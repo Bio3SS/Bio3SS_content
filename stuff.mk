@@ -7,6 +7,7 @@
 msrepo = https://github.com/dushoff
 gitroot = ../
 export ms = $(gitroot)/makestuff
+web = $(gitroot)/Bio3SS.github.io/materials/
 
 -include local.mk
 -include $(gitroot)/local.mk
