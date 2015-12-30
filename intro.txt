@@ -1,0 +1,341 @@
+
+INTRO
+
+----------------------------------------------------------------------
+
+Overview
+
+TOC
+
+----------------------------------------------------------------------
+
+
+SEC Course structure
+
+----------------------------------------------------------------------
+
+Course overview
+
+	Lecture notes for each section will be available on AtL the evening
+	before you need them
+
+		Check AtL frequently for announcements and new information
+
+	The course co-ordinator is Marvin Gunderman
+
+		first contact for any administrative issues  
+		
+		{\tt gundermn@mcmaster.ca}; LSB 116; x23556
+
+	The professor is Jonathan Dushoff
+
+		Office hours MTh 9:30, or \emph{by appointment,} LSB 332
+
+		{\tt dushoff@mcmaster.ca}
+
+----------------------------------------------------------------------
+
+Expectations of professor
+
+	Start and end on time
+
+	Focus on conceptual understanding
+
+	Make clear what terminology and facts must be learned
+
+	Open to questions -- both in class (within reason) and at office
+	hours
+
+	Responsive to questions on class forums
+
+----------------------------------------------------------------------
+
+Expectations of students
+
+	Don't talk while other students are talking, or while I am
+	responding to student questions
+
+	If you must talk at other times, be unobtrusive
+
+	Don't use the internet for non-class activities
+
+	Give the professor his 50 min
+
+	Lectures are required
+
+	Tutorials are required, unless otherwise specified
+
+		If you don't go to tutorials, don't bother us about anything
+		covered in tutorials
+
+----------------------------------------------------------------------
+
+Texts
+
+	The primary text for this course is the lecture notes
+
+	You will be given readings, which will be posted to AtL
+
+	You are required to have an Ecology textbook
+
+		Molles and Cahill, Second Canadian edition
+
+----------------------------------------------------------------------
+
+Structure of presentation
+
+	Required material will be clearly outlined in the notes
+
+		ANS This is an answer: it was omitted from the notes for
+		discussion purposes, you should probably write it in
+
+		COMMENT This is a comment: I omitted from the notes because I
+		thought it wasn't necessary for you to study.  If you write it
+		in, make a note to yourself that it's a comment.
+
+	Required terminology will be presented in {\bf bold}
+
+	General ideas and approaches presented in class may also be required;
+	you should take notes on these in your own words
+
+----------------------------------------------------------------------
+
+Polling
+
+	You can obtain extra credit by responding to in-class polls
+
+		Text from your cell phone, or answer on the web
+
+	HREF https://www.polleverywhere.com/multiple_choice_polls/bk3dF3Di1nLoK1j Why are you taking this class?
+
+----------------------------------------------------------------------
+
+SEC People
+
+----------------------------------------------------------------------
+
+Dushoff
+
+	Loves math
+
+	Lived in four countries
+
+	Studies evolution and spread of infectious diseases
+
+		HIV, rabies, ebola, influenza, \ldots
+
+		SHORT You can check my web site and twitter feed
+		
+		NOTES HLINK http://lalashan.mcmaster.ca/theobio/DushoffLab/
+		
+		NOTES HLINK https://twitter.com/jd_mathbio
+
+----------------------------------------------------------------------
+
+Students
+
+	HREF https://www.polleverywhere.com/multiple_choice_polls/1SEAnabWezy8PnB What year are you in?
+
+	HREF https://www.polleverywhere.com/multiple_choice_polls/8aj1IfJG6hZgngw What kind of career are you aiming for?
+
+----------------------------------------------------------------------
+
+SEC Course content
+
+----------------------------------------------------------------------
+
+TSS Learning goals
+
+	Ecology and population ecology
+
+	Quantitative thinking
+
+	Dynamical modeling
+
+----------------------------------------------------------------------
+
+What is ecology?
+
+	HREF https://www.polleverywhere.com/free_text_polls/GTv7Tat4T14I4Oj Poll
+
+	My answer
+
+		ANS The study of how organisms interact with each other and with
+		the environment
+
+		ANS Ecology is not environmentalism 
+
+----------------------------------------------------------------------
+
+What is population ecology?
+
+	HREF https://www.polleverywhere.com/free_text_polls/vBeW96wbrHzgI2v Poll
+
+	My answer
+
+		ANS The study of how organisms interact with each other and with
+		the environment at the population scale
+
+		ANS Larger spatial scale, longer temporal scale
+
+		ANS We use models to link from the individual level to the
+		population level
+
+----------------------------------------------------------------------
+
+Dynamical modeling
+
+BC
+
+	Investigates the links between local, short-term processes, and
+	large-scale, long-term outcomes
+
+	Allows us to explore what assumptions we're making, and how
+	assumptions affect the link
+
+NC
+
+SIDEFIG images/touching.jpg
+
+SIDEFIG images/ew_measles.png
+
+EC
+
+----------------------------------------------------------------------
+
+Math
+
+	Population ecology uses math
+
+		Math is a critical tool for linking processes to outcomes
+
+		Math will play a central role in the course 
+
+	We will keep it {\em simple}
+
+		But we understand that simple does not always mean easy
+
+	HREF lalashan.mcmaster.ca/3SS/math.handouts.pdf Review the math supplement
+
+----------------------------------------------------------------------
+
+Humans and abstract thought
+
+BC
+
+	People are evolved to be concrete thinkers, not conceptual thinkers
+
+	A goal of this course is to build conceptual thinking skills
+
+NC
+
+SIDEFIG images/hockey.jpg
+
+SIDEFIG images/maxwell.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+SS Examples
+
+----------------------------------------------------------------------
+
+Malaria 
+
+BC
+
+	A nasty, mosquito-borne disease
+
+	In some places (e.g., the southeastern US), it has been eradicated
+	almost by accident
+
+		Mosquitoes are still present
+
+	In other places it persists at high levels despite concerted
+	efforts at elimination 
+
+	\emph{What factors determine when and where malaria spreads?}
+
+NC
+
+SIDEFIG images/us_malaria_1935.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Red squirrels
+
+BC
+
+	Red squirrels are rapidly disappearing from England
+
+		Loss of suitable habitat?
+
+		Competition from gray squirrels introduced from North America?
+
+			Diseases carried by gray squirrels?
+
+		Some combination?
+
+	NOTES HLINK http://en.wikipedia.org/wiki/Eastern_grey_squirrels_in_Europe
+
+NC
+
+SIDEFIG images/red_squirrel.jpg
+
+SIDEFIG images/grey_squirrel.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Cod fisheries
+
+BC
+
+	The cod is a culturally and economically important ocean fish
+
+	It was believed for a long time that cod fisheries were too big for
+	human fishing to have a substantial impact
+
+	COMMENT See link in notes
+
+	NOTES HLINK http://en.wikipedia.org/wiki/Collapse_of_the_Atlantic_northwest_cod_fishery 
+
+NC
+
+SIDEFIG images/cod.jpg
+
+SIDEFIG ts/cod1678.simple.Rout-0.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Populations 
+
+	HREF https://www.polleverywhere.com/free_text_polls/CkJYYpOdxeTlCpH What population of organisms interests you?
+
+----------------------------------------------------------------------
+
+Dandelions
+
+BC
+
+	Start with one dandelion; it produces 100 seeds, of which only
+	4% survive to reproduce.
+
+		How many dandelions after 3 years?
+
+			ANS 64?
+
+			ANS 125?
+
+NC
+
+SIDEFIG images/dandy_field.jpg
+
+EC
+

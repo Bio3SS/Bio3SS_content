@@ -1,7 +1,17 @@
-* Update classroom info
-
-* Update midterm scheduling
-
-* Push a sufficient outline (outline.dmu)
 
 * Welcome message (co-ordinate with Marvin)
+
+* Poll Everywhere (anywhere? what?)
+ * Make the links more obvious
+
+* What about slides with no slide heads?
+
+* Facebook
+
+* Math handouts
+
+* Office hours
+
+* Chaining for Lecture images
+ * An overall make file for the directory that is made from the step files
+ * Directories that use Lecture_images should read that make file (and have a rule to update it)
