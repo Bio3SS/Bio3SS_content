@@ -1,4 +1,4 @@
-commit.txt
+commit.time
 .*.sw*
 
 *.pdf
@@ -24,3 +24,10 @@ testdir/
 subclone_dir/
 
 *.makestuff
+.deps/
+*.deps
+*.handouts.tex
+*.complete.tex
+
+lect
+talk
