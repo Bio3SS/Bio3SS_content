@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: test 
+target pngtarget pdftarget vtarget acrtarget: intro.handouts.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -23,7 +23,7 @@ include $(ms)/perl.def
 
 Sources += todo.mkd
 
-Sources += $(wildcard *.dmu) $(wildcard *.txt)
+Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 
 ##################################################################
 
@@ -36,7 +36,7 @@ outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
 ######################################################################
 
 # HOOK
-draft.fmt: lect/lect.format lect/fmt.pl
+intro.handouts.pdf: intro.txt
 
 ## Lecture rules
 
@@ -50,12 +50,30 @@ Sources += beamer.tmp
 %.final.tex: %.txt beamer.tmp final.fmt talk/lect.pl
 	$(PUSH)
 
+Sources += outline.tmp
+%.outline.tex: %.txt outline.tmp outline.fmt talk/lect.pl
+	$(PUSH)
+
+Sources += handouts.tmp
+%.handouts.tex: %.txt handouts.tmp handouts.fmt talk/lect.pl
+	$(PUSH)
+
+## CRIB
+%.tmp:
+	$(CP) */*/$@ $@
+
 
 ##################################################################
 
 # Unit 1 (Intro)
 
 intro.draft.pdf: intro.txt
+
+##################################################################
+
+# Unit 2 (Linear population growth)
+
+linear.draft.pdf: linear.txt
 
 ##################################################################
 

@@ -29,7 +29,7 @@ Course overview
 
 	The professor is Jonathan Dushoff
 
-		Office hours MTh 9:30, or \emph{by appointment,} LSB 332
+		Office hours MTh 11-12, or \emph{by appointment,} LSB 332
 
 		{\tt dushoff@mcmaster.ca}
 
@@ -106,7 +106,7 @@ Polling
 
 		Text from your cell phone, or answer on the web
 
-	HREF https://www.polleverywhere.com/multiple_choice_polls/bk3dF3Di1nLoK1j Why are you taking this class?
+	POLL gdbKrnAHZenKKuk Why are you taking this class?
 
 ----------------------------------------------------------------------
 
@@ -134,9 +134,9 @@ Dushoff
 
 Students
 
-	HREF https://www.polleverywhere.com/multiple_choice_polls/1SEAnabWezy8PnB What year are you in?
+	POLL 44ltozsBFJkon7n What year are you in?
 
-	HREF https://www.polleverywhere.com/multiple_choice_polls/8aj1IfJG6hZgngw What kind of career are you aiming for?
+	POLL XgKDaTl7i2tSYui What kind of career are you aiming for?
 
 ----------------------------------------------------------------------
 
@@ -156,7 +156,7 @@ TSS Learning goals
 
 What is ecology?
 
-	HREF https://www.polleverywhere.com/free_text_polls/GTv7Tat4T14I4Oj Poll
+	POLL GAwCN5eA9OpPe3R Poll
 
 	My answer
 
@@ -169,7 +169,7 @@ What is ecology?
 
 What is population ecology?
 
-	HREF https://www.polleverywhere.com/free_text_polls/vBeW96wbrHzgI2v Poll
+	POLL 6x6QEYmAsSIH1He Poll
 
 	My answer
 
@@ -316,7 +316,7 @@ EC
 
 Populations 
 
-	HREF https://www.polleverywhere.com/free_text_polls/CkJYYpOdxeTlCpH What population of organisms interests you?
+	POLL HsllOFOuaivEeRp What population of organisms interests you?
 
 ----------------------------------------------------------------------
 

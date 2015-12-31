@@ -1,0 +1,11 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx,talk/slidecomm,talk/commands}
+\usepackage{indentfirst}
+
+\begin{document}
+
+\pagestyle{plain}
+
+----------------------------------------------------------------------
+
+\end{document}
