@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: intro.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget: math.complete.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -58,6 +58,9 @@ Sources += handouts.tmp
 %.handouts.tex: %.txt handouts.tmp handouts.fmt talk/lect.pl
 	$(PUSH)
 
+%.complete.tex: %.txt handouts.tmp complete.fmt talk/lect.pl
+	$(PUSH)
+
 ## CRIB
 %.tmp:
 	$(CP) */*/$@ $@
@@ -68,6 +71,9 @@ Sources += handouts.tmp
 # Unit 1 (Intro)
 
 intro.draft.pdf: intro.txt
+
+math.handouts.pdf: math.txt
+math.complete.pdf: math.txt
 
 ##################################################################
 

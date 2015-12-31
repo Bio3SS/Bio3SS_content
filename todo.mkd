@@ -10,8 +10,6 @@
 
 * Math handouts
 
-* Office hours
-
 * Chaining for Lecture images
  * An overall make file for the directory that is made from the step files
  * Directories that use Lecture_images should read that make file (and have a rule to update it)
