@@ -52,8 +52,7 @@ EC
 
 Gypsy moth populations
 
-
-DOUBLEPDF ts/pop10165.Rout
+DOUBLEPDF ts/gm10165.simple.Rout
 
 ----------------------------------------------------------------------
 
@@ -384,7 +383,7 @@ Advantages of geometric view
 
 Gypsy-moth example
 
-DOUBLEPDF ts/pop10165.Rout
+DOUBLEPDF ts/gm10165.simple.Rout
 
 ----------------------------------------------------------------------
 
@@ -860,7 +859,7 @@ Model
 
 		$N_T = N_0 \lambda^T$
 
-		$t_T$ = T \Delta t
+		$t_T = T \Delta t$
 
 	Behaviour
 
@@ -1080,13 +1079,13 @@ Scaling
 
 Bacteria example
 
-DOUBLEFIG bacteria/growth.Rout-2.pdf bacteria/fast.Rout-2.pdf
+DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
 Bacteria example
 
-DOUBLEFIG bacteria/growth.Rout-2.pdf bacteria/fast_scaled.Rout-2.pdf
+DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast_scaled.Rout-2.pdf
 
 ----------------------------------------------------------------------
 

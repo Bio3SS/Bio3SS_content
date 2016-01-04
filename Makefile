@@ -87,14 +87,23 @@ linear.draft.pdf: linear.txt
 
 # Time series plots
 ts/%: ts
-	cd ts && $(MAKE) $*
-
+	cd $< && $(MAKE) $*
+	touch $@
 ts: 
 	/bin/ln -s $(gitroot)/Population_time_series $@
 
+# Exponential plots
+exponential/%: exponential
+	cd $< && $(MAKE) $*
+	touch $@
+exponential: 
+	/bin/ln -s $(gitroot)/Exponential_figures $@
+
 # Lecture images
 images/%: images ;
-images: $(images)
+
+images: 
+	/bin/ln -s $(images) $@
 	$(link)
 
 ##################################################################

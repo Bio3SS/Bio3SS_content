@@ -1,14 +1,9 @@
 
-* Welcome message (co-ordinate with Marvin)
+* Github merge. WTF.
 
-* Poll Everywhere (anywhere? what?)
- * Make the links more obvious
-
-* What about slides with no slide heads?
+* More pictures for Intro
 
 * Facebook
-
-* Math handouts
 
 * Chaining for Lecture images
  * An overall make file for the directory that is made from the step files
