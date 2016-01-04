@@ -53,7 +53,7 @@ EC
 Gypsy moth populations
 
 
-DOUBLEPDF series/pop10165.Rout
+DOUBLEPDF ts/pop10165.Rout
 
 ----------------------------------------------------------------------
 
@@ -384,7 +384,7 @@ Advantages of geometric view
 
 Gypsy-moth example
 
-DOUBLEPDF series/pop10165.Rout
+DOUBLEPDF ts/pop10165.Rout
 
 ----------------------------------------------------------------------
 
