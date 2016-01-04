@@ -3,7 +3,7 @@ INTRO
 
 ----------------------------------------------------------------------
 
-Overview
+CLASS DEFHEAD Overview
 
 TOC
 
@@ -106,7 +106,7 @@ Polling
 
 		Text from your cell phone, or answer on the web
 
-	POLL gdbKrnAHZenKKuk Why are you taking this class?
+	POLL multiple_choice_polls/gdbKrnAHZenKKuk Why are you taking this class?
 
 ----------------------------------------------------------------------
 
@@ -124,7 +124,7 @@ Dushoff
 
 		HIV, rabies, ebola, influenza, \ldots
 
-		SHORT You can check my web site and twitter feed
+		SHORT See notes for more info.
 		
 		NOTES HLINK http://lalashan.mcmaster.ca/theobio/DushoffLab/
 		
@@ -134,9 +134,9 @@ Dushoff
 
 Students
 
-	POLL 44ltozsBFJkon7n What year are you in?
+	POLL multiple_choice_polls/44ltozsBFJkon7n What year are you in?
 
-	POLL XgKDaTl7i2tSYui What kind of career are you aiming for?
+	POLL multiple_choice_polls/XgKDaTl7i2tSYui What kind of career are you aiming for?
 
 ----------------------------------------------------------------------
 
@@ -154,9 +154,7 @@ TSS Learning goals
 
 ----------------------------------------------------------------------
 
-What is ecology?
-
-	POLL GAwCN5eA9OpPe3R Poll
+	POLL free_text_polls/GAwCN5eA9OpPe3R What is ecology?
 
 	My answer
 
@@ -167,9 +165,7 @@ What is ecology?
 
 ----------------------------------------------------------------------
 
-What is population ecology?
-
-	POLL 6x6QEYmAsSIH1He Poll
+	POLL free_text_polls/6x6QEYmAsSIH1He What is population ecology?
 
 	My answer
 
@@ -215,7 +211,7 @@ Math
 
 		But we understand that simple does not always mean easy
 
-	HREF lalashan.mcmaster.ca/3SS/math.handouts.pdf Review the math supplement
+	MATREF math.handouts.pdf Review the math supplement
 
 ----------------------------------------------------------------------
 
@@ -316,7 +312,7 @@ EC
 
 Populations 
 
-	POLL HsllOFOuaivEeRp What population of organisms interests you?
+	POLL free_text_polls/HsllOFOuaivEeRp What population of organisms interests you?
 
 ----------------------------------------------------------------------
 

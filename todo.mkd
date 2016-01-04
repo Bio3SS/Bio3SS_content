@@ -3,8 +3,8 @@
 
 * More pictures for Intro
 
-* Facebook
+* Glue for bullets
 
-* Chaining for Lecture images
+* Chaining for Lecture images (not implemented yet; for now just keep it up to date)
  * An overall make file for the directory that is made from the step files
  * Directories that use Lecture_images should read that make file (and have a rule to update it)

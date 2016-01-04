@@ -40,6 +40,7 @@ intro.handouts.pdf: intro.txt
 
 ## Lecture rules
 
+lect/%.fmt: ;
 %.fmt: lect/lect.format lect/fmt.pl
 	$(PUSHSTAR)
 
@@ -65,12 +66,12 @@ Sources += handouts.tmp
 %.tmp:
 	$(CP) */*/$@ $@
 
-
 ##################################################################
 
 # Unit 1 (Intro)
 
 intro.draft.pdf: intro.txt
+intro.handouts.pdf: intro.txt
 
 math.handouts.pdf: math.txt
 math.complete.pdf: math.txt
@@ -89,6 +90,7 @@ linear.draft.pdf: linear.txt
 ts/%: ts
 	cd $< && $(MAKE) $*
 	touch $@
+
 ts: 
 	/bin/ln -s $(gitroot)/Population_time_series $@
 
@@ -108,10 +110,27 @@ images:
 
 ##################################################################
 
+## Exponential figures
+
+exponential/%: exponential
+	cd $< && $(MAKE) $*
+	touch $@
+
+exponential: 
+	/bin/ln -s $(gitroot)/Exponential_figures $@
+
+##################################################################
+
 ## Push to web
 
-%.push: %
+%.handouts.pdf.push: %.handouts.pdf
 	$(CP) $< $(web)
+
+%.complete.pdf.push: %.complete.pdf
+	$(CP) $< $(web)
+
+%.final.pdf.push: %.final.pdf
+	$(CP) $< $(Drop)/3SS
 
 ### Makestuff
 
