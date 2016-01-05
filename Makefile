@@ -110,17 +110,6 @@ images:
 
 ##################################################################
 
-## Exponential figures
-
-exponential/%: exponential
-	cd $< && $(MAKE) $*
-	touch $@
-
-exponential: 
-	/bin/ln -s $(gitroot)/Exponential_figures $@
-
-##################################################################
-
 ## Push to web
 
 %.handouts.pdf.push: %.handouts.pdf
