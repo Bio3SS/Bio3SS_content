@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: linear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: intro.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -129,6 +129,6 @@ images:
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
-# -include $(ms)/wrapR.mk
+-include $(ms)/wrapR.mk
 -include $(ms)/newlatex.mk
 include $(ms)/lect.mk

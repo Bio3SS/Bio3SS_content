@@ -1,9 +1,12 @@
 
-* Github merge. WTF.
-
 * More pictures for Intro
+ * E=mc²
+ * Spirally thing-thangs
+ * Four countries
 
 * Glue for bullets
+
+* Push!
 
 * Chaining for Lecture images (not implemented yet; for now just keep it up to date)
  * An overall make file for the directory that is made from the step files

@@ -122,9 +122,6 @@ Stochastic version
 
 TSS Bacteria
 
-	COMMENT This slide had some typos in one of the versions of the
-	notes.
-
 	Imagine we have some bacteria growing in a big tank, constantly
 	dividing and dying:
 

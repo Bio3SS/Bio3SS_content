@@ -132,6 +132,30 @@ Dushoff
 
 ----------------------------------------------------------------------
 
+WIDEFIG filledCircle.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+WIDEFIG images/phila_skyline.jpg
+
+--------------------------------------------------------------------
+
+WIDEFIG images/big_bend.jpg
+
+--------------------------------------------------------------------
+
+WIDEFIG images/taiwan_street.jpg
+
+--------------------------------------------------------------------
+
+WIDEFIG images/tims.jpg
+
+----------------------------------------------------------------------
+
+WIDEFIG weitz_full.pdf
+
+----------------------------------------------------------------------
+
 Students
 
 	POLL multiple_choice_polls/44ltozsBFJkon7n What year are you in?
@@ -191,9 +215,9 @@ BC
 
 NC
 
-SIDEFIG images/touching.jpg
+WIDEFIG images/touching.jpg
 
-SIDEFIG images/ew_measles.png
+WIDEFIG images/ew_measles.png
 
 EC
 
@@ -225,9 +249,9 @@ BC
 
 NC
 
-SIDEFIG images/hockey.jpg
+WIDEFIG images/hockey.jpg
 
-SIDEFIG images/maxwell.jpg
+WIDEFIG images/emc.png
 
 EC
 
@@ -255,7 +279,7 @@ BC
 
 NC
 
-SIDEFIG images/us_malaria_1935.jpg
+WIDEFIG images/us_malaria_1935.jpg
 
 EC
 
@@ -271,17 +295,15 @@ BC
 
 		Competition from gray squirrels introduced from North America?
 
-			Diseases carried by gray squirrels?
-
-		Some combination?
+		Diseases carried by gray squirrels?
 
 	NOTES HLINK http://en.wikipedia.org/wiki/Eastern_grey_squirrels_in_Europe
 
 NC
 
-SIDEFIG images/red_squirrel.jpg
+WIDEFIG images/red_squirrel.jpg
 
-SIDEFIG images/grey_squirrel.jpg
+WIDEFIG images/grey_squirrel.jpg
 
 EC
 
@@ -291,20 +313,17 @@ Cod fisheries
 
 BC
 
-	The cod is a culturally and economically important ocean fish
+	Is the ocean too big for people to affect?
 
-	It was believed for a long time that cod fisheries were too big for
-	human fishing to have a substantial impact
-
-	COMMENT See link in notes
+	What happened to the cod?
 
 	NOTES HLINK http://en.wikipedia.org/wiki/Collapse_of_the_Atlantic_northwest_cod_fishery 
 
 NC
 
-SIDEFIG images/cod.jpg
+WIDEFIG images/cod.jpg
 
-SIDEFIG ts/cod1678.simple.Rout-0.pdf
+WIDEFIG ts/cod1678.simple.Rout-0.pdf
 
 EC
 
@@ -331,7 +350,7 @@ BC
 
 NC
 
-SIDEFIG images/dandy_field.jpg
+WIDEFIG images/dandy_field.jpg
 
 EC
 
