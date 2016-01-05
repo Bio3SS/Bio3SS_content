@@ -35,9 +35,6 @@ outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
 
 ######################################################################
 
-# HOOK
-intro.handouts.pdf: intro.txt
-
 ## Lecture rules
 
 lect/%.fmt: ;
@@ -62,10 +59,6 @@ Sources += handouts.tmp
 %.complete.tex: %.txt handouts.tmp complete.fmt talk/lect.pl
 	$(PUSH)
 
-## CRIB
-%.tmp:
-	$(CP) */*/$@ $@
-
 ##################################################################
 
 # Unit 1 (Intro)
@@ -75,6 +68,8 @@ intro.handouts.pdf: intro.txt
 
 math.handouts.pdf: math.txt
 math.complete.pdf: math.txt
+
+Sources += weitz_full.pdf filledCircle.R
 
 ##################################################################
 
