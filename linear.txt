@@ -24,7 +24,7 @@ BC
 
 NC
 
-SIDEFIG images/dandy_field.jpg
+WIDEFIG images/dandy_field.jpg
 
 EC
 
@@ -42,9 +42,9 @@ BC
 
 NC
 
-SIDEFIG images/gm_caterpillar.jpg
+WIDEFIG images/gm_caterpillar.jpg
 
-SIDEFIG images/gm_defoliation.jpg
+WIDEFIG images/gm_defoliation.jpg
 
 EC
 
@@ -413,7 +413,7 @@ BC
 
 NC
 
-SIDEFIG images/tai3.jpg
+WIDEFIG images/tai3.jpg
 
 EC
 
@@ -617,7 +617,7 @@ BC
 
 NC
 
-SIDEFIG images/flat.png
+WIDEFIG images/flat.png
 
 EC
 
@@ -737,7 +737,7 @@ BC
 
 NC
 
-SIDEFIG images/cool_moth.jpg
+WIDEFIG images/cool_moth.jpg
 
 EC
 
@@ -761,7 +761,7 @@ BC
 
 NC
 
-SIDEFIG images/violet_bacteria.jpg
+WIDEFIG images/violet_bacteria.jpg
 
 EC
 
@@ -787,9 +787,9 @@ BC
 
 NC
 
-SIDEFIG images/dandy_flower.jpg
+WIDEFIG images/dandy_flower.jpg
 
-SIDEFIG images/dandy_seeds.jpg
+WIDEFIG images/dandy_seeds.jpg
 
 EC
 
@@ -894,9 +894,9 @@ BC
 
 NC
 
-SIDEFIG images/cool_moth.jpg
+WIDEFIG images/cool_moth.jpg
 
-SIDEFIG images/dandy_flower.jpg
+WIDEFIG images/dandy_flower.jpg
 
 EC
 
@@ -1025,7 +1025,7 @@ BC
 
 NC
 
-SIDEFIG images/espresso.jpg
+WIDEFIG images/espresso.jpg
 
 EC
 
@@ -1054,7 +1054,7 @@ BC
 
 NC
 
-SIDEFIG images/clock.jpg
+WIDEFIG images/clock.jpg
 
 EC
 
@@ -1433,9 +1433,9 @@ BC
 
 NC
 
-SIDEFIG images/humans.jpg
+WIDEFIG images/humans.jpg
 
-SIDEFIG images/wolves.jpg
+WIDEFIG images/wolves.jpg
 
 EC
 
