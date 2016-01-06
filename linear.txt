@@ -196,7 +196,7 @@ TSEC Exponential growth
 
 	POLL https://www.polleverywhere.com/multiple_choice_polls/R4B7MuFIsRyMBQR Which of these is an example?
 
-FIG exponential/exponential.Rout.four.pdf
+LANDFIG exponential/exponential.Rout.four.pdf
 
 ----------------------------------------------------------------------
 
