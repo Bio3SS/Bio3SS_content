@@ -76,6 +76,7 @@ Sources += weitz_full.pdf filledCircle.R
 # Unit 2 (Linear population growth)
 
 linear.draft.pdf: linear.txt
+linear.handouts.pdf: linear.txt
 
 ##################################################################
 

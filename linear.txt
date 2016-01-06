@@ -108,7 +108,7 @@ Moth calculation
 
 Stochastic version
 
-	Obviously, we don't expect to get \emph{exactly} 7.5 moths.
+	Obviously, we will not get \emph{exactly} 7.5 moths.
 
 	If we consider moths as individuals, we need a \textbf{stochastic}
 	model
@@ -120,19 +120,27 @@ Stochastic version
 
 ----------------------------------------------------------------------
 
+Stochastic model
+
+FIG exponential/dandelion.Rout-2.pdf
+
+----------------------------------------------------------------------
+
 TSS Bacteria
 
 	Imagine we have some bacteria growing in a big tank, constantly
 	dividing and dying:
 
-		They divide (forming two bacteria from one) constantly at a rate
+		They divide (forming two bacteria from one) at a rate
 		of $0.04/\hr$
 
-		They wash out of the tank (constantly) at a rate of 0.02/\hr
+		They wash out of the tank at a rate of 0.02/\hr
 
-		They die (constantly) at a rate of 0.01/\hr
+		They die at a rate of 0.01/\hr
 
-	Rates are \textbf{per capita} (i.e., per individual)
+	Rates are \textbf{per capita} (i.e., per individual) and
+	\textbf{instaneous} (they describe what is happening at each moment
+	of time)
 
 	We start with 10 bacteria/ml
 	
@@ -158,8 +166,6 @@ Bacteria, rescaled
 		They wash out of the tank at a rate of 0.48/day
 
 		They die at a rate of 0.24/day
-
-	Rates are \textbf{per capita} (i.e., per individual)
 
 	If we start with 10 bacteria/ml, how many do we have after 1 day?
 
@@ -435,7 +441,9 @@ CSLIDE Speeding in Taiwan
 
 		ANS But I do get extremely close (after several hours)
 
-	ANS \emph{Not} the same as Zeno's paradox!
+	Do you remember Zeno's paradox?
+
+		ANS In Zeno's paradox, I do arrive
 
 ----------------------------------------------------------------------
 
@@ -513,14 +521,7 @@ Euler's $e$
 
 		ANS $e$ times closer
 
-	COMMENT I want everybody in the class to look at somebody else's
-	notes, so I collect all of the notes and then pass them back out
-	absolutely at random.
-
-	COMMENT What is the probability that \emph{nobody} gets their own
-	notes back
-
-		COMMENT Almost exactly $1/e$
+	COMMENT $e$ or $1/e$ is the answer to a lot of questions like this one
 
 ----------------------------------------------------------------------
 
@@ -1001,10 +1002,6 @@ Summary
 
 ----------------------------------------------------------------------
 
-HANDOUTPART
-
-----------------------------------------------------------------------
-
 SEC Units and scaling
 
 ----------------------------------------------------------------------
@@ -1324,10 +1321,7 @@ Calculating birth rate
 
 Calculating death rate
 
-	COMMENT One of the words on this slide is wrong, sorry. I'll leave
-	it to you to find it.
-
-	Fecundity in the continuous-time model is deaths per
+	The death rate $d$ in the continuous-time model is deaths per
 	individual per unit time
 
 		An instaneous rate
