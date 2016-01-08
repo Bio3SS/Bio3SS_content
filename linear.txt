@@ -562,7 +562,7 @@ Bacteriostasis answers
 
 	Start with 10 bacteria/ml:
 
-		ANS After one hour, 9.80 bacteria/ml
+		ANS After one hour, 9.802 bacteria/ml
 
 		ANS After one week, 0.347 bacteria/ml
 
