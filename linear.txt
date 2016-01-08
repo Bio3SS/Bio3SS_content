@@ -14,11 +14,18 @@ BC
 	Start with one dandelion; it produces 100 seeds, of which only
 	4% survive to reproduce.
 
+CHANGE ML,MK: need to worry about annual cycles next year 
+
 		POLL https://www.polleverywhere.com/free_text_polls/jrcSpwWFGcPZp4Q How many dandelions after 3 years?
 
 			ANS 64?
 
 			ANS 125?
+
+CHANGE ML : speadsheet - name range
+CHANGE ML : think about better variable names 
+CHANGE ML : maybe start with the assumption adults don't survival and additional part question 
+CHANGE ML : it is legit to have 1/2 because this is a math model ...  			
 
 		HREF http://lalashan.mcmaster.ca/theobio/3SS/index.php/Linear_population_models See spreadsheet
 
@@ -78,7 +85,7 @@ RSLIDE Moth calculation
 	POLL https://www.polleverywhere.com/free_text_polls/MUSznOOOghzhPqR What happens if we start with 10 moths?
 
 		ANS We end up with 15 moths
-
+    CHANGE ML : intervals are also legit answers
 ----------------------------------------------------------------------
 
 Moth calculation
@@ -195,6 +202,8 @@ Units
 
 Bacteriostasis
 
+CHANGE ML: come back to the example and do the 1 week calucation and post it
+
 	What if we add an agent to the tank that makes the birth and death
 	rates nearly zero?
 
@@ -207,6 +216,11 @@ Bacteriostasis
 ----------------------------------------------------------------------
 
 TSEC Exponential growth
+
+CHANGE ML : only legit in log scale 
+CHANGE ML : maybe stretch it out 
+CHANGE ML : next year show what picture A looks like on the log scale
+
 
 	POLL https://www.polleverywhere.com/free_text_polls/59rZNZLRum55IKI What is exponential growth?
 
@@ -293,6 +307,8 @@ SS Log and linear scales
 
 Scales of comparison
 
+CHANGE ML : note natural log vs log10?
+
 	POLL https://www.polleverywhere.com/free_text_polls/mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
 
 		ANS If you said 100, you are thinking multiplicatively
@@ -303,11 +319,16 @@ Scales of comparison
 
 Scales of display
 
+CHANGE ML: change your coloring/ shape, hard to see
+
 DOUBLEPDF exponential/comparison.Rout
 
 ----------------------------------------------------------------------
 
 Canadian provinces 
+
+CHANGE ML: I don't like you changing BOTH axis in multiplicative scale at once
+CHANGE ML : Do them one at a time and tell students you do time on the linear scale
 
 DOUBLEFIG exponential/canada.Rout-0.pdf exponential/canada.Rout-1.pdf
 
