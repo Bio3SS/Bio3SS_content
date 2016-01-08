@@ -122,6 +122,18 @@ Stochastic version
 
 Stochastic model
 
+FIG exponential/dandelion.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Stochastic model
+
+FIG exponential/dandelion.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Stochastic model
+
 FIG exponential/dandelion.Rout-2.pdf
 
 ----------------------------------------------------------------------
@@ -190,9 +202,7 @@ Bacteriostasis
 
 	If we start with 10 bacteria/ml, how many do we have after:
 
-		POLL https://www.polleverywhere.com/free_text_polls/YN2bgU2NJDBuIXd 1 hr?
-
-		POLL https://www.polleverywhere.com/free_text_polls/9oMr0wvgbVk4W58 A week?
+		POLL https://www.polleverywhere.com/free_text_polls/YN2bgU2NJDBuIXd 1 hr/wk?
 
 ----------------------------------------------------------------------
 
@@ -205,6 +215,41 @@ TSEC Exponential growth
 FIG exponential/exponential.Rout.four.pdf
 
 ----------------------------------------------------------------------
+
+CSLIDE A
+
+FIG exponential/exponential.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+CSLIDE B
+
+FIG exponential/exponential.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+CSLIDE C
+
+FIG exponential/exponential.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+CSLIDE D
+
+FIG exponential/exponential.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+CSLIDE Exponential growth
+
+	POLL https://www.polleverywhere.com/free_text_polls/59rZNZLRum55IKI What is exponential growth?
+
+	POLL https://www.polleverywhere.com/multiple_choice_polls/R4B7MuFIsRyMBQR Which of these is an example?
+
+FIG exponential/exponential.Rout.four.pdf
+
+----------------------------------------------------------------------
+
 
 Types of growth
 
@@ -325,6 +370,12 @@ DOUBLEFIG exponential/canada.Rout-3.pdf exponential/canada.Rout-5.pdf
 ASLIDE Canada plus room 1105
 
 DOUBLEFIG exponential/canada.Rout-4.pdf exponential/canada.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+CSLIDE Predation comparison
+
+FIG images/buffalo.jpg
 
 ----------------------------------------------------------------------
 
