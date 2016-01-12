@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: linear.final.pdf 
+target pngtarget pdftarget vtarget acrtarget: linear.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -76,6 +76,7 @@ Sources += weitz_full.pdf filledCircle.R
 # Unit 2 (Linear population growth)
 
 linear.final.pdf: linear.txt
+linear.draft.pdf: linear.txt
 linear.handouts.pdf: linear.txt
 
 ##################################################################

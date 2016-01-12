@@ -22,15 +22,15 @@ BC
 
 		ANS 125?
 
-CHANGE ML : speadsheet - name range
-
-CHANGE ML : think about better variable names 
-
-CHANGE ML : maybe start with the assumption adults don't survival and additional part question 
-
-CHANGE ML : it is legit to have 1/2 because this is a math model ...  			
-
 		HREF http://lalashan.mcmaster.ca/theobio/3SS/index.php/Linear_population_models See spreadsheet
+
+	CHANGE ML : speadsheet - name range
+
+	CHANGE ML : think about better variable names 
+
+	CHANGE ML : maybe start with the assumption adults don't survival and additional part question 
+
+	CHANGE ML : it is legit to have 1/2 because this is a math model ...  			
 
 NC
 
@@ -703,12 +703,22 @@ EC
 
 Dynamic models
 
+BC
+
 	\textbf{Dynamic models} describe rules for how a system changes at
 	each point in time
 
 	We will see what these assumptions about how the system
 	\emph{changes} lead to conclusions about what the system \emph{does}
 	over longer time periods
+
+NC
+
+WIDEFIG images/touching.jpg
+
+WIDEFIG images/ew_measles.png
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -811,7 +821,7 @@ BC
 
 	Census time
 
-		ANS Annually; it doesn't matter when
+		ANS Annually; use the same time (and stage) each year
 
 NC
 
