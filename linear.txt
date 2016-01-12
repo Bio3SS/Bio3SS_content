@@ -557,7 +557,7 @@ RSLIDE Bacteriostasis
 ----------------------------------------------------------------------
 
 Bacteriostasis answers
-
+CHANGE ML: need a poll here
 	Bacteria wash out at the rate of 0.02/hr
 
 		ANS This can only make sense with concrete units if we think of
@@ -702,7 +702,7 @@ EC
 ----------------------------------------------------------------------
 
 Dynamic models
-
+CHANGE ML: note. dandelion example
 BC
 
 	\textbf{Dynamic models} describe rules for how a system changes at
@@ -754,6 +754,7 @@ Parameters
 ----------------------------------------------------------------------
 
 How do populations change?
+CHANGE ML: test polls and make sure the hyperlinks work?
 
 	I survey a population in 2005, and again in 2009.  I get a different
 	answer the second time.
@@ -799,7 +800,7 @@ Linear population models
 		ANS They usually correspond to exponential growth -- or decline
 
 ----------------------------------------------------------------------
-
+CHANGE ML: con't here tomorrow!
 SS Examples
 
 ----------------------------------------------------------------------
