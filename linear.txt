@@ -14,9 +14,9 @@ BC
 	Start with one dandelion; it produces 100 seeds, of which only
 	4% survive to reproduce.
 
-	CHANGE ML,MK: need to worry about annual cycles next year 
+	CHANGE ML,MK: Specify that it's an annual cycle
 
-	POLL https://www.polleverywhere.com/free_text_polls/jrcSpwWFGcPZp4Q How many dandelions after 3 years?
+	POLL jrcSpwWFGcPZp4Q How many dandelions after 3 years?
 
 		ANS 64?
 
@@ -85,7 +85,7 @@ RSLIDE Moth calculation
 
 		All adults die after reproduction
 
-	POLL https://www.polleverywhere.com/free_text_polls/MUSznOOOghzhPqR What happens if we start with 10 moths?
+	POLL MUSznOOOghzhPqR What happens if we start with 10 moths?
 
 		ANS We end up with 15 moths
 
@@ -216,20 +216,21 @@ CHANGE ML: come back to the example and do the 1 week calucation and post it
 
 	If we start with 10 bacteria/ml, how many do we have after:
 
-		POLL https://www.polleverywhere.com/free_text_polls/YN2bgU2NJDBuIXd 1 hr/wk?
+		POLL YN2bgU2NJDBuIXd 1 hr/wk?
 
 ----------------------------------------------------------------------
 
 TSEC Exponential growth
 
 CHANGE ML : only legit in log scale 
+
 CHANGE ML : maybe stretch it out 
+
 CHANGE ML : next year show what picture A looks like on the log scale
 
+	POLL 59rZNZLRum55IKI What is exponential growth?
 
-	POLL https://www.polleverywhere.com/free_text_polls/59rZNZLRum55IKI What is exponential growth?
-
-	POLL https://www.polleverywhere.com/multiple_choice_polls/R4B7MuFIsRyMBQR Which of these is an example?
+	POLL R4B7MuFIsRyMBQR Which of these is an example?
 
 FIG exponential/exponential.Rout.four.pdf
 
@@ -261,9 +262,9 @@ FIG exponential/exponential.Rout-3.pdf
 
 CSLIDE Exponential growth
 
-	POLL https://www.polleverywhere.com/free_text_polls/59rZNZLRum55IKI What is exponential growth?
+	POLL 59rZNZLRum55IKI What is exponential growth?
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/R4B7MuFIsRyMBQR Which of these is an example?
+	POLL R4B7MuFIsRyMBQR Which of these is an example?
 
 FIG exponential/exponential.Rout.four.pdf
 
@@ -314,7 +315,7 @@ Scales of comparison
 
 CHANGE ML : note natural log vs log10?
 
-	POLL https://www.polleverywhere.com/free_text_polls/mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
+	POLL mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
 
 		ANS If you said 100, you are thinking multiplicatively
 
@@ -411,7 +412,7 @@ BC
 
 	A 500 lb lion is attacking a 1000 lb buffalo!
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/mWPcnLTGOScEpPG This is analogous to a 15 lb red fox attacking:
+	POLL mWPcnLTGOScEpPG This is analogous to a 15 lb red fox attacking:
 
 		A 30 lb beaver (twice as heavy)?
 
@@ -512,11 +513,13 @@ CSLIDE Speeding in Taiwan
 
 	Imagine now that I follow the signs exactly and unrealistically.
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/gnI0dJ16ry1YVAo Do I ever arrive in the (ideal) town of Speed?
+	POLL gnI0dJ16ry1YVAo Do I ever arrive in the (ideal) town of Speed?
 
 		ANS No
 
 		ANS But I do get extremely close (after several hours)
+
+	CHANGE They don't know Zeno!
 
 	Do you remember Zeno's paradox?
 
@@ -764,7 +767,7 @@ CHANGE ML: test polls and make sure the hyperlinks work?
 	I survey a population in 2005, and again in 2009.  I get a different
 	answer the second time.
 
-	POLL https://www.polleverywhere.com/free_text_polls/Dw8wmkW6lt2FSw4 What are some reasons why the size of the population might change?
+	POLL Dw8wmkW6lt2FSw4 What are some reasons why the size of the population might change?
 
 		ANS Birth
 
@@ -1133,7 +1136,7 @@ BC
 	We \emph{cannot} {add} quantities with different units (unless they
 	can be converted to the same units)
 
-	POLL https://www.polleverywhere.com/free_text_polls/79kNtEUMa39BNfC How many seconds are there in a day?
+	POLL q1Uw9Tqk3s6aaDu How many seconds are there in a day?
 
 		ANS
 		$\bigeq \frac{60 \uname{sec}}{\uname{min}} $ 
@@ -1180,7 +1183,7 @@ DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast_scaled.Rout-2.pdf
 
 Thinking about units 
 
-	POLL https://www.polleverywhere.com/free_text_polls/mPB7sUK1hfvcy2h What is $10^{3 \dd}$?
+	POLL dtoNQ0UYTN3J8b7 What is $10^{3 \dd}$?
 
 		NOANS
 
@@ -1242,7 +1245,7 @@ Moths
 
 	$\cdot 0.5 \uname{rA}/\uname{A}$
 
-	POLL https://www.polleverywhere.com/free_text_polls/qWbRwbUdRy6sdTX What's the product?
+	POLL tLELJesRPskkwAS What's the product?
 
 		ANS $1.5\uname{rA}/\uname{rF}$
 
@@ -1601,7 +1604,7 @@ Balance
 
 Changing growth rates
 
-	POLL https://www.polleverywhere.com/free_text_polls/Il4TXA5p9PH2KIt What sort of factors can make species growth rates change?
+	POLL 23RB9oQMsK354yP What sort of factors can make species growth rates change?
 
 		ANS Seasonality
 
