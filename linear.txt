@@ -325,7 +325,7 @@ CHANGE ML : note natural log vs log10?
 
 Scales of display
 
-CHANGE ML: change your coloring/ shape, hard to see
+CHANGE ML : change your coloring/ shape, hard to see
 
 DOUBLEPDF exponential/comparison.Rout
 
@@ -333,7 +333,7 @@ DOUBLEPDF exponential/comparison.Rout
 
 Canadian provinces 
 
-CHANGE ML: I don't like you changing BOTH axis in multiplicative scale at once
+CHANGE ML : I don't like you changing BOTH axis in multiplicative scale at once
 CHANGE ML : Do them one at a time and tell students you do time on the linear scale
 
 DOUBLEFIG exponential/canada.Rout-0.pdf exponential/canada.Rout-1.pdf
@@ -519,7 +519,7 @@ CSLIDE Speeding in Taiwan
 
 		ANS But I do get extremely close (after several hours)
 
-	CHANGE They don't know Zeno!
+	CHANGE ML : They don't know Zeno!
 
 	Do you remember Zeno's paradox?
 
@@ -819,6 +819,8 @@ Moths
 
 BC
 
+CHANGE MK: Maybe bring back gypsy moth population time series 
+
 	State variables
 
 		ANS Number of moths/ha
@@ -833,6 +835,10 @@ BC
 	Census time
 
 		ANS Annually; use the same time (and stage) each year
+
+CHANGE MK: Cryptic names in the spreadsheet (any way to have a note in plain english of what each parameter stands for?)
+
+CHANGE MK: Draw a moth cycle on the slide?
 
 NC
 
@@ -870,6 +876,8 @@ Dandelions
 
 BC
 
+CHANGE MK: Again, think a drawn cycle on the slide would be helpful.
+
 	State variables
 
 		ANS Number of dandelions in a field
@@ -883,6 +891,8 @@ BC
 		ANS Annually, before reproduction
 
 		ANS When new and returning individuals are most similar
+
+CHANGE MK: Clarify that the census time becomes a choice because you have conceded to only track one state variable.
 
 NC
 
@@ -957,6 +967,8 @@ Model
 
 		$t_T = T \Delta t$
 
+CHANGE MK: Spend plenty of time here attempting to extract the answer from students.
+
 	Behaviour
 
 		ANS Increases exponentially (geometrically) when $\lambda>1$
@@ -1023,6 +1035,8 @@ Assumptions
 ----------------------------------------------------------------------
 
 Interpretation
+
+CHANGE MK: Maybe put this example first
 
 	If we have $N$ individuals at time $t$, how does the population
 	change?
