@@ -780,7 +780,8 @@ CHANGE ML: test polls and make sure the hyperlinks work?
 		ANS Immigration and emigration
 
 		ANS Sampling (ie., my counts are not perfectly correct)
-CHANGE: you ask for the definition of vicariance: "fragmentation" of a population (change in gene flow) leading to a differention of the population (can lead to new species)
+		
+CHANGE CC: you ask for the definition of vicariance: "fragmentation" of a population (change in gene flow) leading to a differention of the population (can lead to new species)
 ----------------------------------------------------------------------
 
 Censusing and intermediate variables
@@ -798,7 +799,10 @@ Censusing and intermediate variables
 
 
 Linear population models
+
+CHANGE CC: Define per capita before 
 CHANGE CC: you want to restructure this slide
+
 	We will focus mostly on births and deaths
 
 		These are done by individuals in our population, thus it
