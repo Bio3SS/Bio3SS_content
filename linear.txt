@@ -228,6 +228,8 @@ CHANGE ML : maybe stretch it out
 
 CHANGE ML : next year show what picture A looks like on the log scale
 
+CHANGE CC : in addition to the change of ML, you wanted to show D at a larger scale for next year
+
 	POLL 59rZNZLRum55IKI What is exponential growth?
 
 	POLL R4B7MuFIsRyMBQR Which of these is an example?
