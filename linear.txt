@@ -1146,6 +1146,7 @@ WIDEFIG images/espresso.jpg
 
 EC
 
+CHANGE ML: bateria example.. week to day, day to hours?
 ----------------------------------------------------------------------
 
 Manipulating units
@@ -1195,12 +1196,14 @@ Bacteria example
 
 DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast.Rout-2.pdf
 
+CHANGE ML: show the equation? and the little r?
 ----------------------------------------------------------------------
 
 Bacteria example
 
 DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast_scaled.Rout-2.pdf
 
+CHANGE ML: give some text to follow along, you talk too fast. 
 ----------------------------------------------------------------------
 
 Thinking about units 
@@ -1246,6 +1249,10 @@ Unitless quantities
 
 	Quantities that determine \emph{how} a system behaves must have a
 	unitless form
+	
+	CHANGE ML: Remind people little r is a common example you are going to use
+	
+	CHANGE ML: or put it up once a while.
 
 		Otherwise, they could be scaled
 
@@ -1277,6 +1284,16 @@ Moths
 ----------------------------------------------------------------------
 
 Moth spreadsheet
+
+  CHANGE ML: is there a cleaner way to do the spreadsheet?
+  
+  CHANGE ML: need better names for spreadsheet. Too confusing
+  
+  CHANGE ML: Be more clear when you say, Adults model gives the right answer
+  
+  CHANGE ML: People look confuse, they don't know what to expect.
+  
+  CHANGE ML: wasting people's time is a good example. If you waste 1 min/student, and there are 120 students in the class, how much time did you waste?
 
 	Once we close the loop, it doesn't matter where we start:
 
