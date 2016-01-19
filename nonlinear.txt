@@ -11,7 +11,7 @@ TSEC Introduction
 	Now we'll discuss why large and small populations might have
 	different birth or death rates
 
-		and what this implies about population \textbf{dynamicss}
+		and what this implies about population \textbf{dynamics}
 
 ----------------------------------------------------------------------
 
@@ -43,10 +43,10 @@ The third law of population dynamics
 	Environmental variation cannot be the only thing that changes growth
 	rates
 
-	Populations are, directly or indirectly, affecting their own growth
+	Populations are, directly or indirectly, liimiting their own growth
 	rates
 
-	This is called \emph{density dependence}
+	This is called \textbf{density dependence}
 
 ----------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ Long-term growth rates
 	This is almost certainly because factors affecting their growth rate
 	change with the size of population.  
 
-	POLL https://www.polleverywhere.com/free_text_polls/QQyd9SgNKsdPQxP What is an example of a density-dependent mechanism that
+	POLL XXXXXXX What is an example of a density-dependent mechanism that
 	affects growth rate?
 
 		ANS Predators and diseases
@@ -65,13 +65,13 @@ Long-term growth rates
 			ANS As populations go up, pressure from natural enemies could
 			go up \emph{even faster}
 
-		ANS Not enough resources to go around 
+		ANS Insufficient resources
 
-			ANS e.g., oak trees use all the available light
+			ANS Not enough to go around: e.g., oak trees use all the
+			available light
 
-		ANS Resources are destroyed by the population 
-
-			ANS e.g., gypsy moths kill all the oak trees
+		ANS Resources are destroyed: e.g., gypsy moths kill all the oak
+		trees
 
 ----------------------------------------------------------------------
 
@@ -152,8 +152,10 @@ How do we know it's regulation?
 
 		ANS This is true for \emph{every} population
 
-		ANS If this balance does not occur by chance, then it must be
-		through direct or indirect responses to the population size
+		ANS This is unlikely to occur by chance
+		
+		ANS Thus, it must be through direct or indirect responses to the
+		population size
 
 ----------------------------------------------------------------------
 
@@ -163,25 +165,31 @@ SS Population Examples
 
 Elk
 
-DOUBLEPDF series/elk.simple.Rout
+DOUBLEPDF ts/elk.simple.Rout
+
+----------------------------------------------------------------------
+
+CSLIDE Ebola
+
+DOUBLEFIG ts/wa/liberia150429.npc.tsplot.Rout-0.pdf ts/wa/liberia150429.npc.tsplot.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
 Ebola
 
-DOUBLEPDF series/liberia_confirmed.simple.Rout
+DOUBLEFIG ts/wa/liberia150429.npc.tsplot.Rout-2.pdf ts/wa/liberia150429.npc.tsplot.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
 Paramecia
 
-DOUBLEPDF series/paramecia.simple.Rout
+DOUBLEPDF ts/paramecia.simple.Rout
 
 ----------------------------------------------------------------------
 
 RSLIDE Gypsy moths
 
-DOUBLEPDF series/pop10165.simple.Rout
+DOUBLEPDF ts/gm10165.simple.Rout
 
 ----------------------------------------------------------------------
 
@@ -369,10 +377,19 @@ Exponential-rates model
 	This is the simplest model that is perfectly smooth and keeps track
 	of birth and death rates separately
 
-	Simpler than a linear model because: 
+----------------------------------------------------------------------
 
-		ANS Rates will always stay positive as long as $b_0$ and $d_0$
-		are positive
+Exponential-rates vs.\ logistic
+
+	The exponential-rates model is conceptually clearer
+
+		Birth and death rates are clearly defined
+
+	Mathematically nicer
+
+		Rates always stay positive 
+
+	The logistic \emph{looks} less scary
 
 ----------------------------------------------------------------------
 
@@ -460,15 +477,13 @@ Model
 
 		$\bigeq \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d_0 \exp(-N/N_d))N$
 
-		COMMENT Fixed from notes
-
-	Solution: 
+	Exact solution: 
 
 		Insanely complicated
 
-	Behaviour:
+	Behaviour of the solution:
 
-		Reasonably easy to figure out
+		Pretty easy!
 
 ----------------------------------------------------------------------
 
@@ -527,8 +542,6 @@ Simulations
 
 	We will simulate the behaviour of populations in continuous time
 	using the program R
-
-	HLINK http://lalashan.mcmaster.ca/theobio/3SS/index.php/BirthDeath
 
 	This program generates the pictures in this section by implementing
 	our model of how the population changes instantaneously
@@ -733,10 +746,10 @@ Stable and unstable equilibria
 		At least in our simplified model
 
 	An equilibrium is defined as stable if we expect to approach the
-	equilibrium when we are \emph{near} it
+	equilibrium \emph{when we are near it.}
 
 	An equilibrium is defined as unstable if we expect to move away from
-	the equilibrium when we are \emph{near} it
+	the equilibrium \emph{when we are near it.}
 
 ----------------------------------------------------------------------
 
@@ -844,14 +857,11 @@ Characteristic times
 	Just like in the simple model, an equilibrium will have a
 	characteristic time
 
-		COMMENT Unless it's just on the border of stability 
-		-- you don't need to worry about this case.
+	If I'm close to an equilibrium, how long would it take:
 
-	If I'm close to an equilibrium, how long does it take me to get 
+		to go the distance to the equilibrium at my current ``speed''
 
-		$e$ times closer, or $e$ times farther
-
-		This is the characteristic time
+		to actually get $e$ times closer, or $e$ times farther
 
 ----------------------------------------------------------------------
 
@@ -880,13 +890,13 @@ Dynamics of density-dependent populations
 
 Elk
 
-DOUBLEPDF series/elk.simple.Rout
+DOUBLEPDF ts/elk.simple.Rout
 
 ----------------------------------------------------------------------
 
 Paramecia
 
-DOUBLEPDF series/paramecia.simple.Rout
+DOUBLEPDF ts/paramecia.simple.Rout
 
 ----------------------------------------------------------------------
 
@@ -1105,8 +1115,6 @@ Specific assumptions
 
 		$p(N) = p_0 \exp(-N/N_p)$
 
-		COMMENT Fixed
-
 	Good for organisms where competition is mostly felt by the young
 
 	As in the continuous case, other formulations will give similar
@@ -1142,7 +1150,9 @@ What is \Ro?
 
 	\R\ is the fecundity multiplied by the lifespan
 
-		ANS $f * 1/\mu$, where $\mu = 1-p$
+		ANS Lifespan = $1/\mu = 1/(1-p)$
+
+		ANS $\R = f/(1-p)$
 
 	\Ro\ is \R\ in the limit where density is low
 
@@ -1183,7 +1193,7 @@ FIG compensation/stable.plots.Rout-0.pdf
 
 RSLIDE What dynamics do we expect?
 
-FIG compensation/stable.plots.Rout-0.pdf
+FIG compensation/stable.plots.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -1194,6 +1204,12 @@ DOUBLEPDF compensation/stable.plots.Rout
 ----------------------------------------------------------------------
 
 RSLIDE What dynamics do we get?
+
+----------------------------------------------------------------------
+
+RSLIDE Simple dynamics
+
+DOUBLEPDF compensation/stable.plots.Rout
 
 ----------------------------------------------------------------------
 
@@ -1252,7 +1268,7 @@ Complex behaviour in our simulations
 
 ----------------------------------------------------------------------
 
-Reponse to population increase
+Response to population increase
 
 DOUBLEFIG compensation/stable.plots.Rout-2.pdf compensation/stable.plots.Rout-3.pdf
 
@@ -1421,25 +1437,25 @@ Complex behaviour in real populations
 
 RSLIDE Paramecia
 
-DOUBLEPDF series/paramecia.simple.Rout
+DOUBLEPDF ts/paramecia.simple.Rout
 
 ----------------------------------------------------------------------
 
 Paramecia
 
-DOUBLEFIG series/paramecia.plot.Rout-3.pdf series/paramecia.plot.Rout-2.pdf
+DOUBLEFIG ts/paramecia.plot.Rout-3.pdf ts/paramecia.plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
 RSLIDE Elk
 
-DOUBLEPDF series/elk.simple.Rout
+DOUBLEPDF ts/elk.simple.Rout
 
 ----------------------------------------------------------------------
 
 Elk
 
-DOUBLEFIG series/elk.plot.Rout-3.pdf series/elk.plot.Rout-2.pdf
+DOUBLEFIG ts/elk.plot.Rout-3.pdf ts/elk.plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
@@ -1783,7 +1799,9 @@ BC
 
 NC
 
-DOUBLEFIG moths/mothtest.Rout-1.pdf moths/mothtest.Rout-2.pdf
+SIDEFIG compensation/mothtest.Rout-1.pdf
+
+SIDEFIG compensation/mothtest.Rout-2.pdf
 
 EC
 

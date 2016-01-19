@@ -123,6 +123,13 @@ bd_models/%: bd_models
 bd_models: 
 	/bin/ln -s $(gitroot)/Birth_death_models $@
 
+## Discrete-time population models with compensation
+compensation/%: compensation
+	cd $< && $(MAKE) $*
+	touch $@
+compensation: 
+	/bin/ln -s $(gitroot)/Compensation_models $@
+
 ##################################################################
 
 ## Push to web
