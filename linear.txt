@@ -1408,6 +1408,8 @@ Lifespan
 
 Calculating \R
 
+	CHANGE ML: CAn you put R and r side by side?
+
 	\R is fecundity multiplied by lifespan
 
 	$\R = f/\mu = f/(1-p)$
