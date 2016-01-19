@@ -34,7 +34,7 @@ BC
 
 NC
 
-WIDEFIG images/dandy_field.jpg
+SIDEFIG images/dandy_field.jpg
 
 EC
 
@@ -52,9 +52,9 @@ BC
 
 NC
 
-WIDEFIG images/gm_caterpillar.jpg
+SIDEFIG images/gm_caterpillar.jpg
 
-WIDEFIG images/gm_defoliation.jpg
+SIDEFIG images/gm_defoliation.jpg
 
 EC
 
@@ -402,9 +402,9 @@ DOUBLEFIG exponential/canada.Rout-4.pdf exponential/canada.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE Predation comparison
+CLASS CSLIDE Predation comparison
 
-FIG images/buffalo.jpg
+CLASS FIG images/buffalo.jpg
 
 ----------------------------------------------------------------------
 
@@ -499,7 +499,7 @@ BC
 
 NC
 
-WIDEFIG images/tai3.jpg
+SIDEFIG images/tai3.jpg
 
 EC
 
@@ -688,9 +688,9 @@ Tools to link scales
 
 NC
 
-WIDEFIG images/touching.jpg
+SIDEFIG images/touching.jpg
 
-WIDEFIG images/ew_measles.png
+SIDEFIG images/ew_measles.png
 
 EC
 
@@ -714,7 +714,7 @@ BC
 
 NC
 
-WIDEFIG images/flat.png
+SIDEFIG images/flat.png
 
 EC
 
@@ -850,7 +850,7 @@ CHANGE MK: Draw a moth cycle on the slide?
 
 NC
 
-WIDEFIG images/cool_moth.jpg
+SIDEFIG images/cool_moth.jpg
 
 EC
 
@@ -874,7 +874,7 @@ BC
 
 NC
 
-WIDEFIG images/violet_bacteria.jpg
+SIDEFIG images/violet_bacteria.jpg
 
 EC
 
@@ -904,9 +904,9 @@ CHANGE MK: Clarify that the census time becomes a choice because you have conced
 
 NC
 
-WIDEFIG images/dandy_flower.jpg
+SIDEFIG images/dandy_flower.jpg
 
-WIDEFIG images/dandy_seeds.jpg
+SIDEFIG images/dandy_seeds.jpg
 
 EC
 
@@ -1013,9 +1013,9 @@ BC
 
 NC
 
-WIDEFIG images/cool_moth.jpg
+SIDEFIG images/cool_moth.jpg
 
-WIDEFIG images/dandy_flower.jpg
+SIDEFIG images/dandy_flower.jpg
 
 EC
 
@@ -1142,7 +1142,7 @@ BC
 
 NC
 
-WIDEFIG images/espresso.jpg
+SIDEFIG images/espresso.jpg
 
 EC
 
@@ -1172,7 +1172,7 @@ BC
 
 NC
 
-WIDEFIG images/clock.jpg
+SIDEFIG images/clock.jpg
 
 EC
 
@@ -1564,9 +1564,9 @@ BC
 
 NC
 
-WIDEFIG images/humans.jpg
+SIDEFIG images/humans.jpg
 
-WIDEFIG images/wolves.jpg
+SIDEFIG images/wolves.jpg
 
 EC
 

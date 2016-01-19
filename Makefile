@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: linear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: nonlinear.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -81,6 +81,18 @@ linear.handouts.pdf: linear.txt
 
 ##################################################################
 
+# Conversion notes (temporary for 2016)
+
+##################################################################
+
+# Unit 2 (Regulated population growth)
+
+nonlinear.final.pdf: nonlinear.txt
+nonlinear.draft.pdf: nonlinear.txt
+nonlinear.handouts.pdf: nonlinear.txt
+
+##################################################################
+
 # Project directories
 
 # Time series plots
@@ -100,10 +112,16 @@ exponential:
 
 # Lecture images
 images/%: images ;
-
 images: 
 	/bin/ln -s $(images) $@
 	$(link)
+
+## Birth-death models (including time-delay models)
+bd_models/%: bd_models
+	cd $< && $(MAKE) $*
+	touch $@
+bd_models: 
+	/bin/ln -s $(gitroot)/Birth_death_models $@
 
 ##################################################################
 
