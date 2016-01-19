@@ -1319,6 +1319,8 @@ Dandelion spreadsheet
 
 		rA/rA; seed/seed
 
+CHANGE CC: I think you went a little too fast some students seemed to be a little lost
+
 ----------------------------------------------------------------------
 
 SEC Key parameters
@@ -1334,6 +1336,8 @@ TSS Discrete-time model
 ----------------------------------------------------------------------
 
 Calculating fecundity
+
+CHANGE CC: I think it was helpful that you drew and explained on the board but sometimes it was not very clear 
 
 	Fecundity $f$ in our model must be unitless
 
@@ -1364,6 +1368,8 @@ Calculating survival
 ----------------------------------------------------------------------
 
 Finite rate of increase
+
+CHANGE CC: perhaps you can add a poll for "when is the population increasing" to check that everybody understands (only one person wanted to answer your question)
 
 	Population increases when $\lambda>1$
 
@@ -1483,6 +1489,8 @@ Instaneous rate of increase
 
 Calculating \R
 
+CHANGE CC: even only one person asked you for the explanation on the board, according to the students' faces I thing it helped a lot
+
 	The mean lifespan is $1/d$
 
 		Equivalent to the characteristic time for the death process (if
@@ -1514,6 +1522,8 @@ Is the population increasing?
 ----------------------------------------------------------------------
 
 TSS Links
+
+CHANGE CC: when you asked the students about your following question nobody answered, perhaps you can add a poll to see if everybody is following what you are saying...
 
 	If a population grows at rate $r$ for time period $\Delta t$, how
 	much does it change?
