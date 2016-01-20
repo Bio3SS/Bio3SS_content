@@ -73,6 +73,8 @@ Long-term growth rates
 		ANS Resources are destroyed: e.g., gypsy moths kill all the oak
 		trees
 
+CHANGE MK: Maybe include other competition within a species.
+
 ----------------------------------------------------------------------
 
 Population regulation
@@ -83,6 +85,8 @@ Population regulation
 		lower
 
 		Maybe with a time delay
+
+CHANGE MK: Maybe not an appropriate time to introduce time delay?
 
 	Why is this interesting?
 
@@ -192,6 +196,8 @@ RSLIDE Gypsy moths
 DOUBLEPDF ts/gm10165.simple.Rout
 
 ----------------------------------------------------------------------
+Gypsy moths prefer oak trees, but the overabundance of white-tailed deer in
+eastern deciduous forests is reducing recruitment of oaks, reducing the population size of the gypsy moths
 
 Gypsy moths
 

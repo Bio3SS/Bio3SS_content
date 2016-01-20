@@ -1483,6 +1483,8 @@ Instaneous rate of increase
 
 		ANS [1/time]
 
+CHANGE MK: Make it more clear (make this an answer?) that r = 0 is the reason we can have a non-unitless r
+
 	But we still have a unitless criterion: $r=0$
 
 ----------------------------------------------------------------------
@@ -1618,9 +1620,13 @@ Long-term growth rate
 
 			ANS Very close to $r=0$ or $\lambda=1$
 
+CHANGE MK: but slightly greater than 0 or 1
+
 		An unsuccessful population?
 
 			ANS \emph{Probably} very close to $r=0$ or $\lambda=1$ 
+
+CHANGE MK: but slightly less than 0 or 1
 
 			ANS If much less, it would disappear very fast
 
@@ -1649,6 +1655,8 @@ Balance
 
 			ANS For all the species?
 
+CHANGE MK: Maybe do not need to restate this again? Just jump to limiting factors?
+
 		ANS Growth rates change through time
 
 ----------------------------------------------------------------------
@@ -1668,6 +1676,8 @@ Changing growth rates
 		ANS Predators and diseases
 
 		ANS Resources (food and space)
+
+CHANGE MK: Add natural disasters
 
 ----------------------------------------------------------------------
 
