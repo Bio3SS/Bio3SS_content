@@ -35,6 +35,12 @@ The second law of population dynamics
 
 ----------------------------------------------------------------------
 
+CSLIDE Crowding
+
+FIG images/ecoli.jpg
+
+----------------------------------------------------------------------
+
 The third law of population dynamics
 
 	Exponential growth (or decline) cannot continue forever --
@@ -1065,8 +1071,7 @@ Unitless quantities
 	is the characteristic time of approach to the carrying capacity in
 	the absence of delay
 
-	It is very cool (but \emph{not} relevant to the course) that cycles
-	are persistent when $\tau/t_c > \pi/2$
+	In fact, cycles are persistent when $\tau/t_c > \pi/2$!
 
 ----------------------------------------------------------------------
 
