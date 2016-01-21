@@ -1,0 +1,20 @@
+\documentclass[12pt]{article}
+\usepackage{epsfig,grffile,url}
+\newcounter{question}
+\newcounter{qpart}[question]
+ 
+\begin{document}
+
+\input{lect/pop.tex}
+
+\thispagestyle{empty}
+
+----------------------------------------------------------------------
+
+\vfill
+\renewcommand{\baselinestretch}{7}
+
+{\tiny \sl 
+\copyright 2010--2016 by Jonathan Dushoff and the 3SS teaching team.  May be reproduced and distributed, with this notice, for non-commercial purposes only.}
+
+\end{document}

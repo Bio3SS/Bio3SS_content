@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: nonlinear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: pg.asn.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -38,25 +38,25 @@ outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
 ## Lecture rules
 
 lect/%.fmt: ;
-%.fmt: lect/lect.format lect/fmt.pl
+%.lect.fmt: lect/lect.format lect/fmt.pl
 	$(PUSHSTAR)
 
 Sources += beamer.tmp
-%.draft.tex: %.txt beamer.tmp draft.fmt talk/lect.pl
+%.draft.tex: %.txt beamer.tmp draft.lect.fmt talk/lect.pl
 	$(PUSH)
 
-%.final.tex: %.txt beamer.tmp final.fmt talk/lect.pl
+%.final.tex: %.txt beamer.tmp final.lect.fmt talk/lect.pl
 	$(PUSH)
 
 Sources += outline.tmp
-%.outline.tex: %.txt outline.tmp outline.fmt talk/lect.pl
+%.outline.tex: %.txt outline.tmp outline.lect.fmt talk/lect.pl
 	$(PUSH)
 
 Sources += handouts.tmp
-%.handouts.tex: %.txt handouts.tmp handouts.fmt talk/lect.pl
+%.handouts.tex: %.txt handouts.tmp handouts.lect.fmt talk/lect.pl
 	$(PUSH)
 
-%.complete.tex: %.txt handouts.tmp complete.fmt talk/lect.pl
+%.complete.tex: %.txt handouts.tmp complete.lect.fmt talk/lect.pl
 	$(PUSH)
 
 ##################################################################
@@ -95,12 +95,22 @@ nonlinear.handouts.pdf: nonlinear.txt
 
 # Project directories
 
+# Assignments directory (on a private repo)
+assign/%: assign
+	cd $< && $(MAKE) $*
+	touch $@
+
+assign:
+	cd $(gitroot) && $(MAKE) Assignments
+	/bin/ln -s $(gitroot)/Assignments $@
+
 # Time series plots
 ts/%: ts
 	cd $< && $(MAKE) $*
 	touch $@
 
 ts: 
+	cd $(gitroot) && $(MAKE) Population_time_series $@
 	/bin/ln -s $(gitroot)/Population_time_series $@
 
 # Exponential plots
@@ -114,7 +124,6 @@ exponential:
 images/%: images ;
 images: 
 	/bin/ln -s $(images) $@
-	$(link)
 
 ## Birth-death models (including time-delay models)
 bd_models/%: bd_models
@@ -129,6 +138,28 @@ compensation/%: compensation
 	touch $@
 compensation: 
 	/bin/ln -s $(gitroot)/Compensation_models $@
+
+##################################################################
+
+# HOOK
+
+pg.asn.pdf: assign/pg.ques
+
+## Assignments
+
+Sources += asn.tmp
+
+%.ques.fmt: lect/ques.format lect/fmt.pl
+	$(PUSHSTAR)
+
+%.asn.tex: assign/%.ques asn.tmp asn.ques.fmt talk/lect.pl
+	$(PUSH)
+
+%.key.tex: assign/%.ques asn.tmp key.ques.fmt talk/lect.pl
+	$(PUSH)
+
+%.rub.tex: assign/%.ques asn.tmp rub.ques.fmt talk/lect.pl
+	$(PUSH)
 
 ##################################################################
 

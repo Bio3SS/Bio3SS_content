@@ -79,7 +79,7 @@ Long-term growth rates
 		ANS Resources are destroyed: e.g., gypsy moths kill all the oak
 		trees
 
-CHANGE MK: Maybe include other competition within a species.
+	CHANGE MK: Maybe include other competition within a species.
 
 ----------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Population regulation
 
 		Maybe with a time delay
 
-CHANGE MK: Maybe not an appropriate time to introduce time delay?
+	CHANGE MK: Maybe not an appropriate time to introduce time delay?
 
 	Why is this interesting?
 
@@ -115,6 +115,7 @@ SIDEFIG images/mangroves.jpg
 SIDEFIG images/gm_defoliation.jpg
 
 EC
+
 ----------------------------------------------------------------------
 
 Sometimes regulation is not apparent
