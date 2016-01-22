@@ -176,6 +176,8 @@ SS Population Examples
 
 Elk
 
+  CHANGE ML: Put a small note saying these are the same but different scale
+
 DOUBLEPDF ts/elk.simple.Rout
 
 ----------------------------------------------------------------------
@@ -190,6 +192,8 @@ Ebola
 
 DOUBLEFIG ts/wa/liberia150429.npc.tsplot.Rout-2.pdf ts/wa/liberia150429.npc.tsplot.Rout-3.pdf
 
+
+  CHANGE ML: Maybe use different lines (solid/dotted) instead of colour
 ----------------------------------------------------------------------
 
 Paramecia
@@ -215,6 +219,7 @@ Gypsy moths
 
 		Directly or indirectly, in the short or long term?
 
+  CHANGE ML: Make more bullet points.
 ----------------------------------------------------------------------
 
 SEC Continuous-time regulation
@@ -236,6 +241,9 @@ Build on the linear model
 ----------------------------------------------------------------------
 
 Individual perspective
+
+
+  CHANGE ML: really need notes for these four plots.
 
 DOUBLEFIG bd_models/constant.bd.Rout-0.pdf bd_models/constant.bd.Rout-2.pdf
 
@@ -292,6 +300,8 @@ BC
 
 		If individuals shift their resources to reproduction instead of
 		survival
+		
+		CHANGE ML: Law reinforcement (CHINA?)
 
 NC
 
@@ -358,6 +368,8 @@ Carrying capacity
 		$\R(K) \equiv 1$
 
 		$b(K) \equiv d(K)$
+		
+	CHANGE ML: Please use different bullet style
 
 ----------------------------------------------------------------------
 
@@ -375,6 +387,8 @@ Logistic model
 
 	Not a linear model, because \emph{population-level} rates are not
 	linear
+	
+	CHANGE ML: Make a note, little r is per capita rate
 
 ----------------------------------------------------------------------
 
@@ -386,6 +400,8 @@ Exponential-rates model
 
 		$d(N) = d_0 \exp(-N/N_d)$
 
+  CHANGE ML: No negative in the death equation
+  
 	$N_b$ and $N_d$ have the same units as $N$
 
 	This is the simplest model that is perfectly smooth and keeps track
@@ -450,6 +466,7 @@ States and state variables
 
 		ANS We are still assuming that's all we need to know
 
+  CHANGE ML: second answer: assume all individuals are the same.
 ----------------------------------------------------------------------
 
 Parameters
@@ -468,6 +485,8 @@ Parameters
 ----------------------------------------------------------------------
 
 Characteristic \emph{scale}
+
+  CHANGE ML: Con't here next week. Weekend!!
 
 	A characteristic scale for density dependence is analogous to a
 	characteristic time
