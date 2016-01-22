@@ -61,6 +61,8 @@ Sources += handouts.tmp
 
 ##################################################################
 
+Outputs += $(wildcard *.final.pdf *.asn.pdf)
+
 # Unit 1 (Intro)
 
 intro.draft.pdf: intro.txt
@@ -174,10 +176,26 @@ Sources += asn.tmp
 %.final.pdf.push: %.final.pdf
 	$(CP) $< $(Drop)/3SS
 
-### Makestuff
+## Push to private repo
 
-## Change this name to download a new version of the makestuff directory
-# Makefile: start.makestuff
+%.private: %
+	$(CP) $< assign
+
+## Outputs branch
+
+outputs.new: commit.time
+	git checkout -b outputs
+	git rm $(Sources)
+	git push -u origin outputs
+	git checkout master
+
+pushOut: $(Outputs) commit.time
+	git checkout outputs
+	git add $(Targets)
+	git push -u origin outputs
+	git checkout master
+
+### Makestuff
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
