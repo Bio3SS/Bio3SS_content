@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: nonlinear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: clearSources 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -194,6 +194,13 @@ pushOut: $(Outputs) commit.time
 	git add $(Targets)
 	git push -u origin outputs
 	git checkout master
+
+clearSources: commit.time
+	git checkout outputs
+	git rm $(Sources)
+	git push -u origin outputs
+	git checkout master
+
 
 ### Makestuff
 
