@@ -191,7 +191,7 @@ outputs.new: commit.time
 
 pushOut: $(Outputs) commit.time
 	git checkout outputs
-	git add $(Targets)
+	git add $(Outputs)
 	git push -u origin outputs
 	git checkout master
 

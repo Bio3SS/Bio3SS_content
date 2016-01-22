@@ -8,6 +8,9 @@ commit.time
 .*.aux
 *.blg
 *.bbl
+*.nav
+*.snm
+*.toc
 
 *out
 *.RData
@@ -28,6 +31,9 @@ subclone_dir/
 *.deps
 *.handouts.tex
 *.complete.tex
+*.draft.tex
+*.key.tex
+*.rub.tex
 
 lect
 talk
