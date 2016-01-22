@@ -203,10 +203,11 @@ RSLIDE Gypsy moths
 DOUBLEPDF ts/gm10165.simple.Rout
 
 ----------------------------------------------------------------------
-Gypsy moths prefer oak trees, but the overabundance of white-tailed deer in
-eastern deciduous forests is reducing recruitment of oaks, reducing the population size of the gypsy moths
+
 
 Gypsy moths
+
+	CHANGE Gypsy moths prefer oak trees, but the overabundance of white-tailed deer in eastern deciduous forests is reducing recruitment of oaks, reducing the population size of the gypsy moths
 
 	POLL https://www.polleverywhere.com/free_text_polls/TbtndvYJ9xHJniX What are some factors that limit gypsy-moth populations?
 
@@ -627,7 +628,13 @@ EC
 
 ----------------------------------------------------------------------
 
-RSLIDE Density-dependent growth (increasing death rate)
+RSLIDE Decreasing birth rates
+
+FIG bd_models/birth.bd.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Increasing death rates
 
 FIG bd_models/death.bd.Rout-0.pdf
 
@@ -805,6 +812,8 @@ Basic reproductive number
 	
 		ANS $\Ro=b(0)/d(0)$
 
+		ANS $\Ro$, $b(0)$, and $d(0)$ are limits
+
 ----------------------------------------------------------------------
 
 Invasion
@@ -881,6 +890,12 @@ Characteristic times
 RSLIDE Characteristic times
 
 DOUBLEFIG bd_models/birth.bd.Rout-2.pdf bd_models/birth.bd.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Elk
+
+DOUBLEPDF ts/elk.simple.Rout
 
 ----------------------------------------------------------------------
 
