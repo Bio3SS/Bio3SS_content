@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: pushOut 
+target pngtarget pdftarget vtarget acrtarget pushtarget: intro.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -145,7 +145,7 @@ compensation:
 
 # HOOK
 
-pg.asn.pdf: assign/pg.ques
+intro.key.pdf: assign/intro.ques
 
 ## Assignments
 
@@ -167,12 +167,21 @@ Sources += asn.tmp
 
 ## Push to web
 
+# Notes
 %.handouts.pdf.push: %.handouts.pdf
 	$(CP) $< $(web)
 
 %.complete.pdf.push: %.complete.pdf
 	$(CP) $< $(web)
 
+# Assignments
+%.asn.pdf.push: %.asn.pdf
+	$(CP) $< $(web)
+
+%.key.pdf.push: %.key.pdf
+	$(CP) $< $(web)
+
+# Slides
 %.final.pdf.push: %.final.pdf
 	$(CP) $< $(Drop)/3SS
 
@@ -181,7 +190,7 @@ Sources += asn.tmp
 %.private: %
 	$(CP) $< assign
 
-## Outputs branch
+## Outputs branch; not worth it!
 
 outputs.new: commit.time
 	git checkout -b outputs
