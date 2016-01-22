@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: nonlinear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget: pushOut 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -199,6 +199,7 @@ outputs.new: commit.time
 pushOut: $(Outputs) commit.time
 	git checkout outputs
 	git add $(Outputs)
+	git commit -m "pushOut"
 	git push -u origin outputs
 	git checkout master
 
