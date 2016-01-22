@@ -183,6 +183,13 @@ Sources += asn.tmp
 
 ## Outputs branch
 
+clearSources: commit.time
+	git checkout outputs
+	git rm $(Sources)
+	git commit -a -m "clearSources"
+	git push -u origin outputs
+	git checkout master
+
 outputs.new: commit.time
 	git checkout -b outputs
 	git rm $(Sources)
