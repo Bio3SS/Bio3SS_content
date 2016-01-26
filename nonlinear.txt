@@ -563,6 +563,8 @@ DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-2.pdf
 
 High starting population
 
+  CHANGE ML: Indiviual level plots? 
+
 DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-4.pdf
 
 ----------------------------------------------------------------------
@@ -813,7 +815,9 @@ What kind of equilibrium?
 ----------------------------------------------------------------------
 
 Basic reproductive number
-
+  
+  CHANGE ML: Con't here on wed!
+  
 	The reproductive number of a population not affected by crowding is
 	called the \textbf{basic reproductive number}
 
