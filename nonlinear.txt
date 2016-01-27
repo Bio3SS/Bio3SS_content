@@ -487,6 +487,7 @@ Parameters
 Characteristic \emph{scale}
 
   CHANGE ML: Con't here next week. Weekend!!
+  CHANGE CC: explain a little more "characteristic scale"? 
 
 	A characteristic scale for density dependence is analogous to a
 	characteristic time
@@ -536,6 +537,11 @@ Dynamics
 		at a high value?
 
 ----------------------------------------------------------------------
+
+CHANGE CC: Perhaps you can add some notes on the slides: like the legend of the plots and the formula on the top of the slide can help to follow
+CHANGE CC: When you use arrows to separate 2 cases: before and after b=d, you can use different colors (for the 2 arows and use the same to draw a box around the plot of the right) or hilight more which arrow correspond to the plot on the right
+CHANGE CC: when you change the slides with the plots and when you came back on previous plots you went too fast
+CHANGE CC: perhaps change the slides order: your explanation was very clear but you didn't have the good plots
 
 RSLIDE What will this model do?
 
@@ -723,6 +729,8 @@ DOUBLEFIG bd_models/slow.bd.Rout-1.pdf bd_models/slow.bd.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
+CHANGE CC: you said that you repeat a lot but you went more and more fast (some students came back on their notes to follow)
+
 Other examples
 
 	There are two other possible scenarios for density dependence
@@ -779,6 +787,8 @@ TSS Equilibria and time scales
 		ANS $N=0$ (the population is absent)
 
 ----------------------------------------------------------------------
+
+CHANGE CC: spend a little more time explaining the definitions
 
 Stable and unstable equilibria
 
