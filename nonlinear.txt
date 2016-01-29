@@ -1144,6 +1144,8 @@ SEC Discrete-time regulation
 
 TSS A simple, discrete-time model
 
+  CHANGE ML: spice up some winter insect examples from bio seminar for next year
+
 	We extend our discrete-time model from the previous unit:
 
 		$N_{T+1} = (p+f)N_T \equiv \lambda N_T$
@@ -1151,6 +1153,8 @@ TSS A simple, discrete-time model
 		$t_{T+1} = t_T + \Delta t$ (does not change)
 
 	To:
+	  
+	  CHANGE ML: maybe add sub t (_T) in p and f
 
 		$N_{T+1} = (p(N)+f(N))N_T \equiv \lambda(N) N_T$
 
@@ -1175,6 +1179,8 @@ Specific assumptions
 
 		$p(N) = p_0 \exp(-N/N_p)$
 
+	CHANGE ML: WHAT DOES THE NEXT LINE MEAN? TAKE IT OUT
+	
 	Good for organisms where competition is mostly felt by the young
 
 	As in the continuous case, other formulations will give similar
@@ -1330,6 +1336,9 @@ Complex behaviour in our simulations
 
 Response to population increase
 
+  CHANGE ML: put titles?
+  CHANGE ML: Maybe change N_T and N_T+1 axis on the same linear scale
+
 DOUBLEFIG compensation/stable.plots.Rout-2.pdf compensation/stable.plots.Rout-3.pdf
 
 ----------------------------------------------------------------------
@@ -1413,6 +1422,8 @@ Contest competition
 
 	How does contest competition square with regulation?
 
+    CHANGE ML: plot scramble and contest competition.
+    
 		ANS Regulation means that $\lambda$ has to go down with $N_T$ --
 		\Nprime\ does not have to.
 
@@ -1425,6 +1436,8 @@ DOUBLEFIG compensation/monotonic.plots.Rout-2.pdf compensation/monotonic.plots.R
 ----------------------------------------------------------------------
 
 Songbirds
+
+  CHANGE ML: con't here next week. WEEKEND!! 
 
 BC
 
