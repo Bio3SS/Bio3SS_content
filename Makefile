@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: intro.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.bank.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -63,7 +63,7 @@ Sources += handouts.tmp
 
 Outputs += $(wildcard *.final.pdf *.asn.pdf)
 
-# Unit 1 (Intro)
+# Unit 0 (Intro)
 
 intro.draft.pdf: intro.txt
 intro.handouts.pdf: intro.txt
@@ -75,7 +75,7 @@ Sources += weitz_full.pdf filledCircle.R
 
 ##################################################################
 
-# Unit 2 (Linear population growth)
+# Unit 1 (Linear population growth)
 
 linear.final.pdf: linear.txt
 linear.draft.pdf: linear.txt
@@ -84,6 +84,8 @@ linear.handouts.pdf: linear.txt
 ##################################################################
 
 # Conversion notes (temporary for 2016)
+
+# CHECK WIDEFIG, SIDEFIG ... but I guess it's fine
 
 ##################################################################
 
@@ -94,6 +96,23 @@ nonlinear.draft.pdf: nonlinear.txt
 nonlinear.handouts.pdf: nonlinear.txt
 
 ##################################################################
+
+# HOOK
+
+midterm1.bank.pdf: lect/test.format assign/midterm1.bank
+
+### Tests
+
+Sources += test.tmp
+
+%.test.fmt: lect/test.format lect/fmt.pl
+	$(PUSHSTAR)
+
+%.bank.tex: assign/%.bank test.tmp bank.test.fmt talk/lect.pl
+	$(PUSH)
+
+##################################################################
+
 
 # Project directories
 
@@ -142,10 +161,6 @@ compensation:
 	/bin/ln -s $(gitroot)/Compensation_models $@
 
 ##################################################################
-
-# HOOK
-
-intro.key.pdf: assign/intro.ques
 
 ## Assignments
 
