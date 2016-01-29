@@ -6,7 +6,6 @@
 	arrows,decorations.pathmorphing,backgrounds,positioning,fit,calc,scopes
 }
 
-\input{dfpar.tex}
 
 \newcommand{\blank}{\rule{5em}{0.4pt}}
 
@@ -29,8 +28,9 @@
 \begin{document}
 \newcommand{\testver}{Q}
 
-\input{pop}
-\input{doublefig}
+\input{lect/pop.tex}
+\input{lect/dfpar.tex}
+
 % \input{formulas}
 
 % \thispagestyle{empty}
