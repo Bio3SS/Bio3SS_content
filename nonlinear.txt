@@ -747,6 +747,33 @@ Other examples
 
 ----------------------------------------------------------------------
 
+RSLIDE Maximum growth rates
+
+	When does a population in this model have the fastest
+	\emph{per-capita} growth rate?
+
+		NOANS When density is low. This is an assumption.
+
+	When does a population in this model have the fastest \emph{total}
+	growth rate?
+
+		NOANS Intermediate between low density and the carrying capacity.
+		This is a something we learn from the model
+
+----------------------------------------------------------------------
+
+RSLIDE Individual perspective
+
+DOUBLEFIG bd_models/birth.bd.Rout-0.pdf bd_models/birth.bd.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Population perspective
+
+DOUBLEFIG bd_models/birth.bd.Rout-1.pdf bd_models/birth.bd.Rout-3.pdf
+
+----------------------------------------------------------------------
+
 Maximum growth rates
 
 	When does a population in this model have the fastest
@@ -1315,9 +1342,9 @@ BC
 
 NC
 
-SIDEFIG compensation/two.plots.Rout-0.pdf
+HIDEFIG compensation/two.plots.Rout-0.pdf
 
-SIDEFIG compensation/two.plots.Rout-1.pdf
+HIDEFIG compensation/two.plots.Rout-1.pdf
 
 EC
 
@@ -1428,9 +1455,12 @@ Contest competition
 
 	How does contest competition square with regulation?
 
-    CHANGE ML: plot scramble and contest competition.
+	CHANGE ML: plot scramble and contest competition.
     
 		ANS Regulation means that $\lambda$ has to go down with $N_T$ --
+
+		ANS Regulation means that $\lambda$ has to go down with $N_T$;
+
 		\Nprime\ does not have to.
 
 ----------------------------------------------------------------------
@@ -1878,9 +1908,9 @@ BC
 
 NC
 
-SIDEFIG compensation/mothtest.Rout-1.pdf
+HIDEFIG compensation/mothtest.Rout-1.pdf
 
-SIDEFIG compensation/mothtest.Rout-2.pdf
+HIDEFIG compensation/mothtest.Rout-2.pdf
 
 EC
 
