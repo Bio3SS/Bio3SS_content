@@ -861,6 +861,8 @@ Invasion
 
 	Which is the same as saying $\Ro>1$
 
+	CHANGE MK: May be more clear to students if you show words and figures on the same slide so that they can see the equilibria at the same time as the figures?
+
 ----------------------------------------------------------------------
 
 Different behaviours
@@ -1024,6 +1026,8 @@ Time-delayed continuous models
 		ANS Rates might depend on the past, but the births and deaths are
 		happening in the current population
 
+	CHANGE MK: Actually write out “Growth at time t depends on conditions at time t - tau” So that you don’t have to on the board? Make the equation that follows part of the answer, and then create a poll here maybe
+
 ----------------------------------------------------------------------
 
 Our model
@@ -1058,6 +1062,8 @@ Model dynamics
 		before it will stop growing
 
 	So what happens in the long term?
+
+	CHANGE MK: Add tau = 1 in the figure title
 
 ----------------------------------------------------------------------
 
