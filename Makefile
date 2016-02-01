@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.bank.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -97,18 +97,27 @@ nonlinear.handouts.pdf: nonlinear.txt
 
 ##################################################################
 
-# HOOK
-
-midterm1.bank.pdf: lect/test.format assign/midterm1.bank
+### Need to look at figure commands (FIG|PDF) and typically prefix assign/
 
 ### Tests
 
-Sources += test.tmp
+# HOOK
+
+midterm1.test.pdf: assign/linear.bank lect/test.format
+
+Sources += test.tmp copy.tex
 
 %.test.fmt: lect/test.format lect/fmt.pl
 	$(PUSHSTAR)
 
+# assign/nonlinear.bank
+midterm1.bank: assign/linear.bank assign/nonlinear.bank 
+	$(cat)
+
 %.bank.tex: assign/%.bank test.tmp bank.test.fmt talk/lect.pl
+	$(PUSH)
+
+midterm1.test.tex: midterm1.bank test.tmp midterm1.test.fmt talk/lect.pl
 	$(PUSH)
 
 ##################################################################

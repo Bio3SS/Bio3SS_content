@@ -14,7 +14,6 @@
 \vfill
 \renewcommand{\baselinestretch}{7}
 
-{\tiny \sl 
-\copyright 2010--2016 by Jonathan Dushoff and the 3SS teaching team.  May be reproduced and distributed, with this notice, for non-commercial purposes only.}
+{\tiny \sl \input{copy.tex}}
 
 \end{document}
