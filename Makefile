@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -103,21 +103,59 @@ nonlinear.handouts.pdf: nonlinear.txt
 
 # HOOK
 
-midterm1.test.pdf: assign/linear.bank lect/test.format
+midterm1.1.test.pdf: testselect.pl
 
-Sources += test.tmp copy.tex
+Sources += test.tmp copy.tex mc.tmp
+
+null.tmp:
+	touch $@
 
 %.test.fmt: lect/test.format lect/fmt.pl
 	$(PUSHSTAR)
 
-# assign/nonlinear.bank
-midterm1.bank: assign/linear.bank assign/nonlinear.bank 
+%.select.fmt: lect/select.format lect/fmt.pl
+	$(PUSHSTAR)
+
+# Look at test banks one at a time (use unit names)
+
+# Make combined banks for each test
+midterm1.bank.test: assign/linear.bank assign/nonlinear.bank 
 	$(cat)
 
-%.bank.tex: assign/%.bank test.tmp bank.test.fmt talk/lect.pl
+# Select the multiple choice part of a test
+%.mc: %.bank.test null.tmp %.select.fmt talk/lect.pl
 	$(PUSH)
 
-midterm1.test.tex: midterm1.bank test.tmp midterm1.test.fmt talk/lect.pl
+# Look at short lists one at a time
+%.short.tex: assign/%.bank test.tmp bank.test.fmt talk/lect.pl
+	$(PUSH)
+
+# Make combined short lists for each test
+midterm1.short.test: assign/linear.short assign/nonlinear.short 
+	$(cat)
+
+# Select the short-answer part of a test
+%.sa: %.short.test null.tmp %.select.fmt talk/lect.pl
+	$(PUSH)
+
+Sources += end.dmu
+
+### Combine mc and sa to make the real test
+%.test: %.mc end.dmu %.sa
+	$(cat)
+
+##### Versioning
+
+Sources += scramble.pl testselect.pl
+
+midterm1.%.mc: midterm1.mc scramble.pl
+	$(PUSHSTAR)
+
+midterm1.%.sa: midterm1.sa testselect.pl
+	$(PUSHSTAR)
+
+### Process a test into different outputs
+%.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
 ##################################################################
