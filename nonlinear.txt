@@ -35,7 +35,7 @@ The second law of population dynamics
 
 ----------------------------------------------------------------------
 
-CSLIDE Crowding
+SSLIDE Crowding
 
 FIG images/ecoli.jpg
 
@@ -398,7 +398,7 @@ Exponential-rates model
 
 		$b(N) = b_0 \exp(-N/N_b)$
 
-		$d(N) = d_0 \exp(-N/N_d)$
+		$d(N) = d_0 \exp(N/N_d)$ \textbf{(fixed a typo here)}
 
   CHANGE ML: No negative in the death equation
   
@@ -509,7 +509,8 @@ Model
 
 	Dynamics: 
 
-		$\bigeq \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d_0 \exp(-N/N_d))N$
+		$\bigeq \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d_0 \exp(N/N_d))N$
+ 		\textbf{(fixed the same typo here)}
 
 	Exact solution: 
 
