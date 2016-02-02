@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.zip 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -14,8 +14,9 @@ test: intro.draft.tex.deps
 
 Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
 include stuff.mk
+-include $(ms)/os.mk
 
-include $(ms)/perl.def
+-include $(ms)/perl.def
 
 ##################################################################
 
@@ -101,11 +102,16 @@ nonlinear.handouts.pdf: nonlinear.txt
 
 ### Tests
 
-# HOOK
+# HOOKS
 
-midterm1.1.test.pdf: testselect.pl
+midterm1.front.pdf: midterm1.front.tex
+midterm1.1.exam.pdf: testselect.pl
 
 Sources += test.tmp copy.tex mc.tmp
+Sources += $(wildcard *.front.tex)
+
+Sources += formulas1.tex formulas2.tex formulas3.tex
+Sources += $(wildcard *.formulas)
 
 null.tmp:
 	touch $@
@@ -119,7 +125,7 @@ null.tmp:
 # Look at test banks one at a time (use unit names)
 
 # Make combined banks for each test
-midterm1.bank.test: assign/linear.bank assign/nonlinear.bank 
+midterm1.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank 
 	$(cat)
 
 # Select the multiple choice part of a test
@@ -148,11 +154,17 @@ Sources += end.dmu
 
 Sources += scramble.pl testselect.pl
 
+midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
+	$(ZIP)
+
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
 
 midterm1.%.sa: midterm1.sa testselect.pl
 	$(PUSHSTAR)
+
+midterm1.%.exam.pdf: midterm1.front.pdf midterm1.%.test.pdf
+	$(pdfcat)
 
 ### Process a test into different outputs
 %.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
@@ -275,4 +287,4 @@ pushOut: $(Outputs) commit.time
 
 -include $(ms)/wrapR.mk
 -include $(ms)/newlatex.mk
-include $(ms)/lect.mk
+-include $(ms)/lect.mk

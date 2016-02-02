@@ -2,6 +2,8 @@ use strict;
 
 my $version = shift(@ARGV);
 
+$version--;
+
 undef $/;
 my $sa = <>;
 
