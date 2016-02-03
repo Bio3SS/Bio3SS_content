@@ -1546,6 +1546,8 @@ Complex behaviour in real populations
 
 ----------------------------------------------------------------------
 
+CHANGE CC: we don't see the labels of the axis and the black line
+
 RSLIDE Paramecia
 
 DOUBLEPDF ts/paramecia.simple.Rout
@@ -1557,6 +1559,8 @@ Paramecia
 DOUBLEFIG ts/paramecia.plot.Rout-3.pdf ts/paramecia.plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
+
+CHANGE CC: Improve the plots for the elk (plot on the left doesn't fit with the plot on the right)
 
 RSLIDE Elk
 
@@ -1673,6 +1677,8 @@ SIDEFIG bd_models/allee.bd.Rout-0.pdf
 EC
 
 ----------------------------------------------------------------------
+
+CHANGE CC: perhaps more notes for the plots  
 
 Individual perspective
 
