@@ -88,12 +88,6 @@ linear.handouts.pdf: linear.txt
 
 ##################################################################
 
-# Conversion notes (temporary for 2016)
-
-# CHECK WIDEFIG, SIDEFIG ... but I guess it's fine
-
-##################################################################
-
 # Unit 2 (Regulated population growth)
 
 nonlinear.final.pdf: nonlinear.txt
@@ -102,9 +96,17 @@ nonlinear.handouts.pdf: nonlinear.txt
 
 ##################################################################
 
-### Need to look at figure commands (FIG|PDF) and typically prefix assign/
+# Unit 3 (Structured populations growth)
+
+structure.final.pdf: structure.txt
+structure.draft.pdf: structure.txt
+structure.handouts.pdf: structure.txt
+
+##################################################################
 
 ### Tests
+
+### Need to look at figure commands (FIG|PDF) and typically prefix assign/
 
 # HOOKS
 
@@ -229,6 +231,20 @@ life/%: life
 	touch $@
 life: 
 	/bin/ln -s $(gitroot)/Life_tables $@
+
+## Age distributions
+age/%: age
+	cd $< && $(MAKE) $*
+	touch $@
+age: 
+	/bin/ln -s $(gitroot)/Age_distributions $@
+
+## Linear models with structure
+structure/%: structure
+	cd $< && $(MAKE) $*
+	touch $@
+structure: 
+	/bin/ln -s $(gitroot)/Structured_models $@
 
 ##################################################################
 

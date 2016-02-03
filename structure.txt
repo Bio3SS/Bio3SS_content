@@ -178,7 +178,7 @@ BC
 
 NC
 
-SIDEFIG images/sa2000.jpg
+SIDEFIG images/israelpop.png
 
 EC
 
@@ -277,9 +277,6 @@ TSEC Constructing a model
 
 	Parameters: $p$ and $f$ \emph{for each age that we are modeling}
 
-	COMMENT This means that we need a maximum age, which can be a
-	serious limitation to this sort of model
-
 ----------------------------------------------------------------------
 
 When to count
@@ -371,7 +368,7 @@ Long-term dynamics
 
 	POLL https://www.polleverywhere.com/free_text_polls/Y7w56rJEkp1eCtT What are the long-term dynamics of such a system?
 
-		ANS Exponential growth or exponential
+		ANS Exponential growth or exponential decline
 
 ----------------------------------------------------------------------
 
@@ -709,7 +706,7 @@ SIDEFIG images/big_tree.jpg
 
 NC
 
-WSIDEFIG 1.0 images/stork.jpg
+HIDEFIG images/stork.jpg
 
 EC
 
@@ -977,6 +974,44 @@ TSEC Age distributions
 
 	HLINK http://www.gapminder.org/population/tool/
 
+	HLINK https://en.wikipedia.org/
+
+----------------------------------------------------------------------
+
+SSLIDE Age distributions
+
+WIDEFIG images/israelpop.png
+
+----------------------------------------------------------------------
+
+SSLIDE Age distributions
+
+WIDEFIG images/cypruspop.png
+
+----------------------------------------------------------------------
+
+SSLIDE Age distributions
+
+WIDEFIG images/iranpop.png
+
+----------------------------------------------------------------------
+
+SSLIDE Age distributions
+
+WIDEFIG images/canadapop.jpg
+
+----------------------------------------------------------------------
+
+SSLIDE Age distributions
+
+WIDEFIG images/bahrainpop.jpg
+
+----------------------------------------------------------------------
+
+SSLIDE Age distributions
+
+WIDEFIG images/cambodiapop.png
+
 ----------------------------------------------------------------------
 
 Learning from the model
@@ -1138,6 +1173,14 @@ TSS Stage structure
 
 ----------------------------------------------------------------------
 
+Advantages
+
+	Stage structured models don't need a maximum age
+
+	Nor one box for every single age class
+
+----------------------------------------------------------------------
+
 Unregulated growth
 
 	What happens if you have a constant stage table (no regulation)?
@@ -1151,8 +1194,7 @@ Unregulated growth
 
 		Can calculate a stable stage distribution
 
-		COMMENT \R\ is about the same, $\lambda$ and SAD kind of a
-		nightmare, but computers can do it
+		COMMENT \R\ is about the same as in age structured model
 
 	Unregulated growth cannot persist
 
