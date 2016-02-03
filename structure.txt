@@ -16,7 +16,7 @@ TSEC Introduction
 	What are some organisms for which this seems like a good
 	approximation?
 
-		ANS Dandelions, bacteria
+		ANS Dandelions, bacteria, insects
 
 	What are some organisms that don't work so well?
 
@@ -53,7 +53,8 @@ TSS Example: biennial dandelions
 		Second-year adults never survive
 
 	Will this population increase or decrease through time?
-
+ 
+  CHANGE MK: Maybe let students form a group here prior to showing them the next two slides of information. Also, poll here? Or, if you are up for the extra bit of time maybe form 2-3 polls to work through the question (Poll: what is your census time. Poll: How to predict the population at the next census)
 ----------------------------------------------------------------------
 
 How to study this population
