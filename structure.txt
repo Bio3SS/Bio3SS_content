@@ -464,7 +464,9 @@ Calculating \R
 
 ----------------------------------------------------------------------
 
-SS Dandelion example
+TSS Dandelion example
+
+CLASS HIGHFIG images/dandy_field.jpg
 
 ----------------------------------------------------------------------
 
@@ -524,14 +526,9 @@ DOUBLEFIG structure/dandy.Rout-1.pdf structure/dandy.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
+TSS Squirrel example
 
-SS Squirrel example
-
-----------------------------------------------------------------------
-
-RSLIDE Gray squirrel population example
-
-INPUT life/sq.empty.tab.tex
+CLASS HIGHFIG images/grey_squirrel.jpg
 
 ----------------------------------------------------------------------
 
@@ -590,6 +587,12 @@ TSS Salmon example
 	What happens when a population has independent cohorts
 
 		Does not necessarily converge to a SAD
+
+----------------------------------------------------------------------
+
+RSLIDE Salmon example
+
+HIGHFIG images/salmon.jpg
 
 ----------------------------------------------------------------------
 

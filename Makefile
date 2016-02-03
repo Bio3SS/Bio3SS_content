@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.final.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -35,10 +35,6 @@ outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
 	$(PUSH)
 
 ######################################################################
-
-## HOOK
-
-structure.handouts.pdf: structure.txt
 
 ## Lecture rules
 
