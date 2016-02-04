@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.final.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -12,7 +12,7 @@ test: intro.draft.tex.deps
 
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
+Sources = Makefile .gitignore README.md stuff.mk LICENSE.md course.mk
 include stuff.mk
 -include $(ms)/os.mk
 
