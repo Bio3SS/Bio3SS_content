@@ -16,6 +16,7 @@ images = $(Drop)/Lecture_images
 
 update_images:
 	cd $(gitroot)/Lecture_images && $(MAKE) Drop=$(dir $(images)) all.html
+	touch .image_up
 
 Makefile: $(ms) $(images) $(dirs)
 $(ms):

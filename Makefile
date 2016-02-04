@@ -206,8 +206,9 @@ exponential:
 
 # Lecture images
 images/%: images ;
-images: 
+images: .image_up
 	/bin/ln -s $(images) $@
+	touch $@
 
 ## Birth-death models (including time-delay models)
 bd_models/%: bd_models
