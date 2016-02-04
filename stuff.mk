@@ -23,7 +23,7 @@ $(ms):
 
 $(dirs): 
 	$(MAKE) -f stuff.mk $(gitroot)
-	cd $< && git clone $(courserepo)/$(notdir $@).git
+	cd $(gitroot) && git clone $(courserepo)/$(notdir $@).git
 
 $(gitroot):
 	mkdir $@
