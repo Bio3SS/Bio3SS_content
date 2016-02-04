@@ -14,6 +14,9 @@ web = $(gitroot)/Bio3SS.github.io/materials/
 export ms = $(gitroot)/makestuff
 images = $(Drop)/Lecture_images
 
+update_images:
+	cd $(gitroot)/Lecture_images && $(MAKE) Drop=$(dir $(images)) all.html
+
 Makefile: $(ms) $(images) $(dirs)
 $(ms):
 	$(MAKE) -f stuff.mk $(gitroot)
