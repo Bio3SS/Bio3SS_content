@@ -12,7 +12,7 @@ test: intro.draft.tex.deps
 
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md course.mk
+Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
 include stuff.mk
 -include $(ms)/os.mk
 
