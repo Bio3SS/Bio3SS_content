@@ -42,6 +42,8 @@ lect/%.fmt: ;
 %.lect.fmt: lect/lect.format lect/fmt.pl
 	$(PUSHSTAR)
 
+.PRECIOUS: lect/lect.format lect/fmt.pl
+
 Sources += beamer.tmp
 %.draft.tex: %.txt beamer.tmp draft.lect.fmt talk/lect.pl
 	$(PUSH)
