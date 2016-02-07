@@ -3,10 +3,12 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.rub.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
+
+midterm1.1.rub.pdf:
 
 ##################################################################
 
@@ -174,6 +176,12 @@ midterm1.%.exam.pdf: midterm1.front.pdf midterm1.%.test.pdf
 %.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
+%.key.tex: %.test test.tmp key.test.fmt talk/lect.pl
+	$(PUSH)
+
+%.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
+	$(PUSH)
+
 ##################################################################
 
 
@@ -283,7 +291,7 @@ Sources += asn.tmp
 
 # Slides
 %.final.pdf.push: %.final.pdf
-	$(CP) $< $(Drop)/3SS
+	$(CP) $< $(Drop)/3SS/3SS_content
 
 ## Push to private repo
 
