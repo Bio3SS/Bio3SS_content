@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.rub.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.tests 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -108,16 +108,14 @@ structure.handouts.pdf: structure.txt
 
 ### Need to look at figure commands (FIG|PDF) and typically prefix assign/
 
-# HOOKS
-
-midterm1.front.pdf: midterm1.front.tex
-midterm1.1.exam.pdf: testselect.pl
-
 Sources += test.tmp copy.tex mc.tmp
 Sources += $(wildcard *.front.tex)
 
 Sources += formulas1.tex formulas2.tex formulas3.tex
 Sources += $(wildcard *.formulas)
+
+
+### Formats
 
 null.tmp:
 	touch $@
@@ -135,6 +133,7 @@ midterm1.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank
 	$(cat)
 
 # Select the multiple choice part of a test
+.PRECIOUS: %.mc
 %.mc: %.bank.test null.tmp %.select.fmt talk/lect.pl
 	$(PUSH)
 
@@ -147,9 +146,11 @@ midterm1.short.test: assign/linear.short assign/nonlinear.short
 	$(cat)
 
 # Select the short-answer part of a test
+.PRECIOUS: %.sa
 %.sa: %.short.test null.tmp %.select.fmt talk/lect.pl
 	$(PUSH)
 
+### Separator for MC and SA on the same test
 Sources += end.dmu
 
 ### Combine mc and sa to make the real test
@@ -158,11 +159,20 @@ Sources += end.dmu
 
 ##### Versioning
 
+## I should move towards using 5 versions: four for the main test, and one for others (SAS, late finals, ...)
+
 Sources += scramble.pl testselect.pl
 
+## Printing
 midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
 	$(ZIP)
 
+## Pushing
+midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.test.pdf.push midterm1.4.test.pdf.push
+
+midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pdf.push midterm1.4.key.pdf.push
+
+# Might need to be explicit, because of conflict with bank rules. Worth checking.
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
 
@@ -181,6 +191,22 @@ midterm1.%.exam.pdf: midterm1.front.pdf midterm1.%.test.pdf
 
 %.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
+
+#### Marking
+
+## Hooks
+
+# Make a plain answer key (ssv)
+%.ssv: %.test key.pl
+	$(PUSH)
+
+# Make a special answer key for scantron processing
+%.csv: %.ssv scantron.pl
+	$(PUSH)
+
+# Combine a bunch of scantron keys into a file for the processors
+final2014.scantron.csv final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.csv %.2.csv %.3.csv %.4.csv
+	$(cat)
 
 ##################################################################
 
@@ -287,6 +313,9 @@ Sources += asn.tmp
 	$(CP) $< $(web)
 
 %.key.pdf.push: %.key.pdf
+	$(CP) $< $(web)
+
+%.test.pdf.push: %.test.pdf
 	$(CP) $< $(web)
 
 # Slides
