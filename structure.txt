@@ -151,6 +151,8 @@ What determines $\R$?
 
 	ANS $\R=1.2$
 
+CHANGE CC: Explaining how to calculate R on the board was helpful I think but probably go a little slower
+
 ----------------------------------------------------------------------
 What does \R\ tell us about $\lambda$
 
@@ -267,6 +269,8 @@ Discrete vs.\ continuous time
 
 	In this unit, we will focus on discrete time
 
+CHANGE CC: Add a poll to check that everybody is listening and understands what is a discrete model (nobody answers questions)?
+
 ----------------------------------------------------------------------
 
 TSEC Constructing a model
@@ -277,6 +281,8 @@ TSEC Constructing a model
 	State variables: how many individuals of each age at any given time
 
 	Parameters: $p$ and $f$ \emph{for each age that we are modeling}
+
+CHANGE CC: Helpful to draw the table of what is happening to each age-class next year but probably a little slower for the explanations
 
 ----------------------------------------------------------------------
 
