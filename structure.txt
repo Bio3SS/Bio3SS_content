@@ -587,6 +587,8 @@ Gray squirrel dynamics
 
 DOUBLEFIG structure/squirrels.Rout-2.pdf structure/squirrels.Rout-1.pdf
 
+  CHANGE MK: We ended here. Did not start the Salmon example
+
 ----------------------------------------------------------------------
 
 TSS Salmon example
