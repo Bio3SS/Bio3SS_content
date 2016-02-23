@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.tests 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -240,7 +240,7 @@ exponential:
 
 # Lecture images
 images/%: images ;
-images: .image_up
+images: 
 	/bin/ln -s $(images) $@
 	touch $@
 

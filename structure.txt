@@ -55,6 +55,7 @@ TSS Example: biennial dandelions
 	Will this population increase or decrease through time?
  
   CHANGE MK: Maybe let students form a group here prior to showing them the next two slides of information. Also, poll here? Or, if you are up for the extra bit of time maybe form 2-3 polls to work through the question (Poll: what is your census time. Poll: How to predict the population at the next census)
+
 ----------------------------------------------------------------------
 
 How to study this population
@@ -587,7 +588,11 @@ Gray squirrel dynamics
 
 DOUBLEFIG structure/squirrels.Rout-2.pdf structure/squirrels.Rout-1.pdf
 
-  CHANGE MK: We ended here. Did not start the Salmon example
+----------------------------------------------------------------------
+
+CSLIDE The structured model
+
+WIDEFIG images/structure_cc.png
 
 ----------------------------------------------------------------------
 
@@ -596,6 +601,9 @@ TSS Salmon example
 	What happens when a population has independent cohorts
 
 		Does not necessarily converge to a SAD
+
+	CHANGE JD: Give an example of a salmon life table with independent
+	cohorts
 
 ----------------------------------------------------------------------
 
@@ -629,7 +637,6 @@ DOUBLEFIG structure/salmon.Rout-2.pdf structure/salmon.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-
 SS Calculation details
 
 ----------------------------------------------------------------------
@@ -650,6 +657,21 @@ DEFHEAD $f_x$ vs.~$m_x$
 		ANS Need to close the loop from one census to the next
 
 ----------------------------------------------------------------------
+
+RSLIDE Example: biennial dandelions
+
+	Adults produce 80 seeds each ($m_x$)
+
+	1% of seeds survive to become adults
+
+	50% of first-year adults survive to reproduce again
+
+	Second-year adults never survive
+
+	What does the life table look like?
+
+----------------------------------------------------------------------
+
 
 ASLIDE Dandelion life table
 
