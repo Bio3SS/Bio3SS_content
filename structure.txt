@@ -670,6 +670,8 @@ RSLIDE Example: biennial dandelions
 
 	What does the life table look like?
 
+CHANGE CC: It was cool that you re-do the life table on the board (life cycle+calculation with explanation at the same time)
+
 ----------------------------------------------------------------------
 
 
@@ -682,6 +684,10 @@ INPUT life/pre.tab.tex
 ASLIDE Counting \emph{after} reproduction
 
 INPUT life/post.tab.tex
+
+CHANGE CC: The after reproduction explanation was a little less clear
+CHANGE CC: A student asked you for the fx value for age2, your explanation was helpful for more students (perhaps next year give the explanation directly. 
+CHANGE CC: I think it was also cool when you build the table with 3 lines on the board in order to better explain the table with 2 lines of the post reproduction counting
 
 ----------------------------------------------------------------------
 
@@ -705,6 +711,8 @@ Calculating \R
 		Which values of $p_x$ and $f_x$ is \R\ sensitive to?
 
 			ANS The $p$s for young individuals affect all the $\ell$s.
+
+CHANGE CC: You were disappointed that you didn't have a poll here for the last question
 
 ----------------------------------------------------------------------
 
