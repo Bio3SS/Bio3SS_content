@@ -783,13 +783,15 @@ The Euler equation
 	expect from growing at rate $\lambda$, would it continue to grow at
 	rate $\lambda$.
 
-	On the left-side cohort started as $\lambda$ times smaller than the
+	On the left-side each cohort started as $\lambda$ times smaller than the
 	one after it
 
 		Then got multiplied by $\ell_x$.
 
 	Under this assumption, is the next generation $\lambda$ times bigger
 	again?
+	
+  CHANGE MK: I think it may be useful to have a numeric life table example to show in parallel with these equations. 
 
 ----------------------------------------------------------------------
 
@@ -851,6 +853,8 @@ Studying population growth
 
 		More useful in cases where we expect the life table to be
 		constant with exponential growth or decline for a long time
+		
+  CHANGE MK: In tutorial I showed how lambda changes per generation as the age distribution is approaching its stable distribution, which seemed to help students. Maybe include a quick calculation?
 
 ----------------------------------------------------------------------
 
@@ -910,6 +914,8 @@ When do we start counting?
 
 		If we count right {\em after} reproduction, this means we are
 		calling newborns age class 1.  Don't get confused.
+
+  CHANGE MK: Probably should have this when you introduce the life tables
 
 	POLL https://www.polleverywhere.com/free_text_polls/cVddcKqFeO4h1Xq What is $\ell_1$ when we count before reproduction?
 
