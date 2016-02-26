@@ -1009,6 +1009,8 @@ Fecundity patterns
 	Fecundity often goes up early in life and then remains constant
 
 		ANS Birds, large mammals
+		
+	CHANGE ML: clarify the question for fecundity, what is going on for big mammals, if you don't want humans as the answer for the first question
 
 	It may also go up and then come down
 
@@ -1134,6 +1136,8 @@ University cohorts
 			ANS The lower classes are larger (even more so)
 
 		POLL https://www.polleverywhere.com/multiple_choice_polls/A9n63MoZK9vIFDT Fewer students are admitted each year
+		
+		CHANGE ML: McMaster is being more elite, becoming number 1 university in the world
 
 			ANS Anything could happen (drop outs and size change are
 			operating in different directions)
