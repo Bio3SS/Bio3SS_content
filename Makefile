@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: regulation.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -101,6 +101,14 @@ nonlinear.handouts.pdf: nonlinear.txt
 structure.final.pdf: structure.txt
 structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
+
+##################################################################
+
+# Unit 4 (Life history)
+
+life_history.final.pdf: life_history.txt
+life_history.draft.pdf: life_history.txt
+life_history.handouts.pdf: life_history.txt
 
 ##################################################################
 
@@ -259,11 +267,18 @@ compensation:
 	/bin/ln -s $(gitroot)/Compensation_models $@
 
 ## Life tables
-life/%: life
+life_tables/%: life_tables
 	cd $< && $(MAKE) $*
 	touch $@
-life: 
+life_tables: 
 	/bin/ln -s $(gitroot)/Life_tables $@
+
+## Life history
+life_history/%: life_history
+	cd $< && $(MAKE) $*
+	touch $@
+life_history: 
+	/bin/ln -s $(gitroot)/Life_history $@
 
 ## Age distributions
 age/%: age

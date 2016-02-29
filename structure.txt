@@ -496,19 +496,19 @@ RSLIDE Example: biennial dandelions
 
 Dandelion life table
 
-INPUT life/dandy.skeleton.tab.tex
+INPUT life_tables/dandy.skeleton.tab.tex
 
 ----------------------------------------------------------------------
 
 RSLIDE Dandelion life table
 
-INPUT life/dandy.empty.tab.tex
+INPUT life_tables/dandy.empty.tab.tex
 
 ----------------------------------------------------------------------
 
 ASLIDE Dandelion life table
 
-INPUT life/dandy.tab.tex
+INPUT life_tables/dandy.tab.tex
 
 ----------------------------------------------------------------------
 
@@ -544,7 +544,7 @@ CLASS HIGHFIG images/grey_squirrel.jpg
 
 Gray squirrel population example
 
-INPUT life/sq.empty.tab.tex
+INPUT life_tables/sq.empty.tab.tex
 
 ----------------------------------------------------------------------
 
@@ -564,7 +564,7 @@ Squirrel observations
 
 ASLIDE Gray squirrel population example
 
-INPUT life/sq.tab.tex
+INPUT life_tables/sq.tab.tex
 
 ----------------------------------------------------------------------
 
@@ -679,13 +679,13 @@ CHANGE CC: It was cool that you re-do the life table on the board (life cycle+ca
 
 ASLIDE Dandelion life table
 
-INPUT life/pre.tab.tex
+INPUT life_tables/pre.tab.tex
 
 ----------------------------------------------------------------------
 
 ASLIDE Counting \emph{after} reproduction
 
-INPUT life/post.tab.tex
+INPUT life_tables/post.tab.tex
 
 CHANGE CC: The after reproduction explanation was a little less clear
 CHANGE CC: A student asked you for the fx value for age2, your explanation was helpful for more students (perhaps next year give the explanation directly. 
