@@ -3,12 +3,12 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.bank.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
 
-midterm1.1.rub.pdf:
+midterm2.test.pdf:
 
 ##################################################################
 
@@ -136,16 +136,19 @@ null.tmp:
 # Look at test banks one at a time (use unit names)
 
 # Make combined banks for each test
-midterm1.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank 
+midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank 
 	$(cat)
 
+%.bank.test: %.bank null.tmp bank.select.fmt talk/lect.pl
+	$(PUSH)
+
 midterm2.bank.key.pdf:
-midterm2.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank
+midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank
 	$(cat)
 
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
-%.mc: %.bank.test null.tmp %.select.fmt talk/lect.pl
+%.mc: %.bank null.tmp %.select.fmt talk/lect.pl
 	$(PUSH)
 
 # Look at short lists one at a time
@@ -156,7 +159,7 @@ midterm2.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank a
 midterm1.short.test: assign/linear.short assign/nonlinear.short 
 	$(cat)
 
-midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure.short assign/life.short
+midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure.short assign/life_history.short
 	$(cat)
 
 # Select the short-answer part of a test
