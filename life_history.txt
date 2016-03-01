@@ -8,7 +8,7 @@ TSEC Introduction
 	{\bf Life history} refers to patterns of how organisms allocate
 	resources to key components underlying reproductive success:
 
-	POLL https://www.polleverywhere.com/free_text_polls/ayWHcAKITmjUtkW Give a one-word example of such a component
+	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component
 
 		ANS Survival
 
@@ -59,7 +59,9 @@ Oaks and dandelions
 
 		ANS Water, sunlight, nutrients
 
-	POLL https://www.polleverywhere.com/free_text_polls/pJxwGWJ5QD3dlUT What are some differences?
+	POLL free_text_polls/euJrjbBCEVjEphr What are some differences?
+
+		ANS Oak trees are bigger
 
 		ANS Oak trees wait longer to reproduce
 
@@ -271,7 +273,7 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 		ANS Oaks vs.~pines
 
-	POLL https://www.polleverywhere.com/free_text_polls/IxSL57p6o07Np13 What are potential advantages of producing fewer offspring with the same amount of energy?
+	POLL free_text_polls/gBkYaGL5NBgZCHK What are potential advantages of producing fewer offspring with the same amount of energy?
 
 		ANS Greater chance of survival (or reproductive success)
 
@@ -380,9 +382,9 @@ Measuring $K$
 
 	Which has a higher value of $K$?
 
-		POLL https://www.polleverywhere.com/multiple_choice_polls/jtPhspIqS7E7bXA In [indiv/ha]?
+		POLL multiple_choice_polls/mAH34RghCw8Iwre In [indiv/ha]?
 
-		POLL https://www.polleverywhere.com/multiple_choice_polls/ShhCqfyEJuHpV2g In [kg/ha]?
+		POLL multiple_choice_polls/UKMeDYbvnEz2nbJ In [kg/ha]?
 
 	To compare species, we attempt to measure $K$ in units that reflect
 	the effect of crowding on the competitive environment
@@ -486,7 +488,7 @@ Changing conditions
 	When conditions are good ($\R>1$), should organisms be fast
 	or slow to maximize $\lambda$?
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/ShhCqfyEJuHpV2g When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
+	POLL multiple_choice_polls/n1ZCuPQxTwbHAnz When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
 
 ----------------------------------------------------------------------
 
@@ -593,7 +595,7 @@ Example: plant Q
 
 	The three kinds of year are equally likely
 	
-	POLL https://www.polleverywhere.com/free_text_polls/rOrZ0pG0EvtlCOr What is the long term average growth rate of the population?
+	POLL free_text_polls/0gN1gjenIjZtPnq What is the long term average growth rate of the population?
 
 		ANS The geometric mean of 6, 0.6 and 0.06: $\lambda=0.6$
 
@@ -710,7 +712,7 @@ Why is it called bet hedging?
 
 TSEC Sex ratios
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/Y5YBAt2O7YXdsfB Should organisms allocate more resources to producing males or females?
+	POLL free_text_polls/YKYgHq4h0mvWaIT Should organisms allocate more resources to producing males or females?
 
 		ANS They should allocate more resources to females because it is
 		females that limit the growth rate
@@ -788,7 +790,7 @@ Sex ratio and balance
 	Thus, the \emph{number} of offspring I can make does not depend on
 	sex
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/Ibn1XfnEkfFfJ37 If everyone else is making more males than females, what should I do?
+	POLL free_text_polls/Zh8O1GPCrHRnkin If everyone else is making more males than females, what should I do?
 
 		ANS Make more females, because that will increase my average
 		fitness

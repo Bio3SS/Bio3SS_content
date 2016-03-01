@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.final.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
