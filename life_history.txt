@@ -85,11 +85,15 @@ Scales of competition
 
 		Competition between populations
 
+CHANGE CC: You went quite fast for this slide
+
 ----------------------------------------------------------------------
 
 TSEC Tradeoffs
 
 	Some evolutionary changes simply help organisms function better
+
+CHANGE CC: Perhaps write some examples on the slide for the previous sentence 
 
 	Most have advantages and disadvantages
 
@@ -100,6 +104,8 @@ TSEC Tradeoffs
 
 	A \textbf{tradeoff} occurs when improvements in one area come at a
 	cost of disadvantages in another area
+
+CHANGE CC: A funny example is the color of the beak of birds: Faivre et al (2003) Immune Activation Rapidly Mirrored in a Secondary Sexual Trait. Science 04. Vol. 300, Issue 5616, pp. 103 DOI: 10.1126/science.1081802
 
 ----------------------------------------------------------------------
 
@@ -297,6 +303,8 @@ Tradeoff: direct investment vs.~dispersal investment
 
 		ANS Parent-assisted dispersal is often their only chance to move.
 
+CHANGE CC: Perhaps don't distinguish the last example from the others or change the order (one student answered you at first with the last example)
+
 ----------------------------------------------------------------------
 
 TSEC The $r$ vs.~$K$ metaphor
@@ -328,6 +336,8 @@ DEFHEAD $r$ vs.\ $K$ strategies
 	densities ``$K$-strategists''
 
 		They do well in stable, crowded environments
+
+CHANGE CC: K-stategist: "high" and not "low"
 
 ----------------------------------------------------------------------
 
