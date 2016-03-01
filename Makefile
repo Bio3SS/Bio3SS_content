@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.final.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.bank.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -122,7 +122,6 @@ Sources += $(wildcard *.front.tex)
 Sources += formulas1.tex formulas2.tex formulas3.tex
 Sources += $(wildcard *.formulas)
 
-
 ### Formats
 
 null.tmp:
@@ -140,6 +139,10 @@ null.tmp:
 midterm1.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank 
 	$(cat)
 
+midterm2.bank.key.pdf:
+midterm2.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank
+	$(cat)
+
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
 %.mc: %.bank.test null.tmp %.select.fmt talk/lect.pl
@@ -151,6 +154,9 @@ midterm1.bank.test: midterm1.formulas assign/linear.bank assign/nonlinear.bank
 
 # Make combined short lists for each test
 midterm1.short.test: assign/linear.short assign/nonlinear.short 
+	$(cat)
+
+midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure.short assign/life.short
 	$(cat)
 
 # Select the short-answer part of a test
