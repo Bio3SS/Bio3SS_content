@@ -403,6 +403,18 @@ Measuring $K$
 
 ----------------------------------------------------------------------
 
+RSLIDE Example: trees
+
+FIG images/old_growth_opal.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Example: trees
+
+FIG images/old_field.jpg
+
+----------------------------------------------------------------------
+
 Example: trees
 
 	Assuming there is a tradeoff between $\rmax$ and $K$, would you
