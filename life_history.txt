@@ -493,6 +493,8 @@ Biology is complicated
 
 		17-year locusts, century plants
 
+  CHANGE MK: Image of the plant would be nice
+
 	Every species life history has specific, important {\em details}
 
 		But general principles are very important to guide our
@@ -509,6 +511,8 @@ Changing conditions
 
 	When conditions are good ($\R>1$), should organisms be fast
 	or slow to maximize $\lambda$?
+	
+  CHANGE MK: Need an answer here
 
 	POLL multiple_choice_polls/n1ZCuPQxTwbHAnz When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
 
@@ -522,6 +526,8 @@ Changing life history
 		ANS Move slow when things are bad, and fast when things are good
 
 	Examples
+	
+  CHANGE MK: Poll here would be nice. Maybe you will get some interesting examples if students can answer anonymously
 
 		ANS Many animals reach sexual maturity faster under good
 		conditions
@@ -560,6 +566,8 @@ TSEC Bet hedging
 
 		If all your offspring are in similar conditions, they can all do
 		well together -- or they can all die together
+		
+  CHANGE MK: Wording seems a bit off here: "If all of your offspring are (born at the same time into similar conditions)..." or something like that
 
 	Strategies that usually do well aren't good enough
 
