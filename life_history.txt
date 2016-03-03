@@ -515,6 +515,8 @@ Changing conditions
   CHANGE MK: Need an answer here
 
 	POLL multiple_choice_polls/n1ZCuPQxTwbHAnz When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
+	
+CHANGE CC: you also wanted to add the answer of the poll
 
 ----------------------------------------------------------------------
 
@@ -550,6 +552,8 @@ Applications
 
 	Would $r$ or $K$ strategists be more useful for human production (eg.
 	biofuels, agriculture, drug production etc..)?
+	
+	CHANGE CC: you wanted to divide the question into 2 questions 
 
 		ANS $r$ strategists are likely to respond better to human attempts
 		to manipulate the environment to their advantage
