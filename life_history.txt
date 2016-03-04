@@ -757,6 +757,8 @@ TSEC Sex ratios
 
 		ANS They should allocate more resources to males, because males
 		have greater potential reproductive success
+		
+		CHANGE ML: add the case it can be reverse for different speices like sea horse
 
 ----------------------------------------------------------------------
 
@@ -813,6 +815,8 @@ Elephant seal details
 
 		ANS Males' average fitness is 300/360=0.83; females' is 300/40 =
 		7.5
+
+  CHANGE ML: Con't here next week
 
 ----------------------------------------------------------------------
 
