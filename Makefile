@@ -189,7 +189,7 @@ midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.tes
 
 midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pdf.push midterm1.4.key.pdf.push
 
-# Might need to be explicit, because of conflict with bank rules. Worth checking.
+# These rules need to be explicit, because of conflict with bank rules. A pain, but no easy fix.
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
 
@@ -197,6 +197,15 @@ midterm1.%.sa: midterm1.sa testselect.pl
 	$(PUSHSTAR)
 
 midterm1.%.exam.pdf: midterm1.front.pdf midterm1.%.test.pdf
+	$(pdfcat)
+
+midterm2.%.mc: midterm2.mc scramble.pl
+	$(PUSHSTAR)
+
+midterm2.%.sa: midterm2.sa testselect.pl
+	$(PUSHSTAR)
+
+midterm2.%.exam.pdf: midterm2.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
 ### Process a test into different outputs
