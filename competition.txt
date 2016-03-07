@@ -433,7 +433,7 @@ BC
 
 NC
 
-FIG images/toe_balance.jpg
+SIDEFIG images/toe_balance.jpg
 
 EC
 

@@ -332,8 +332,8 @@ competition:
 
 ## Assignments
 
-regulation.rub.pdf: assign/regulation.ques
 pg.asn.pdf: assign/pg.ques
+regulation.key.pdf: assign/regulation.ques
 
 Sources += asn.tmp
 
