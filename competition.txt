@@ -186,6 +186,7 @@ Carrying capacity with competition
 Logistic model
 
 	You've probably learned about the logistic model, if not you may
+	learn about it later
 
 	This model is similar to the logistic model, except:
 
@@ -246,25 +247,24 @@ Competitive exclusion
 
 CSLIDE Dominance time plot
 
-FIG competition/second.comp.Rout-4.pdf
+FIG competition/first.comp.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE Dominance phase plot
+RSLIDE Dominance phase plot
 
-DOUBLEFIG competition/first.comp.Rout-0.pdf competition/second.comp.Rout-0.pdf
+DOUBLEFIG competition/first.comp.Rout-2.pdf competition/first.comp.Rout-0.pdf
 
 ----------------------------------------------------------------------
-
 Dominance
 
 DOUBLEFIG competition/second.comp.Rout-4.pdf competition/second.comp.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Dominance reversed
+CSLIDE Dominance
 
-DOUBLEFIG competition/third.comp.Rout-0.pdf competition/third.comp.Rout-1.pdf
+DOUBLEFIG competition/second.comp.Rout-2.pdf competition/second.comp.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
@@ -278,6 +278,25 @@ Time plots and phase plots
 		Better for seeing dynamical results
 
 		Worse for seeing rates (how quickly things change)
+
+----------------------------------------------------------------------
+
+Reading phase plots
+
+	Log or linear (per capita vs.~total perspective)
+
+	Open circles are starting points
+
+	Closed circles are ending points
+
+	Arrows show direction of time
+
+----------------------------------------------------------------------
+
+
+Dominance reversed
+
+DOUBLEFIG competition/third.comp.Rout-0.pdf competition/third.comp.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -400,10 +419,6 @@ Neutral competition
 
 ----------------------------------------------------------------------
 
-RSLIDE Perfect balance
-
-----------------------------------------------------------------------
-
 TSS Unbalanced competition
 
 BC
@@ -510,21 +525,22 @@ FIG images/wild_dogs.jpg
 
 CSLIDE Founder control
 
-FIG competition/mutual.comp.Rout-2.pdf
+FIG competition/mutual.comp.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
 CSLIDE Founder control
 
-FIG competition/mutual.comp.Rout-7.pdf
+FIG competition/mutual.comp.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
 Founder control
 
-DOUBLEFIG competition/mutual.comp.Rout-2.pdf competition/mutual.comp.Rout-7.pdf
+DOUBLEFIG competition/mutual.comp.Rout-3.pdf competition/mutual.comp.Rout-5.pdf
 
 ----------------------------------------------------------------------
+
 CSLIDE Founder control phase plot
 
 FIG competition/mutual.comp.Rout-0.pdf
@@ -540,6 +556,15 @@ FIG competition/mutual.comp.Rout-1.pdf
 Founder control phase plots
 
 DOUBLEFIG competition/mutual.comp.Rout-0.pdf competition/mutual.comp.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Founder control can be complicated
+
+WFIG 0.6 competition/mutual.comp.Rout-4.pdf
+
+	Founder control really means each species can win with a \emph{big
+	enough} head start
 
 ----------------------------------------------------------------------
 
@@ -719,7 +744,7 @@ TSS Colonization and co-existence
 		$r$ strategists do better in the short term; $K$ strategists do
 		better do better in the long term
 	
-	When can you survive by doing better in the short term?
+	POLL When can you survive by doing better in the short term?
 
 		ANS When new opportunities (empty habitat) keep coming available
 
