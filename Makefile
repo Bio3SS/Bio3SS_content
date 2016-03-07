@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: regulation.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -307,12 +307,13 @@ structure:
 
 ## Assignments
 
+regulation.rub.pdf: assign/regulation.ques
+pg.asn.pdf: assign/pg.ques
+
 Sources += asn.tmp
 
 %.ques.fmt: lect/ques.format lect/fmt.pl
 	$(PUSHSTAR)
-
-pg.asn.pdf: assign/regulation.ques
 
 %.asn.tex: assign/%.ques asn.tmp asn.ques.fmt talk/lect.pl
 	$(PUSH)
