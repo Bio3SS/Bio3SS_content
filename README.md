@@ -1,1 +1,1 @@
-This README was made automatically by makestuff and should be changed.
+Content for Jonathan Dushoff's Population Ecology course (Biology 3SS) at McMaster University.

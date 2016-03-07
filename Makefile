@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.final.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -109,6 +109,15 @@ structure.handouts.pdf: structure.txt
 life_history.final.pdf: life_history.txt
 life_history.draft.pdf: life_history.txt
 life_history.handouts.pdf: life_history.txt
+
+
+######################################################################
+
+# Unit 5 (Competition)
+
+competition.final.pdf: competition.txt
+competition.draft.pdf: competition.txt
+competition.handouts.pdf: competition.txt
 
 ##################################################################
 
@@ -311,6 +320,13 @@ structure/%: structure
 	touch $@
 structure: 
 	/bin/ln -s $(gitroot)/Structured_models $@
+
+## Competition models
+competition/%: competition
+	cd $< && $(MAKE) $*
+	touch $@
+competition: 
+	/bin/ln -s $(gitroot)/Competition_models $@
 
 ##################################################################
 
