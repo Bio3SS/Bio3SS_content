@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.zip 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -193,6 +193,10 @@ Sources += scramble.pl testselect.pl
 midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
 	$(ZIP)
 
+## Printing
+midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
+	$(ZIP)
+
 ## Pushing
 midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.test.pdf.push midterm1.4.test.pdf.push
 
@@ -205,7 +209,10 @@ midterm1.%.mc: midterm1.mc scramble.pl
 midterm1.%.sa: midterm1.sa testselect.pl
 	$(PUSHSTAR)
 
-midterm1.%.exam.pdf: midterm1.front.pdf midterm1.%.test.pdf
+midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
+	$(pdfcat)
+
+midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
 midterm2.%.mc: midterm2.mc scramble.pl
@@ -240,7 +247,7 @@ midterm2.%.exam.pdf: midterm2.front.pdf midterm2.%.test.pdf
 	$(PUSH)
 
 # Combine a bunch of scantron keys into a file for the processors
-final2014.scantron.csv final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.csv %.2.csv %.3.csv %.4.csv
+final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.csv %.2.csv %.3.csv %.4.csv %.5.csv
 	$(cat)
 
 ##################################################################
