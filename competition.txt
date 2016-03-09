@@ -183,6 +183,8 @@ Carrying capacity with competition
 
 ----------------------------------------------------------------------
 
+  CHANGE MK: This information felt a little out of place
+
 Logistic model
 
 	You've probably learned about the logistic model, if not you may
@@ -222,6 +224,8 @@ Equal competition
 		dominate
 
 		ANS No coexistence 
+		
+  CHANGE MK: Combine the next information on Competitive exclusion with this information so that you don't need an additional slide before the pictures. This was a bit choppy
 
 ----------------------------------------------------------------------
 
@@ -290,6 +294,8 @@ Reading phase plots
 	Closed circles are ending points
 
 	Arrows show direction of time
+	
+  CHANGE MK: Small bit of text about different starting conditions or different parameter sets would be nice
 
 ----------------------------------------------------------------------
 
@@ -297,6 +303,8 @@ Reading phase plots
 Dominance reversed
 
 DOUBLEFIG competition/third.comp.Rout-0.pdf competition/third.comp.Rout-1.pdf
+
+  CHANGE MK: Can we see the carrying capacity of the non-dominant species?
 
 ----------------------------------------------------------------------
 
@@ -341,7 +349,7 @@ Balanced competition example
 	POLL https://www.polleverywhere.com/free_text_polls/OHwhmRq2NQUGxkT Which species is bigger?
 
 		ANS Species 2 individuals use as much water as 4
-		species individuals
+		species 1 individuals
 
 	If they're only competing for water, what's the value of
 	$\alpha_{12}$?
