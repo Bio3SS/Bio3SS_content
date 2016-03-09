@@ -835,6 +835,8 @@ Sex ratio and balance
 
 	How should this population evolve?
 
+CHANGE CC: add "long term" in the question
+
 		ANS To a balanced sex ratio
 
 ----------------------------------------------------------------------
@@ -941,6 +943,8 @@ Equids
 	Horses and zebras produce offspring at similar rates through their
 	adult lives
 
+CHANGE CC: add males have harem
+
 	The healthiest, middle-aged mares produce a greater fraction of males
 
 		Presumably they are allocating more resources to these males
@@ -959,3 +963,4 @@ Equids
 		ANS High-risk, aggressive development increases the chance of
 		being dominant and reproductively successful
 
+CHANGE CC: another example which is very interesting is the Kakapo. It was an endangered species and researchers tried to save them giving food to the females but it was a disaster. Females tend to have a big male during good years so because of the researchers the females "thought" they were good years and the population had a very biased male sex-ratio and almost disappeared...
