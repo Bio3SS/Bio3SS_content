@@ -332,12 +332,10 @@ DEFHEAD $r$ vs.\ $K$ strategies
 
 		They do well in recently disturbed, uncrowded environments 
 
-	We call organisms that tend to out-perform other species at low
+	We call organisms that tend to out-perform other species at high
 	densities ``$K$-strategists''
 
 		They do well in stable, crowded environments
-
-CHANGE CC: K-stategist: "high" and not "low"
 
 ----------------------------------------------------------------------
 

@@ -8,8 +8,6 @@ target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
 
-midterm2.test.pdf:
-
 ##################################################################
 
 # make files
@@ -218,6 +216,7 @@ midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 midterm2.%.mc: midterm2.mc scramble.pl
 	$(PUSHSTAR)
 
+midterm2.1.sa: midterm2.sa testselect.pl
 midterm2.%.sa: midterm2.sa testselect.pl
 	$(PUSHSTAR)
 
@@ -233,6 +232,9 @@ midterm2.%.exam.pdf: midterm2.front.pdf midterm2.%.test.pdf
 
 %.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
+
+midterm.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
+	$(TGZ)
 
 #### Marking
 
