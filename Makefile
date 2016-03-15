@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.rub.tgz 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.1.ssv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -12,7 +12,7 @@ test: intro.draft.tex.deps
 
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
+Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
 include stuff.mk
 -include $(ms)/os.mk
 
@@ -185,7 +185,7 @@ Sources += end.dmu
 
 ## I should move towards using 5 versions: four for the main test, and one for others (SAS, late finals, ...)
 
-Sources += scramble.pl testselect.pl
+# Sources += $(wildcard *.pl)
 
 ## Printing
 midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
@@ -241,6 +241,7 @@ midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midte
 ## Hooks
 
 # Make a plain answer key (ssv)
+midterm2.1.ssv: midterm2.1.test key.pl
 %.ssv: %.test key.pl
 	$(PUSH)
 
