@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.1.ssv 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -107,7 +107,6 @@ structure.handouts.pdf: structure.txt
 life_history.final.pdf: life_history.txt
 life_history.draft.pdf: life_history.txt
 life_history.handouts.pdf: life_history.txt
-
 
 ######################################################################
 
@@ -413,3 +412,4 @@ pushOut: $(Outputs) commit.time
 -include $(ms)/wrapR.mk
 -include $(ms)/newlatex.mk
 -include $(ms)/lect.mk
+
