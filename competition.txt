@@ -774,6 +774,8 @@ Growth rates
 
 	The maximum growth rate (for each species) is $r_0 = (b(0) - d(0))$:
 
+  CHANGE ML: make a simple model example. Landscape
+
 		ANS The net growth rate when crowding pressure is very low
 
 	The species with the better $r_0$ should do better in the short run
@@ -915,6 +917,8 @@ Competitive exclusion and biodiversity
 	Two species that use resources the same way cannot co-exist in a
 	stable environment in the long term due to their competitive
 	dynamics
+
+  CHANGE ML: Do people know what your examples are? For example, a picture of Joshua tree and catus? 
 
 	This statement can be justified mathematically, and it has
 	important implications for real populations \ldots\
