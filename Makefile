@@ -280,6 +280,11 @@ midterm2.orders: midterm2.1.order midterm2.2.order midterm2.3.order midterm2.4.o
 %.responses.csv: assign/%.responses.csv
 	perl -ne 'print if /^[0-9]{3}/' $< > $@
 
+clean_error:
+	git filter-branch --force --index-filter \
+	'git rm --cached --ignore-unmatch midterm2.scores.orig.csv' \
+	--prune-empty --tag-name-filter cat -- --all
+
 midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
