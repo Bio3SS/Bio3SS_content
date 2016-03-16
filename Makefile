@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.scores.orig.csv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -64,8 +64,6 @@ Sources += handouts.tmp
 
 ##################################################################
 
-Outputs += $(wildcard *.final.pdf *.asn.pdf)
-
 # Unit 0 (Intro)
 
 intro.draft.pdf: intro.txt
@@ -74,7 +72,7 @@ intro.handouts.pdf: intro.txt
 math.handouts.pdf: math.txt
 math.complete.pdf: math.txt
 
-Sources += weitz_full.pdf filledCircle.R
+Sources += weitz_full.pdf 
 
 ##################################################################
 
@@ -182,9 +180,9 @@ Sources += end.dmu
 
 ##### Versioning
 
-## I should move towards using 5 versions: four for the main test, and one for others (SAS, late finals, ...)
+## Now 5 versions: four for the main test, and one for others (SAS, late finals, ...)
 
-# Sources += $(wildcard *.pl)
+Sources += $(wildcard *.pl) $(wildcard *.R)
 
 ## Printing
 midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
@@ -195,9 +193,9 @@ midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midter
 	$(ZIP)
 
 ## Pushing
-midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.test.pdf.push midterm1.4.test.pdf.push
+midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
 
-midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pdf.push midterm1.4.key.pdf.push
+midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
 
 # These rules need to be explicit, because of conflict with bank rules. A pain, but no easy fix.
 midterm1.%.mc: midterm1.mc scramble.pl
@@ -215,7 +213,6 @@ midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 midterm2.%.mc: midterm2.mc scramble.pl
 	$(PUSHSTAR)
 
-midterm2.1.sa: midterm2.sa testselect.pl
 midterm2.%.sa: midterm2.sa testselect.pl
 	$(PUSHSTAR)
 
@@ -235,6 +232,8 @@ midterm2.%.exam.pdf: midterm2.front.pdf midterm2.%.test.pdf
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
 
+######################################################################
+
 #### Marking
 
 ## Hooks
@@ -252,8 +251,58 @@ midterm2.1.ssv: midterm2.1.test key.pl
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.csv %.2.csv %.3.csv %.4.csv %.5.csv
 	$(cat)
 
-##################################################################
+########################
 
+### CRIBBING
+
+%.R:
+	$(CP) assign/WorkingWiki-export/Tests/$@ .
+
+%.pl:
+	$(CP) assign/WorkingWiki-export/Tests/$@ .
+
+########################
+
+#### Marking and analyzing
+
+# Make a skeleton to track how questions are scrambled
+%.skeleton: %.test skeleton.pl
+	$(PUSH)
+
+# Make files showing the order for versions of a test
+midterm2.%.order: midterm2.skeleton scramble.pl
+	$(PUSHSTAR)
+
+midterm2.orders: midterm2.1.order midterm2.2.order midterm2.3.order midterm2.4.order midterm2.5.order orders.pl
+	$(PUSH)
+
+## Edit student responses from scantron, and compile into scores
+%.responses.csv: assign/%.responses.csv
+	perl -ne 'print if /^[0-9]{3}/' $< > $@
+
+Archive += midterm2.scores.orig.csv 
+midterm2.scores.orig.csv:
+	/bin/cp midterm2.scores.Rout.csv $@
+
+midterm2.scores.Rout.csv:
+%.scores.Rout: %.responses.csv %.orders %.ssv scores.R
+	$(run-R)
+
+## Compare our calculated scores with scores calculated by the Media folks
+%.media.csv: assign/%.media.csv
+	perl -ne 'print if /^[a-z]{3}/' $< > $@
+
+midterm2.scorecheck.Rout: scorecheck.R
+%.scorecheck.Rout: %.scores.Rout %.media.csv scorecheck.R
+	$(run-R)
+
+## Descramble and evaluate questions
+
+midterm2.descramble.Rout: descramble.R
+%.descramble.Rout: %.scores.Rout descramble.R
+	$(run-R)
+
+##################################################################
 
 # Project directories
 
@@ -389,6 +438,8 @@ Sources += asn.tmp
 	$(CP) $< assign
 
 ## Outputs branch; not worth it!
+
+Outputs += $(wildcard *.final.pdf *.asn.pdf)
 
 outputs.new: commit.time
 	git checkout -b outputs
