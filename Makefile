@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.scores.orig.csv 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.scores.update.Rout 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -244,11 +244,11 @@ midterm2.1.ssv: midterm2.1.test key.pl
 	$(PUSH)
 
 # Make a special answer key for scantron processing
-%.csv: %.ssv scantron.pl
+%.sc.csv: %.ssv scantron.pl
 	$(PUSH)
 
 # Combine a bunch of scantron keys into a file for the processors
-final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.csv %.2.csv %.3.csv %.4.csv %.5.csv
+final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
 	$(cat)
 
 ########################
@@ -285,11 +285,14 @@ clean_error:
 	'git rm --cached --ignore-unmatch midterm2.scores.orig.csv' \
 	--prune-empty --tag-name-filter cat -- --all
 
-midterm2.scores.orig.csv:
+assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
 midterm2.scores.Rout.csv:
 %.scores.Rout: %.responses.csv %.orders %.ssv scores.R
+	$(run-R)
+
+midterm2.scores.update.Rout: midterm2.scores.Rout.csv assign/midterm2.scores.orig.csv update.R
 	$(run-R)
 
 ## Compare our calculated scores with scores calculated by the Media folks
