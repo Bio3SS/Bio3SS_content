@@ -924,6 +924,8 @@ Competitive exclusion and biodiversity
 	important implications for real populations \ldots\
 	
 	\ldots but it must also break down 
+	
+	CHANGE ML: Make a poll here
 
 		ANS Species may not use resources in the same way
 
