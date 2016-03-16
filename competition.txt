@@ -516,6 +516,8 @@ Founder control
 
 			ANS Example: trees and grasses
 
+CHANGE CC: the order of the pictures doesn't fit with the order of the examples 
+
 ----------------------------------------------------------------------
 
 RSLIDE Founder control
@@ -590,6 +592,8 @@ Results of competition
 
 		ANS Founder effects, neutrality or coexistence
 
+CHANGE CC: perhaps add a poll to check that everybody is following 
+
 ----------------------------------------------------------------------
 
 SEC Population-level interactions
@@ -611,6 +615,8 @@ TSS Invasion theory
 		ANS Founder control occurs when neither species can invade the
 		other
 
+CHANGE CC: perhaps add some answers of the students that were interesting: successfull/unsuccessfull invasion, mating...
+
 ----------------------------------------------------------------------
 
 Allee effects
@@ -622,6 +628,8 @@ Allee effects
 
 		ANS With Allee effects a species that could do fine in a certain
 		situation may still not be able to ``invade" if it's rare
+
+CHANGE CC: Try to go slowly (you gave the solution before asking)
 
 ----------------------------------------------------------------------
 
@@ -679,6 +687,8 @@ Results of competition
 
 		ANS We expect that species to always win: dominance
 
+CHANGE CC: the table you drew on the board to summarize was helpful and will help students to remember
+
 ----------------------------------------------------------------------
 
 Measuring competition
@@ -718,6 +728,8 @@ Founder control
 		ANS Who gets there first
 
 		ANS Initial maximum growth rate
+
+CHANGE CC: Add: how they affect each other 
 
 ----------------------------------------------------------------------
 
