@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.scores.update.Rout 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.complete.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -112,7 +112,16 @@ life_history.handouts.pdf: life_history.txt
 
 competition.final.pdf: competition.txt
 competition.draft.pdf: competition.txt
+competition.complete.pdf: competition.txt
 competition.handouts.pdf: competition.txt
+
+##################################################################
+
+# Unit 6 (Exploitation)
+
+exploitation.final.pdf: exploitation.txt
+exploitation.draft.pdf: exploitation.txt
+exploitation.handouts.pdf: exploitation.txt
 
 ##################################################################
 

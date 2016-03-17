@@ -729,7 +729,9 @@ Founder control
 
 		ANS Initial maximum growth rate
 
-CHANGE CC: Add: how they affect each other 
+		ANS How strongly they affect each other 
+
+		CHANGE Think again about this list!
 
 ----------------------------------------------------------------------
 
@@ -774,7 +776,7 @@ Growth rates
 
 	The maximum growth rate (for each species) is $r_0 = (b(0) - d(0))$:
 
-  CHANGE ML: make a simple model example. Landscape
+	CHANGE ML: make a simple model example. Landscape
 
 		ANS The net growth rate when crowding pressure is very low
 
