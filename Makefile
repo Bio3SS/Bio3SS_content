@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.complete.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -260,18 +260,6 @@ midterm2.1.ssv: midterm2.1.test key.pl
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
 	$(cat)
 
-########################
-
-### CRIBBING
-
-%.R:
-	$(CP) assign/WorkingWiki-export/Tests/$@ .
-
-%.pl:
-	$(CP) assign/WorkingWiki-export/Tests/$@ .
-
-########################
-
 #### Marking and analyzing
 
 # Make a skeleton to track how questions are scrambled
@@ -401,6 +389,14 @@ competition/%: competition
 	touch $@
 competition: 
 	/bin/ln -s $(gitroot)/Competition_models $@
+
+## Exploitation models
+exploitation/%: exploitation
+	cd $< && $(MAKE) $*
+	touch $@
+
+exploitation: 
+	/bin/ln -s $(gitroot)/Exploitation_models $@
 
 ##################################################################
 
