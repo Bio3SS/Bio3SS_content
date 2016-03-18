@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.asn.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -404,6 +404,10 @@ exploitation:
 
 pg.asn.pdf: assign/pg.ques
 regulation.key.pdf: assign/regulation.ques
+
+## Interaction is an old assignment, no broken up into a very short (life history) assignment and a slightly longer (competition) assignment
+interaction.asn.pdf: assign/interaction.ques
+competition.asn.pdf: assign/competition.ques
 
 Sources += asn.tmp
 
