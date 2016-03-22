@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.final.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.curved.Rout 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -267,29 +267,40 @@ final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: 
 	$(PUSH)
 
 # Make files showing the order for versions of a test
+midterm1.%.order: midterm2.skeleton scramble.pl
+	$(PUSHSTAR)
+
 midterm2.%.order: midterm2.skeleton scramble.pl
 	$(PUSHSTAR)
 
-midterm2.orders: midterm2.1.order midterm2.2.order midterm2.3.order midterm2.4.order midterm2.5.order orders.pl
+midterm1.orders:
+midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.order midterm%.5.order orders.pl
 	$(PUSH)
 
-## Edit student responses from scantron, and compile into scores
+## Student responses from scantron
 %.responses.csv: assign/%.responses.csv
 	perl -ne 'print if /^[0-9]{3}/' $< > $@
 
-clean_error:
-	git filter-branch --force --index-filter \
-	'git rm --cached --ignore-unmatch midterm2.scores.orig.csv' \
-	--prune-empty --tag-name-filter cat -- --all
-
+## Archive
 assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
+## Compile scores
 midterm2.scores.Rout.csv:
 %.scores.Rout: %.responses.csv %.orders %.ssv scores.R
 	$(run-R)
 
-midterm2.scores.update.Rout: midterm2.scores.Rout.csv assign/midterm2.scores.orig.csv update.R
+######### Error correction
+## Bonus files
+midterm2.mortfix.bonus.Rout: midterm2.responses.csv midterm2.orders mortfix.ssv scores.R
+midterm2.%.bonus.Rout: midterm2.responses.csv midterm2.orders %.ssv scores.R
+	$(run-R)
+
+## Combining
+midterm2.fixed.Rout: midterm2.scores.Rout.csv midterm2.mortfix.bonus.Rout.csv midterm2.nonsense.bonus.Rout.csv addscores.R
+	$(run-R)
+
+midterm2.curved.Rout: midterm2.fixed.Rout curve.R
 	$(run-R)
 
 ## Compare our calculated scores with scores calculated by the Media folks
