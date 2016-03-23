@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.curved.Rout 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -418,7 +418,7 @@ regulation.key.pdf: assign/regulation.ques
 
 ## Interaction is an old assignment, no broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
-competition.asn.pdf: assign/competition.ques
+competition.key.pdf: assign/competition.ques
 
 Sources += asn.tmp
 
