@@ -83,7 +83,7 @@ EC
 
 TSEC Single-epidemic model
 
-HFIG 0.16 boxes/sir.np.three.pdf
+WIDEFIG boxes/sir.np.three.pdf
 
 	Susceptible $\to$ Infectious $\to$ Recovered
 
@@ -91,7 +91,7 @@ HFIG 0.16 boxes/sir.np.three.pdf
 
 Transition rates
 
-HFIG 0.16 boxes/sir.three.pdf
+WIDEFIG boxes/sir.three.pdf
 
 	What factors govern movement through the boxes?
 
@@ -240,8 +240,6 @@ BC
 
 		ANS People might lose immunity
 
-			COMMENT Changed!
-
 		ANS Births and deaths
 
 NC
@@ -260,13 +258,13 @@ FIG dd/ewmeas.Rout.pdf
 
 Closing the circle
 
-HFIG 0.16 boxes/sirs.four.pdf
+WIDEFIG boxes/sirs.four.pdf
 
 ----------------------------------------------------------------------
 
 Births and deaths
 
-HFIG 0.16 boxes/sirbd.four.pdf
+WIDEFIG boxes/sirbd.four.pdf
 
 ----------------------------------------------------------------------
 
@@ -303,8 +301,6 @@ TSEC Reproductive numbers and risk
 	At equilibrium, the proportion of people who are susceptible to
 	disease should be approximately $S/N = 1/\Ro$
 
-		COMMENT Changed!
-
 	Proportion ``affected'' (infectious or immune) should be
 	approximately $V/N = 1-1/\Ro$
 
@@ -316,8 +312,6 @@ TSEC Reproductive numbers and risk
 Reproductive numbers and risk
 
 DOUBLEFIG sims/fs.Rout-1.pdf sims/fs.Rout-0.pdf
-
-COMMENT Changed the axis labels
 
 ----------------------------------------------------------------------
 
