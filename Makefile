@@ -52,7 +52,7 @@ Sources += beamer.tmp
 	$(PUSH)
 
 Sources += outline.tmp
-%.outline.tex: %.txt outline.tmp outline.lect.fmt talk/lect.pl
+%.outline.tex: %.txt outline.tmp lect/outline.fmt talk/lect.pl
 	$(PUSH)
 
 Sources += handouts.tmp
@@ -127,6 +127,7 @@ exploitation.handouts.pdf: exploitation.txt
 
 # Unit 6 (Disease)
 
+disease.outline.pdf: disease.txt
 disease.final.pdf: disease.txt
 disease.draft.pdf: disease.txt
 disease.handouts.pdf: disease.txt
@@ -438,6 +439,13 @@ sims/%: sims
 
 sims: 
 	/bin/ln -s $(gitroot)/SIR_simulations $@
+
+ebola/%: ebola
+	cd $< && $(MAKE) $*
+	touch $@
+
+ebola: 
+	/bin/ln -s $(gitroot)/WA_Ebola_Outbreak $@
 
 ##################################################################
 

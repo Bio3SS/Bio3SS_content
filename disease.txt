@@ -46,10 +46,23 @@ Disease agents
 
 ----------------------------------------------------------------------
 
+Microparasites
+
+	For infections with small pathogens (viruses and bacteria), we don't
+	attempt to count pathogens, but instead divide disease into stages
+
+		Latently infected
+
+		Productively infected
+
+		Recovered
+
+----------------------------------------------------------------------
+
 Microparasite models
 
-	Instead of modeling the number of hosts and the number of pathogens,
-	we measure number of people in various \textbf{states}:
+	We model microparasites by counting the number of hosts in various
+	\textbf{states}:
 
 		\textbf{Susceptible} individuals can become infected
 
@@ -58,8 +71,11 @@ Microparasite models
 		\textbf{Resistant} individuals are not infected and cannot become
 		infected
 
-----------------------------------------------------------------------
+	More complicated models might included other states, such as
+	latently infected hosts who are infected with the pathogen but
+	cannot yet infect others
 
+----------------------------------------------------------------------
 
 Models as tools
 
@@ -81,11 +97,51 @@ EC
 
 ----------------------------------------------------------------------
 
+TSEC Rate of spread
+
+	For many diseases, especially new diseases, we can \emph{observe}
+	and \emph{estimate} $r$
+
+		ANS the exponential rate of spread
+
+	Want to know what factors contribute to that, and how it relates to
+	\R
+
+		ANS number of new cases per case
+
+----------------------------------------------------------------------
+
+Example: the West African Ebola epidemic
+
+DOUBLEPDF ebola/liberia150429.npc.tsplot.Rout
+
+----------------------------------------------------------------------
+
+Generation intervals
+
+BC
+
+	Analogous to a life table
+
+	Researchers try to estimate the \emph{proportion} of transmission
+	that happens for different \textbf{ages of infection}
+
+	How long from the time you are \emph{infected} to the time you
+	\emph{infect someone else}?
+
+NC
+
+EC
+
+----------------------------------------------------------------------
+
 TSEC Single-epidemic model
 
 WIDEFIG boxes/sir.np.three.pdf
 
 	Susceptible $\to$ Infectious $\to$ Recovered
+
+	We also use $N$ to mean the total population
 
 ----------------------------------------------------------------------
 
@@ -107,7 +163,7 @@ BC
 
 	POLL https://www.polleverywhere.com/free_text_polls/wnvlD2eCauyM0tV What happens in the long term if we introduce an infectious individual?
 
-		ANS There is (usually) an \textbf{epidemic} -- an outbreak of
+		ANS The \emph{may be} an \textbf{epidemic} -- an outbreak of
 		disease
 
 		ANS Disease burns out
@@ -124,6 +180,19 @@ EC
 
 ----------------------------------------------------------------------
 
+Interpreting
+
+	Why might there not be an epidemic?
+
+		ANS Demographic stochasticity: if we only start with one
+		individual, we expect an element of chance
+
+	Why doesn't everyone get infected?
+
+		NOANS
+
+----------------------------------------------------------------------
+
 Implementing the model
 
 BC
@@ -136,6 +205,23 @@ BC
 		$$\frac{dI}{dt}  = \beta \frac{SI}{N}- \gamma I $$
 
 		$$\frac{dR}{dt}  = \gamma I $$
+
+NC
+
+SIDEFIG boxes/sir.three.pdf
+
+EC
+
+
+----------------------------------------------------------------------
+
+Units
+
+BC
+
+	$S, I, R, N$: [people] or [people/ha]
+
+	$\beta, \gamma$: [1/time]
 
 NC
 
@@ -212,6 +298,11 @@ Effective reproductive number
 
 		ANS At equilibrium, $S/N = 1/\Ro$
 
+	Why doesn't everyone get infected?
+
+		ANS Because when $\Reff<1$, the disease dies out on its own (each
+		case causes less than 1 new case)
+
 ----------------------------------------------------------------------
 
 Epidemic size
@@ -285,14 +376,37 @@ Tendency to oscillate
 			System reaches an \textbf{endemic} equilibrium -- disease
 			persists
 
-	These damped oscillations can interact with other factors to produce
-	sustained cycles
+----------------------------------------------------------------------
 
-		Weather
+Source of oscillations
 
-		School terms
+	Similar to predator-prey systems
 
-		Demographic stochasticity
+	What happens if we start with too many susceptibles?
+
+		ANS There will be a big epidemic
+
+		ANS \ldots then a very low number of susceptibles
+
+		ANS \ldots then a very low level of diseases
+
+		ANS \ldots then an increase in the number of susceptibles
+
+----------------------------------------------------------------------
+
+Persistent oscillations
+
+	If oscillations tend to be damped in simple models, why do they
+	persist in real life?
+
+		ANS Weather
+
+		ANS School terms
+
+		ANS Demographic stochasticity
+
+		ANS Behaviour: if people are scared of the disease, it goes away,
+		and then they stop being scared
 
 ----------------------------------------------------------------------
 
