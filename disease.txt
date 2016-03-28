@@ -1,0 +1,372 @@
+UNIT 7: Infectious disease
+
+----------------------------------------------------------------------
+
+SEC Introduction
+
+----------------------------------------------------------------------
+
+Infectious disease
+
+	Extremely common
+
+	Huge impacts on ecological interactions
+
+	A form of exploitation, but doesn't fit well into our previous
+	modeling framework
+
+		How many people are there?
+
+		How many influenza viruses are there?
+
+		How do they find each other?
+
+----------------------------------------------------------------------
+
+Disease agents
+
+	POLL https://www.polleverywhere.com/free_text_polls/Bzr6gpzwQ5k1xR9 Can you name an infectious agent that causes disease in humans?
+
+	Disease agents vary tremendously:
+
+		Most \textbf{viruses} have just a handful of genes that allow
+		them to hijack a cell and get it to make virus copies
+
+			ANS influenza virus, Ebola virus, HIV, measles
+
+		\textbf{Bacteria} are independent, free-living cells with
+		hundreds or thousands of chemical pathways
+
+			ANS Tuberculosis, anthrax, pertussis
+
+		\textbf{Eukaryotic} pathogens are nucleated cells who are more
+		closely related to you than they are to bacteria
+
+			ANS Malaria, various worms
+
+----------------------------------------------------------------------
+
+Microparasite models
+
+	Instead of modeling the number of hosts and the number of pathogens,
+	we measure number of people in various \textbf{states}:
+
+		\textbf{Susceptible} individuals can become infected
+
+		\textbf{Infectious} individuals are infected and can infect others
+
+		\textbf{Resistant} individuals are not infected and cannot become
+		infected
+
+----------------------------------------------------------------------
+
+
+Models as tools
+
+BC
+
+	Models are the tools that we use to connect scales:
+
+		individuals to populations
+		
+		single actions to trends through time
+
+NC
+
+SIDEFIG images/trans.jpg
+
+SIDEFIG dd/ewmeas.Rout.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+TSEC Single-epidemic model
+
+HFIG 0.16 boxes/sir.np.three.pdf
+
+	Susceptible $\to$ Infectious $\to$ Recovered
+
+----------------------------------------------------------------------
+
+Transition rates
+
+HFIG 0.16 boxes/sir.three.pdf
+
+	What factors govern movement through the boxes?
+
+		People get better independently
+
+		People get infected by infectious people
+
+----------------------------------------------------------------------
+
+Conceptual modeling
+
+BC
+
+	POLL https://www.polleverywhere.com/free_text_polls/wnvlD2eCauyM0tV What happens in the long term if we introduce an infectious individual?
+
+		ANS There is (usually) an \textbf{epidemic} -- an outbreak of
+		disease
+
+		ANS Disease burns out
+
+		ANS Everyone winds up either recovered or susceptible
+
+		ANS Not everyone gets infected!
+
+NC
+
+SIDEFIG boxes/sir.three.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Implementing the model
+
+BC
+
+	The {simplest} way to implement this conceptual
+	model is with differential equations:
+
+		$$\frac{dS}{dt}  =  - \beta \frac{SI}{N} $$
+
+		$$\frac{dI}{dt}  = \beta \frac{SI}{N}- \gamma I $$
+
+		$$\frac{dR}{dt}  = \gamma I $$
+
+NC
+
+SIDEFIG boxes/sir.three.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+A sample simulation
+
+DOUBLEPDF sims/burnout.plots.Rout
+
+----------------------------------------------------------------------
+
+Parameters
+
+	Infectious people recover at \emph{per capita}
+	rate $\gamma$ 
+
+		Total recovery rate is $\gamma I$
+
+		Mean time infectious is $D = 1/\gamma$
+
+	Susceptible people have ``potentially effective'' contacts at rate
+	$\beta$
+
+		These are contacts that would lead to infection if the person
+		contacted is infectious
+
+		Total infection rate is $\beta I/N$, because $I/N$ is the
+		proportion of the population infectious
+
+----------------------------------------------------------------------
+
+Basic reproductive number
+
+	POLL https://www.polleverywhere.com/free_text_polls/u2wFujyEqi0x97i What \emph{unitless} parameter can you make from the model above?
+
+		ANS $\Ro = \beta D = \beta/\gamma$ is the \textbf{basic
+		reproductive number}
+
+		ANS The \emph{potential} number of infections caused by an
+		average infectious individual
+
+			ANS That is: the number they would cause on average if
+			everyone else were susceptible
+
+----------------------------------------------------------------------
+
+Basic reproductive number implications
+
+	POLL https://www.polleverywhere.com/free_text_polls/mgMP9u3qyXnvufa What happens early in the epidemic if $\Ro>1$?
+
+		ANS Number of infected individuals grows exponentially
+
+	What happens early in the epidemic if $\Ro<1$?
+
+		ANS Number of infected individuals cannot grow (disease cannot
+		invade)
+
+----------------------------------------------------------------------
+
+Effective reproductive number
+
+	The effective reproductive number gives the number of new infections
+	per infectious individual in a partially susceptible population:
+
+		ANS $\Reff = \Ro S/N$
+
+	What do we expect $\Reff$ to be at equilibrium?
+
+		ANS 1. Each case causes on average one new case, at equilibrium.
+
+		ANS At equilibrium, $S/N = 1/\Ro$
+
+----------------------------------------------------------------------
+
+Epidemic size
+
+	In this model, the epidemic always burns out
+
+		No source of new susceptibles
+
+	Epidemic size is determined by:
+
+		ANS \Ro -- larger \Ro\ leads to a bigger epidemic
+
+		ANS The number of susceptibles at the beginning of the epidemic
+
+			ANS More susceptibles means a bigger epidemic -- and therefore
+			fewer susceptibles at the end
+
+----------------------------------------------------------------------
+
+TSEC Recurrent epidemic models
+
+BC
+
+	POLL https://www.polleverywhere.com/free_text_polls/sEYAe0XNBHSFoYI If epidemics tend to burn out, why do we often see repeated
+	epidemics?
+
+		ANS People might lose immunity
+
+			COMMENT Changed!
+
+		ANS Births and deaths
+
+NC
+
+SIDEFIG dd/ewmeas.Rout.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Recurrent epidemics
+
+FIG dd/ewmeas.Rout.pdf
+
+----------------------------------------------------------------------
+
+Closing the circle
+
+HFIG 0.16 boxes/sirs.four.pdf
+
+----------------------------------------------------------------------
+
+Births and deaths
+
+HFIG 0.16 boxes/sirbd.four.pdf
+
+----------------------------------------------------------------------
+
+Tendency to oscillate
+
+DOUBLEPDF sims/recurrent.plots.Rout
+
+----------------------------------------------------------------------
+
+Tendency to oscillate
+
+	``Closed-loop'' SIR models (ie., with births or loss of immunity):
+
+		Tend to oscillate
+
+		Oscillations tend to be damped
+
+			System reaches an \textbf{endemic} equilibrium -- disease
+			persists
+
+	These damped oscillations can interact with other factors to produce
+	sustained cycles
+
+		Weather
+
+		School terms
+
+		Demographic stochasticity
+
+----------------------------------------------------------------------
+
+TSEC Reproductive numbers and risk
+
+	At equilibrium, the proportion of people who are susceptible to
+	disease should be approximately $S/N = 1/\Ro$
+
+		COMMENT Changed!
+
+	Proportion ``affected'' (infectious or immune) should be
+	approximately $V/N = 1-1/\Ro$
+
+	If you have a single, fast epidemic, the size is also predicted by
+	\Ro.
+
+----------------------------------------------------------------------
+
+Reproductive numbers and risk
+
+DOUBLEFIG sims/fs.Rout-1.pdf sims/fs.Rout-0.pdf
+
+COMMENT Changed the axis labels
+
+----------------------------------------------------------------------
+
+Examples
+
+	Ronald Ross predicted 100 years ago that reducing mosquito densities
+	by a factor of 5 or so would \emph{eliminate} malaria
+
+	Gradual disappearance of polio, typhoid, etc., without risk factors
+	going to zero
+
+	Eradication of smallpox!
+
+----------------------------------------------------------------------
+
+Persistence of infectious disease
+
+	Why have infectious diseases persisted?
+
+		The pathogens \emph{evolve}
+
+		Human populations are \textbf{heterogeneous}
+
+			People differ in: nutrition, exposure, access to care
+
+----------------------------------------------------------------------
+
+Heterogeneity and persistence
+
+	Heterogeneity \emph{increases} \Ro
+
+		When disease is rare, it is concentrated in the most vulnerable
+		populations 
+
+			Cases per case is high	
+
+			Elimination is harder
+
+	Marginal populations
+
+		Heterogeneity could make it easier to concentrate on the most
+		vulnerable populations and eliminate disease
+
+		Humans rarely do this, however: the populations that need the
+		most support typically have the least access
+
+----------------------------------------------------------------------
+
+CSLIDE Reproductive numbers and risk
+
+DOUBLEFIG sims/fs.Rout-1.pdf sims/fs.Rout-0.pdf
+

@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: disease.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -122,6 +122,14 @@ competition.handouts.pdf: competition.txt
 exploitation.final.pdf: exploitation.txt
 exploitation.draft.pdf: exploitation.txt
 exploitation.handouts.pdf: exploitation.txt
+
+##################################################################
+
+# Unit 6 (Disease)
+
+disease.final.pdf: disease.txt
+disease.draft.pdf: disease.txt
+disease.handouts.pdf: disease.txt
 
 ##################################################################
 
@@ -408,6 +416,28 @@ exploitation/%: exploitation
 
 exploitation: 
 	/bin/ln -s $(gitroot)/Exploitation_models $@
+
+### Disease stuff (hard to organize)
+boxes/%: boxes
+	cd $< && $(MAKE) $*
+	touch $@
+
+boxes: 
+	/bin/ln -s $(gitroot)/SIR_model_family $@
+
+dd/%: dd
+	cd $< && $(MAKE) $*
+	touch $@
+
+dd: 
+	/bin/ln -s $(gitroot)/Disease_data $@
+
+sims/%: sims
+	cd $< && $(MAKE) $*
+	touch $@
+
+sims: 
+	/bin/ln -s $(gitroot)/SIR_simulations $@
 
 ##################################################################
 
