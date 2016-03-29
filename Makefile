@@ -252,6 +252,12 @@ midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midte
 
 ######################################################################
 
+# Substance (belongs elsewhere)
+
+ebola_time = steps.R gamHist.R # Copied from academicWW
+
+######################################################################
+
 #### Marking
 
 ## Hooks

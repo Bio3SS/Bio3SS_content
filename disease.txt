@@ -46,6 +46,24 @@ Disease agents
 
 ----------------------------------------------------------------------
 
+SSLIDE Influenza virus
+
+FIG images/flu_virus.jpg
+
+----------------------------------------------------------------------
+
+SSLIDE Tuberculosis bacilli
+
+FIG images/tb.jpg
+
+----------------------------------------------------------------------
+
+SSLIDE Malaria sporozoite
+
+FIG images/sporozoite.jpg
+
+----------------------------------------------------------------------
+
 Microparasites
 
 	For infections with small pathogens (viruses and bacteria), we don't
@@ -111,6 +129,20 @@ TSEC Rate of spread
 
 ----------------------------------------------------------------------
 
+Basic reproductive number
+
+	People in the disease field love to talk specifically about \Ro
+
+	But they don't always mean the same thing:
+
+		Maximum value of \R in a population
+
+		Theoretical value in a naive population without control efforts
+
+		Actual value before an epidemic
+
+----------------------------------------------------------------------
+
 Example: the West African Ebola epidemic
 
 DOUBLEPDF ebola/liberia150429.npc.tsplot.Rout
@@ -121,17 +153,88 @@ Generation intervals
 
 BC
 
-	Analogous to a life table
-
 	Researchers try to estimate the \emph{proportion} of transmission
 	that happens for different \textbf{ages of infection}
 
 	How long from the time you are \emph{infected} to the time you
 	\emph{infect someone else}?
 
+	Analogous to a life table
+
+	The effective generation time $\hat G$ has units of time
+
 NC
 
+SIDEFIG gamHist.Rout-4.pdf
+
 EC
+
+----------------------------------------------------------------------
+
+Generation intervals
+
+DOUBLEFIG gamHist.Rout-4.pdf gamHist.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Speed and risk
+
+BC
+
+	Which is more dangerous, a fast disease, or a slow disease?
+
+		How are we measuring speed?
+
+		How are we measuring danger?
+
+		\emph{What do we already know?}
+
+NC
+
+SIDEFIG gamHist.Rout-4.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+SSLIDE Fighting Ebola
+
+FIG images/burial_team.jpg
+
+----------------------------------------------------------------------
+
+Generation time and risk
+
+	If we know $\R$, what does the generation time tell us about $r$?
+
+		ANS The faster the generations (small $\hat G$), the faster the
+		exponential growth (large $r$)
+
+	If we know $r$, what does the generation time tell us about $\R$?
+
+		ANS The faster the generations (small $\hat G$), the  the
+		\emph{smaller} the strength of the epidemic (small reproductive
+		number $\R$)
+
+	$\R = \exp(r \hat G)$
+
+----------------------------------------------------------------------
+
+RSLIDE Generation time and risk
+
+FIG steps.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Generation time and risk
+
+FIG steps.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Generation time and risk
+
+DOUBLEPDF steps.Rout
 
 ----------------------------------------------------------------------
 
@@ -231,9 +334,15 @@ EC
 
 ----------------------------------------------------------------------
 
-A sample simulation
+RSLIDE Simulating the model
 
 DOUBLEPDF sims/burnout.plots.Rout
+
+----------------------------------------------------------------------
+
+Simulating the model
+
+DOUBLEFIG sims/burnouts.plots.Rout-0.pdf sims/burnouts.plots.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
@@ -305,7 +414,7 @@ Effective reproductive number
 
 ----------------------------------------------------------------------
 
-Epidemic size
+TSS Epidemic size
 
 	In this model, the epidemic always burns out
 
@@ -322,11 +431,45 @@ Epidemic size
 
 ----------------------------------------------------------------------
 
+Ebola example
+
+BC
+
+	In September, the US CDC predicted ``as many as'' 1.5 million Ebola
+	cases in Liberia
+
+	What happened?
+
+NC
+
+SIDEFIG ebola/liberia150429.npc.tsplot.Rout
+
+EC
+
+----------------------------------------------------------------------
+
+What limits epidemics?
+
+	POLL XXX What limits epidemics in our simple models?
+
+		ANS Depletion of susceptibles
+
+	POLL XXX What else limits epidemics in real life?
+
+		ANS Interventions
+
+		ANS Behaviour change
+
+		ANS Heterogeneity (differences between hosts, locations, etc.)
+
+----------------------------------------------------------------------
+
 TSEC Recurrent epidemic models
 
 BC
 
-	POLL https://www.polleverywhere.com/free_text_polls/sEYAe0XNBHSFoYI If epidemics tend to burn out, why do we often see repeated
+	POLL https://www.polleverywhere.com/free_text_polls/sEYAe0XNBHSFoYI
+	If epidemics tend to burn out, why do we often see repeated
 	epidemics?
 
 		ANS People might lose immunity
@@ -441,6 +584,31 @@ Examples
 
 ----------------------------------------------------------------------
 
+Threshold for elimination
+
+	What proportion of the population should be vaccinated to eliminate
+	a disease?
+
+		ANS Transmission should be reduced by a factor of $\R$, so a
+		fraction $1=1/\R$ should be vaccinated
+
+----------------------------------------------------------------------
+
+Examples: 
+
+	Polio has an $\Ro$ of about 5. What proportion of the population
+	should be vaccinated to eliminate polio?
+
+		ANS 1-1/5 = 80%
+
+	Measles has an $\Ro$ of about 20. What proportion of the population
+	should be vaccinated to eliminate measles?
+
+		ANS 1-1/20 = 95%
+
+----------------------------------------------------------------------
+
+
 Persistence of infectious disease
 
 	Why have infectious diseases persisted?
@@ -471,10 +639,3 @@ Heterogeneity and persistence
 
 		Humans rarely do this, however: the populations that need the
 		most support typically have the least access
-
-----------------------------------------------------------------------
-
-CSLIDE Reproductive numbers and risk
-
-DOUBLEFIG sims/fs.Rout-1.pdf sims/fs.Rout-0.pdf
-
