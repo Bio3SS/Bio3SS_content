@@ -127,6 +127,8 @@ TSEC Rate of spread
 
 		ANS number of new cases per case
 
+CHANGE CC: Add a poll for r/R to check if it is ok for everyone?
+
 ----------------------------------------------------------------------
 
 Basic reproductive number
@@ -168,6 +170,8 @@ NC
 SIDEFIG gamHist.Rout-4.pdf
 
 EC
+
+CHANGE CC: make the pictures with more differences? We can say for which one we have a higher variability but not which one shows the highest density at the beginning
 
 ----------------------------------------------------------------------
 
