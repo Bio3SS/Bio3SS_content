@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: disease.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.complete.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -122,6 +122,7 @@ competition.handouts.pdf: competition.txt
 exploitation.final.pdf: exploitation.txt
 exploitation.draft.pdf: exploitation.txt
 exploitation.handouts.pdf: exploitation.txt
+exploitation.complete.pdf: exploitation.txt
 
 ##################################################################
 
