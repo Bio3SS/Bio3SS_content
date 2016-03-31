@@ -304,6 +304,8 @@ Implementing the model
 
 BC
 
+  CHANGE MK: Probably useful to describe beta before moving too far
+
 	The {simplest} way to implement this conceptual
 	model is with differential equations:
 
@@ -333,6 +335,8 @@ BC
 NC
 
 SIDEFIG boxes/sir.three.pdf
+
+  CHANGE MK: Writing on the board was definitely very helpful here. May consider doing it a bit more often in units before this and exploitation
 
 EC
 
@@ -406,6 +410,8 @@ Effective reproductive number
 		ANS $\Reff = \Ro S/N$
 
 	What do we expect $\Reff$ to be at equilibrium?
+	
+  CHANGE MK: I think it would be useful to spend en extra few seconds emphasizing that the SIR model on the board wont reach an equilibrium with I > 0
 
 		ANS 1. Each case causes on average one new case, at equilibrium.
 
