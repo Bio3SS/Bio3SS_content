@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.complete.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: expl.asn.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -458,12 +458,16 @@ ebola:
 
 ## Assignments
 
+##
 pg.asn.pdf: assign/pg.ques
+
 regulation.key.pdf: assign/regulation.ques
 
-## Interaction is an old assignment, no broken up into a very short (life history) assignment and a slightly longer (competition) assignment
+## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
 competition.key.pdf: assign/competition.ques
+
+expl.asn.pdf: assign/expl.ques
 
 Sources += asn.tmp
 

@@ -411,7 +411,7 @@ Effective reproductive number
 
 	What do we expect $\Reff$ to be at equilibrium?
 	
-  CHANGE MK: I think it would be useful to spend en extra few seconds emphasizing that the SIR model on the board wont reach an equilibrium with I > 0
+	CHANGE MK: I think it would be useful to spend en extra few seconds emphasizing that the SIR model on the board wont reach an equilibrium with I > 0
 
 		ANS 1. Each case causes on average one new case, at equilibrium.
 
