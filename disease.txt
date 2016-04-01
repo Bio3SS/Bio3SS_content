@@ -445,6 +445,8 @@ Ebola example
 
 BC
 
+  CHANGE MK: Maybe put this after the next slide and before "Recurrent epidemic models"
+
 	In September, the US CDC predicted ``as many as'' 1.5 million Ebola
 	cases in Liberia
 
@@ -541,13 +543,15 @@ Source of oscillations
 
 		ANS \ldots then a very low number of susceptibles
 
-		ANS \ldots then a very low level of diseases
+		ANS \ldots then a very low level of disease
 
 		ANS \ldots then an increase in the number of susceptibles
 
 ----------------------------------------------------------------------
 
 Persistent oscillations
+
+  CHANGE MK: Graph here of measles so you dont have to scroll back and forth
 
 	If oscillations tend to be damped in simple models, why do they
 	persist in real life?
