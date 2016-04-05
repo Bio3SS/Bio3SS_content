@@ -584,6 +584,8 @@ Reproductive numbers and risk
 
 DOUBLEFIG sims/fs.Rout-1.pdf sims/fs.Rout-0.pdf
 
+CHANGE CC: Go slower when you draw the plots on the board: V/N vs R0 and I vs S (for the last one also explain more what are the loops)
+
 ----------------------------------------------------------------------
 
 Examples
@@ -606,6 +608,8 @@ Threshold for elimination
 		ANS Transmission should be reduced by a factor of $\R$, so a
 		fraction $1=1/\R$ should be vaccinated
 
+CHANGE CC: change "$1=1/\R$" by "$1-1/\R$"
+
 ----------------------------------------------------------------------
 
 Examples: 
@@ -620,6 +624,9 @@ Examples:
 
 		ANS 1-1/20 = 95%
 
+CHANGE CC: You made the 1st question as a poll
+CHANGE CC: better not to use "=" because "at least"
+
 ----------------------------------------------------------------------
 
 
@@ -632,6 +639,8 @@ Persistence of infectious disease
 		Human populations are \textbf{heterogeneous}
 
 			People differ in: nutrition, exposure, access to care
+
+CHANGE CC: Add "people choose not to vaccine their babies"
 
 ----------------------------------------------------------------------
 
