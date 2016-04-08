@@ -147,7 +147,7 @@ Basic reproductive number
 
 Example: the West African Ebola epidemic
 
-DOUBLEPDF ebola/liberia150429.npc.tsplot.Rout
+DOUBLEPDF ebola/liberia.npc.tsplot.Rout
 
 ----------------------------------------------------------------------
 
@@ -454,7 +454,7 @@ BC
 
 NC
 
-SIDEFIG ebola/liberia150429.npc.tsplot.Rout
+SIDEFIG ebola/liberia.npc.tsplot.Rout
 
 EC
 
