@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: expl.asn.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.bank.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -167,6 +167,10 @@ midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank
 
 midterm2.bank.key.pdf:
 midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank
+	$(cat)
+
+final.bank.key.pdf:
+final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank assign/comp.bank assign/pred.bank assign/disease.bank
 	$(cat)
 
 # Select the multiple choice part of a test
