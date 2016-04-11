@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.bank.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.ssv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -158,6 +158,17 @@ null.tmp:
 
 # Look at test banks one at a time (use unit names)
 
+%.bank: assign/%.bank
+	$(copy)
+
+linear.bank.key.pdf: assign/linear.bank
+nonlinear.bank.key.pdf: assign/nonlinear.bank
+structure.bank.key.pdf: assign/structure.bank
+life_history.bank.key.pdf: assign/life_history.bank
+comp.bank.key.pdf: assign/comp.bank
+pred.bank.key.pdf: assign/pred.bank
+disease.bank.key.pdf: assign/disease.bank
+
 # Make combined banks for each test
 midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank 
 	$(cat)
@@ -200,6 +211,10 @@ Sources += end.dmu
 ### Combine mc and sa to make the real test
 %.test: %.mc end.dmu %.sa
 	$(cat)
+
+final.key.pdf:
+final.test: final.mc
+	$(copy)
 
 ##### Versioning
 
@@ -271,6 +286,8 @@ ebola_time = steps.R gamHist.R # Copied from academicWW
 midterm2.1.ssv: midterm2.1.test key.pl
 %.ssv: %.test key.pl
 	$(PUSH)
+
+final.ssv:
 
 # Make a special answer key for scantron processing
 %.sc.csv: %.ssv scantron.pl
