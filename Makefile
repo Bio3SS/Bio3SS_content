@@ -10,6 +10,8 @@ test: intro.draft.tex.deps
 
 ##################################################################
 
+Sources += exam.tmp final_texcover.tex
+
 # make files
 
 Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
