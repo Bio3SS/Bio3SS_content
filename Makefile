@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.ssv 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.1.final.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -248,7 +248,13 @@ midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
+final.%.exam.pdf: final.front.pdf final.%.pdf
+	$(pdfcat)
+
 midterm2.%.mc: midterm2.mc scramble.pl
+	$(PUSHSTAR)
+
+final.%.test: final.mc scramble.pl
 	$(PUSHSTAR)
 
 midterm2.%.sa: midterm2.sa testselect.pl
@@ -259,6 +265,10 @@ midterm2.%.exam.pdf: midterm2.front.pdf midterm2.%.test.pdf
 
 ### Process a test into different outputs
 %.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
+	$(PUSH)
+
+final.1.final.pdf: exam.tmp 
+%.final.tex: %.test exam.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
 %.key.tex: %.test test.tmp key.test.fmt talk/lect.pl
