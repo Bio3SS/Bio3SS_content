@@ -3,14 +3,14 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.1.final.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.zip 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
 
 ##################################################################
 
-Sources += exam.tmp final_texcover.tex
+Sources += exam.tmp final_texcover.tex scantron.jpg
 
 # make files
 
@@ -230,6 +230,9 @@ midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midter
 
 ## Printing
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
+	$(ZIP)
+
+final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
 
 ## Pushing
