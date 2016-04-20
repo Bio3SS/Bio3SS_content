@@ -2,6 +2,8 @@ library(dplyr)
 
 maxScore <- 15
 
+tot <- read.csv(input_files[[1]])
+
 summary(tot)
 
 tot <- (tot 

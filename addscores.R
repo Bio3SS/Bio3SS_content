@@ -9,3 +9,4 @@ for (l in input_files){
 }
 
 print(mean(tot$score))
+write.csv(tot, csvname)

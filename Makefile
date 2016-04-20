@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.zip 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.curved.Rout 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -337,10 +337,16 @@ midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.o
 assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
+## Recorded version
+midterm2.pv.Rout: grades/ta.csv midterm2.pv.R
+
 ## Compile scores
 midterm2.scores.Rout.csv:
-%.scores.Rout: %.responses.csv %.orders %.ssv scores.R
+midterm2.scores.Rout: scores.R
+%.scores.Rout: %.pv.Rout %.responses.csv %.orders %.ssv scores.R
 	$(run-R)
+
+# newscores.R is not working yet; tries to merge in manually entered version numbers
 
 ######### Error correction
 ## Bonus files
@@ -352,7 +358,12 @@ midterm2.%.bonus.Rout: midterm2.responses.csv midterm2.orders %.ssv scores.R
 midterm2.fixed.Rout: midterm2.scores.Rout.csv midterm2.mortfix.bonus.Rout.csv midterm2.nonsense.bonus.Rout.csv addscores.R
 	$(run-R)
 
-midterm2.curved.Rout: midterm2.fixed.Rout curve.R
+### A bunch of pipeline problems due to my addressing the bubbling problems too late. Did not manually check versions for these people, and did not figure out what's going on with the scores.R
+
+Sources += midterm2.hand.csv
+
+midterm2.curved.Rout.csv: 
+midterm2.curved.Rout: midterm2.hand.csv curve.R
 	$(run-R)
 
 ## Compare our calculated scores with scores calculated by the Media folks
@@ -381,6 +392,14 @@ assign/%: assign
 assign:
 	cd $(gitroot) && $(MAKE) Assignments
 	/bin/ln -s $(gitroot)/Assignments $@
+
+# Grades directory 
+grades/%: grades
+	cd $< && $(MAKE) $*
+	touch $@
+
+grades:
+	/bin/ln -s $(gitroot)/Grading_scripts $@
 
 # Time series plots
 ts/%: ts
