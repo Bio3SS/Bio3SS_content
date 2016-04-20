@@ -360,7 +360,9 @@ midterm2.fixed.Rout: midterm2.scores.Rout.csv midterm2.mortfix.bonus.Rout.csv mi
 
 ### A bunch of pipeline problems due to my addressing the bubbling problems too late. Did not manually check versions for these people, and did not figure out what's going on with the scores.R
 
-Sources += midterm2.hand.csv
+# Sources += midterm2.hand.csv
+midterm2.hand.csv: assign/midterm2.hand.csv
+	$(copy)
 
 midterm2.curved.Rout.csv: 
 midterm2.curved.Rout: midterm2.hand.csv curve.R
