@@ -1,29 +1,25 @@
 
 TITLE BIOLOGY 3SS3: Population Ecology
 
-SUBTITLE Winter 2016
+SUBTITLE Winter 2017
 
-<<<<<<< HEAD
-NOTE Uploaded \today\ to {\rm \url{http://Bio3SS.github.io/outline.pdf}.}
-=======
 NOTE Uploaded \today\ to {\rm \url{https://bio3ss.github.io/materials/outline.pdf}.}
->>>>>>> Finished with intro? Working on linear unit compilation.
 
 TOPIC Instructor
 Jonathan Dushoff ({\tt dushoff@mcmaster.ca})
 
-TOPIC Course Co-ordinator
+COMMENT TOPIC Course Co-ordinator
 Marvin Gunderman {\tt gundermn@mcmaster.ca}
 
-TOPIC Teaching assistants
+COMMENT TOPIC Teaching assistants
 Caroline Cauret;
 Morgan Kain;
 Michael Li
 
-TOPIC Lectures
+COMMENT TOPIC Lectures
 Tue, Wed, Fri at 9:30 AM in MDCL-1105.
 
-TOPIC Tutorials
+COMMENT TOPIC Tutorials
 Beginning the week of 11 Jan
 
 SECT Course material

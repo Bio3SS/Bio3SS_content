@@ -3,7 +3,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.curved.Rout 
+target pngtarget pdftarget vtarget acrtarget pushtarget: outline.pdf.push 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -35,6 +35,8 @@ Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 outline.pdf: outline.dmu
 outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
 	$(PUSH)
+outline.pdf.push: outline.pdf
+	cp $< ~/git/Bio3SS.github.io/materials/
 
 ######################################################################
 

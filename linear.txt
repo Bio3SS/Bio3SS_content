@@ -24,13 +24,13 @@ BC
 
 		HREF http://lalashan.mcmaster.ca/theobio/3SS/index.php/Linear_population_models See spreadsheet
 
-	CHANGE ML : speadsheet - name range
+		CHANGE ML : speadsheet - name range
 
-	CHANGE ML : think about better variable names 
+		CHANGE ML : think about better variable names 
 
-	CHANGE ML : maybe start with the assumption adults don't survival and additional part question 
+		CHANGE ML : maybe start with the assumption adults don't survival and additional part question 
 
-	CHANGE ML : it is legit to have 1/2 because this is a math model ...  			
+		CHANGE ML : it is legit to have 1/2 because this is a math model ...  			
 
 NC
 
@@ -89,7 +89,7 @@ RSLIDE Moth calculation
 
 		ANS We end up with 15 moths
 
-	CHANGE ML : intervals are also legit answers
+		CHANGE ML : intervals are also legit answers
 
 ----------------------------------------------------------------------
 
@@ -207,7 +207,7 @@ Units
 
 Bacteriostasis
 
-CHANGE ML: come back to the example and do the 1 week calucation and post it
+	CHANGE ML: come back to the example and do the 1 week calucation and post it
 
 	What if we add an agent to the tank that makes the birth and death
 	rates nearly zero?
@@ -222,13 +222,13 @@ CHANGE ML: come back to the example and do the 1 week calucation and post it
 
 TSEC Exponential growth
 
-CHANGE ML : only legit in log scale 
+	CHANGE ML : only legit in log scale 
 
-CHANGE ML : maybe stretch it out 
+	CHANGE ML : maybe stretch it out 
 
-CHANGE ML : next year show what picture A looks like on the log scale
+	CHANGE ML : next year show what picture A looks like on the log scale
 
-CHANGE CC : in addition to the change of ML, you wanted to show D at a larger scale for next year + the letters of the plots don't appear for each of them
+	CHANGE CC : in addition to the change of ML, you wanted to show D at a larger scale for next year + the letters of the plots don't appear for each of them
 
 	POLL 59rZNZLRum55IKI What is exponential growth?
 
@@ -315,7 +315,7 @@ SS Log and linear scales
 
 Scales of comparison
 
-CHANGE ML : note natural log vs log10?
+	CHANGE ML : note natural log vs log10?
 
 	POLL mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
 
@@ -327,7 +327,7 @@ CHANGE ML : note natural log vs log10?
 
 Scales of display
 
-CHANGE ML : change your coloring/ shape, hard to see
+	CHANGE ML : change your coloring/ shape, hard to see
 
 DOUBLEPDF exponential/comparison.Rout
 
@@ -335,8 +335,9 @@ DOUBLEPDF exponential/comparison.Rout
 
 Canadian provinces 
 
-CHANGE ML : I don't like you changing BOTH axis in multiplicative scale at once
-CHANGE ML : Do them one at a time and tell students you do time on the linear scale
+	CHANGE ML : I don't like you changing BOTH axis in multiplicative scale at once
+
+	CHANGE ML : Do them one at a time and tell students you do time on the linear scale
 
 DOUBLEFIG exponential/canada.Rout-0.pdf exponential/canada.Rout-1.pdf
 
@@ -1620,13 +1621,13 @@ Long-term growth rate
 
 			ANS Very close to $r=0$ or $\lambda=1$
 
-CHANGE MK: but slightly greater than 0 or 1
+			CHANGE MK: but slightly greater than 0 or 1
 
 		An unsuccessful population?
 
 			ANS \emph{Probably} very close to $r=0$ or $\lambda=1$ 
 
-CHANGE MK: but slightly less than 0 or 1
+			CHANGE MK: but slightly less than 0 or 1
 
 			ANS If much less, it would disappear very fast
 
@@ -1655,7 +1656,7 @@ Balance
 
 			ANS For all the species?
 
-CHANGE MK: Maybe do not need to restate this again? Just jump to limiting factors?
+			CHANGE MK: Maybe do not need to restate this again? Just jump to limiting factors?
 
 		ANS Growth rates change through time
 
@@ -1677,7 +1678,7 @@ Changing growth rates
 
 		ANS Resources (food and space)
 
-CHANGE MK: Add natural disasters
+		CHANGE MK: Add natural disasters
 
 ----------------------------------------------------------------------
 
