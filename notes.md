@@ -1,1 +1,9 @@
-* Change the makefile and commit the perl files at school, and then merge. The problem with ssv and key should be that I've incorporated star.pl into some other perl file, but not committed it.
+* Go to classroom (Mon)
+
+* Set up Avenue!
+
+* Make the calendar and do all the scheduling
+
+* agenda.mkd for team meetings
+
+* Check that I have at least some content!

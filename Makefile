@@ -3,22 +3,23 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: outline.pdf.push 
+target pngtarget pdftarget vtarget acrtarget pushtarget: intro.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
 
 ##################################################################
 
-Sources += exam.tmp final_texcover.tex scantron.jpg
-
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
+Sources += Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
 include stuff.mk
 -include $(ms)/os.mk
 
 -include $(ms)/perl.def
+
+## Orphaned from 2016
+Sources += exam.tmp final_texcover.tex scantron.jpg
 
 ##################################################################
 
@@ -31,6 +32,7 @@ Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 ##################################################################
 
 ## Outline
+## Deprecated! Now part of the gh-pages
 
 outline.pdf: outline.dmu
 outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
