@@ -20,6 +20,7 @@ include stuff.mk
 -include $(ms)/perl.def
 
 ## Orphaned from 2016
+Sources += dushoff.mk
 Sources += exam.tmp final_texcover.tex scantron.jpg
 
 ##################################################################
