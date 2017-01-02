@@ -1,5 +1,6 @@
-# Bio3SS_content
+# bIO3SS_content
 ### Hooks for the editor to set the default target
+### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
 current: target
 
@@ -413,7 +414,7 @@ ts/%: ts
 	touch $@
 
 ts: 
-	cd $(gitroot) && $(MAKE) Population_time_series $@
+	cd $(gitroot) && $(MAKE) Population_time_series
 	/bin/ln -s $(gitroot)/Population_time_series $@
 
 # Exponential plots
