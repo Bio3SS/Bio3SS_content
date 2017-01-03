@@ -31,7 +31,7 @@ dl:
 
 # General content
 
-Sources += todo.mkd
+Sources += todo.mkd agenda.mkd
 
 Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 
