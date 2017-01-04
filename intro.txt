@@ -77,7 +77,10 @@ Texts
 
 	You are required to have an Ecology textbook
 
-		Molles and Cahill, Second Canadian edition
+		Molles and Cahill, Second Canadian edition is recommended
+
+		If you would like to use a different textbook, let your TA know, so we
+		can attempt to provide readings.
 
 ----------------------------------------------------------------------
 
@@ -105,11 +108,17 @@ Polling
 
 		Text from your cell phone, or answer on the web
 
-	POLL multiple_choice_polls/gdbKrnAHZenKKuk Why are you taking this class?
+	POLL multiple_choice_polls/VE6Hqu9GEOgamgS Why are you taking this class?
 
 ----------------------------------------------------------------------
 
 SEC People
+
+----------------------------------------------------------------------
+
+TAs
+
+	Awesome
 
 ----------------------------------------------------------------------
 
@@ -169,9 +178,9 @@ WIDEFIG weitz_full.pdf
 
 Students
 
-	POLL multiple_choice_polls/44ltozsBFJkon7n What year are you in?
+	POLL multiple_choice_polls/jJELPZrtV4FEEpw What year are you in?
 
-	POLL multiple_choice_polls/XgKDaTl7i2tSYui What kind of career are you aiming for?
+	POLL multiple_choice_polls/H9mkx7iaRkRPEBu What kind of career are you aiming for?
 
 ----------------------------------------------------------------------
 
@@ -189,7 +198,7 @@ TSS Learning goals
 
 ----------------------------------------------------------------------
 
-	POLL free_text_polls/GAwCN5eA9OpPe3R What is ecology?
+	POLL free_text_polls/Asm8VGYRLvIVpNo What is ecology?
 
 	My answer
 
@@ -200,7 +209,7 @@ TSS Learning goals
 
 ----------------------------------------------------------------------
 
-	POLL free_text_polls/6x6QEYmAsSIH1He What is population ecology?
+	POLL free_text_polls/wj9J0ivIZc2hKoA What is population ecology?
 
 	My answer
 
@@ -342,7 +351,7 @@ EC
 
 Populations 
 
-	POLL free_text_polls/HsllOFOuaivEeRp What population of organisms interests you?
+	POLL free_text_polls/HmlkR0qs7rMbCaZ What population of organisms interests you?
 
 ----------------------------------------------------------------------
 
