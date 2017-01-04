@@ -1,5 +1,5 @@
-# bIO3SS_content
-### Hooks for the editor to set the default target
+# Bio3SS_content
+
 ### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
 current: target
