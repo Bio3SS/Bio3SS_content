@@ -12,9 +12,7 @@ TSS Dandelions
 BC
 
 	Start with one dandelion; it produces 100 seeds, of which only
-	4% survive to reproduce.
-
-	CHANGE ML,MK: Specify that it's an annual cycle
+	4% survive to reproduce the next year.
 
 	POLL jrcSpwWFGcPZp4Q How many dandelions after 3 years?
 
@@ -23,14 +21,6 @@ BC
 		ANS 125?
 
 		HREF http://lalashan.mcmaster.ca/theobio/3SS/index.php/Linear_population_models See spreadsheet
-
-		CHANGE ML : speadsheet - name range
-
-		CHANGE ML : think about better variable names 
-
-		CHANGE ML : maybe start with the assumption adults don't survival and additional part question 
-
-		CHANGE ML : it is legit to have 1/2 because this is a math model ...  			
 
 NC
 
@@ -90,6 +80,8 @@ RSLIDE Moth calculation
 		ANS We end up with 15 moths
 
 		CHANGE ML : intervals are also legit answers
+
+		CHANGE JD: What does this mean?
 
 ----------------------------------------------------------------------
 
@@ -522,11 +514,9 @@ CSLIDE Speeding in Taiwan
 
 		ANS But I do get extremely close (after several hours)
 
-	CHANGE ML : They don't know Zeno!
+	Does anyone remember Zeno's paradox?
 
-	Do you remember Zeno's paradox?
-
-		ANS In Zeno's paradox, I do arrive
+		ANS Don't worry about it, then
 
 ----------------------------------------------------------------------
 
@@ -669,11 +659,9 @@ SEC Constructing models
 
 ----------------------------------------------------------------------
 
-SS Dynamic models
+TSS Dynamical models
 
 ----------------------------------------------------------------------
-
-CHANGE CC: you were looking for the picture of the 2 children, perhaps better to put it here
 
 BC
 
@@ -721,9 +709,9 @@ EC
 
 ----------------------------------------------------------------------
 
-Dynamic models
+Dynamical models
 
-	\textbf{Dynamic models} describe rules for how a system changes at
+	\textbf{Dynamical models} describe rules for how a system changes at
 	each point in time
 
 	We will see what these assumptions about how the system

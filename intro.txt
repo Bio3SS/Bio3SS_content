@@ -16,22 +16,21 @@ SEC Course structure
 
 Course overview
 
-	Lecture notes for each section will be available on AtL the evening
+	Lecture notes for each section will be available on AtL the afternoon
 	before you need them
 
 		Check AtL frequently for announcements and new information
 
-	The course co-ordinator is Marvin Gunderman
-
-		first contact for any administrative issues  
-		
-		{\tt gundermn@mcmaster.ca}; LSB 116; x23556
-
 	The professor is Jonathan Dushoff
 
-		Office hours MTh 11-12, or \emph{by appointment,} LSB 332
+		Office hours Tue 9:30-10:20 AM, Wed 2:30-3:20 PM,
+		or \emph{by appointment,} LSB 332
 
 		{\tt dushoff@mcmaster.ca}
+
+	The lecture TA is Caroline Cauret
+
+		Contact through the Facebook group, or AtL
 
 ----------------------------------------------------------------------
 
@@ -46,7 +45,7 @@ Expectations of professor
 	Open to questions -- both in class (within reason) and at office
 	hours
 
-	Responsive to questions on class forums
+	Responsive to questions on class forums (Facebook and AtL)
 
 ----------------------------------------------------------------------
 
@@ -132,27 +131,37 @@ Dushoff
 
 ----------------------------------------------------------------------
 
-Squaring the circle
+RSLIDE Squaring the circle
 
 HIGHFIG filledCircle.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
+RSLIDE Which country? 
+
 WIDEFIG images/phila_skyline.jpg
 
 --------------------------------------------------------------------
+
+RSLIDE Which country? 
 
 WIDEFIG images/big_bend.jpg
 
 --------------------------------------------------------------------
 
+RSLIDE Which country? 
+
 WIDEFIG images/taiwan_street.jpg
 
 --------------------------------------------------------------------
 
+RSLIDE Which country? 
+
 WIDEFIG images/tims.jpg
 
 ----------------------------------------------------------------------
+
+RSLIDE Ebola research
 
 WIDEFIG weitz_full.pdf
 
@@ -217,9 +226,9 @@ BC
 
 NC
 
-WIDEFIG images/touching.jpg
+SIDEFIG images/touching.jpg
 
-WIDEFIG images/ew_measles.png
+SIDEFIG images/ew_measles.png
 
 EC
 
@@ -251,9 +260,9 @@ BC
 
 NC
 
-WIDEFIG images/hockey.jpg
+SIDEFIG images/hockey.jpg
 
-WIDEFIG images/emc.png
+SIDEFIG images/emc.png
 
 EC
 
@@ -281,7 +290,7 @@ BC
 
 NC
 
-WIDEFIG images/us_malaria_1935.jpg
+SIDEFIG images/us_malaria_1935.jpg
 
 EC
 
@@ -303,9 +312,9 @@ BC
 
 NC
 
-WIDEFIG images/red_squirrel.jpg
+SIDEFIG images/red_squirrel.jpg
 
-WIDEFIG images/grey_squirrel.jpg
+SIDEFIG images/grey_squirrel.jpg
 
 EC
 
@@ -323,9 +332,9 @@ BC
 
 NC
 
-WIDEFIG images/cod.jpg
+SIDEFIG images/cod.jpg
 
-WIDEFIG ts/cod1678.simple.Rout-0.pdf
+SIDEFIG ts/cod1678.simple.Rout-0.pdf
 
 EC
 
@@ -342,7 +351,7 @@ Dandelions
 BC
 
 	Start with one dandelion; it produces 100 seeds, of which only
-	4% survive to reproduce.
+	4% survive to reproduce the next year.
 
 		How many dandelions after 3 years?
 
@@ -352,7 +361,7 @@ BC
 
 NC
 
-WIDEFIG images/dandy_field.jpg
+SIDEFIG images/dandy_field.jpg
 
 EC
 

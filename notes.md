@@ -1,9 +1,9 @@
-* Go to classroom (Mon)
+* Ask TAs about persisting questions
 
-* Set up Avenue!
+* POLLS
 
-* Make the calendar and do all the scheduling
+* Spreadsheet
 
-* agenda.mkd for team meetings
+* Lecture overview??
 
-* Check that I have at least some content!
+* Dropbox login? Is there a better way to get the lectures?
