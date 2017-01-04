@@ -576,27 +576,8 @@ Sources += asn.tmp
 	$(CP) $< $(Drop)/3SS/3SS_content
 
 ## Push to private repo
-
 %.private: %
 	$(CP) $< assign
-
-## Outputs branch; not worth it!
-
-Outputs += $(wildcard *.final.pdf *.asn.pdf)
-
-outputs.new: commit.time
-	git checkout -b outputs
-	git rm $(Sources)
-	git commit -a -m "clearSources"
-	git push -u origin outputs
-	git checkout master
-
-pushOut: $(Outputs) commit.time
-	git checkout outputs
-	git add $(Outputs)
-	git commit -m "pushOut"
-	git push -u origin outputs
-	git checkout master
 
 ### Makestuff
 

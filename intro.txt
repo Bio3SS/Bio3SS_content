@@ -132,7 +132,9 @@ Dushoff
 
 ----------------------------------------------------------------------
 
-WIDEFIG filledCircle.Rout-4.pdf
+Squaring the circle
+
+HIGHFIG filledCircle.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
