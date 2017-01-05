@@ -14,6 +14,8 @@ SEC Course structure
 
 ----------------------------------------------------------------------
 
+CHANGE CC: Need to check the links on the slides for the polls. Outlines broken. Apparently old versions of the slides. Add a slide about taking notes.
+
 Course overview
 
 	Lecture notes for each section will be available on AtL the afternoon
