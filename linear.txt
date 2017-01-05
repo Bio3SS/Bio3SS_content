@@ -79,9 +79,11 @@ RSLIDE Moth calculation
 
 		ANS We end up with 15 moths
 
-		CHANGE ML : intervals are also legit answers
+		CHANGE ML : intervals are also legit answers 
 
 		CHANGE JD: What does this mean?
+		
+		CHANGE MLans : I think you wanted to make the statement our calucations are just approximations. It is okay to get non-integer answers and we have some kind of error bars with our estimation.  
 
 ----------------------------------------------------------------------
 
@@ -329,6 +331,8 @@ Scales of comparison
 	CHANGE ML : note natural log vs log10?
 
 	CHANGE JD: What does this mean?
+	
+	CHANGE MLans: Different bases. For example: simulate some data points, plot it on natural log scale and plot it on log10 scale. The shape will be the same, but the axis values will change.
 
 	POLL mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
 
@@ -1467,9 +1471,11 @@ Lifespan
 
 Calculating \R
 
-	CHANGE ML: CAn you put R and r side by side?
+	CHANGE ML: Can you put R and r side by side?
 
 	CHANGE JD: Can you explain what you mean?
+	
+	CHANGE MLans: Split the page into two in the middle, left side will be discrete and will use big R, right side will be continuous and use little r.
 
 	\R is fecundity multiplied by lifespan
 
