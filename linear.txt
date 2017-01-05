@@ -124,21 +124,37 @@ Stochastic version
 
 ----------------------------------------------------------------------
 
-Stochastic model
+RSLIDE Stochastic model
 
 FIG exponential/dandelion.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Stochastic model
+RSLIDE Stochastic model
 
 FIG exponential/dandelion.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Stochastic model
+RSLIDE Stochastic model
 
 FIG exponential/dandelion.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Stochastic model
+
+BC
+
+	A stochastic model has randomness in the model.
+
+	If we run it again with the same parameters and starting conditions, we get a different answer
+
+NC
+
+SIDEFIG exponential/dandelion.Rout-2.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -254,7 +270,7 @@ FIG exponential/exponential.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE Exponential growth
+Exponential growth
 
 	POLL 59rZNZLRum55IKI What is exponential growth?
 
@@ -264,6 +280,19 @@ FIG exponential/exponential.Rout.four.pdf
 
 ----------------------------------------------------------------------
 
+CSLIDE A on both scales
+
+BCC
+
+SIDEFIG exponential/exponential.Rout-0.pdf
+
+NCC
+
+SIDEFIG exponential/exponential.Rout-4.pdf
+
+EC
+
+----------------------------------------------------------------------
 
 Types of growth
 
@@ -308,6 +337,8 @@ SS Log and linear scales
 Scales of comparison
 
 	CHANGE ML : note natural log vs log10?
+
+	CHANGE JD: What does this mean?
 
 	POLL mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
 
@@ -755,8 +786,6 @@ Parameters
 
 How do populations change?
 
-CHANGE ML: test polls and make sure the hyperlinks work?
-
 	I survey a population in 2005, and again in 2009.  I get a different
 	answer the second time.
 
@@ -770,7 +799,6 @@ CHANGE ML: test polls and make sure the hyperlinks work?
 
 		ANS Sampling (ie., my counts are not perfectly correct)
 		
-CHANGE CC: you ask for the definition of vicariance: "fragmentation" of a population (change in gene flow) leading to a differention of the population (can lead to new species)
 ----------------------------------------------------------------------
 
 Censusing and intermediate variables
@@ -807,8 +835,6 @@ CHANGE CC: you want to restructure this slide
 ----------------------------------------------------------------------
 
 SS Examples
-
-CHANGE ML: con't here tomorrow!
 
 ----------------------------------------------------------------------
 
@@ -1136,6 +1162,7 @@ SIDEFIG images/espresso.jpg
 EC
 
 CHANGE ML: bateria example.. week to day, day to hours?
+
 ----------------------------------------------------------------------
 
 Manipulating units
@@ -1186,6 +1213,7 @@ Bacteria example
 DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast.Rout-2.pdf
 
 CHANGE ML: show the equation? and the little r?
+
 ----------------------------------------------------------------------
 
 Bacteria example
@@ -1193,6 +1221,7 @@ Bacteria example
 DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast_scaled.Rout-2.pdf
 
 CHANGE ML: give some text to follow along, you talk too fast. 
+
 ----------------------------------------------------------------------
 
 Thinking about units 
@@ -1472,24 +1501,23 @@ Instaneous rate of increase
 
 		ANS [1/time]
 
-CHANGE MK: Make it more clear (make this an answer?) that r = 0 is the reason we can have a non-unitless r
-
 	But we still have a unitless criterion: $r=0$
+
+		ANS 0 times anything is really just zero
+
+		ANS Does 0km = 0cm?
 
 ----------------------------------------------------------------------
 
 Calculating \R
 
-CHANGE CC: even only one person asked you for the explanation on the board, according to the students' faces I thing it helped a lot
+	The mean lifespan is $L = 1/d$
 
-	The mean lifespan is $1/d$
-
-		Equivalent to the characteristic time for the death process (if
-		we neglected births)
+		Equivalent to the characteristic time for the death process
 
 	\R is the average number of births expected over that time frame:
 
-		$\R = b/d$
+		$\R = bL = b/d$
 
 ----------------------------------------------------------------------
 

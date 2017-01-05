@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: intro.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: linear.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
