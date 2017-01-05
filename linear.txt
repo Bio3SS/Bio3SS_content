@@ -348,19 +348,25 @@ Scales of comparison
 
 ----------------------------------------------------------------------
 
-Scales of display
+RSLIDE Scales of display
 
-	CHANGE ML : change your coloring/ shape, hard to see
+FIG exponential/comparison.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Scales of display
+
+FIG exponential/comparison.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Scales of display
 
 DOUBLEPDF exponential/comparison.Rout
 
 ----------------------------------------------------------------------
 
 Canadian provinces 
-
-	CHANGE ML : I don't like you changing BOTH axis in multiplicative scale at once
-
-	CHANGE ML : Do them one at a time and tell students you do time on the linear scale
 
 DOUBLEFIG exponential/canada.Rout-0.pdf exponential/canada.Rout-1.pdf
 
