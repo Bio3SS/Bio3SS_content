@@ -213,9 +213,7 @@ Units
 
 ----------------------------------------------------------------------
 
-Bacteriostasis
-
-	CHANGE ML: come back to the example and do the 1 week calucation and post it
+RSLIDE Bacteriostasis
 
 	What if we add an agent to the tank that makes the birth and death
 	rates nearly zero?
@@ -224,23 +222,17 @@ Bacteriostasis
 
 	If we start with 10 bacteria/ml, how many do we have after:
 
-		POLL YN2bgU2NJDBuIXd 1 hr/wk?
+		POLL YN2bgU2NJDBuIXd 1 hr?
+
+		POLL YN2bgU2NJDBuIXd 1 wk?
 
 ----------------------------------------------------------------------
 
 TSEC Exponential growth
 
-	CHANGE ML : only legit in log scale 
+	What is exponential growth?
 
-	CHANGE ML : maybe stretch it out 
-
-	CHANGE ML : next year show what picture A looks like on the log scale
-
-	CHANGE CC : in addition to the change of ML, you wanted to show D at a larger scale for next year + the letters of the plots don't appear for each of them
-
-	POLL 59rZNZLRum55IKI What is exponential growth?
-
-	POLL R4B7MuFIsRyMBQR Which of these is an example?
+	Which of these is an example?
 
 FIG exponential/exponential.Rout.four.pdf
 
@@ -270,7 +262,7 @@ FIG exponential/exponential.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-Exponential growth
+RSLIDE Exponential growth
 
 	POLL 59rZNZLRum55IKI What is exponential growth?
 
@@ -282,15 +274,13 @@ FIG exponential/exponential.Rout.four.pdf
 
 CSLIDE A on both scales
 
-BCC
+FIG exponential/exponential.Rout-0.pdf
 
-SIDEFIG exponential/exponential.Rout-0.pdf
+----------------------------------------------------------------------
 
-NCC
+CSLIDE A on both scales
 
-SIDEFIG exponential/exponential.Rout-4.pdf
-
-EC
+FIG exponential/exponential.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
@@ -357,6 +347,8 @@ FIG exponential/comparison.Rout-0.pdf
 RSLIDE Scales of display
 
 FIG exponential/comparison.Rout-1.pdf
+
+CHANGE Pre-slides for both of these
 
 ----------------------------------------------------------------------
 
@@ -574,7 +566,7 @@ Characteristic times
 
 ----------------------------------------------------------------------
 
-RSLIDE Bacteriostasis
+Bacteriostasis
 
 	What if we add an agent to the tank that makes the birth and death
 	rates nearly zero?
@@ -583,15 +575,13 @@ RSLIDE Bacteriostasis
 
 	If we start with 10 bacteria/ml, how many do we have after:
 
-		An hour?
+		POLL YN2bgU2NJDBuIXd 1 hr?
 
-		A week?
+		POLL YN2bgU2NJDBuIXd 1 wk?
 
 ----------------------------------------------------------------------
 
 Bacteriostasis answers
-
-	CHANGE ML: need a poll here
 
 	Bacteria wash out at the rate of 0.02/hr
 
@@ -633,7 +623,14 @@ Euler's $e$
 
 		ANS $e$ times closer
 
-	COMMENT $e$ or $1/e$ is the answer to a lot of questions like this one
+	$e$ or $1/e$ is the approximate answer to a lot of questions like this one
+
+		If I compound 1%/year interest for 100 years, how much does my money grow?
+
+		If two people go deal out two decks of cards simultaneously, what is the
+		probability they will never match cards?
+
+		If everyone picks up a backpack at random after a test, what's the probability nobody gets the right backpack? 
 
 ----------------------------------------------------------------------
 
@@ -823,7 +820,6 @@ Censusing and intermediate variables
 
 Linear population models
 
-CHANGE CC: Define per capita before 
 CHANGE CC: you want to restructure this slide
 
 	We will focus mostly on births and deaths
@@ -844,7 +840,33 @@ SS Examples
 
 ----------------------------------------------------------------------
 
-Moths
+RSLIDE Gypsy moths
+
+BC
+
+	A pest species that feeds on deciduous trees
+
+	Introduced to N. America from Europe ~ 150 years ago
+
+	Capable of wide-scale defoliation
+
+NC
+
+SIDEFIG images/gm_caterpillar.jpg
+
+SIDEFIG images/gm_defoliation.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+RSLIDE Gypsy moth populations
+
+DOUBLEPDF ts/gm10165.simple.Rout
+
+----------------------------------------------------------------------
+
+Moth example
 
 BC
 
@@ -865,7 +887,7 @@ CHANGE MK: Maybe bring back gypsy moth population time series
 
 		ANS Annually; use the same time (and stage) each year
 
-CHANGE MK: Cryptic names in the spreadsheet (any way to have a note in plain english of what each parameter stands for?)
+CHANGE MK: Work on simplifying spreadsheet
 
 CHANGE MK: Draw a moth cycle on the slide?
 
@@ -996,9 +1018,10 @@ Model
 
 		$t_T = T \Delta t$
 
-CHANGE MK: Spend plenty of time here attempting to extract the answer from students.
+			CHANGE MK: Spend plenty of time here attempting to extract the answer
+			from students.
 
-	Behaviour
+	Behaviour of $N$
 
 		ANS Increases exponentially (geometrically) when $\lambda>1$
 
@@ -1008,7 +1031,7 @@ CHANGE MK: Spend plenty of time here attempting to extract the answer from stude
 
 Interpretation
 
-	Assumptions are over-simplifications
+	Assumptions are simplifications based on reality
 
 	We can understand why populations change exponentially sometimes
 
@@ -1066,6 +1089,8 @@ Assumptions
 Interpretation
 
 CHANGE MK: Maybe put this example first
+
+CHANGE JD: Before what?
 
 	If we have $N$ individuals at time $t$, how does the population
 	change?
@@ -1161,13 +1186,17 @@ BC
 
 		ANS $12\esp$
 
+	What is $1\wk \cdot 0.02/\dd$?
+
+		ANS 1\wk \cdot 0.02\dd 
+
+		ANS 1\wk \cdot 0.02\dd \cdot \frac{168\dd}{\wk}
+
 NC
 
 SIDEFIG images/espresso.jpg
 
 EC
-
-CHANGE ML: bateria example.. week to day, day to hours?
 
 ----------------------------------------------------------------------
 
@@ -1331,19 +1360,19 @@ Moth spreadsheet
 
 ----------------------------------------------------------------------
 
-Dandelion spreadsheet
+Calculating $\lambda$
 
-	$N_{T+1} = \lambda N_T$ 
-		
 	$\lambda \equiv p + f$ is the \textbf{finite rate of increase}
 
-	$\lambda$ must be unitless
+	If $N_{T+1} = \lambda N_T$, what are the units of $\lambda$?
 
-		Therefore $p$ and $f$ must be unitless
+		ANS unitless
 
-		rA/rA; seed/seed
+	Therefore $p$ and $f$ must be unitless
 
-CHANGE CC: I think you went a little too fast some students seemed to be a little lost
+		example, rA/rA; seed/seed
+
+		to do it right, we close the loop
 
 ----------------------------------------------------------------------
 
@@ -1361,7 +1390,7 @@ TSS Discrete-time model
 
 Calculating fecundity
 
-CHANGE CC: I think it was helpful that you drew and explained on the board but sometimes it was not very clear 
+CHANGE Blackboard
 
 	Fecundity $f$ in our model must be unitless
 
@@ -1393,8 +1422,6 @@ Calculating survival
 
 Finite rate of increase
 
-CHANGE CC: perhaps you can add a poll for "when is the population increasing" to check that everybody understands (only one person wanted to answer your question)
-
 	Population increases when $\lambda>1$
 
 	So $\lambda$ must be unitless
@@ -1411,9 +1438,11 @@ Reproductive number
 	The reproductive number \R measures the average number of offspring
 	produced by a single individual over the course of its lifetime
 
-	The population will increase when:
+	POLL The population will increase when \R\ldots:
 
 		ANS $\R>1$
+
+	POLL What are the units of \R?
 
 		ANS \R must be unitless
 
@@ -1439,6 +1468,8 @@ Lifespan
 Calculating \R
 
 	CHANGE ML: CAn you put R and r side by side?
+
+	CHANGE JD: Can you explain what you mean?
 
 	\R is fecundity multiplied by lifespan
 
@@ -1548,15 +1579,11 @@ Is the population increasing?
 
 TSS Links
 
-CHANGE CC: when you asked the students about your following question nobody answered, perhaps you can add a poll to see if everybody is following what you are saying...
-
 	If a population grows at rate $r$ for time period $\Delta t$, how
 	much does it change?
 
-		$N_0 \exp(r\Delta t)$ must correspond to $N_0 \lambda^1$, where 1
+		$N_0 \exp(r\Delta t)$ must correspond to $N_0 \lambda$, where 1
 		is:
-
-			ANS The number of time steps, $T$
 
 	To link a continuous-time model to a discrete-time model, we
 	set:
@@ -1643,16 +1670,15 @@ Long-term growth rate
 
 			ANS Very close to $r=0$ or $\lambda=1$
 
-			CHANGE MK: but slightly greater than 0 or 1
+			ANS But a little larger
 
 		An unsuccessful population?
 
 			ANS \emph{Probably} very close to $r=0$ or $\lambda=1$ 
 
-			CHANGE MK: but slightly less than 0 or 1
+			ANS But a little smaller
 
-			ANS If much less, it would disappear very fast
-
+			ANS If much smaller, it would disappear very fast
 
 ----------------------------------------------------------------------
 
