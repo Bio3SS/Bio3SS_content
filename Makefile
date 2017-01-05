@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: linear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: linear.handouts.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -88,13 +88,27 @@ Sources += weitz_full.pdf
 
 ##################################################################
 
+## Large-print development
+
+## This kind of works, but has issues (e.g., with frac, fancy R)
+## Could be useful for later if people demand editable
+%.hh.tex: %.handouts.tex webhtml.pl
+	$(PUSH)
+linear.handouts.html: linear.hh.tex
+	$(pandocs)
+
+## extarticle seems good instead
+## changed the tmp to extarticle because there seems no downside
+%.large.tex: %.handouts.tex
+	perl -pe 's/12pt/17pt/' $< > $@
+
+##################################################################
+
 # Unit 1 (Linear population growth)
 
 linear.final.pdf: linear.txt
 linear.draft.pdf: linear.txt
 linear.handouts.pdf: linear.txt
-
-##################################################################
 
 # Unit 2 (Regulated population growth)
 
@@ -556,6 +570,10 @@ Sources += asn.tmp
 
 # Notes
 %.handouts.pdf.push: %.handouts.pdf
+	$(CP) $< $(web)
+
+# Notes
+%.large.pdf.push: %.large.pdf
 	$(CP) $< $(web)
 
 %.complete.pdf.push: %.complete.pdf

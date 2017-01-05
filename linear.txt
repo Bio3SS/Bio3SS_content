@@ -14,19 +14,32 @@ BC
 	Start with one dandelion; it produces 100 seeds, of which only
 	4% survive to reproduce the next year.
 
-	POLL jrcSpwWFGcPZp4Q How many dandelions after 3 years?
+	How many dandelions after 3 years?
 
 		ANS 64?
 
 		ANS 125?
 
-		HREF http://lalashan.mcmaster.ca/theobio/3SS/index.php/Linear_population_models See spreadsheet
+		HREF https://bio3ss.github.io/linear.html See spreadsheet on resource page
+
+	The spreadsheet is an implementation of a dynamical model!
 
 NC
 
 SIDEFIG images/dandy_field.jpg
 
 EC
+
+----------------------------------------------------------------------
+
+Dynamical models
+
+	Make rules about how things change on a small scale
+
+	Assumptions should be clear enough to allow you to calculate or simulate
+	population-level resuls
+
+	Challenging and clarifying assumptions is a key advantage of models
 
 ----------------------------------------------------------------------
 
@@ -63,8 +76,6 @@ RSLIDE Moth calculation
 
 		The average reproductive female lays 600 eggs
 
-			NOANS
-
 		10% of eggs hatch into larvae
 
 		10% of larvae mature into pupae
@@ -83,6 +94,8 @@ RSLIDE Moth calculation
 
 ----------------------------------------------------------------------
 
+ADD Check CLASS
+
 Moth calculation
 
 	Researchers studying a gypsy moth population make the following
@@ -90,7 +103,7 @@ Moth calculation
 
 		The average reproductive female lays 600 eggs
 
-			ANS Assume half are female
+			CLASS ANS Assume half are female
 
 		10% of eggs hatch into larvae
 
@@ -150,7 +163,7 @@ BC
 
 NC
 
-SIDEFIG exponential/dandelion.Rout-2.pdf
+FIG exponential/dandelion.Rout-2.pdf
 
 EC
 
@@ -173,7 +186,7 @@ TSS Bacteria
 	of time)
 
 	We start with 10 bacteria/ml
-	
+
 		How many do we have after 1 hr?
 
 		What about after 1 day?
@@ -232,7 +245,7 @@ TSEC Exponential growth
 
 	Which of these is an example?
 
-FIG exponential/exponential.Rout.four.pdf
+FIG exponential/exponential.Rout.four-0.pdf
 
 ----------------------------------------------------------------------
 
@@ -302,12 +315,40 @@ Types of growth
 
 ----------------------------------------------------------------------
 
+Exponential decline?
+
+	POLL Smorgon What does exponential decline look like?
+
+		ANS Decline is proportional to size
+
+		ANS Declines more and more _slowly_ (on linear scale)
+
+----------------------------------------------------------------------
+
+ASLIDE Exponential decline
+
+ADD Check
+
+BC
+
+WIDEFIG exponential/decline.Rout-1.pdf
+
+NC
+
+	Decline is proportional to size
+
+	Declines more and more _slowly_ (on linear scale)
+
+EC
+
+----------------------------------------------------------------------
+
 Terminology
 
 	Sometimes people distinguish
-	
+
 		\textbf{arithmetic} from \textbf{linear} growth, or
-	
+
 		\textbf{geometric} from \textbf{exponential} growth
 
 	Based on:
@@ -342,13 +383,15 @@ RSLIDE Scales of display
 
 FIG exponential/comparison.Rout-1.pdf
 
-CHANGE Pre-slides for both of these
+ADD Pre-slides for both of these
 
 ----------------------------------------------------------------------
 
 Scales of display
 
 DOUBLEPDF exponential/comparison.Rout
+
+There is only one log scale; it doesn't matter which base you use!
 
 ----------------------------------------------------------------------
 
@@ -750,8 +793,6 @@ Dynamical models
 	\emph{changes} lead to conclusions about what the system \emph{does}
 	over longer time periods
 
-	CHANGE ML: note. dandelion example
-
 ----------------------------------------------------------------------
 
 States and state variables
@@ -790,7 +831,7 @@ How do populations change?
 	I survey a population in 2005, and again in 2009.  I get a different
 	answer the second time.
 
-	POLL Dw8wmkW6lt2FSw4 What are some reasons why the size of the population might change?
+	POLL Dw8wmkW6lt2FSw4 What are some reasons why this answer might change?
 
 		ANS Birth
 
@@ -799,7 +840,7 @@ How do populations change?
 		ANS Immigration and emigration
 
 		ANS Sampling (ie., my counts are not perfectly correct)
-		
+
 ----------------------------------------------------------------------
 
 Censusing and intermediate variables
@@ -815,15 +856,15 @@ Censusing and intermediate variables
 
 ----------------------------------------------------------------------
 
-
 Linear population models
-
-CHANGE CC: you want to restructure this slide
 
 	We will focus mostly on births and deaths
 
-		These are done by individuals in our population, thus it
-		makes sense to think of them as having per capita rates
+	Births and deaths are done by individuals
+
+		We model the rate of each individual (per capita rates)
+
+		Total rate is the per capita rate multiplied by population size
 
 	If per capita rates are constant, we say that our population
 	\emph{models} are \textbf{linear}
@@ -868,8 +909,6 @@ Moth example
 
 BC
 
-CHANGE MK: Maybe bring back gypsy moth population time series 
-
 	State variables
 
 		ANS Number of moths/ha
@@ -885,9 +924,9 @@ CHANGE MK: Maybe bring back gypsy moth population time series
 
 		ANS Annually; use the same time (and stage) each year
 
-CHANGE MK: Work on simplifying spreadsheet
+ADD Spreadsheet here?
 
-CHANGE MK: Draw a moth cycle on the slide?
+ADD Blackboard
 
 NC
 
@@ -923,9 +962,9 @@ EC
 
 Dandelions
 
-BC
+ADD Blackboard
 
-CHANGE MK: Again, think a drawn cycle on the slide would be helpful.
+BC
 
 	State variables
 
@@ -940,8 +979,6 @@ CHANGE MK: Again, think a drawn cycle on the slide would be helpful.
 		ANS Annually, before reproduction
 
 		ANS When new and returning individuals are most similar
-
-CHANGE MK: Clarify that the census time becomes a choice because you have conceded to only track one state variable.
 
 NC
 
@@ -959,22 +996,6 @@ SS A simple discrete-time model
 
 Assumptions
 
-	Individuals are \textbf{independent}: what I do does not depend on
-	how many other individuals are around
-
-	The population is censused at regular time intervals $\Delta
-	t$
-
-		Usually $\Delta t$ = 1\yr
-
-	All individuals are the same at the time of census
-
-	Population changes deterministically
-
-----------------------------------------------------------------------
-
-Interpretation
-
 	If we have $N$ individuals after $T$ time steps, what determines how
 	many individuals we have after $T+1$ time steps?
 
@@ -989,6 +1010,23 @@ Interpretation
 		ANS $N_{T+1} = (pN_T+fN_T) = (p+f)N_T$
 
 ----------------------------------------------------------------------
+
+CONT Assumptions
+
+	Individuals are \textbf{independent}: what I do does not depend on
+	how many other individuals are around
+
+	The population is censused at regular time intervals $\Delta
+	t$
+
+		Usually $\Delta t$ = 1\yr
+
+	All individuals are the same at the time of census
+
+	Population changes deterministically
+
+----------------------------------------------------------------------
+
 
 Definitions
 
@@ -1016,10 +1054,7 @@ Model
 
 		$t_T = T \Delta t$
 
-			CHANGE MK: Spend plenty of time here attempting to extract the answer
-			from students.
-
-	Behaviour of $N$
+	POLL Smorgon How does $N$ behave in this model?
 
 		ANS Increases exponentially (geometrically) when $\lambda>1$
 
@@ -1044,7 +1079,7 @@ BC
 	Moths
 
 		$p=0$, so $\lambda=f$. 
-		
+
 			Moths are \textbf{semelparous} (reproduce once); they have
 			an \textbf{annual} population
 
@@ -1069,27 +1104,6 @@ SS A simple continuous-time model
 
 Assumptions
 
-	Individuals are \textbf{independent}: what I do does not depend on
-	how many other individuals are around
-
-	The population can be censused at any time
-
-	Population size changes continuously
-
-		ANS Advantageous if reproduction is continuous
-
-	All individuals are the same all the time
-
-		ANS Usually disadvantageous
-
-----------------------------------------------------------------------
-
-Interpretation
-
-CHANGE MK: Maybe put this example first
-
-CHANGE JD: Before what?
-
 	If we have $N$ individuals at time $t$, how does the population
 	change?
 
@@ -1106,6 +1120,24 @@ CHANGE JD: Before what?
 
 ----------------------------------------------------------------------
 
+CONT Assumptions
+
+	Individuals are \textbf{independent}: what I do does not depend on
+	how many other individuals are around
+
+	The population can be censused at any time
+
+	Population size changes continuously
+
+		ANS Advantageous if reproduction is continuous
+
+	All individuals are the same all the time
+
+		ANS Usually disadvantageous
+
+----------------------------------------------------------------------
+
+
 Definitions
 
 	$b$ is the \textbf{birth rate}
@@ -1116,7 +1148,7 @@ Definitions
 
 	These quantities are not associated with a time period, but they
 	have units:
-	
+
 		ANS 1/[time]
 
 ----------------------------------------------------------------------
@@ -1148,12 +1180,14 @@ Bacteria
 	But we can't do an infinite number of simulation steps on the
 	computer
 
-	HREF http://lalashan.mcmaster.ca/theobio/3SS/index.php/Bacteria
-	Bacteria page on web site
+----------------------------------------------------------------------
 
-		NOTES HLINK http://lalashan.mcmaster.ca/theobio/3SS/index.php/Bacteria 
+CONT Bacteria
+
+DOUBLEFIG exponential/growth.Rout-0.pdf exponential/growth.Rout-1.pdf
 
 ----------------------------------------------------------------------
+
 
 Summary
 
@@ -1161,7 +1195,7 @@ Summary
 	dynamic models
 
 	If we assume that \emph{individuals} behave independently, then
-	
+
 		we expect \emph{populations} to grow (or decline) exponentially
 
 ----------------------------------------------------------------------
@@ -1234,28 +1268,37 @@ Scaling
 		If I multiply all the quantities with units of time in my model
 		by 10, I should get an answer that looks the same, but
 		with a different time scale
-		
+
 		If a multiply all the quantities with units of dandelions in my
 		model by 10, I should get an answer that looks the same, but with
 		a different number of dandelions
 
 ----------------------------------------------------------------------
 
-Bacteria example
+RSLIDE Scaling time in bacteria
 
-DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast.Rout-2.pdf
-
-CHANGE ML: show the equation? and the little r?
+DOUBLEFIG exponential/growth.Rout-0.pdf exponential/growth.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Bacteria example
+Scaling time in bacteria
 
-DOUBLEFIG exponential/growth.Rout-2.pdf exponential/fast_scaled.Rout-2.pdf
-
-CHANGE ML: give some text to follow along, you talk too fast. 
+DOUBLEFIG exponential/growth.Rout-0.pdf exponential/growth.Rout-2.pdf
 
 ----------------------------------------------------------------------
+
+ASLIDE Scaling population
+
+DOUBLEFIG exponential/growth.Rout-0.pdf exponential/growth.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE Scaling population
+
+DOUBLEFIG exponential/growth.Rout-0.pdf exponential/growth.Rout-4.pdf
+
+----------------------------------------------------------------------
+
 
 Thinking about units 
 
@@ -1284,9 +1327,9 @@ Unit-ed quantities
 
 	We typically make sense of quantities with units by comparing them
 	to other quantities with the same units, e.g.: 
-	
+
 		birth rate vs.\ death rate
-		
+
 		characteristic time of exponential growth vs.\ observation time
 
 ----------------------------------------------------------------------
@@ -1300,16 +1343,14 @@ Unitless quantities
 
 	Quantities that determine \emph{how} a system behaves must have a
 	unitless form
-	
-	CHANGE ML: Remind people little r is a common example you are going to use
-	
-	CHANGE ML: or put it up once a while.
 
 		Otherwise, they could be scaled
 
 		Zero works as a unitless quantity:
 
-			Is 0km the same as 0in?
+			0km = 0cm
+
+	Examples include $\lambda$ and $\R$.
 
 ----------------------------------------------------------------------
 
@@ -1336,15 +1377,7 @@ Moths
 
 Moth spreadsheet
 
-  CHANGE ML: is there a cleaner way to do the spreadsheet?
-  
-  CHANGE ML: need better names for spreadsheet. Too confusing
-  
-  CHANGE ML: Be more clear when you say, Adults model gives the right answer
-  
-  CHANGE ML: People look confuse, they don't know what to expect.
-  
-  CHANGE ML: wasting people's time is a good example. If you waste 1 min/student, and there are 120 students in the class, how much time did you waste?
+	ADD Spreadsheet prep
 
 	Once we close the loop, it doesn't matter where we start:
 
@@ -1381,14 +1414,14 @@ SEC Key parameters
 TSS Discrete-time model
 
 	$N_{T+1} = \lambda N_T$ 
-		
+
 	$\lambda \equiv p + f$
 
 ----------------------------------------------------------------------
 
 Calculating fecundity
 
-CHANGE Blackboard
+ADD Blackboard
 
 	Fecundity $f$ in our model must be unitless
 
@@ -1436,11 +1469,11 @@ Reproductive number
 	The reproductive number \R measures the average number of offspring
 	produced by a single individual over the course of its lifetime
 
-	POLL The population will increase when \R\ldots:
+	POLL Smorgon The population will increase when \R\ldots:
 
 		ANS $\R>1$
 
-	POLL What are the units of \R?
+	POLL Smorgon What are the units of \R?
 
 		ANS \R must be unitless
 
@@ -1457,19 +1490,15 @@ Lifespan
 
 	How many time steps do you expect to survive, on average?  
 
-		ANS $1/\mu$ (not obvious, but true)
+		ANS $1/\mu$ 
+
+			ANS Roughly makes sense, and is also right
 
 		ANS Average lifetime is $1/\mu * \Delta t$
 
 ----------------------------------------------------------------------
 
 Calculating \R
-
-	CHANGE ML: Can you put R and r side by side?
-
-	CHANGE JD: Can you explain what you mean?
-	
-	CHANGE MLans: Split the page into two in the middle, left side will be discrete and will use big R, right side will be continuous and use little r.
 
 	\R is fecundity multiplied by lifespan
 
@@ -1478,6 +1507,32 @@ Calculating \R
 	Why do we multiply by time \emph{steps} instead of lifetime?
 
 		ANS Because $f$ is also measured per time step
+
+----------------------------------------------------------------------
+
+Comparison
+
+BCC
+
+	$\R = f/\mu = f/(1-p)$
+
+	Unitless
+
+	Population behaviour depends on the comparison $\R:1$
+
+		Equivalent to $f:\mu$
+
+NCC
+
+	$\lambda = f+p = f+(1-\mu)$
+
+	Unitless
+
+	Population behaviour depends on the comparison $\lambda:1$
+
+		Equivalent to $f:\mu$
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -1558,6 +1613,32 @@ Calculating \R
 
 ----------------------------------------------------------------------
 
+Comparison
+
+BCC
+
+	$\R = bL = b/d$
+
+	Unitless
+
+	Population behaviour depends on the comparison $\R:1$
+
+		Equivalent to $b:d$
+
+NCC
+
+	$r = b-d = f+(1-\mu)$
+
+	Units [1/t] (a rate)
+
+	Population behaviour depends on the comparison $r:0$
+
+		Equivalent to $b:d$
+
+EC
+
+----------------------------------------------------------------------
+
 Is the population increasing?
 
 	What does $r$ tell us about whether the population is
@@ -1587,9 +1668,9 @@ TSS Links
 
 	To link a continuous-time model to a discrete-time model, we
 	set:
-	
+
 		$\lambda = \exp(r\Delta t)$
-	
+
 		ANS $r = \log_e(\lambda)/\Delta t$
 
 ----------------------------------------------------------------------
@@ -1647,16 +1728,16 @@ Example: Human population growth
 		ANS $N(t) = N(0) \exp(rt)$
 
 			ANS $r = \log_e(N/N(0))/t$
-		
+
 			ANS $r = \log_e(7000000000/1000)/50000\uname{yr}$ $=
 			0.0003/\uname{yr}$
 
 		ANS $N_T = N_0 \lambda^T$
-		
+
 			ANS $T = {t/\Delta t} = 50000\uname{yr}/20\uname{yr} = 2500$
-		
+
 			ANS $\lambda = (N_T/N_0)^{1/T}$
-			
+
 			ANS $\lambda = (7000000000/1000)^{1/2500}$ $= 1.006$
 
 ----------------------------------------------------------------------
@@ -1700,11 +1781,9 @@ Balance
 	If populations grow and shrink proportionally to their size, why
 	don't they go exponentially to zero or infinity?
 
-		ANS \R\ is extremely close to 1
+		ANS \R\ is extremely close to 1 for every species
 
-			ANS For all the species?
-
-			CHANGE MK: Maybe do not need to restate this again? Just jump to limiting factors?
+	How is this possible
 
 		ANS Growth rates change through time
 
@@ -1726,7 +1805,7 @@ Changing growth rates
 
 		ANS Resources (food and space)
 
-		CHANGE MK: Add natural disasters
+		ANS Natural disasters
 
 ----------------------------------------------------------------------
 
