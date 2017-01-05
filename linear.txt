@@ -79,11 +79,7 @@ RSLIDE Moth calculation
 
 		ANS We end up with 15 moths
 
-		CHANGE ML : intervals are also legit answers 
-
-		CHANGE JD: What does this mean?
-		
-		CHANGE MLans : I think you wanted to make the statement our calucations are just approximations. It is okay to get non-integer answers and we have some kind of error bars with our estimation.  
+		ANS On average
 
 ----------------------------------------------------------------------
 
@@ -274,13 +270,13 @@ FIG exponential/exponential.Rout.four.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE A on both scales
+RSLIDE A 
 
 FIG exponential/exponential.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE A on both scales
+ASLIDE A on the log scale
 
 FIG exponential/exponential.Rout-4.pdf
 
@@ -327,12 +323,6 @@ SS Log and linear scales
 ----------------------------------------------------------------------
 
 Scales of comparison
-
-	CHANGE ML : note natural log vs log10?
-
-	CHANGE JD: What does this mean?
-	
-	CHANGE MLans: Different bases. For example: simulate some data points, plot it on natural log scale and plot it on log10 scale. The shape will be the same, but the axis values will change.
 
 	POLL mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
 
@@ -626,6 +616,10 @@ Euler's $e$
 	of Speed?
 
 		ANS $e$ times closer
+
+----------------------------------------------------------------------
+
+CONT Euler's $e$
 
 	$e$ or $1/e$ is the approximate answer to a lot of questions like this one
 
