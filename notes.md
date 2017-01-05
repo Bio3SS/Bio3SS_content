@@ -1,9 +1,10 @@
-* Ask TAs about persisting questions
 
-* POLLS
+* Ask TAs about persisting questions
 
 * Spreadsheet
 
 * Lecture overview??
 
-* Dropbox login? Is there a better way to get the lectures?
+* Poll Everywhere ready?
+
+* Check that I have at least some content!
