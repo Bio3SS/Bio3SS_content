@@ -220,8 +220,8 @@ TSS Learning goals
 
 		ANS Larger spatial scale, longer temporal scale
 
-		ANS We use models to link from the individual level to the
-		population level
+		ANS We use \emph{dynamical models} to link from the individual level to
+		the population level
 
 ----------------------------------------------------------------------
 
