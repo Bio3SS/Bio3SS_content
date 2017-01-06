@@ -86,15 +86,13 @@ RSLIDE Moth calculation
 
 		All adults die after reproduction
 
-	POLL MUSznOOOghzhPqR What happens if we start with 10 moths?
+	POLL free_text_polls/UXPcZzeu284rM7p What happens if we start with 10 moths?
 
 		ANS We end up with 15 moths
 
 		ANS On average
 
 ----------------------------------------------------------------------
-
-ADD Check CLASS
 
 Moth calculation
 
@@ -155,15 +153,17 @@ FIG exponential/dandelion.Rout-2.pdf
 
 Stochastic model
 
-BC
+ADD Switch sides for next year
+
+BCC
 
 	A stochastic model has randomness in the model.
 
 	If we run it again with the same parameters and starting conditions, we get a different answer
 
-NC
+NCC
 
-FIG exponential/dandelion.Rout-2.pdf
+WIDEFIG exponential/dandelion.Rout-2.pdf
 
 EC
 
@@ -233,9 +233,9 @@ RSLIDE Bacteriostasis
 
 	If we start with 10 bacteria/ml, how many do we have after:
 
-		POLL YN2bgU2NJDBuIXd 1 hr?
+		POLL free_text_polls/RGIksOrgB7BwtEm 1 hr?
 
-		POLL YN2bgU2NJDBuIXd 1 wk?
+		POLL free_text_polls/WdKNKRCE7Q6hr3U 1 wk?
 
 ----------------------------------------------------------------------
 
@@ -245,7 +245,7 @@ TSEC Exponential growth
 
 	Which of these is an example?
 
-FIG exponential/exponential.Rout.four-0.pdf
+FIG exponential/exponential.Rout.four.pdf
 
 ----------------------------------------------------------------------
 
@@ -275,11 +275,35 @@ FIG exponential/exponential.Rout-3.pdf
 
 RSLIDE Exponential growth
 
-	POLL 59rZNZLRum55IKI What is exponential growth?
+	POLL free_text_polls/oItfgStGB94yj9Z What is exponential growth?
 
-	POLL R4B7MuFIsRyMBQR Which of these is an example?
+	POLL multiple_choice_polls/1rEH4rixsf0SNLZ Which of these is an example?
 
 FIG exponential/exponential.Rout.four.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE A
+
+FIG exponential/exponential.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE B
+
+FIG exponential/exponential.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE C
+
+FIG exponential/exponential.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE D
+
+FIG exponential/exponential.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
@@ -292,6 +316,18 @@ FIG exponential/exponential.Rout-0.pdf
 ASLIDE A on the log scale
 
 FIG exponential/exponential.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE C 
+
+FIG exponential/exponential.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE C on the linear scale
+
+FIG exponential/exponential.Rout-5.pdf
 
 ----------------------------------------------------------------------
 
@@ -317,27 +353,25 @@ Types of growth
 
 Exponential decline?
 
-	POLL Smorgon What does exponential decline look like?
+	POLL multiple_choice_polls/1rEH4rixsf0SNLZ What does exponential decline look like?
 
 		ANS Decline is proportional to size
 
-		ANS Declines more and more _slowly_ (on linear scale)
+		ANS Declines more and more \emph{slowly} (on linear scale)
 
 ----------------------------------------------------------------------
 
 ASLIDE Exponential decline
 
-ADD Check
-
 BC
 
-WIDEFIG exponential/decline.Rout-1.pdf
+WIDEFIG exponential/decline.Rout-6.pdf
 
 NC
 
 	Decline is proportional to size
 
-	Declines more and more _slowly_ (on linear scale)
+	Declines more and more \emph{slowly} (on linear scale)
 
 EC
 
@@ -365,7 +399,7 @@ SS Log and linear scales
 
 Scales of comparison
 
-	POLL mzRsojoOQ427Bqv 1 is to 10 as 10 is to what?
+	POLL free_text_polls/mSM205BkHzDKpkP 1 is to 10 as 10 is to what?
 
 		ANS If you said 100, you are thinking multiplicatively
 
@@ -375,7 +409,19 @@ Scales of comparison
 
 RSLIDE Scales of display
 
+FIG exponential/comparison.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Scales of display
+
 FIG exponential/comparison.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Scales of display
+
+FIG exponential/comparison.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
@@ -473,7 +519,7 @@ BC
 
 	A 500 lb lion is attacking a 1000 lb buffalo!
 
-	POLL mWPcnLTGOScEpPG This is analogous to a 15 lb red fox attacking:
+	POLL multiple_choice_polls/NCHfvX2CUGV2GoJ This is analogous to a 15 lb red fox attacking:
 
 		A 30 lb beaver (twice as heavy)?
 
@@ -574,7 +620,7 @@ CSLIDE Speeding in Taiwan
 
 	Imagine now that I follow the signs exactly and unrealistically.
 
-	POLL gnI0dJ16ry1YVAo Do I ever arrive in the (ideal) town of Speed?
+	POLL free_text_polls/yqZNkSY38WVmWmj Do I ever arrive in the (ideal) town of Speed?
 
 		ANS No
 
