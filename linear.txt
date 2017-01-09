@@ -429,8 +429,6 @@ RSLIDE Scales of display
 
 FIG exponential/comparison.Rout-1.pdf
 
-ADD Pre-slides for both of these
-
 ----------------------------------------------------------------------
 
 Scales of display
@@ -438,6 +436,18 @@ Scales of display
 DOUBLEPDF exponential/comparison.Rout
 
 There is only one log scale; it doesn't matter which base you use!
+
+----------------------------------------------------------------------
+
+RSLIDE Canadian provinces 
+
+FIG exponential/canada.Rout-0.pdf 
+
+----------------------------------------------------------------------
+
+Canadian provinces 
+
+FIG exponential/canada.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
