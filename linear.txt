@@ -345,6 +345,8 @@ Types of growth
 
 		ANS Per-capita growth is constant
 
+		ANS Only C is exponential, mathematically speaking.
+
 	other:
 
 		Many possibilities, we may discuss some later
@@ -1276,9 +1278,9 @@ BC
 
 	What is $1\wk \cdot 0.02/\dd$?
 
-		ANS 1\wk \cdot 0.02\dd 
+		ANS $1\wk \cdot 0.02\dd$
 
-		ANS 1\wk \cdot 0.02\dd \cdot \frac{168\dd}{\wk}
+		ANS $1\wk \cdot 0.02\dd \cdot \frac{168\dd}{\wk}$
 
 NC
 
