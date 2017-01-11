@@ -661,6 +661,30 @@ Characteristic times
 
 ----------------------------------------------------------------------
 
+RSLIDE Characteristic times
+
+FIG exponential/speed_story.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/speed_story.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE Characteristic times
+
+FIG exponential/speed_story.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/speed_story.Rout-3.pdf
+
+----------------------------------------------------------------------
+
 Bacteriostasis
 
 	What if we add an agent to the tank that makes the birth and death
@@ -708,6 +732,30 @@ Bacteriostasis analysis
 
 ----------------------------------------------------------------------
 
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-3.pdf
+
+----------------------------------------------------------------------
+
 Euler's $e$
 
 	The reason mathematicians like $e$ is that it makes this link
@@ -747,6 +795,31 @@ Exponential growth
 
 ----------------------------------------------------------------------
 
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-6.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-7.pdf
+
+----------------------------------------------------------------------
+
+
 Doubling time
 
 	Some people prefer to think about doubling times.
@@ -771,6 +844,13 @@ Doubling time
 
 ----------------------------------------------------------------------
 
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+
 Half life
 
 	The half life plays the same role for exponential decline as the
@@ -787,6 +867,13 @@ Half life
 		We can write $T_h = \log_e(2) T_c$
 
 ----------------------------------------------------------------------
+
+RSLIDE Characteristic times
+
+FIG exponential/bacteria_scales.Rout-1.pdf
+
+----------------------------------------------------------------------
+
 
 SEC Constructing models
 
@@ -1455,7 +1542,9 @@ Calculating $\lambda$
 
 	If $N_{T+1} = \lambda N_T$, what are the units of $\lambda$?
 
-		ANS unitless
+		ANS We multiply by $\lambda$ over and over
+
+		ANS Therefore $\lambda$ must be unitless
 
 	Therefore $p$ and $f$ must be unitless
 
