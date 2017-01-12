@@ -694,9 +694,9 @@ Bacteriostasis
 
 	If we start with 10 bacteria/ml, how many do we have after:
 
-		POLL YN2bgU2NJDBuIXd 1 hr?
+		POLL free_text_polls/Es8VWnO5ERxNOlx 1 hr?
 
-		POLL YN2bgU2NJDBuIXd 1 wk?
+		POLL free_text_polls/c6LRaLzWaiQZFKa 1 wk?
 
 ----------------------------------------------------------------------
 
@@ -819,7 +819,6 @@ FIG exponential/bacteria_scales.Rout-7.pdf
 
 ----------------------------------------------------------------------
 
-
 Doubling time
 
 	Some people prefer to think about doubling times.
@@ -844,12 +843,23 @@ Doubling time
 
 ----------------------------------------------------------------------
 
-RSLIDE Characteristic times
+RSLIDE
 
-FIG exponential/bacteria_scales.Rout-5.pdf
+FIG exponential/bacteria_times.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
+RSLIDE
+
+FIG exponential/bacteria_times.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE
+
+FIG exponential/bacteria_times.Rout-5.pdf
+
+----------------------------------------------------------------------
 
 Half life
 
@@ -868,9 +878,22 @@ Half life
 
 ----------------------------------------------------------------------
 
-RSLIDE Characteristic times
+RSLIDE
 
-FIG exponential/bacteria_scales.Rout-1.pdf
+FIG exponential/bacteria_times.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE
+
+FIG exponential/bacteria_times.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+ASLIDE
+
+FIG exponential/bacteria_times.Rout-2.pdf
+
 
 ----------------------------------------------------------------------
 
@@ -976,7 +999,7 @@ How do populations change?
 	I survey a population in 2005, and again in 2009.  I get a different
 	answer the second time.
 
-	POLL Dw8wmkW6lt2FSw4 What are some reasons why this answer might change?
+	POLL free_text_polls/MAAeSpcCrfRD7lC What are some reasons why this answer might change?
 
 		ANS Birth
 
@@ -1199,11 +1222,27 @@ Model
 
 		$t_T = T \Delta t$
 
-	POLL Smorgon How does $N$ behave in this model?
+	POLL free_text_polls/GTPbsggjwpXj2Sp How does $N$ behave in this model?
 
 		ANS Increases exponentially (geometrically) when $\lambda>1$
 
 		ANS Decreases exponentially when $\lambda<1$
+
+----------------------------------------------------------------------
+
+RSLIDE Example
+
+BC
+
+SIDEFIG images/dandy_field.jpg
+
+SIDEFIG images/spreadsheet.png
+
+NC
+
+	HREF http://tinyurl.com/DandelionModel2017 Spreadsheet (see resource page)
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -1387,7 +1426,7 @@ BC
 	We \emph{cannot} {add} quantities with different units (unless they
 	can be converted to the same units)
 
-	POLL q1Uw9Tqk3s6aaDu How many seconds are there in a day?
+	POLL free_text_polls/nDRr6COgLchiU5B How many seconds are there in a day?
 
 		ANS
 		$\bigeq \frac{60 \uname{sec}}{\uname{min}} $ 
@@ -1447,7 +1486,7 @@ DOUBLEFIG exponential/growth.Rout-0.pdf exponential/growth.Rout-4.pdf
 
 Thinking about units 
 
-	POLL dtoNQ0UYTN3J8b7 What is $10^{3 \dd}$?
+	POLL free_text_polls/WpdZeN5oUWlF9uQ What is $10^{3 \dd}$?
 
 		NOANS
 
@@ -1511,7 +1550,7 @@ Moths
 
 	$\cdot 0.5 \uname{rA}/\uname{A}$
 
-	POLL tLELJesRPskkwAS What's the product?
+	POLL free_text_polls/O214ighe0x5ACD2 What's the product?
 
 		ANS $1.5\uname{rA}/\uname{rF}$
 
@@ -1616,11 +1655,11 @@ Reproductive number
 	The reproductive number \R measures the average number of offspring
 	produced by a single individual over the course of its lifetime
 
-	POLL Smorgon The population will increase when \R\ldots:
+	POLL free_text_polls/vr3BqzAIemoYqKL The population will increase when \R\ldots:
 
 		ANS $\R>1$
 
-	POLL Smorgon What are the units of \R?
+	POLL free_text_polls/OCrIQcBwqmfa9l7 What are the units of \R?
 
 		ANS \R must be unitless
 
@@ -1938,7 +1977,7 @@ Balance
 
 Changing growth rates
 
-	POLL 23RB9oQMsK354yP What sort of factors can make species growth rates change?
+	POLL free_text_polls/0tUk425po7FPFxM What sort of factors can make species growth rates change?
 
 		ANS Seasonality
 
