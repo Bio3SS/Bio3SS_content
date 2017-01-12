@@ -443,6 +443,8 @@ There is only one log scale; it doesn't matter which base you use!
 
 RSLIDE Canadian provinces 
 
+CHANGE CC: Add a poll What are the most unusual provinces in Canada
+
 FIG exponential/canada.Rout-0.pdf 
 
 ----------------------------------------------------------------------
@@ -624,6 +626,9 @@ EC
 
 CSLIDE Speeding in Taiwan
 
+CHANGE CC: Change this poll into a multiple choices poll
+CHANGE CC: Add in blue as an answer to the poll: Always an hour away of speed
+
 	Moral:
 
 		Units (km is \emph{not} a speed)
@@ -697,6 +702,8 @@ Bacteriostasis
 		POLL free_text_polls/Es8VWnO5ERxNOlx 1 hr?
 
 		POLL free_text_polls/c6LRaLzWaiQZFKa 1 wk?
+
+CHANGE CC: Another poll or just showing the answers from yesterday?
 
 ----------------------------------------------------------------------
 
@@ -1009,6 +1016,7 @@ How do populations change?
 
 		ANS Sampling (ie., my counts are not perfectly correct)
 
+CHANGE CC: stop here on Thurs 12
 ----------------------------------------------------------------------
 
 Censusing and intermediate variables
