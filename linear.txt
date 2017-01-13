@@ -1049,6 +1049,8 @@ Linear population models
 
 		ANS They usually correspond to exponential growth -- or decline
 
+CHANGE CC: You wanted the answer to be divided into 2 points
+
 ----------------------------------------------------------------------
 
 SS Examples
@@ -1106,6 +1108,8 @@ SIDEFIG images/cool_moth.jpg
 
 EC
 
+CHANGE CC: Yes Gypsy moths have only 1 generation/year
+CHANGE CC: maybe have a poll for either state variable or parameters to check if everybody is OK with that
 ----------------------------------------------------------------------
 
 Bacteria
@@ -1130,6 +1134,7 @@ SIDEFIG images/violet_bacteria.jpg
 
 EC
 
+CHANGE CC: For the parameters you should divide the answers in multiple points (same for the dandelions) 
 ----------------------------------------------------------------------
 
 Dandelions
@@ -1179,6 +1184,8 @@ Assumptions
 
 		ANS $N_{T+1} = (pN_T+fN_T) = (p+f)N_T$
 
+CHANGE CC: Be more clear with this slide (explain more what you mean by f and/or m)
+CHANGE CC: On the board: N(t+1) = pN(t) + pmN(t) = (p+f) N(t)
 ----------------------------------------------------------------------
 
 CONT Assumptions
@@ -1195,6 +1202,7 @@ CONT Assumptions
 
 	Population changes deterministically
 
+CHANGE CC: You wanted to add the "world picture" more often to hilight the fact that model are a simplification of the truth
 ----------------------------------------------------------------------
 
 
@@ -1208,6 +1216,7 @@ Definitions
 
 		... associated with the time step $\Delta t$
 
+CHANGE CC: add the units?
 ----------------------------------------------------------------------
 
 Model
