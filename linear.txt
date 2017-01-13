@@ -1100,10 +1100,6 @@ BC
 
 		ANS Annually; use the same time (and stage) each year
 
-ADD Spreadsheet here?
-
-ADD Blackboard
-
 NC
 
 SIDEFIG images/cool_moth.jpg
@@ -1137,8 +1133,6 @@ EC
 ----------------------------------------------------------------------
 
 Dandelions
-
-ADD Blackboard
 
 BC
 
@@ -1307,7 +1301,7 @@ Assumptions
 
 		ANS $\ds \frac{dN}{dt} = (b-d)N $
 
-		ANS That's what calculus if \emph{for} -- describing
+		ANS That's what calculus is \emph{for} -- describing
 		instantaneous rates of change
 
 ----------------------------------------------------------------------
@@ -1342,6 +1336,8 @@ Definitions
 	have units:
 
 		ANS 1/[time]
+
+			ANS $\equiv$ (indiv/[time])/indiv
 
 ----------------------------------------------------------------------
 
