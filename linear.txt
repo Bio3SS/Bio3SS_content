@@ -1368,6 +1368,8 @@ Bacteria
 	But we can't do an infinite number of simulation steps on the
 	computer
 
+	ADD We need fancier methods
+
 ----------------------------------------------------------------------
 
 CONT Bacteria
