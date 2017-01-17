@@ -1423,6 +1423,8 @@ BC
 
 		ANS $1\wk \cdot 0.02\dd \cdot \frac{168\dd}{\wk}$
 
+		ANS 3.36
+
 NC
 
 SIDEFIG images/espresso.jpg
@@ -1576,7 +1578,7 @@ Moths
 
 Moth spreadsheet
 
-	ADD Spreadsheet prep
+	ADD No more moth spreadsheet
 
 	Once we close the loop, it doesn't matter where we start:
 
@@ -1667,7 +1669,7 @@ Finite rate of increase
 
 Reproductive number 
 
-	The reproductive number \R measures the average number of offspring
+	The reproductive number \R\ measures the average number of offspring
 	produced by a single individual over the course of its lifetime
 
 	POLL free_text_polls/vr3BqzAIemoYqKL The population will increase when \R\ldots:
@@ -1676,7 +1678,7 @@ Reproductive number
 
 	POLL free_text_polls/OCrIQcBwqmfa9l7 What are the units of \R?
 
-		ANS \R must be unitless
+		ANS \R\ must be unitless
 
 ----------------------------------------------------------------------
 
@@ -1701,7 +1703,7 @@ Lifespan
 
 Calculating \R
 
-	\R is fecundity multiplied by lifespan
+	\R\ is fecundity multiplied by lifespan
 
 	$\R = f/\mu = f/(1-p)$
 
@@ -1808,7 +1810,7 @@ Calculating \R
 
 		Equivalent to the characteristic time for the death process
 
-	\R is the average number of births expected over that time frame:
+	\R\ is the average number of births expected over that time frame:
 
 		$\R = bL = b/d$
 
