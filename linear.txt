@@ -1330,6 +1330,8 @@ CONT Assumptions
 
 		ANS Usually disadvantageous
 
+CHANGE CC: Split advantages/disadvantages into 2 slides to make it more clear
+
 ----------------------------------------------------------------------
 
 
@@ -1426,6 +1428,8 @@ BC
 		ANS 3.36
 
 NC
+
+CHANGE CC: correct the calculation 1week x 0.02/day x 7day/wk = 0.14
 
 SIDEFIG images/espresso.jpg
 
@@ -1679,6 +1683,8 @@ Reproductive number
 	POLL free_text_polls/OCrIQcBwqmfa9l7 What are the units of \R?
 
 		ANS \R\ must be unitless
+
+CHANGE CC: stop before the polls on Jan 17
 
 ----------------------------------------------------------------------
 
