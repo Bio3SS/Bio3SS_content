@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: linear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: intro.asn.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -540,6 +540,8 @@ ebola:
 ## Assignments
 
 ##
+intro.asn.pdf: assign/intro.ques
+
 pg.asn.pdf: assign/pg.ques
 
 regulation.key.pdf: assign/regulation.ques
