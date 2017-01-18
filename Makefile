@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: intro.asn.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: nonlinear.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -592,8 +592,8 @@ Sources += asn.tmp
 	$(CP) $< $(web)
 
 # Slides
-%.final.pdf.push: %.final.pdf
-	$(CP) $< $(Drop)/3SS/3SS_content
+%.final.pdf.push: %.final.gp ;
+%.draft.pdf.push: %.draft.gp ;
 
 ## Push to private repo
 %.private: %

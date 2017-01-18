@@ -105,7 +105,7 @@ Sometimes regulation is apparent
 BC
 
 	Some species seem to fill a niche (mangroves)
-	
+
 	or deplete their own food resources (gypsy moths)
 
 NC
@@ -164,7 +164,7 @@ How do we know it's regulation?
 		ANS This is true for \emph{every} population
 
 		ANS This is unlikely to occur by chance
-		
+
 		ANS Thus, it must be through direct or indirect responses to the
 		population size
 
@@ -220,6 +220,7 @@ Gypsy moths
 		Directly or indirectly, in the short or long term?
 
   CHANGE ML: Make more bullet points.
+
 ----------------------------------------------------------------------
 
 SEC Continuous-time regulation
@@ -241,7 +242,6 @@ Build on the linear model
 ----------------------------------------------------------------------
 
 Individual perspective
-
 
   CHANGE ML: really need notes for these four plots.
 
@@ -280,7 +280,7 @@ Recruitment
 
 	In simple continuous-time population models, recruitment is included
 	in birth:
-	
+
 		$b$ is the rate at which adults produce new adults; or seeds
 		produce new seeds -- we have to ``close the loop"
 
@@ -300,7 +300,7 @@ BC
 
 		If individuals shift their resources to reproduction instead of
 		survival
-		
+
 		CHANGE ML: Law reinforcement (CHINA?)
 
 NC
@@ -321,12 +321,12 @@ BC
 		Individuals are starving, or conflict increases
 
 		But it may stay the same
-		
+
 			if reproduction is limited by competition for breeding sites,
 			or by recruitment of juveniles
 
 		Or even go down 
-		
+
 			if organisms go into some sort of ``resting mode"
 
 NC
@@ -368,7 +368,7 @@ Carrying capacity
 		$\R(K) \equiv 1$
 
 		$b(K) \equiv d(K)$
-		
+
 	CHANGE ML: Please use different bullet style
 
 ----------------------------------------------------------------------
@@ -387,7 +387,7 @@ Logistic model
 
 	Not a linear model, because \emph{population-level} rates are not
 	linear
-	
+
 	CHANGE ML: Make a note, little r is per capita rate
 
 ----------------------------------------------------------------------
@@ -398,11 +398,7 @@ Exponential-rates model
 
 		$b(N) = b_0 \exp(-N/N_b)$
 
-		$d(N) = d_0 \exp(N/N_d)$ \textbf{(fixed a typo here)}
-
-  CHANGE ML: No negative in the death equation
-  
-	$N_b$ and $N_d$ have the same units as $N$
+		$d(N) = d_0 \exp(N/N_d)$ 
 
 	This is the simplest model that is perfectly smooth and keeps track
 	of birth and death rates separately
@@ -466,7 +462,8 @@ States and state variables
 
 		ANS We are still assuming that's all we need to know
 
-  CHANGE ML: second answer: assume all individuals are the same.
+  			ANS In other words, that all individuals are the same.
+
 ----------------------------------------------------------------------
 
 Parameters
@@ -485,9 +482,6 @@ Parameters
 ----------------------------------------------------------------------
 
 Characteristic \emph{scale}
-
-  CHANGE ML: Con't here next week. Weekend!!
-  CHANGE CC: explain a little more "characteristic scale"? 
 
 	A characteristic scale for density dependence is analogous to a
 	characteristic time
@@ -510,7 +504,6 @@ Model
 	Dynamics: 
 
 		$\bigeq \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d_0 \exp(N/N_d))N$
- 		\textbf{(fixed the same typo here)}
 
 	Exact solution: 
 
@@ -530,7 +523,7 @@ Dynamics
 		I.e., how will it change through time?
 
 	What will the population do if it starts
-	
+
 		near zero?
 
 		near the equilibrium?
@@ -853,9 +846,7 @@ What kind of equilibrium?
 ----------------------------------------------------------------------
 
 Basic reproductive number
-  
-  CHANGE ML: Con't here on wed!
-  
+
 	The reproductive number of a population not affected by crowding is
 	called the \textbf{basic reproductive number}
 
@@ -870,7 +861,7 @@ Basic reproductive number
 		ANS Increases when it is small
 
 	POLL https://www.polleverywhere.com/free_text_polls/MnLJqpRH8XhSHi9 What is \Ro\ in our current model?
-	
+
 		ANS $\Ro=b(0)/d(0)$
 
 		ANS $\Ro$, $b(0)$, and $d(0)$ are limits
@@ -1165,7 +1156,7 @@ Time-delayed regulation
 		Damped when delay is short \ldots
 
 		Persistent when delay is long \ldots
-		
+
 	\ldots compared to characteristic time of approach to equilibrium
 
 ----------------------------------------------------------------------
@@ -1187,7 +1178,7 @@ TSS A simple, discrete-time model
 		$t_{T+1} = t_T + \Delta t$ (does not change)
 
 	To:
-	  
+
 	  CHANGE ML: maybe add $sub_T$ in p and f
 
 		$N_{T+1} = (p(N)+f(N))N_T \equiv \lambda(N) N_T$
@@ -1214,7 +1205,7 @@ Specific assumptions
 		$p(N) = p_0 \exp(-N/N_p)$
 
 	CHANGE ML: WHAT DOES THE NEXT LINE MEAN? TAKE IT OUT
-	
+
 	Good for organisms where competition is mostly felt by the young
 
 	As in the continuous case, other formulations will give similar
@@ -1458,7 +1449,7 @@ Contest competition
 	How does contest competition square with regulation?
 
 	CHANGE ML: plot scramble and contest competition.
-    
+
 		ANS Regulation means that $\lambda$ has to go down with $N_T$ --
 
 		ANS Regulation means that $\lambda$ has to go down with $N_T$;
@@ -1474,8 +1465,6 @@ DOUBLEFIG compensation/monotonic.plots.Rout-2.pdf compensation/monotonic.plots.R
 ----------------------------------------------------------------------
 
 Songbirds
-
-  CHANGE ML: con't here next week. WEEKEND!! 
 
 BC
 
