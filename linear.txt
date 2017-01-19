@@ -249,25 +249,25 @@ FIG exponential/exponential.Rout.four.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE A
+RSLIDE A
 
 FIG exponential/exponential.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE B
+RSLIDE B
 
 FIG exponential/exponential.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE C
+RSLIDE C
 
 FIG exponential/exponential.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-CSLIDE D
+RSLIDE D
 
 FIG exponential/exponential.Rout-3.pdf
 
@@ -862,7 +862,7 @@ FIG exponential/bacteria_times.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-ASLIDE
+ASLIDE Characterstic time and doubling time
 
 FIG exponential/bacteria_times.Rout-5.pdf
 
@@ -897,7 +897,7 @@ FIG exponential/bacteria_times.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-ASLIDE
+ASLIDE Characterstic time and half life
 
 FIG exponential/bacteria_times.Rout-2.pdf
 

@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: nonlinear.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: linear.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -109,6 +109,7 @@ linear.handouts.html: linear.hh.tex
 linear.final.pdf: linear.txt
 linear.draft.pdf: linear.txt
 linear.handouts.pdf: linear.txt
+linear.complete.pdf: linear.txt
 
 # Unit 2 (Regulated population growth)
 
