@@ -176,8 +176,6 @@ SS Population Examples
 
 Elk
 
-  CHANGE ML: Put a small note saying these are the same but different scale
-
 DOUBLEPDF ts/elk.simple.Rout
 
 ----------------------------------------------------------------------
@@ -219,8 +217,6 @@ Gypsy moths
 
 		Directly or indirectly, in the short or long term?
 
-  CHANGE ML: Make more bullet points.
-
 ----------------------------------------------------------------------
 
 SEC Continuous-time regulation
@@ -243,7 +239,7 @@ Build on the linear model
 
 Individual perspective
 
-  CHANGE ML: really need notes for these four plots.
+  CHANGE ML: really need notes for these four plots. (I am sure you explain it when you are teaching, but some people might not catch everything you say and you don't have notes in the full/complete version.)
 
 DOUBLEFIG bd_models/constant.bd.Rout-0.pdf bd_models/constant.bd.Rout-2.pdf
 
@@ -368,8 +364,6 @@ Carrying capacity
 		$\R(K) \equiv 1$
 
 		$b(K) \equiv d(K)$
-
-	CHANGE ML: Please use different bullet style
 
 ----------------------------------------------------------------------
 
@@ -563,7 +557,7 @@ DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-2.pdf
 
 High starting population
 
-  CHANGE ML: Indiviual level plots? 
+  CHANGE ML: Indiviual level plots? (Just add to the title (Indiviual Perspectiev))
 
 DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-4.pdf
 
@@ -1169,8 +1163,6 @@ SEC Discrete-time regulation
 
 TSS A simple, discrete-time model
 
-  CHANGE ML: spice up some winter insect examples from bio seminar for next year
-
 	We extend our discrete-time model from the previous unit:
 
 		$N_{T+1} = (p+f)N_T \equiv \lambda N_T$
@@ -1361,9 +1353,9 @@ Complex behaviour in our simulations
 
 Response to population increase
 
-  CHANGE ML: put titles?
+  CHANGE ML: put titles? (On the two corresponding plots)
 
-  CHANGE ML: Maybe change $N_T$ and $N_T+1$ axis on the same linear scale
+  CHANGE ML: Maybe change $N_T$ and $N_T+1$ axis on these same linear scale
 
 DOUBLEFIG compensation/stable.plots.Rout-2.pdf compensation/stable.plots.Rout-3.pdf
 
