@@ -73,13 +73,9 @@ Long-term growth rates
 
 		ANS Insufficient resources
 
-			ANS Not enough to go around: e.g., oak trees use all the
-			available light
+			ANS Limitation: e.g., oak trees use all the available light
 
-		ANS Resources are destroyed: e.g., gypsy moths kill all the oak
-		trees
-
-	CHANGE MK: Maybe include other competition within a species.
+			ANS Destruction: gypsy moths kill all the oak trees
 
 ----------------------------------------------------------------------
 
@@ -91,8 +87,6 @@ Population regulation
 		lower
 
 		Maybe with a time delay
-
-	CHANGE MK: Maybe not an appropriate time to introduce time delay?
 
 	Why is this interesting?
 
@@ -127,8 +121,8 @@ BC
 		May be controlled by cryptic (hard to see) natural enemies (like
 		disease or parasites
 
-		May be controlled by food limitation at bad times (e.g., during
-		regular droughts)
+		May be controlled by limitations that occur only at certain times
+		(e.g., during regular droughts)
 
 NC
 
@@ -174,9 +168,11 @@ SS Population Examples
 
 ----------------------------------------------------------------------
 
+RSLIDE
+
 Elk
 
-DOUBLEPDF ts/elk.simple.Rout
+DOUBLEPDF ts/elk.plot.Rout
 
 ----------------------------------------------------------------------
 
@@ -184,32 +180,23 @@ CSLIDE Ebola
 
 DOUBLEFIG ts/wa/liberia150429.npc.tsplot.Rout-0.pdf ts/wa/liberia150429.npc.tsplot.Rout-1.pdf
 
+CHANGE Look at other panels from this figure; they seem out of adjustment so I didn't use them this time.
+
 ----------------------------------------------------------------------
 
-Ebola
+RSLIDE Paramecia
 
-DOUBLEFIG ts/wa/liberia150429.npc.tsplot.Rout-2.pdf ts/wa/liberia150429.npc.tsplot.Rout-3.pdf
-
-
-  CHANGE ML: Maybe use different lines (solid/dotted) instead of colour
-----------------------------------------------------------------------
-
-Paramecia
-
-DOUBLEPDF ts/paramecia.simple.Rout
+DOUBLEPDF ts/paramecia.plot.Rout
 
 ----------------------------------------------------------------------
 
 RSLIDE Gypsy moths
 
-DOUBLEPDF ts/gm10165.simple.Rout
+DOUBLEPDF ts/gm10165.plot.Rout
 
 ----------------------------------------------------------------------
 
-
 Gypsy moths
-
-	CHANGE Gypsy moths prefer oak trees, but the overabundance of white-tailed deer in eastern deciduous forests is reducing recruitment of oaks, reducing the population size of the gypsy moths
 
 	POLL https://www.polleverywhere.com/free_text_polls/TbtndvYJ9xHJniX What are some factors that limit gypsy-moth populations?
 
@@ -239,9 +226,27 @@ Build on the linear model
 
 Individual perspective
 
-  CHANGE ML: really need notes for these four plots. (I am sure you explain it when you are teaching, but some people might not catch everything you say and you don't have notes in the full/complete version.)
-
 DOUBLEFIG bd_models/constant.bd.Rout-0.pdf bd_models/constant.bd.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+CONT Individual perspective
+
+BC
+
+	Per capita rate shows birth and death per individual
+
+	Corresponds to the time plot showing growth on a log scale
+
+		On the log scale we see \emph{multiplicative} or \emph{proportional} change
+
+NC
+
+SIDEFIG bd_models/constant.bd.Rout-0.pdf
+
+SIDEFIG bd_models/constant.bd.Rout-2.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -249,6 +254,26 @@ Population perspective
 
 DOUBLEFIG bd_models/constant.bd.Rout-1.pdf bd_models/constant.bd.Rout-3.pdf
 
+----------------------------------------------------------------------
+
+CONT Population perspective
+
+BC
+
+	Total rate shows birth and death for the whole population
+
+	Corresponds to the time plot showing growth on a linear scale
+
+		On the linear scale we see \emph{additive} or \emph{absolute}
+		change
+
+NC
+
+SIDEFIG bd_models/constant.bd.Rout-1.pdf
+
+SIDEFIG bd_models/constant.bd.Rout-3.pdf
+
+EC
 ----------------------------------------------------------------------
 
 Non-linear model
@@ -296,8 +321,6 @@ BC
 
 		If individuals shift their resources to reproduction instead of
 		survival
-
-		CHANGE ML: Law reinforcement (CHINA?)
 
 NC
 
@@ -371,6 +394,8 @@ Logistic model
 
 	A popular model of density-dependent growth is the logistic model
 
+	Per capita instantaneous growth rate $r$ is a function of $N$
+
 		$r(N) = \rmax(1-N/K)$
 
 		Consistent with various assumptions about $b(N)$ and $d(N)$
@@ -381,8 +406,6 @@ Logistic model
 
 	Not a linear model, because \emph{population-level} rates are not
 	linear
-
-	CHANGE ML: Make a note, little r is per capita rate
 
 ----------------------------------------------------------------------
 
@@ -526,11 +549,6 @@ Dynamics
 
 ----------------------------------------------------------------------
 
-CHANGE CC: Perhaps you can add some notes on the slides: like the legend of the plots and the formula on the top of the slide can help to follow
-CHANGE CC: When you use arrows to separate 2 cases: before and after b=d, you can use different colors (for the 2 arows and use the same to draw a box around the plot of the right) or hilight more which arrow correspond to the plot on the right
-CHANGE CC: when you change the slides with the plots and when you came back on previous plots you went too fast
-CHANGE CC: perhaps change the slides order: your explanation was very clear but you didn't have the good plots
-
 RSLIDE What will this model do?
 
 FIG bd_models/birth.bd.Rout-0.pdf 
@@ -551,15 +569,37 @@ FIG bd_models/birth.bd.Rout-8.pdf
 
 What will this model do?
 
-DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-2.pdf 
+BCC
+
+WIDEFIG bd_models/birth.bd.Rout-8.pdf 
+
+NCC
+
+	Increase when population is below equilibrium
+
+	Decrease when population is above equilibrium
+
+	Converge
+
+EC
 
 ----------------------------------------------------------------------
 
-High starting population
+RSLIDE Low starting population example
 
-  CHANGE ML: Indiviual level plots? (Just add to the title (Indiviual Perspectiev))
+DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE High starting population example
 
 DOUBLEFIG bd_models/birth.bd.Rout-8.pdf bd_models/birth.bd.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Examples
+
+DOUBLEFIG bd_models/birth.bd.Rout-2.pdf bd_models/birth.bd.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
@@ -717,13 +757,11 @@ DOUBLEFIG bd_models/slow.bd.Rout-1.pdf bd_models/slow.bd.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-CHANGE CC: you said that you repeat a lot but you went more and more fast (some students came back on their notes to follow)
-
 Other examples
 
 	There are two other possible scenarios for density dependence
 
-	For fun, you can try to think of what they are
+		For fun, you can try to think of what they are
 
 	But all of these examples have similar behaviour
 
@@ -803,13 +841,13 @@ TSS Equilibria and time scales
 
 ----------------------------------------------------------------------
 
-CHANGE CC: spend a little more time explaining the definitions
-
 Stable and unstable equilibria
 
-	If we are at an equilibrium we expect to stay there
+	Aren't equilibria always stable?
 
-		At least in our simplified model
+		If we are at an equilibrium we expect to stay there
+
+		(in our simplified model, at least)
 
 	An equilibrium is defined as stable if we expect to approach the
 	equilibrium \emph{when we are near it.}
@@ -943,7 +981,7 @@ DOUBLEFIG bd_models/birth.bd.Rout-2.pdf bd_models/birth.bd.Rout-3.pdf
 
 RSLIDE Elk
 
-DOUBLEPDF ts/elk.simple.Rout
+DOUBLEPDF ts/elk.plot.Rout
 
 ----------------------------------------------------------------------
 
@@ -964,15 +1002,15 @@ Dynamics of density-dependent populations
 
 ----------------------------------------------------------------------
 
-Elk
+Paramecia
 
-DOUBLEPDF ts/elk.simple.Rout
+DOUBLEPDF ts/paramecia.plot.Rout
 
 ----------------------------------------------------------------------
 
-Paramecia
+Elk
 
-DOUBLEPDF ts/paramecia.simple.Rout
+DOUBLEPDF ts/elk.plot.Rout
 
 ----------------------------------------------------------------------
 
@@ -1029,17 +1067,21 @@ Time-delayed continuous models
 
 	Be explicit about time: $\bigeq \frac{dN(t)}{dt} = (b(N(t))-d(N(t)))N(t)$
 
+----------------------------------------------------------------------
+
+CONT Time-delayed continuous models
+
 	Where should we add delays? Assume we leave the left-hand side alone
 	(that's what we're trying to model).
 
-		ANS Birth rate, or death rate, or both
+		ANS \emph{rates} at time $t$ might depend on past conditions
+		(population at time $t-\tau$)
 
-		ANS \emph{Not} the population multiplier
+		ANS \emph{population} at time $t$ is just population at time $t$ 
+		
+			ANS that is the population that is experiencing births and deaths
 
-		ANS Rates might depend on the past, but the births and deaths are
-		happening in the current population
-
-	CHANGE MK: Actually write out "Growth at time t depends on conditions at time t - tau" So that you don't have to on the board? Make the equation that follows part of the answer, and then create a poll here maybe
+		ANS $\bigeq \frac{dN(t)}{dt} = (b(N(t-\tau))-d(N(t-\tau)))N(t)$
 
 ----------------------------------------------------------------------
 
@@ -1075,8 +1117,6 @@ Model dynamics
 		before it will stop growing
 
 	So what happens in the long term?
-
-	CHANGE MK: Add tau = 1 in the figure title
 
 ----------------------------------------------------------------------
 
@@ -1171,9 +1211,7 @@ TSS A simple, discrete-time model
 
 	To:
 
-	  CHANGE ML: maybe add $sub_T$ in p and f
-
-		$N_{T+1} = (p(N)+f(N))N_T \equiv \lambda(N) N_T$
+		$N_{T+1} = (p(N_T)+f(N_T))N_T \equiv \lambda(N) N_T$
 
 ----------------------------------------------------------------------
 
@@ -1195,10 +1233,6 @@ Specific assumptions
 		$f(N)=f_0 \exp(-N/N_f)$
 
 		$p(N) = p_0 \exp(-N/N_p)$
-
-	CHANGE ML: WHAT DOES THE NEXT LINE MEAN? TAKE IT OUT
-
-	Good for organisms where competition is mostly felt by the young
 
 	As in the continuous case, other formulations will give similar
 	results
@@ -1353,10 +1387,6 @@ Complex behaviour in our simulations
 
 Response to population increase
 
-  CHANGE ML: put titles? (On the two corresponding plots)
-
-  CHANGE ML: Maybe change $N_T$ and $N_T+1$ axis on these same linear scale
-
 DOUBLEFIG compensation/stable.plots.Rout-2.pdf compensation/stable.plots.Rout-3.pdf
 
 ----------------------------------------------------------------------
@@ -1440,13 +1470,29 @@ Contest competition
 
 	How does contest competition square with regulation?
 
-	CHANGE ML: plot scramble and contest competition.
+		ANS Regulation means that $\lambda$ has to go down with $N_T$ \ldots
 
-		ANS Regulation means that $\lambda$ has to go down with $N_T$ --
+		ANS \emph{not} that \Nprime\ has to.
 
-		ANS Regulation means that $\lambda$ has to go down with $N_T$;
+----------------------------------------------------------------------
 
-		\Nprime\ does not have to.
+RSLIDE Contest competition
+
+BC
+
+	How does contest competition square with regulation?
+
+		Regulation means that $\lambda$ has to go down with $N_T$ \ldots
+
+		\emph{not} that \Nprime\ has to.
+
+NC
+
+SIDEFIG compensation/monotonic.plots.Rout-2.pdf
+
+SIDEFIG compensation/monotonic.plots.Rout-3.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -1527,11 +1573,9 @@ Complex behaviour in real populations
 
 ----------------------------------------------------------------------
 
-CHANGE CC: we don't see the labels of the axis and the black line
-
 RSLIDE Paramecia
 
-DOUBLEPDF ts/paramecia.simple.Rout
+DOUBLEPDF ts/paramecia.plot.Rout
 
 ----------------------------------------------------------------------
 
@@ -1541,11 +1585,9 @@ DOUBLEFIG ts/paramecia.plot.Rout-3.pdf ts/paramecia.plot.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-CHANGE CC: Improve the plots for the elk (plot on the left doesn't fit with the plot on the right)
-
 RSLIDE Elk
 
-DOUBLEPDF ts/elk.simple.Rout
+DOUBLEPDF ts/elk.plot.Rout
 
 ----------------------------------------------------------------------
 

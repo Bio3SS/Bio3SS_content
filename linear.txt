@@ -626,9 +626,6 @@ EC
 
 CSLIDE Speeding in Taiwan
 
-CHANGE CC: Change this poll into a multiple choices poll
-CHANGE CC: Add in blue as an answer to the poll: Always an hour away of speed
-
 	Moral:
 
 		Units (km is \emph{not} a speed)
@@ -639,7 +636,7 @@ CHANGE CC: Add in blue as an answer to the poll: Always an hour away of speed
 
 	POLL free_text_polls/yqZNkSY38WVmWmj Do I ever arrive in the (ideal) town of Speed?
 
-		ANS No
+		ANS No. I am always an hour away!
 
 		ANS But I do get extremely close (after several hours)
 
@@ -1016,7 +1013,6 @@ How do populations change?
 
 		ANS Sampling (ie., my counts are not perfectly correct)
 
-CHANGE CC: stop here on Thurs 12
 ----------------------------------------------------------------------
 
 Censusing and intermediate variables
@@ -1047,9 +1043,9 @@ Linear population models
 
 		Linear models do not usually correspond to linear growth!
 
-		ANS They usually correspond to exponential growth -- or decline
+		ANS They usually correspond to exponential growth
 
-CHANGE CC: You wanted the answer to be divided into 2 points
+			ANS \ldots or exponential decline
 
 ----------------------------------------------------------------------
 
@@ -1102,14 +1098,15 @@ BC
 
 		ANS Annually; use the same time (and stage) each year
 
+	CHANGE CC: maybe have a poll for either state variable or parameters to check if everybody is OK with that
+
 NC
 
 SIDEFIG images/cool_moth.jpg
 
 EC
 
-CHANGE CC: Yes Gypsy moths have only 1 generation/year
-CHANGE CC: maybe have a poll for either state variable or parameters to check if everybody is OK with that
+
 ----------------------------------------------------------------------
 
 Bacteria
@@ -1135,6 +1132,7 @@ SIDEFIG images/violet_bacteria.jpg
 EC
 
 CHANGE CC: For the parameters you should divide the answers in multiple points (same for the dandelions) 
+
 ----------------------------------------------------------------------
 
 Dandelions
@@ -1186,6 +1184,8 @@ Assumptions
 
 CHANGE CC: Be more clear with this slide (explain more what you mean by f and/or m)
 CHANGE CC: On the board: N(t+1) = pN(t) + pmN(t) = (p+f) N(t)
+CHANGE Add more maternity in general
+
 ----------------------------------------------------------------------
 
 CONT Assumptions
@@ -1202,9 +1202,9 @@ CONT Assumptions
 
 	Population changes deterministically
 
-CHANGE CC: You wanted to add the "world picture" more often to hilight the fact that model are a simplification of the truth
-----------------------------------------------------------------------
+CHANGE Show model world picture again?
 
+----------------------------------------------------------------------
 
 Definitions
 
@@ -1216,7 +1216,8 @@ Definitions
 
 		... associated with the time step $\Delta t$
 
-CHANGE CC: add the units?
+		($\Delta t$ has units of time)
+
 ----------------------------------------------------------------------
 
 Model
@@ -1423,13 +1424,11 @@ BC
 
 		ANS $1\wk \cdot 0.02\dd$
 
-		ANS $1\wk \cdot 0.02\dd \cdot \frac{168\dd}{\wk}$
+		ANS $1\wk \cdot 0.02\dd \cdot \frac{7\dd}{\wk}$
 
-		ANS 3.36
+		ANS 0.14
 
 NC
-
-CHANGE CC: correct the calculation 1week x 0.02/day x 7day/wk = 0.14
 
 SIDEFIG images/espresso.jpg
 
@@ -1684,8 +1683,6 @@ Reproductive number
 
 		ANS \R\ must be unitless
 
-CHANGE CC: stop before the polls on Jan 17
-
 ----------------------------------------------------------------------
 
 Lifespan
@@ -1774,6 +1771,8 @@ Calculating birth rate
 
 		An instaneous rate
 
+		CHANGE This attempt to pull answers is awkward. Maybe refer specifically to cancelling next time
+
 		Units of [1/time] -- implies what assumption?
 
 			ANS We assume all individuals are effectively the same
@@ -1798,7 +1797,7 @@ Instaneous rate of increase
 
 	Population increases when $r=b-d > 0$
 
-	$r$ is not unitless 
+	$r$ is not unitless, units are:
 
 		ANS [1/time]
 
@@ -1836,7 +1835,7 @@ BCC
 
 NCC
 
-	$r = b-d = f+(1-\mu)$
+	$r = b-d $
 
 	Units [1/t] (a rate)
 
