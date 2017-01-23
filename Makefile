@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: nonlinear.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: pg.asn.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
