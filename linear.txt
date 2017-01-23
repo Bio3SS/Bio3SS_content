@@ -1689,6 +1689,8 @@ Lifespan
 
 	What is the lifespan of an individual in this model?
 
+CHANGE CC: need to make the question more clear
+
 	If $p$ is the proportion of individuals that survive, then the
 	proportion that die is:
 
@@ -1713,7 +1715,8 @@ Calculating \R
 	Why do we multiply by time \emph{steps} instead of lifetime?
 
 		ANS Because $f$ is also measured per time step
-
+		
+CHANGE CC: You also liked the answer: because R has to be unitless (need to cancel the units)
 ----------------------------------------------------------------------
 
 Comparison
@@ -1740,6 +1743,7 @@ NCC
 
 EC
 
+CHANGE CC: add lifespan vs step time perspectives
 ----------------------------------------------------------------------
 
 Is the population increasing?
@@ -1881,6 +1885,7 @@ TSS Links
 
 		ANS $r = \log_e(\lambda)/\Delta t$
 
+CHANGE CC: need to make this slide more clear
 ----------------------------------------------------------------------
 
 Characteristic time
@@ -2015,6 +2020,7 @@ Changing growth rates
 
 		ANS Natural disasters
 
+CHANGE CC: include Natural disasters in enviroonmental changes
 ----------------------------------------------------------------------
 
 Regulation
