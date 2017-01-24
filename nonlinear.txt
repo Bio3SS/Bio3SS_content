@@ -388,6 +388,7 @@ Carrying capacity
 
 		$b(K) \equiv d(K)$
 
+CHANGE CC: you wanted to change ...until crowded into ...until "crowded"
 ----------------------------------------------------------------------
 
 Logistic model
@@ -481,6 +482,7 @@ States and state variables
 
   			ANS In other words, that all individuals are the same.
 
+CHANGE CC: It annoyed you that * appeared before the text
 ----------------------------------------------------------------------
 
 Parameters
@@ -495,7 +497,7 @@ Parameters
 
 		ANS $N_d$ [indiv] (or [indiv/area])
 
-
+CHANGE CC: Need to introduce more the question (don't forget to speak about b(n) = b0exp(-N/N0) )
 ----------------------------------------------------------------------
 
 Characteristic \emph{scale}
@@ -657,6 +659,7 @@ Population-scale pictures
 		corresponds to the dynamics we visualize on a linear-scale graph
 		of the population
 
+CHANGE CC:  the explanation about the plot with the line curving down at the pop level not very clear
 ----------------------------------------------------------------------
 
 Population perspective picture
@@ -681,6 +684,7 @@ SIDEFIG images/tongass.jpg
 
 EC
 
+CHANGE CC: you weren't very happy about the order of the following plots
 ----------------------------------------------------------------------
 
 RSLIDE Decreasing birth rates
