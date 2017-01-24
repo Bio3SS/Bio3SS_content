@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: pg.asn.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: nonlinear.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -410,11 +410,14 @@ midterm2.descramble.Rout: descramble.R
 ##################################################################
 
 # Project directories
+# These touch commands sometimes lead to endless remaking; 
+#    wonder if I added them for some reason.
 
 # Assignments directory (on a private repo)
 assign/%: assign
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 assign:
 	cd $(gitroot) && $(MAKE) Assignments
@@ -423,7 +426,8 @@ assign:
 # Grades directory 
 grades/%: grades
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 grades:
 	/bin/ln -s $(gitroot)/Grading_scripts $@
@@ -431,7 +435,8 @@ grades:
 # Time series plots
 ts/%: ts
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 ts: 
 	cd $(gitroot) && $(MAKE) Population_time_series
@@ -440,7 +445,8 @@ ts:
 # Exponential plots
 exponential/%: exponential
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 exponential: 
 	/bin/ln -s $(gitroot)/Exponential_figures $@
 
@@ -448,61 +454,70 @@ exponential:
 images/%: images ;
 images: 
 	/bin/ln -s $(images) $@
-	touch $@
+
+# touch $@
 
 ## Birth-death models (including time-delay models)
 bd_models/%: bd_models
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 bd_models: 
 	/bin/ln -s $(gitroot)/Birth_death_models $@
 
 ## Discrete-time population models with compensation
 compensation/%: compensation
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 compensation: 
 	/bin/ln -s $(gitroot)/Compensation_models $@
 
 ## Life tables
 life_tables/%: life_tables
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 life_tables: 
 	/bin/ln -s $(gitroot)/Life_tables $@
 
 ## Life history
 life_history/%: life_history
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 life_history: 
 	/bin/ln -s $(gitroot)/Life_history $@
 
 ## Age distributions
 age/%: age
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 age: 
 	/bin/ln -s $(gitroot)/Age_distributions $@
 
 ## Linear models with structure
 structure/%: structure
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 structure: 
 	/bin/ln -s $(gitroot)/Structured_models $@
 
 ## Competition models
 competition/%: competition
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 competition: 
 	/bin/ln -s $(gitroot)/Competition_models $@
 
 ## Exploitation models
 exploitation/%: exploitation
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 exploitation: 
 	/bin/ln -s $(gitroot)/Exploitation_models $@
@@ -510,28 +525,32 @@ exploitation:
 ### Disease stuff (hard to organize)
 boxes/%: boxes
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 boxes: 
 	/bin/ln -s $(gitroot)/SIR_model_family $@
 
 dd/%: dd
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 dd: 
 	/bin/ln -s $(gitroot)/Disease_data $@
 
 sims/%: sims
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 sims: 
 	/bin/ln -s $(gitroot)/SIR_simulations $@
 
 ebola/%: ebola
 	cd $< && $(MAKE) $*
-	touch $@
+
+# touch $@
 
 ebola: 
 	/bin/ln -s $(gitroot)/WA_Ebola_Outbreak $@
