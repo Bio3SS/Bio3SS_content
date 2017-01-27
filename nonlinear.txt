@@ -793,6 +793,7 @@ RSLIDE Maximum growth rates
 		
 		NOANS This is a something we learn from the model
 
+CHANGE CC: Explanation ok but perhaps change slightly the order. You often repeated yourself 
 ----------------------------------------------------------------------
 
 RSLIDE Individual perspective
@@ -902,6 +903,7 @@ Basic reproductive number
 
 		ANS Increases when it is small
 
+CHANGE CC: add what happen if the population continues to increase
 ----------------------------------------------------------------------
 
 CONT
@@ -912,6 +914,7 @@ CONT
 
 		ANS $\Ro$, $b(0)$, and $d(0)$ are limits
 
+CHANGE CC: Might need more explanation before this poll (not a lot of good answer)
 ----------------------------------------------------------------------
 
 Invasion
@@ -926,6 +929,7 @@ Invasion
 
 	Which is the same as saying $\Ro>1$
 
+CHANGE CC: You introduced invasion kinda fast, not sure everybody followed
 ----------------------------------------------------------------------
 
 Different behaviours
@@ -1017,6 +1021,7 @@ RSLIDE Elk
 
 DOUBLEPDF ts/elk.plot.Rout
 
+CHANGE CC: wanted to add the paramecia plot
 ----------------------------------------------------------------------
 
 Dynamics of density-dependent populations
