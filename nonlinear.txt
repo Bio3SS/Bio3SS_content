@@ -1021,6 +1021,7 @@ RSLIDE Elk
 
 DOUBLEPDF ts/elk.plot.Rout
 
+CHANGE CC: for elk: add more tick marks for the y axis 
 CHANGE CC: wanted to add the paramecia plot
 ----------------------------------------------------------------------
 
