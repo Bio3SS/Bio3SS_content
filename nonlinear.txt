@@ -1253,6 +1253,7 @@ TSS A simple, discrete-time model
 
 		$N_{T+1} = (p(N_T)+f(N_T))N_T \equiv \lambda(N) N_T$
 
+CHANGE CC: lambda(N) into lambda(N_T)
 ----------------------------------------------------------------------
 
 Assumptions
@@ -1406,6 +1407,7 @@ HIDEFIG compensation/two.plots.Rout-1.pdf
 
 EC
 
+CHANGE CC: having the figures bigger
 ----------------------------------------------------------------------
 
 Complex behaviour in our simulations
