@@ -1561,6 +1561,7 @@ SIDEFIG images/swallows.jpg
 
 EC
 
+CHANGE CC: Songbirds: add blue : possibility of depletion 
 ----------------------------------------------------------------------
 
 Plants
@@ -1725,6 +1726,7 @@ Types of Allee effect
 
 		ANS if it goes \emph{up} at low density
 
+CHANGE CC: it seems like you confused yourself a little by saying in a different way and then saying the blue lines, perhaps add the birth / death rates and not only "it" in the answer part
 ----------------------------------------------------------------------
 
 Allee effect models
