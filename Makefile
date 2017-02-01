@@ -4,12 +4,22 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.handouts.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
 
 ##################################################################
+
+# This is a big, old messy directory. It seems to clone OK, though.
+
+# Lecture formats are in lect/
+##### Main is lect/lect.format. Probably
+
+# Scripts seem to be in talk/ and make rules in $(ms). But it's not clear if those work
+
+######################################################################
+
 
 # make files
 

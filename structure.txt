@@ -1,8 +1,6 @@
 
 UNIT 3: Structured populations
 
-CHANGE CC: General note: for next year: review the polls to have all the polls ready before the class
-
 ----------------------------------------------------------------------
 
 TSEC Introduction
@@ -14,6 +12,8 @@ TSEC Introduction
 
 		ANS All individuals can be counted the same.  At least at census
 		time
+
+		ANS Never exactly true
 
 	What are some organisms for which this seems like a good
 	approximation?
@@ -55,8 +55,6 @@ TSS Example: biennial dandelions
 		Second-year adults never survive
 
 	Will this population increase or decrease through time?
- 
-  CHANGE MK: Maybe let students form a group here prior to showing them the next two slides of information. Also, poll here? Or, if you are up for the extra bit of time maybe form 2-3 polls to work through the question (Poll: what is your census time. Poll: How to predict the population at the next census)
 
 ----------------------------------------------------------------------
 
@@ -157,7 +155,8 @@ What determines $\R$?
 CHANGE CC: Explaining how to calculate R on the board was helpful I think but probably go a little slower
 
 ----------------------------------------------------------------------
-What does \R\ tell us about $\lambda$
+
+What does \R\ tell us about $\lambda$?
 
 	ANS Population increases when $\R>1$, so $\lambda>1$ exactly
 	when  $\R>1$
@@ -192,8 +191,8 @@ EC
 
 Regulation
 
-	Simple population models with regulation can have very complicated
-	dynamics
+	\emph{Simple} population models with regulation can have extremely
+	complicated dynamics
 
 	\emph{Structured} population models with regulation can have
 	insanely complicated dynamics
@@ -205,14 +204,16 @@ Regulation
 
 		ANS Average per capita rates do not depend on population size
 
+ADD Insane complexity image. Owen?
+
+
 ----------------------------------------------------------------------
 
 Age-structured models
 
 BC
 
-	The most common approach to structured models is to structure by
-	age
+	The most common approach is to structure by age
 
 	In age-structured models we model how many individuals there are in
 	each ``age class''
@@ -260,19 +261,17 @@ Discrete vs.\ continuous time
 
 	Continuous-time models are structurally simpler (and smoother)
 
-	Discrete-time models are easier to use with age structure
+	POLL How do population characteristics affect the choice?
 
-	Choice may also depend on the population:
+		ANS Populations with continuous reproduction (e.g. bacteria), may be
+		better suited to continuous-time models
 
-		ANS Populations with continuous reproduction may be better suited
-		to continuous-time models
+		ANS Populations with \textbf{synchronous} reproduction (e.g., moths) may
+		be better suited to discrete-time models
 
-		ANS Populations with \textbf{synchronous} reproduction may be
-		better suited to discrete-time models
+	Adding age structure is conceptually simpler with discrete time
 
-	In this unit, we will focus on discrete time
-
-CHANGE CC: Add a poll to check that everybody is listening and understands what is a discrete model (nobody answers questions)?
+		ANS So we'll do that.
 
 ----------------------------------------------------------------------
 
@@ -301,8 +300,7 @@ When to count
 
 		Some other time, for convenience in counting
 
-			ANS A time when individuals gather together (although this is
-			often for mating)
+			ANS A time when individuals gather together
 
 			ANS A time when they are easy to find (insect pupae)
 
@@ -356,8 +354,7 @@ Short-term dynamics
 	\ldots and starting conditions
 
 		If we start with mostly very old or very young individuals, it
-		might go down; with lots of reproductively healthy adults it
-		might go up
+		might go down; with lots of reproductive adults it might go up
 
 ----------------------------------------------------------------------
 
@@ -474,7 +471,11 @@ Calculating \R
 
 ----------------------------------------------------------------------
 
-TSS Dandelion example
+SS Examples
+
+----------------------------------------------------------------------
+
+Dandelion example
 
 CLASS HIGHFIG images/dandy_field.jpg
 
@@ -536,7 +537,7 @@ DOUBLEFIG structure/dandy.Rout-1.pdf structure/dandy.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-TSS Squirrel example
+Squirrel example
 
 CLASS HIGHFIG images/grey_squirrel.jpg
 
@@ -598,20 +599,23 @@ WIDEFIG images/structure_cc.png
 
 ----------------------------------------------------------------------
 
-TSS Salmon example
+Salmon example
 
-	What happens when a population has independent cohorts
+	What happens when a population has independent cohorts?
 
 		Does not necessarily converge to a SAD
 
-	CHANGE JD: Give an example of a salmon life table with independent
-	cohorts
+----------------------------------------------------------------------
+
+ASLIDE Salmon example
+
+INPUT life_tables/salmon.empty.tab.tex
 
 ----------------------------------------------------------------------
 
 RSLIDE Salmon example
 
-HIGHFIG images/salmon.jpg
+WIDEFIG images/salmon.jpg
 
 ----------------------------------------------------------------------
 
@@ -657,6 +661,17 @@ DEFHEAD $f_x$ vs.~$m_x$
 		depending on when the census is
 
 		ANS Need to close the loop from one census to the next
+
+----------------------------------------------------------------------
+
+When do we start counting?
+
+	Is the first age class called 0, or 1?
+
+		In this course, we will start from age class 1
+
+		If we count right {\em after} reproduction, this means we are
+		calling newborns age class 1.  Don't get confused.
 
 ----------------------------------------------------------------------
 
@@ -710,11 +725,9 @@ Calculating \R
 
 		Which ages have a large \emph{contribution} to \R?
 
-		Which values of $p_x$ and $f_x$ is \R\ sensitive to?
+		POLL Which values of $p_x$ and $f_x$ is \R\ sensitive to?
 
 			ANS The $p$s for young individuals affect all the $\ell$s.
-
-CHANGE CC: You were disappointed that you didn't have a poll here for the last question
 
 ----------------------------------------------------------------------
 
@@ -725,7 +738,7 @@ The effect of old individuals
 
 		The contribution of an age class to $\R$ is $\ell_x f_x$
 
-		POLL https://www.polleverywhere.com/free_text_polls/uQki7wkPea7GSnj How are these values extreme?
+		POLL https://www.polleverywhere.com/free_text_polls/uQki7wkPea7GSnj Extreme how?
 
 		ANS In most populations $\ell$ can be very small for large $x$
 
@@ -908,16 +921,11 @@ Patterns of survivorship
 
 ----------------------------------------------------------------------
 
-When do we start counting?
+Starting off
 
-	Is the first age class called 0, or 1?
+	Recall: we always start from age \emph{class} 1
 
-		In this course, we will start from age class 1
-
-		If we count right {\em after} reproduction, this means we are
-		calling newborns age class 1.  Don't get confused.
-
-  CHANGE MK: Probably should have this when you introduce the life tables
+		If we count newborns, we still call them class 1.  
 
 	POLL https://www.polleverywhere.com/free_text_polls/cVddcKqFeO4h1Xq What is $\ell_1$ when we count before reproduction?
 
