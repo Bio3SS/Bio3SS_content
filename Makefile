@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.handouts.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.final.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -134,6 +134,9 @@ nonlinear.handouts.pdf: nonlinear.txt
 structure.final.pdf: structure.txt
 structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
+
+structure.pq: structure.txt pq.pl
+	$(PUSH)
 
 ##################################################################
 
