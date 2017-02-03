@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
-\usepackage{epsfig,grffile,xspace}
+\usepackage{graphicx,talk/commands}
+\usepackage{grffile,xspace}
 \usepackage[margin=1.2in]{geometry}
 \usepackage{tikz}
 \usetikzlibrary{

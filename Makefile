@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -14,9 +14,11 @@ test: intro.draft.tex.deps
 # This is a big, old messy directory. It seems to clone OK, though.
 
 # Lecture formats are in lect/
-##### Main is lect/lect.format. Probably
+##### Main is lect/lect.format
+##### lect is in makestuff; make sure to sync
 
 # Scripts seem to be in talk/ and make rules in $(ms). But it's not clear if those work
+##### talk is in makestuff; make sure to sync
 
 ######################################################################
 
@@ -196,6 +198,8 @@ null.tmp:
 %.select.fmt: lect/select.format lect/fmt.pl
 	$(PUSHSTAR)
 
+######################################################################
+
 # Look at test banks one at a time (use unit names)
 
 %.bank: assign/%.bank
@@ -223,6 +227,12 @@ midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign
 final.bank.key.pdf:
 final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank assign/comp.bank assign/pred.bank assign/disease.bank
 	$(cat)
+
+######################################################################
+
+## Developing a test
+
+midterm1.test.pdf:
 
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
@@ -255,6 +265,10 @@ Sources += end.dmu
 final.key.pdf:
 final.test: final.mc
 	$(copy)
+
+######################################################################
+
+midterm1.key.pdf:
 
 ##### Versioning
 
