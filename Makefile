@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.exam.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -214,7 +214,7 @@ pred.bank.key.pdf: assign/pred.bank
 disease.bank.key.pdf: assign/disease.bank
 
 # Make combined banks for each test
-midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank 
+midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank
 	$(cat)
 
 %.bank.test: %.bank null.tmp bank.select.fmt talk/lect.pl
@@ -268,7 +268,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm1.key.pdf:
+midterm1.1.exam.pdf:
 
 ##### Versioning
 
@@ -296,6 +296,8 @@ midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pd
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
 
+## Split questions into 4 or 5 questions (if there are slash-separated numbers)
+## Do not scramble. This allows hacking at the clearpage stuff, which is not ideal, but is what I'm currently doing.
 midterm1.%.sa: midterm1.sa testselect.pl
 	$(PUSHSTAR)
 

@@ -1850,6 +1850,8 @@ BC
 
 	This doesn't always mean $Ro<1$
 
+	CHANGE Explicitly define weak and strong -- they are testable
+
 NC
 
 SIDEFIG bd_models/weak.bd.Rout-0.pdf

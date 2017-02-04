@@ -347,6 +347,8 @@ ASLIDE The structured model
 
 WIDEFIG images/structure_cc.png
 
+CHANGE Put this in the goddam lecture notes, morph!:e
+
 ----------------------------------------------------------------------
 
 SS Model dynamics
