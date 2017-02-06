@@ -24,6 +24,7 @@ TSEC Introduction
 
 		ANS Trees, people, codfish
 
+CHANGE CC: Add: dogs/cats : can reproduce anytime → hard to model
 ----------------------------------------------------------------------
 
 Structured populations
