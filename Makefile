@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.zip 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -22,7 +22,6 @@ test: intro.draft.tex.deps
 
 ######################################################################
 
-
 # make files
 
 Sources += Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
@@ -32,6 +31,8 @@ include stuff.mk
 -include $(ms)/perl.def
 
 ## Orphaned from 2016
+## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
+## In which case, why bother with note once they are rescued.
 Sources += exam.tmp final_texcover.tex scantron.jpg
 
 ## local
@@ -269,6 +270,7 @@ final.test: final.mc
 ######################################################################
 
 midterm1.1.exam.pdf:
+midterm1.1.key.pdf:
 
 ##### Versioning
 
