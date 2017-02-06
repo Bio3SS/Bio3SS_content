@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.1.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.3.exam.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -269,8 +269,8 @@ final.test: final.mc
 
 ######################################################################
 
-midterm1.1.exam.pdf:
-midterm1.1.key.pdf:
+midterm1.3.exam.pdf:
+midterm1.3.key.pdf:
 
 ##### Versioning
 

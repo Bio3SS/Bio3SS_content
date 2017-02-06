@@ -30,10 +30,28 @@ subclone_dir/
 .deps/
 *.deps
 *.handouts.tex
+*.large.tex
 *.complete.tex
 *.draft.tex
+*.final.tex
+
+*.asn.tex
 *.key.tex
 *.rub.tex
+
+%.bank
+%.mc
+%.sa
+%.test
+%.test.tex
+
+## Directories
+age
+assign
+bd_models
+compensation
+exponential
+images
 
 lect
 talk
