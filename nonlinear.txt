@@ -1879,6 +1879,7 @@ Allee effect summary
 
 		ANS Maybe a large initial group established by chance
 
+CHANGE CC: add maybe they just show up / maybe it is a transient pop
 ----------------------------------------------------------------------
 
 TSS Stochastic effects
