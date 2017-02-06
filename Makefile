@@ -269,7 +269,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm1.3.exam.pdf:
+midterm1.1.exam.pdf:
 midterm1.3.key.pdf:
 
 ##### Versioning

@@ -39,11 +39,11 @@ subclone_dir/
 *.key.tex
 *.rub.tex
 
-%.bank
-%.mc
-%.sa
-%.test
-%.test.tex
+*.bank
+*.mc
+*.sa
+*.test
+*.test.tex
 
 ## Directories
 age
@@ -52,6 +52,9 @@ bd_models
 compensation
 exponential
 images
+life_tables
+structure
+ts
 
 lect
 talk
