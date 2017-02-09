@@ -471,6 +471,7 @@ Cumulative survivorship
 		ever counted at all (ie., it survives to its first census)
 
 CHANGE CC: add the definition in the notes and explain more l1 = 1 (needed to explain 2 times)
+
 ----------------------------------------------------------------------
 
 Calculating \R
@@ -914,7 +915,7 @@ SEC Life-table patterns
 
 ----------------------------------------------------------------------
 
-TSS Survivorship
+SS Survivorship
 
 ----------------------------------------------------------------------
 
@@ -945,6 +946,9 @@ Starting off
 	POLL free_text_polls/hIXTOy066y90aYM What is $\ell_1$ when we count before reproduction?  What is l_1 when we count before reproduction?
 
 		ANS 1
+
+		ANS $\ell_1$ is the probability you're counted at age class 1,
+		\emph{given} that you're counted at age class 1.
 
 		ANS We don't count individuals that we don't count
 
