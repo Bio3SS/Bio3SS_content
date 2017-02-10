@@ -421,6 +421,8 @@ Exponential-rates model
 	This is the simplest model that is perfectly smooth and keeps track
 	of birth and death rates separately
 
+	CHANGE More explanation of the scales
+
 ----------------------------------------------------------------------
 
 Exponential-rates vs.\ logistic
@@ -1277,6 +1279,8 @@ Specific assumptions
 
 	As in the continuous case, other formulations will give similar
 	results
+
+	CHANGE More explanation of the scales
 
 ----------------------------------------------------------------------
 
