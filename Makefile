@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.3.exam.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.scantron.csv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -138,8 +138,15 @@ structure.final.pdf: structure.txt
 structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
 
+## New poll questions framework; still in development
 structure.pq: structure.txt pq.pl
 	$(PUSH)
+
+## Script for cutting things off to make partial notes
+structure_prelim.txt: structure.txt prelim.pl
+	$(PUSH)
+
+structure_prelim.complete.pdf: structure.txt
 
 ##################################################################
 
@@ -279,7 +286,7 @@ midterm1.3.key.pdf:
 Sources += $(wildcard *.pl) $(wildcard *.R)
 
 ## Printing
-midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
+midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf midterm1.5.exam.pdf
 	$(ZIP)
 
 ## Printing
@@ -363,6 +370,8 @@ final.ssv:
 # Make a special answer key for scantron processing
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
+
+midterm1.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv

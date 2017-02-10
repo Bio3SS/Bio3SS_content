@@ -207,7 +207,7 @@ Regulation
 
 ----------------------------------------------------------------------
 
-Complexity
+SSLIDE Complexity
 
 FIG images/bifurcation.png
 

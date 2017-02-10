@@ -533,7 +533,7 @@ BC
 
 	A 500 lb lion is attacking a 1000 lb buffalo!
 
-	POLL multiple_choice_polls/NCHfvX2CUGV2GoJ This is analogous to a 15 lb red fox attacking:
+	POLL multiple_choice_polls/NCHfvX2CUGV2GoJ This is analogous to a 15 lb red fox attacking:|
 
 		A 30 lb beaver (twice as heavy)?
 
@@ -1675,7 +1675,7 @@ Reproductive number
 	The reproductive number \R\ measures the average number of offspring
 	produced by a single individual over the course of its lifetime
 
-	POLL free_text_polls/vr3BqzAIemoYqKL The population will increase when \R\ldots:
+	POLL free_text_polls/vr3BqzAIemoYqKL The population will increase when \R\ldots:|
 
 		ANS $\R>1$
 
