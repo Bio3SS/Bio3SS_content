@@ -1,0 +1,434 @@
+
+UNIT 3: Structured populations
+
+----------------------------------------------------------------------
+
+TSEC Introduction
+
+	Up until now we've tracked populations with a single state variable
+	(population size or population density)
+
+	POLL free_text_polls/UVRTWo0NBuHpHs5 What assumption are we making?
+
+		ANS All individuals can be counted the same.  At least at census
+		time
+
+		ANS Never exactly true
+
+	What are some organisms for which this seems like a good
+	approximation?
+
+		ANS Dandelions, bacteria, insects
+
+	What are some organisms that don't work so well?
+
+		ANS Trees, people, codfish
+
+CHANGE CC: Add: dogs/cats : can reproduce anytime → hard to model
+----------------------------------------------------------------------
+
+Structured populations
+
+	If we think age or size is important to understanding a population,
+	we might model it as an {\bf structured} population
+
+	Instead of just keeping track of the total number of individuals
+	in our population \ldots
+
+		Keeping track of how many individuals of each age
+
+			or size
+
+			or developmental stage
+
+----------------------------------------------------------------------
+
+TSS Example: biennial dandelions
+
+	Imagine a population of dandelions
+
+		Adults produce 80 seeds each year
+
+		1% of seeds survive to become adults
+
+		50% of first-year adults survive to reproduce again
+
+		Second-year adults never survive
+
+	Will this population increase or decrease through time?
+
+----------------------------------------------------------------------
+
+How to study this population
+
+	Choose a census time
+
+		Before reproduction or after
+
+		Since we have complete cycle information, either one should work
+
+	Figure out how to predict the population at the next census
+
+----------------------------------------------------------------------
+
+Census choices
+
+BC
+
+	Before reproduction
+
+		All individuals are adults
+
+		We want to know how many adults we will see next year
+
+	After reproduction
+
+		Seeds, one-year-olds and two-year-olds
+
+		Two-year-olds have already produced their seeds; once these seeds
+		are counted, the two-year-olds can be ignored, since they will
+		not reproduce or survive again
+
+NC
+
+SIDEFIG images/dandy_field.jpg
+
+SIDEFIG images/dandy_seeds.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+RSLIDE Example: biennial dandelions
+
+	Imagine a population of dandelions
+
+		Adults produce 80 seeds each year
+
+		1% of seeds survive to become adults
+
+		50% of first-year adults survive to reproduce again
+
+		Second-year adults never survive
+
+	Will this population increase or decrease through time?
+
+----------------------------------------------------------------------
+
+What determines $\lambda$?
+
+	If we have 20 adults before reproduction, how many do we expect to
+	see next time?
+
+	$\lambda = p + f$ is the total number of individuals per individual
+	after one time step
+
+	POLL free_text_polls/RD108ersZU9xUej What is $f$ in this example?  What is the fecundity in this example?
+
+		ANS 0.8
+
+	POLL free_text_polls/QJSfa3XSSQORvvA What is $p$ in this example?  What is the survival probability in this example?
+
+		ANS 0.5 for 1-year-olds and 0 for 2-year-olds.
+
+		ANS We can't take an average, because we don't know the
+		population structure
+
+----------------------------------------------------------------------
+
+What determines $\R$?
+
+	$\R$ is the average total number of offspring produced by an
+	individual over their lifespan
+
+	Can start at any stage, but need to close the loop
+
+	POLL free_text_polls/QJSfa3XSSQORvvA What is the reproductive number?
+
+	ANS If you become an adult you produce (on average)
+
+		ANS 0.8 adults your first year
+
+		ANS 0.4 adults your second year
+
+	ANS $\R=1.2$
+
+CHANGE CC: Explaining how to calculate R on the board was helpful I think but probably go a little slower
+
+----------------------------------------------------------------------
+
+What does \R\ tell us about $\lambda$?
+
+	ANS Population increases when $\R>1$, so $\lambda>1$ exactly
+	when  $\R>1$
+
+	If $\R=1.2$, then $\lambda$
+
+		ANS $>1$ -- the population is increasing
+
+		ANS $<1.2$ -- the life cycle takes more than 1 year, so it should
+		take more than one year for the population to increase 1.2 times
+
+----------------------------------------------------------------------
+
+TSS Modeling approach
+
+BC
+
+	In this unit, we will construct \emph{simple} models of structured
+	populations
+
+		To explore how structure might affect population dynamics
+
+		To investigate how to interpret structured data
+
+NC
+
+SIDEFIG images/israelpop.png
+
+EC
+
+----------------------------------------------------------------------
+
+Regulation
+
+	\emph{Simple} population models with regulation can have extremely
+	complicated dynamics
+
+	\emph{Structured} population models with regulation can have
+	insanely complicated dynamics
+
+	Here we will focus on understanding structured population models
+	\emph{without regulation}:
+
+		ANS Individuals behave independently, or (equivalently)
+
+		ANS Average per capita rates do not depend on population size
+
+----------------------------------------------------------------------
+
+SSLIDE Complexity
+
+FIG images/bifurcation.png
+
+----------------------------------------------------------------------
+
+
+Age-structured models
+
+BC
+
+	The most common approach is to structure by age
+
+	In age-structured models we model how many individuals there are in
+	each ``age class''
+
+		Typically, we use age classes of one year
+
+		Example: salmon live in the ocean for roughly a fixed number of
+		years; if we know how old a salmon is, that strongly affects how
+		likely it is to reproduce
+
+NC
+
+SIDEFIG images/salmon.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Stage-structured models
+
+BC
+
+	In stage-structured models, we model how many individuals there are
+	in different stages
+
+		Ie., newborns, juveniles, adults
+
+		More flexible than an age-structured model
+
+		Example: forest trees may survive on very little light for a long
+		time before they have the opportunity to recruit to the sapling
+		stage
+
+NC
+
+SIDEFIG images/tongass.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Discrete vs.\ continuous time
+
+	Structured models can be done in either discrete or continuous time
+
+	Continuous-time models are structurally simpler (and smoother)
+
+	POLL free_text_polls/Mu8xWj5Objdg0WJ How do population characteristics affect the choice? How do population characteristics affect the choice between discrete and continuous models?
+
+		ANS Populations with continuous reproduction (e.g. bacteria), may be
+		better suited to continuous-time models
+
+		ANS Populations with \textbf{synchronous} reproduction (e.g., moths) may
+		be better suited to discrete-time models
+
+	Adding age structure is conceptually simpler with discrete time
+
+		ANS So we'll do that.
+
+----------------------------------------------------------------------
+
+TSEC Constructing a model
+
+	This section will focus on \textbf{linear, discrete-time,
+	age-structured} models
+
+	State variables: how many individuals of each age at any given time
+
+	Parameters: $p$ and $f$ \emph{for each age that we are modeling}
+
+CHANGE CC: Helpful to draw the table of what is happening to each age-class next year but probably a little slower for the explanations
+
+----------------------------------------------------------------------
+
+When to count
+
+	We will choose a census time that is appropriate for our
+	study
+
+		Before reproduction, to have the fewest number of individuals
+
+		After reproduction, to have the most information about the
+		population processes
+
+		Some other time, for convenience in counting
+
+			ANS A time when individuals gather together
+
+			ANS A time when they are easy to find (insect pupae)
+
+----------------------------------------------------------------------
+
+The conceptual model
+
+	Once we choose a census time, we imagine we know the population for
+	each age $x$ after time step $T$.
+
+		We call these values $N_x(T)$
+
+	Now we want to calculate the expected number of individuals in each
+	age class at the next time step
+
+		We call these values $N_x(T+1)$
+
+	POLL free_text_polls/DHybyQQJegyAYbw What do we need to know? What do we need to know to calculate population for next time?
+
+		ANS The survival probability of each age group: $p_x$
+
+		ANS The average fecundity of each age group: $f_x$
+
+----------------------------------------------------------------------
+
+Closing the loop
+
+	$f_x$ and $p_x$ must close the loop back to the census time, so we
+	can use them to simulate our model:
+
+		$f_x$ has units [new indiv (at census time)]/[age $x$ indiv
+		(at census time)]
+
+		$p_x$ has units [age $x+1$ indiv (at census time)]/[age $x$ indiv
+		(at census time)]
+
+----------------------------------------------------------------------
+
+ASLIDE The structured model
+
+WIDEFIG images/structure_cc.png
+
+CHANGE Put this in the goddam lecture notes, morph!:e
+
+----------------------------------------------------------------------
+
+SS Model dynamics
+
+----------------------------------------------------------------------
+
+Short-term dynamics
+
+	This model's short-term dynamics will depend on parameters
+	\ldots
+
+		It is more likely to go up if fecundities and survival
+		probabilities are high
+
+	\ldots and starting conditions
+
+		If we start with mostly very old or very young individuals, it
+		might go down; with lots of reproductive adults it might go up
+
+----------------------------------------------------------------------
+
+Long-term dynamics
+
+	If a population follows a model like this, it will tend to reach
+
+		a \textbf{stable age distribution}:
+
+			the \emph{proportion} of individuals in each age class is
+			constant
+
+		a stable value of $\lambda$
+
+			if the proportions are constant, then we can average over
+			$f_x$ and $p_x$, and the system will behave like our simple
+			model
+
+	POLL free_text_polls/DtbBUtry5ts5XRz What are the long-term dynamics of such a system?
+
+		ANS Exponential growth or exponential decline
+
+----------------------------------------------------------------------
+
+Exception
+
+	Populations with \textbf{independent cohorts} do not tend to reach a
+	stable age distribution
+
+		A \textbf{cohort} is a group that enters the population at the
+		same time
+
+		We say my cohort and your cohort interact if my children
+		might be in the same cohort as your children
+
+		or my grandchildren might be in the same cohort as your
+		great-grandchlidren
+
+		\ldots
+
+	As long as all cohorts interact (none are independent), then the
+	unregulated model leads to a stable age distribution (SAD)
+
+----------------------------------------------------------------------
+
+Independent cohorts
+
+	Some populations might have independent cohorts:
+
+		If salmon reproduce \emph{exactly} every four years, then:
+
+			the 2015 cohort would have offspring in 2019, 2023, 2027,
+			2031, \ldots
+
+			the 2016 cohort would have offspring in 2020, 2024, 2028,
+			2032, \ldots
+
+			in theory, they could remain independent -- distribution would
+			not converge
+
+	Examples could include 17-year locusts, century plants, \ldots
+
+----------------------------------------------------------------------
+
