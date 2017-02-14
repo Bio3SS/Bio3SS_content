@@ -995,7 +995,7 @@ DEFHEAD ``Types'' of survivorship
 
 RSLIDE Changing survivorship
 
-FIG age/arch.Rout-2.pdf
+FIG age/arch.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
@@ -1192,6 +1192,25 @@ FIG age/arch_sad.Rout-2.pdf
 Age distributions
 
 FIG age/arch_sad.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE The Euler equation
+
+	If the life table doesn't change, then $\lambda$ is given by $\sum_x
+	\ell_x f_x \lambda^{-x} = 1$
+
+	If the population has the structure we would
+	expect from growing at rate $\lambda$, would it continue to grow at
+	rate $\lambda$?
+
+	On the left-side each cohort started as $\lambda$ times smaller than the
+	one after it
+
+		Then got multiplied by $\ell_x$.
+
+	Under this assumption, is the next generation $\lambda$ times bigger
+	again?
 
 ----------------------------------------------------------------------
 
