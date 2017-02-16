@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.scantron.csv 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.prb.tgz 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -344,6 +344,10 @@ final.1.final.pdf: exam.tmp
 
 %.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
+
+## Partial set of rubrics because of coding disaster
+midterm1.prb.tgz: midterm1.1.rub.pdf midterm1.2.rub.pdf midterm1.3.rub.pdf midterm1.4.rub.pdf
+	$(TGZ)
 
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
