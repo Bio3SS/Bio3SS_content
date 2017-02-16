@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
-\usepackage{epsfig,grffile,url}
+\usepackage{graphicx,talk/slidecomm,talk/commands}
+\usepackage{grffile,url}
 \newcounter{question}
 \newcounter{qpart}[question]
  

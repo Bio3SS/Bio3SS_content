@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm1.prb.tgz 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -139,7 +139,7 @@ structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
 
 ## New poll questions framework; still in development
-structure.pq: structure.txt pq.pl
+%.pq: %.txt pq.pl
 	$(PUSH)
 
 ## Script for cutting things off to make partial notes
@@ -155,6 +155,7 @@ structure_prelim.complete.pdf: structure.txt
 life_history.final.pdf: life_history.txt
 life_history.draft.pdf: life_history.txt
 life_history.handouts.pdf: life_history.txt
+life_history.pq: life_history.txt
 
 ######################################################################
 
@@ -284,23 +285,6 @@ midterm1.3.key.pdf:
 ## Now 5 versions: four for the main test, and one for others (SAS, late finals, ...)
 
 Sources += $(wildcard *.pl) $(wildcard *.R)
-
-## Printing
-midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf midterm1.5.exam.pdf
-	$(ZIP)
-
-## Printing
-midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
-	$(ZIP)
-
-final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
-	$(ZIP)
-
-## Pushing
-midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
-
-midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
-
 # These rules need to be explicit, because of conflict with bank rules. A pain, but no easy fix.
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
@@ -348,6 +332,35 @@ final.1.final.pdf: exam.tmp
 ## Partial set of rubrics because of coding disaster
 midterm1.prb.tgz: midterm1.1.rub.pdf midterm1.2.rub.pdf midterm1.3.rub.pdf midterm1.4.rub.pdf
 	$(TGZ)
+
+######################################################################
+
+### Export rules
+
+##### Test 1
+
+## Printing
+midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf midterm1.5.exam.pdf
+	$(ZIP)
+
+## Pushing
+midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.test.pdf.push midterm1.4.test.pdf.push midterm1.5.test.pdf.push 
+
+midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pdf.push midterm1.4.key.pdf.push midterm1.5.key.pdf.push
+
+##### Test 2
+
+## Printing
+midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
+	$(ZIP)
+
+## Pushing
+midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
+
+midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
+
+final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
+	$(ZIP)
 
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
@@ -603,12 +616,16 @@ ebola:
 
 ## Assignments
 
-##
+## Intro (NFC)
 intro.asn.pdf: assign/intro.ques
 
+## Population growth
 pg.asn.pdf: assign/pg.ques
 
-regulation.key.pdf: assign/regulation.ques
+## Intro R (NFC, lives on wiki)
+
+## Regulation (uses some R, lives here, points to wiki)
+regulation.asn.pdf: assign/regulation.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques

@@ -723,6 +723,7 @@ CHANGE CC: The after reproduction explanation was a little less clear
 CHANGE CC: A student asked you for the fx value for age2, your explanation was helpful for more students (perhaps next year give the explanation directly. 
 CHANGE CC: I think it was also cool when you build the table with 3 lines on the board in order to better explain the table with 2 lines of the post reproduction counting
 
+CHANGE CC: 2017: explanation more clear
 ----------------------------------------------------------------------
 
 Calculating \R
@@ -746,6 +747,7 @@ Calculating \R
 
 			ANS The $p$s for young individuals affect all the $\ell$s.
 
+CHANGE CC: p1 f1 better answers to the poll: add the fecundity for the young
 ----------------------------------------------------------------------
 
 The effect of old individuals
@@ -770,6 +772,7 @@ The effect of old individuals
 		ANS In bird populations, old birds produce fairly well, but not
 		nearly enough to outweigh the low probability of being old.
 
+CHANGE CC: for birds need to add "most bird population ..." + probably add the Canadian fish example you were thinking about
 ----------------------------------------------------------------------
 
 CSLIDE Old individuals
@@ -825,6 +828,7 @@ The Euler equation
 	
   CHANGE MK: I think it may be useful to have a numeric life table example to show in parallel with these equations. 
 
+CHANGE CC: you went very fast using different values of lambda, then erasing the results of the calculation, then quickly do another one... Should go slower (you realized at the end of the explanation that you went fast), a little too fast to be clear 
 ----------------------------------------------------------------------
 
 DEFHEAD $\lambda$ and \R
@@ -872,6 +876,7 @@ Time scales
 			ANS But on the same side (same answer about whether population
 			is growing)
 
+CHANGE CC: change 1st poll into multiple choices and for the answers of 2nd poll: don’t suppose that the pop is growing
 ----------------------------------------------------------------------
 
 Studying population growth
@@ -995,7 +1000,7 @@ DEFHEAD ``Types'' of survivorship
 
 RSLIDE Changing survivorship
 
-FIG age/arch.Rout-2.pdf
+FIG age/arch.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
@@ -1047,6 +1052,7 @@ Fecundity patterns
 
 		ANS Fish, trees
 
+CHANGE CC: referred to the structure diagram, might want to add it here
 ----------------------------------------------------------------------
 
 TSEC Age distributions
@@ -1175,6 +1181,8 @@ RSLIDE Changing survivorship
 
 DOUBLEFIG age/arch.Rout-0.pdf age/arch.Rout-1.pdf
 
+CHANGE CC: Should perhaps explain a little why you can observe these different patterns on the plots
+Or when explain the patterns later perhaps add again the corresponding picture (even if small plot) on the slide
 ----------------------------------------------------------------------
 
 Age distributions
@@ -1192,6 +1200,25 @@ FIG age/arch_sad.Rout-2.pdf
 Age distributions
 
 FIG age/arch_sad.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE The Euler equation
+
+	If the life table doesn't change, then $\lambda$ is given by $\sum_x
+	\ell_x f_x \lambda^{-x} = 1$
+
+	If the population has the structure we would
+	expect from growing at rate $\lambda$, would it continue to grow at
+	rate $\lambda$?
+
+	On the left-side each cohort started as $\lambda$ times smaller than the
+	one after it
+
+		Then got multiplied by $\ell_x$.
+
+	Under this assumption, is the next generation $\lambda$ times bigger
+	again?
 
 ----------------------------------------------------------------------
 
