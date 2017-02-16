@@ -1052,6 +1052,7 @@ Fecundity patterns
 
 		ANS Fish, trees
 
+CHANGE CC: referred to the structure diagram, might want to add it here
 ----------------------------------------------------------------------
 
 TSEC Age distributions
@@ -1180,6 +1181,8 @@ RSLIDE Changing survivorship
 
 DOUBLEFIG age/arch.Rout-0.pdf age/arch.Rout-1.pdf
 
+CHANGE CC: Should perhaps explain a little why you can observe these different patterns on the plots
+Or when explain the patterns later perhaps add again the corresponding picture (even if small plot) on the slide
 ----------------------------------------------------------------------
 
 Age distributions
