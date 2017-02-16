@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -139,7 +139,7 @@ structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
 
 ## New poll questions framework; still in development
-structure.pq: structure.txt pq.pl
+%.pq: %.txt pq.pl
 	$(PUSH)
 
 ## Script for cutting things off to make partial notes
@@ -155,6 +155,7 @@ structure_prelim.complete.pdf: structure.txt
 life_history.final.pdf: life_history.txt
 life_history.draft.pdf: life_history.txt
 life_history.handouts.pdf: life_history.txt
+life_history.pq: life_history.txt
 
 ######################################################################
 

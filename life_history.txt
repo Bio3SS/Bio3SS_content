@@ -8,7 +8,7 @@ TSEC Introduction
 	{\bf Life history} refers to patterns of how organisms allocate
 	resources to key components underlying reproductive success:
 
-	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component. |
+	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component. 
 
 		ANS Survival
 
