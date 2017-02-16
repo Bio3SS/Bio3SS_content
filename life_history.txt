@@ -8,7 +8,7 @@ TSEC Introduction
 	{\bf Life history} refers to patterns of how organisms allocate
 	resources to key components underlying reproductive success:
 
-	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component
+	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component. |
 
 		ANS Survival
 
@@ -85,7 +85,7 @@ Scales of competition
 
 		Competition between populations
 
-CHANGE CC: You went quite fast for this slide
+ADD Pictures
 
 ----------------------------------------------------------------------
 
@@ -93,7 +93,7 @@ TSEC Tradeoffs
 
 	Some evolutionary changes simply help organisms function better
 
-CHANGE CC: Perhaps write some examples on the slide for the previous sentence 
+		Hemoglobin is highly evolved to bind a release oxygen
 
 	Most have advantages and disadvantages
 
@@ -105,9 +105,22 @@ CHANGE CC: Perhaps write some examples on the slide for the previous sentence
 	A \textbf{tradeoff} occurs when improvements in one area come at a
 	cost of disadvantages in another area
 
-CHANGE CC: A funny example is the color of the beak of birds: Faivre et al (2003) Immune Activation Rapidly Mirrored in a Secondary Sexual Trait. Science 04. Vol. 300, Issue 5616, pp. 103 DOI: 10.1126/science.1081802
+----------------------------------------------------------------------
+
+RSLIDE Tradeoffs
+
+BC
+
+Bamboo picture
+
+NC
+
+Peacock picture
+
+EC
 
 ----------------------------------------------------------------------
+
 
 Optimization frontiers
 
@@ -289,21 +302,20 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 Tradeoff: direct investment vs.~dispersal investment
 
-	Plants' investment in reproduction may not go directly to the
-	offspring, but instead to mechanisms to help the offspring disperse
+	Investment in reproduction may not go directly to the
+	offspring, but instead to mechanisms to help the offspring disperse.
+	
+	Why is this particularly important in plants?
+
+		ANS Parent-assisted dispersal is often their only chance to move.
+
+	What are some example mechanisms?
 
 		ANS Edible fruits
 
 		ANS Helicopter attachments
 
 		ANS Exploding seed pods
-
-	This may be particularly important to plants because of the ``eggs in
-	one basket" problem
-
-		ANS Parent-assisted dispersal is often their only chance to move.
-
-CHANGE CC: Perhaps don't distinguish the last example from the others or change the order (one student answered you at first with the last example)
 
 ----------------------------------------------------------------------
 
@@ -491,12 +503,16 @@ Biology is complicated
 
 		17-year locusts, century plants
 
-  CHANGE MK: Image of the plant would be nice
-
 	Every species life history has specific, important {\em details}
 
 		But general principles are very important to guide our
 		understanding
+
+----------------------------------------------------------------------
+
+RSLIDE Biology is complicated
+
+Pictures of the above
 
 ----------------------------------------------------------------------
 
@@ -509,12 +525,12 @@ Changing conditions
 
 	When conditions are good ($\R>1$), should organisms be fast
 	or slow to maximize $\lambda$?
-	
-  CHANGE MK: Need an answer here
+
+		ANS Fast
 
 	POLL multiple_choice_polls/n1ZCuPQxTwbHAnz When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
-	
-CHANGE CC: you also wanted to add the answer of the poll
+
+		ANS Slow!
 
 ----------------------------------------------------------------------
 
@@ -525,9 +541,7 @@ Changing life history
 
 		ANS Move slow when things are bad, and fast when things are good
 
-	Examples
-	
-  CHANGE MK: Poll here would be nice. Maybe you will get some interesting examples if students can answer anonymously
+	POLL What are some examples? Can you think of an example of organisms changing life-history patterns?
 
 		ANS Many animals reach sexual maturity faster under good
 		conditions
@@ -548,13 +562,17 @@ Applications
 
 		ANS $r$ strategists will generally deal with disturbance better
 
-	Would $r$ or $K$ strategists be more useful for human production (eg.
+	What are advantages of $r$ or $K$ strategists for human production (eg.
 	biofuels, agriculture, drug production etc..)?
-	
-	CHANGE CC: you wanted to divide the question into 2 questions 
+
+	POLL What are some advantages of $r$ strategists?
+	What are some advantages of r strategists?
 
 		ANS $r$ strategists are likely to respond better to human attempts
 		to manipulate the environment to their advantage
+
+	POLL What are some advantages of $K$ strategists?
+	What are some advantages of K strategists?
 
 		ANS $K$ strategists may be more sustainable to grow for a long
 		time in a stable environment
@@ -566,12 +584,10 @@ TSEC Bet hedging
 	In a risky world, you never want to put all your eggs in the same
 	basket
 
-		If all your offspring are in similar conditions, they can all do
+		If all your offspring are born into similar conditions, they can all do
 		well together -- or they can all die together
-		
-  CHANGE MK: Wording seems a bit off here: "If all of your offspring are (born at the same time into similar conditions)..." or something like that
 
-	Strategies that usually do well aren't good enough
+	Strategies that \emph{usually} do well aren't good enough
 
 		The species we see now have survived for billions of years (if we
 		include ancestral species, who also had to survive)
@@ -755,8 +771,6 @@ TSEC Sex ratios
 
 		ANS They should allocate more resources to males, because males
 		have greater potential reproductive success
-		
-		CHANGE ML: add the case it can be reverse for different speices like sea horse
 
 ----------------------------------------------------------------------
 
@@ -814,8 +828,6 @@ Elephant seal details
 		ANS Males' average fitness is 300/360=0.83; females' is 300/40 =
 		7.5
 
-  CHANGE ML: Con't here next week
-
 ----------------------------------------------------------------------
 
 Sex ratio and balance
@@ -831,9 +843,7 @@ Sex ratio and balance
 		ANS Make more females, because that will increase my average
 		fitness
 
-	How should this population evolve?
-
-CHANGE CC: add "long term" in the question
+	How will this population evolve in the long term?
 
 		ANS To a balanced sex ratio
 
@@ -916,6 +926,7 @@ Female-biased sex ratios
 
 ----------------------------------------------------------------------
 
+
 Variation in reproductive success
 
 	You should recall that in many animals males have very large
@@ -936,14 +947,34 @@ Variation in reproductive success
 
 ----------------------------------------------------------------------
 
+Sexual roles
+
+	What do you expect to happen in a population where males contributing more to raising offspring than females do?
+
+		ANS All of these stories can be reversed
+
+			ANS Females compete for males
+
+			ANS Parents invest more in individual females
+
+			ANS Possible male-biased sex ratio
+
+	Can you think of any examples?
+
+		ANS Sea horses
+
+		ANS Nest-guarding fish
+
+----------------------------------------------------------------------
+
 Equids
 
-	Horses and zebras produce offspring at similar rates through their
+	Horses and zebras have harem males who compete for access to females
+
+	Females produce offspring at similar rates through their
 	adult lives
 
-CHANGE CC: add males have harem
-
-	The healthiest, middle-aged mares produce a greater fraction of males
+	Healthy, middle-aged mares produce a greater fraction of males
 
 		Presumably they are allocating more resources to these males
 		(because they have more resources available)
@@ -961,4 +992,19 @@ CHANGE CC: add males have harem
 		ANS High-risk, aggressive development increases the chance of
 		being dominant and reproductively successful
 
-CHANGE CC: another example which is very interesting is the Kakapo. It was an endangered species and researchers tried to save them giving food to the females but it was a disaster. Females tend to have a big male during good years so because of the researchers the females "thought" they were good years and the population had a very biased male sex-ratio and almost disappeared...
+----------------------------------------------------------------------
+
+Kakapo
+
+BC
+
+	Researchers tried to save the endangered kakapos by providing food to
+	females.
+
+	Females responded to these "good years" by producing too many males making population crisis worse
+
+NC
+
+	ADD Picture
+
+EC
