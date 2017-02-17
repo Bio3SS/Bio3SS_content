@@ -77,11 +77,11 @@ RSLIDE Strategies
 
 BCC
 
-SIDEFIG images/cutters.jpg
+SIDEFIG images/giraffes.png
 
 NCC
 
-SIDEFIG images/giraffes.png
+SIDEFIG images/cutters.jpg
 
 EC
 
@@ -101,7 +101,7 @@ Scales of competition
 
 ----------------------------------------------------------------------
 
-RSLIDE Scales
+RSLIDE Within species
 
 FIG images/mallard_nest.jpg
 
