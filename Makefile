@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.handouts.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -327,6 +327,10 @@ final.1.final.pdf: exam.tmp
 %.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
 
+## Partial set of rubrics because of coding disaster
+midterm1.prb.tgz: midterm1.1.rub.pdf midterm1.2.rub.pdf midterm1.3.rub.pdf midterm1.4.rub.pdf
+	$(TGZ)
+
 ######################################################################
 
 ### Export rules
@@ -342,7 +346,7 @@ midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.tes
 
 midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pdf.push midterm1.4.key.pdf.push midterm1.5.key.pdf.push
 
-##### Test 1
+##### Test 2
 
 ## Printing
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
@@ -355,7 +359,6 @@ midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pd
 
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
-
 
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
