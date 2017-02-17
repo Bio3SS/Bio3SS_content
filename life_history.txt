@@ -8,7 +8,7 @@ TSEC Introduction
 	{\bf Life history} refers to patterns of how organisms allocate
 	resources to key components underlying reproductive success:
 
-	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component. 
+	POLL free_text_polls/kjRkTLMDSwSqi6g Give a one-word example of such a component. 
 
 		ANS Survival
 
@@ -59,7 +59,7 @@ Oaks and dandelions
 
 		ANS Water, sunlight, nutrients
 
-	POLL free_text_polls/euJrjbBCEVjEphr What are some differences?
+	POLL free_text_polls/RxLfPtycVi4bTyp What are some differences?
 
 		ANS Oak trees are bigger
 
@@ -73,9 +73,17 @@ Oaks and dandelions
 
 ----------------------------------------------------------------------
 
-RSLIDE Giraffes and leaf-cutter ants
+RSLIDE Strategies
 
-ADD Pictures
+BCC
+
+SIDEFIG images/cutters.jpg
+
+NCC
+
+SIDEFIG images/giraffes.png
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -91,7 +99,17 @@ Scales of competition
 
 		Competition between populations
 
-ADD Pictures
+----------------------------------------------------------------------
+
+RSLIDE Scales
+
+FIG images/mallard_nest.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Between populations
+
+FIG images/tree_competition.jpg
 
 ----------------------------------------------------------------------
 
@@ -115,15 +133,13 @@ TSEC Tradeoffs
 
 RSLIDE Tradeoffs
 
-BC
+FIG images/bamboo.jpg
 
-Bamboo picture
+----------------------------------------------------------------------
 
-NC
+RSLIDE Tradeoffs
 
-Peacock picture
-
-EC
+FIG images/peacock.jpg
 
 ----------------------------------------------------------------------
 
@@ -164,6 +180,7 @@ NC
 SIDEFIG life_history/frontier.Rout-1.pdf
 
 EC
+
 ----------------------------------------------------------------------
 
 Evolution and optimization
@@ -196,9 +213,13 @@ Programmed optimization
 
 RSLIDE Programmed optimization
 
-Moths
+FIG images/moth_light.jpg
 
-Junior the movie
+----------------------------------------------------------------------
+
+RSLIDE Programmed optimization
+
+HIGHFIG images/teenage_couple.jpg
 
 ----------------------------------------------------------------------
 
@@ -252,8 +273,15 @@ Semelparity
 
 RSLIDE Semele
 
+HIGHFIG images/semele.jpg
+
 ----------------------------------------------------------------------
 
+RSLIDE Cole's paradox
+
+FIG images/tomato.jpg
+
+----------------------------------------------------------------------
 
 Cole's paradox
 
@@ -278,8 +306,6 @@ EC
 
 Responses to Cole
 
-BC
-
 	What are some reasons why it makes evolutionary sense for organisms
 	to be iteroparous, in light of Cole's arguments?
 
@@ -292,13 +318,11 @@ BC
 		ANS Risky environments: long-lived organisms can deal better with
 		variation in offspring success. 
 
-NC
+----------------------------------------------------------------------
+
+RSLIDE Responses to Cole
 
 SIDEFIG images/jungle.jpg
-
-EC
-
-
 
 ----------------------------------------------------------------------
 
@@ -315,7 +339,7 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 		ANS Tsetses vs. mosquitoes
 
-	POLL free_text_polls/gBkYaGL5NBgZCHK What are potential advantages of producing fewer offspring with the same amount of energy?
+	POLL free_text_polls/5vyO0qrVgRGFWHm What are potential advantages of producing fewer offspring with the same amount of energy?
 
 		ANS Greater chance of survival (or reproductive success)
 
@@ -325,7 +349,27 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 RSLIDE How many offspring?
 
-ADD Pictures
+BCC
+
+SIDEFIG images/acorns.jpg
+
+NCC
+
+SIDEFIG images/sequoia_cones.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+RSLIDE How many offspring?
+
+FIG images/mosquito_laying.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE How many offspring?
+
+FIG images/tsetse_laying.jpg
 
 ----------------------------------------------------------------------
 
@@ -350,8 +394,21 @@ Tradeoff: direct investment vs.~dispersal investment
 
 RSLIDE Dispersal investment
 
+FIG images/mulberries.jpg
+
 ----------------------------------------------------------------------
 
+RSLIDE Dispersal investment
+
+FIG images/maple_fruit.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Dispersal investment
+
+FIG images/sandbox_fruit.jpg
+
+----------------------------------------------------------------------
 
 TSEC The $r$ vs.~$K$ metaphor
 
@@ -444,9 +501,9 @@ Measuring $K$
 
 	Which has a higher value of $K$?
 
-		POLL multiple_choice_polls/mAH34RghCw8Iwre In [indiv/ha]? Which has a higher carrying capacity [indiv/ha]? maples, marigolds
+		POLL multiple_choice_polls/oJIl9jyOs45P3ti In [indiv/ha]? Which has a higher carrying capacity [indiv/ha]? maples, marigolds
 
-		POLL multiple_choice_polls/UKMeDYbvnEz2nbJ In [kg/ha]? Which has a higher carrying capacity [kg/ha]? maples, marigolds
+		POLL multiple_choice_polls/jg5HEJysPyiJUWS In [kg/ha]? Which has a higher carrying capacity [kg/ha]? maples, marigolds
 
 	To compare species, we attempt to measure $K$ in units that reflect
 	the effect of crowding on the competitive environment
@@ -575,7 +632,7 @@ Changing conditions
 
 		ANS Fast
 
-	POLL multiple_choice_polls/n1ZCuPQxTwbHAnz When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
+	POLL free_text_polls/zw4SJE9HcxG3rZP When conditions are bad ($\R<1$), When conditions are bad (R<1), should organisms be fast or slow, to maximize λ?
 
 		ANS Slow!
 
@@ -588,7 +645,7 @@ Changing life history
 
 		ANS Move slow when things are bad, and fast when things are good
 
-	POLL XXX What are some examples? Can you think of an example of changing life-history patterns?
+	POLL free_text_polls/uXfLWxzcQeTNO9E What are some examples? Can you think of an example of changing life-history patterns?
 
 		ANS Many animals reach sexual maturity faster under good
 		conditions
@@ -612,13 +669,13 @@ Applications
 	What are advantages of $r$ or $K$ strategists for human production (eg.
 	biofuels, agriculture, drug production etc..)?
 
-	POLL XXX What are some advantages of $r$ strategists?
+	POLL free_text_polls/RrvAaSlcPCYevro What are some advantages of $r$ strategists?
 	What are some advantages of r strategists?
 
 		ANS $r$ strategists are likely to respond better to human attempts
 		to manipulate the environment to their advantage
 
-	POLL XXX What are some advantages of $K$ strategists?
+	POLL free_text_polls/Ac5nrU1aNcHWopy What are some advantages of $K$ strategists?
 	What are some advantages of K strategists?
 
 		ANS $K$ strategists may be more sustainable to grow for a long
@@ -690,7 +747,7 @@ Example: plant Q
 
 	The three kinds of year are equally likely
 	
-	POLL free_text_polls/0gN1gjenIjZtPnq What is the long term average growth rate of plant Q?
+	POLL free_text_polls/mUguRKsPmb9MaZh What is the long term average growth rate of plant Q?
 
 		ANS The geometric mean of 6, 0.6 and 0.06: $\lambda=0.6$
 
@@ -708,7 +765,7 @@ Plant D
 	but they disperse so far (in this hypothetical example) that 1/3 of
 	them experience good, normal and bad conditions every year.
 
-	POLL free_text_polls/0gN1gjenIjZtPnq What is the average growth rate of plant D?
+	POLL free_text_polls/KkFgfiBDNr8CAtX What is the average growth rate of plant D?
 
 		ANS Average survival is the mean of 0.2, 0.02, and 0.002
 
@@ -809,7 +866,7 @@ Why is it called bet hedging?
 
 TSEC Sex ratios
 
-	POLL free_text_polls/YKYgHq4h0mvWaIT Should organisms allocate more resources to producing males or females?
+	POLL free_text_polls/XVdaqUEFBnNJXxX Should organisms allocate more resources to producing males or females?
 
 		ANS They should allocate more resources to females because it is
 		females that limit the growth rate
@@ -887,7 +944,7 @@ Sex ratio and balance
 	Thus, the \emph{number} of offspring I can make does not depend on
 	sex
 
-	POLL free_text_polls/Zh8O1GPCrHRnkin If everyone else is making more males than females, what should I do?
+	POLL free_text_polls/w1XdvYUv8V4ycCh If everyone else is making more males than females, what should I do?
 
 		ANS Make more females, because that will increase my average
 		fitness
