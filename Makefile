@@ -20,8 +20,6 @@ test: intro.draft.tex.deps
 # Scripts seem to be in talk/ and make rules in $(ms). But it's not clear if those work
 ##### talk is in makestuff; make sure to sync
 
-######################################################################
-
 # make files
 
 Sources += Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
