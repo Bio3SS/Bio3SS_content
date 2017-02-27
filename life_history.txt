@@ -346,7 +346,7 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 		ANS Dispersal
 
-CHANCE CC: add higher chance to reproduce again
+CHANGE CC: add higher chance to reproduce again
 ----------------------------------------------------------------------
 
 RSLIDE How many offspring?
