@@ -485,9 +485,8 @@ SIDEFIG images/marigold.jpg
 
 EC
 
-ADD Others?
-
 ----------------------------------------------------------------------
+
 
 Measuring $K$
 
@@ -514,15 +513,35 @@ Measuring $K$
 
 ----------------------------------------------------------------------
 
-RSLIDE Example: trees
+RSLIDE Strategies
 
-FIG images/old_growth_opal.jpg
+BCC
+
+SIDEFIG images/giraffes.png
+
+NCC
+
+SIDEFIG images/cutters.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
-RSLIDE Example: trees
+Example: trees
+
+FIG images/larches.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Open environment
 
 FIG images/old_field.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Stable environment
+
+FIG images/old_growth_opal.jpg
 
 ----------------------------------------------------------------------
 
@@ -566,11 +585,6 @@ DEFHEAD $r$ vs.~$K$ strategists
 
 ----------------------------------------------------------------------
 
-RSLIDE Apples and hemlocks?
-
-----------------------------------------------------------------------
-
-
 Life-history characteristics
 
 	Compared to $K$ strategists, $r$ strategists should:
@@ -596,6 +610,7 @@ Life-history characteristics
 
 ----------------------------------------------------------------------
 
+
 Biology is complicated
 
 	The $r$-$K$ dichotomy is useful for thinking about strategies, but
@@ -618,7 +633,15 @@ Biology is complicated
 
 RSLIDE Biology is complicated
 
-Pictures of the above
+BC
+
+WIDEFIG images/sea_turtle.jpg
+
+NC
+
+WIDEFIG images/century_plant.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -634,7 +657,9 @@ Changing conditions
 
 		ANS Fast
 
-	POLL free_text_polls/zw4SJE9HcxG3rZP When conditions are bad ($\R<1$), When conditions are bad (R<1), should organisms be fast or slow, to maximize λ?
+	POLL free_text_polls/zw4SJE9HcxG3rZP When conditions are bad ($\R<1$),
+	should organisms be fast or slow to maximize $\lambda$?  When conditions are
+	bad (R<1), should organisms be fast or slow, to maximize λ?
 
 		ANS Slow!
 
@@ -1077,7 +1102,13 @@ Sexual roles
 
 RSLIDE Equids
 
-ADD Picture
+FIG images/zebra_harem.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Equids
+
+FIG images/horses.jpg
 
 ----------------------------------------------------------------------
 
@@ -1117,7 +1148,7 @@ CONT Equids
 
 RSLIDE Kakapos
 
-ADD Picture
+FIG images/kakapo_fruit.jpg
 
 ----------------------------------------------------------------------
 
@@ -1133,10 +1164,9 @@ BC
 
 NC
 
-	ADD Picture
+	SIDEFIG images/kakapo_portrait.jpg
 
 EC
-
 
 ----------------------------------------------------------------------
 
