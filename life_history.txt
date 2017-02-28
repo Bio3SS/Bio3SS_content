@@ -560,6 +560,7 @@ Example: trees
 			ANS High $K$ means you can continue doing well when the forest
 			is already too crowded for others
 
+CHANGE CC: add agriculture/human activities as disturbance
 ----------------------------------------------------------------------
 
 DEFHEAD $r$ vs.~$K$ strategists
@@ -629,6 +630,7 @@ Biology is complicated
 		But general principles are very important to guide our
 		understanding
 
+CHANGE CC: change locust into cicadas
 ----------------------------------------------------------------------
 
 RSLIDE Biology is complicated
@@ -663,6 +665,7 @@ Changing conditions
 
 		ANS Slow!
 
+CHANGE CC: change poll into multiple choices
 ----------------------------------------------------------------------
 
 Changing life history
@@ -684,6 +687,7 @@ Changing life history
 		bad -- don't reproduce or grow at all, but may survive for a long
 		time
 
+CHANGE CC: you were thinking of adding a reminder in slide about putting away phones after polls? and maybe give a species name example for animals that reach maturity faster under good conditions
 ----------------------------------------------------------------------
 
 Applications
@@ -708,6 +712,7 @@ Applications
 		ANS $K$ strategists may be more sustainable to grow for a long
 		time in a stable environment
 
+CHANGE CC: rephrase the 1st question + advantages r: add grow faster
 ----------------------------------------------------------------------
 
 TSEC Bet hedging
