@@ -135,6 +135,7 @@ RSLIDE Tradeoffs
 
 FIG images/bamboo.jpg
 
+CHANGE CC: add tradeoff with photosynthesis
 ----------------------------------------------------------------------
 
 RSLIDE Tradeoffs
@@ -345,6 +346,7 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 		ANS Dispersal
 
+CHANGE CC: add higher chance to reproduce again
 ----------------------------------------------------------------------
 
 RSLIDE How many offspring?

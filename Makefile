@@ -625,6 +625,16 @@ pg.asn.pdf: assign/pg.ques
 
 ## Regulation (uses some R, lives here, points to wiki)
 regulation.asn.pdf: assign/regulation.ques
+regulation.key.pdf: assign/regulation.ques
+regulation.rub.pdf: assign/regulation.ques
+
+## An allee question that has fallen between the cracks. Could be added to the previous or following assignment
+## Previous assignment currently has a detailed Allee question, though.
+allee.asn.pdf: assign/allee.ques
+
+## Structure assignment
+## Sometimes for credit, apparently
+structure.asn.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
@@ -632,18 +642,34 @@ competition.key.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
 
+######################################################################
+
+## Transitioning to having knitr in the pipeline
+
+## Pre-knit markup
+%.ques: assign/%.ques lect/knit.fmt talk/lect.pl
+	$(PUSH)
+
+## Knit
+%.qq: %.ques
+	echo 'knitr::knit("$<", "$@")' | R --vanilla
+
+## Markup for different products
 Sources += asn.tmp
 
 %.ques.fmt: lect/ques.format lect/fmt.pl
 	$(PUSHSTAR)
 
-%.asn.tex: assign/%.ques asn.tmp asn.ques.fmt talk/lect.pl
+%.asn.tex: %.qq asn.tmp asn.ques.fmt talk/lect.pl
 	$(PUSH)
 
-%.key.tex: assign/%.ques asn.tmp key.ques.fmt talk/lect.pl
+%.old.asn.tex: assign/%.ques asn.tmp asn.ques.fmt talk/lect.pl
 	$(PUSH)
 
-%.rub.tex: assign/%.ques asn.tmp rub.ques.fmt talk/lect.pl
+%.key.tex: %.qq asn.tmp key.ques.fmt talk/lect.pl
+	$(PUSH)
+
+%.rub.tex: %.qq asn.tmp rub.ques.fmt talk/lect.pl
 	$(PUSH)
 
 ##################################################################
