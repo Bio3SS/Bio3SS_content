@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: regulation.rub.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: regulation.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
