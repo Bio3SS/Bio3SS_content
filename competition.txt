@@ -95,12 +95,11 @@ Flour beetles
 	The larger species survives better in drier conditions, and the
 	smaller species reproduces faster in moister conditions
 
-	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What are the possible outcomes of such an experiment?
+	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What outcomes do you expect under wet vs. dry conditions?
 
 		ANS Each species wins when conditions are better for it
 
-	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if we ``tune" the conditions to something in between
-	(neither species always does better than the other)?
+	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if I ``tune" the conditions to something in between?
 
 		ANS The species could both survive together
 
@@ -163,7 +162,7 @@ Carrying capacity
 	Therefore, we expect each species to converge to its \emph{carrying
 	capacity} $K$ (or $K_1$ and $K_2$) when it is alone
 
-	The species is at equilibrium (carrying capacity) when?
+	How do we define carrying capacity in this system?
 
 		ANS The birth rate equals the death rate: $b(K) = d(K)$
 
@@ -182,8 +181,6 @@ Carrying capacity with competition
 		ANS $N_1 = 0$: the species is not present
 
 ----------------------------------------------------------------------
-
-  CHANGE MK: This information felt a little out of place
 
 Logistic model
 
@@ -210,9 +207,7 @@ Equal competition
 	This means that the competitive effect of an individual from either
 	species is the same.
 
-	We call the total population $\bar N = N_1 + N_2$.
-
-	Our equations are now
+	If $\bar N = N_1 + N_2$, then:
 
 		$\ds \frac{dN_1}{dt} = (b_1(\bar N) - d_1(\bar N)) N_1 $
 
@@ -220,32 +215,12 @@ Equal competition
 
 	What happens in this case?
 
-		ANS The population with the higher value of $K$ is going to
-		dominate
+		ANS Competition is mediated by only one quantity, $\bar N$.
 
-		ANS No coexistence 
+		ANS Whichever species has a higher value of $K$ can survive at a density
+		where the other one can't 
 		
-  CHANGE MK: Combine the next information on Competitive exclusion with this information so that you don't need an additional slide before the pictures. This was a bit choppy
-
-----------------------------------------------------------------------
-
-Competitive exclusion
-
-	Why does one species always win in equal competition?
-
-		Competition is mediated by only one quantity, $\bar N$.
-
-		Whichever species can reproduce up to a higher value of $\bar N$
-		is going to win; there is no basis for a tradeoff
-
-	Reminder:
-
-		$\ds \frac{dN_1}{dt} = (b_1(\bar N) - d_1(\bar N)) N_1 $
-
-		$\ds \frac{dN_2}{dt} = (b_2(\bar N) - d_2(\bar N)) N_2 $
-
-	If $K_1 > K_2$, then species 1 can always increase when species 2
-	can; and sometimes when it can't
+		ANS Dominance!
 
 ----------------------------------------------------------------------
 
@@ -277,9 +252,17 @@ Time plots and phase plots
 	\emph{Time plots} have time on one axis and show population
 	quantities on another
 
+		Fixed parameters (usually)
+
+		Single starting points
+
 	\emph{Phase plots} have population quantities on both axes
 
-		Better for seeing dynamical results
+		Fixed parameters (usually)
+
+		Multiple starting points (usually)
+
+		Better for seeing overall pattern of results
 
 		Worse for seeing rates (how quickly things change)
 
@@ -294,8 +277,6 @@ Reading phase plots
 	Closed circles are ending points
 
 	Arrows show direction of time
-	
-  CHANGE MK: Small bit of text about different starting conditions or different parameter sets would be nice
 
 ----------------------------------------------------------------------
 
@@ -410,22 +391,6 @@ Measuring competitive effects
 
 ----------------------------------------------------------------------
 
-Neutral competition
-
-	If competition is balanced, and neither species dominates, this is
-	called neutral competition
-
-	No tendency for either species to win
-
-	No tendency for founder control or for coexistence
-
-	If there's any small difference between the species, one may
-	dominate
-
-	Even if there's no difference, one should win eventually, by random
-	``drift"
-
-----------------------------------------------------------------------
 
 TSS Unbalanced competition
 
@@ -713,6 +678,23 @@ Measuring competition
 
 		We see the tendency for founder control or coexistence in
 		intermediate conditions
+
+----------------------------------------------------------------------
+
+Neutral competition
+
+	If competition is balanced, and neither species dominates, this is
+	called neutral competition
+
+	No tendency for either species to win
+
+	No tendency for founder control or for coexistence
+
+	If there's any small difference between the species, one may
+	dominate
+
+	Even if there's no difference, one should win eventually, by random
+	``drift"
 
 ----------------------------------------------------------------------
 
