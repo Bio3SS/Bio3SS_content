@@ -43,7 +43,7 @@ Competition
 
 		ANS Oaks and maples competing for light
 
-		ANS Ants and deer competing for leaves
+		ANS Ants and mammals competing for leaves
 
 		ANS Mussels and algae competing for space in the intertidal zone
 
@@ -63,7 +63,7 @@ FIG images/leaf_cutters.jpg
 
 NC
 
-HFIG 0.55 images/tapir.jpg
+WIDEFIG images/tapir.jpg
 
 EC
 
@@ -107,9 +107,15 @@ Flour beetles
 
 ----------------------------------------------------------------------
 
-Outcomes of competition
+RSLIDE Outcomes of competition
 
-BC
+FIG images/confusum.jpg
+
+COMMENT The confused flour beetle
+
+----------------------------------------------------------------------
+
+Outcomes of competition
 
 	In a given stable environment, we generally expect the competitive
 	interaction between two species to have one of the following results
@@ -122,13 +128,7 @@ BC
 		{\bf Founder control}: whichever species gets established first
 		will exclude the other
 
-NC
 
-COMMENT The confused flour beetle
-
-SIDEFIG images/confusum.jpg
-
-EC
 ----------------------------------------------------------------------
 
 TSEC Population model with competition
@@ -487,13 +487,17 @@ CHANGE CC: the order of the pictures doesn't fit with the order of the examples
 
 RSLIDE Founder control
 
-FIG images/savanna_burn.jpg
+FIG images/wild_dogs.jpg
+
+COMMENT Co-operation
 
 ----------------------------------------------------------------------
 
 RSLIDE Founder control
 
-FIG images/wild_dogs.jpg
+FIG images/savanna_burn.jpg
+
+COMMENT Changing the environment
 
 ----------------------------------------------------------------------
 
@@ -748,7 +752,7 @@ TSS Colonization and co-existence
 		$r$ strategists do better in the short term; $K$ strategists do
 		better do better in the long term
 	
-	POLL When can you survive by doing better in the short term?
+	POLL XXX When can you survive by doing better in the short term?
 
 		ANS When new opportunities (empty habitat) keep coming available
 
