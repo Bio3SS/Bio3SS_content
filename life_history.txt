@@ -985,7 +985,9 @@ Sex ratio and balance
 
 	How will this population evolve in the long term?
 
-		ANS To a balanced sex ratio
+		ANS More and more females
+
+		ANS Eventually, a balanced sex ratio
 
 ----------------------------------------------------------------------
 
@@ -1104,6 +1106,18 @@ Sexual roles
 		ANS Sea horses
 
 		ANS Nest-guarding fish
+
+----------------------------------------------------------------------
+
+RSLIDE Pregnant seahorse
+
+FIG images/pregnant_seahorse.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Midshipman nest
+
+FIG images/midshipman_nest.jpg
 
 ----------------------------------------------------------------------
 
