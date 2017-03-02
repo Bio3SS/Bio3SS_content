@@ -751,6 +751,7 @@ Averaging
 
 		$x * y * z = m * m * m$
 
+CHANGE CC: not sure the example of stealing money was very clear
 ----------------------------------------------------------------------
 
 Averaging
@@ -785,6 +786,7 @@ Example: plant Q
 
 		ANS The geometric mean of 6, 0.6 and 0.06: $\lambda=0.6$
 
+CHANGE CC: not a change but a note: students did not know how to calculate the GM
 ----------------------------------------------------------------------
 
 Plant D
@@ -805,6 +807,7 @@ Plant D
 
 		ANS Growth is the arithmetic mean of 3, 0.3 and 0.03: $\lambda=1.11$
 
+CHANGE CC: apparently you went a little bit too fast to explain how you did the calculations
 ----------------------------------------------------------------------
 
 Averaging
@@ -867,6 +870,8 @@ Dispersal, spreading risk over space
 		ANS Distribute risk -- if you don't disperse, \emph{all}
 		of your offspring could die if there is a disturbance
 
+CHANGE CC: staying home: ANS of a student: group protection
+CHANGE CC: dispersal: ANS students: decrease inbreeding, find a better place
 ----------------------------------------------------------------------
 
 Spreading risk over time
