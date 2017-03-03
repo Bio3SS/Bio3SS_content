@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -19,8 +19,6 @@ test: intro.draft.tex.deps
 
 # Scripts seem to be in talk/ and make rules in $(ms). But it's not clear if those work
 ##### talk is in makestuff; make sure to sync
-
-######################################################################
 
 # make files
 
@@ -137,9 +135,17 @@ nonlinear.handouts.pdf: nonlinear.txt
 structure.final.pdf: structure.txt
 structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
+structure.complete.pdf: structure.txt
 
-structure.pq: structure.txt pq.pl
+## New poll questions framework; still in development
+%.pq: %.txt pq.pl
 	$(PUSH)
+
+## Script for cutting things off to make partial notes
+structure_prelim.txt: structure.txt prelim.pl
+	$(PUSH)
+
+structure_prelim.complete.pdf: structure.txt
 
 ##################################################################
 
@@ -148,6 +154,7 @@ structure.pq: structure.txt pq.pl
 life_history.final.pdf: life_history.txt
 life_history.draft.pdf: life_history.txt
 life_history.handouts.pdf: life_history.txt
+life_history.pq: life_history.txt
 
 ######################################################################
 
@@ -157,6 +164,7 @@ competition.final.pdf: competition.txt
 competition.draft.pdf: competition.txt
 competition.complete.pdf: competition.txt
 competition.handouts.pdf: competition.txt
+competition.pq: competition.txt
 
 ##################################################################
 
@@ -277,23 +285,6 @@ midterm1.3.key.pdf:
 ## Now 5 versions: four for the main test, and one for others (SAS, late finals, ...)
 
 Sources += $(wildcard *.pl) $(wildcard *.R)
-
-## Printing
-midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf
-	$(ZIP)
-
-## Printing
-midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
-	$(ZIP)
-
-final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
-	$(ZIP)
-
-## Pushing
-midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
-
-midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
-
 # These rules need to be explicit, because of conflict with bank rules. A pain, but no easy fix.
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
@@ -338,6 +329,39 @@ final.1.final.pdf: exam.tmp
 %.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
 
+## Partial set of rubrics because of coding disaster
+midterm1.prb.tgz: midterm1.1.rub.pdf midterm1.2.rub.pdf midterm1.3.rub.pdf midterm1.4.rub.pdf
+	$(TGZ)
+
+######################################################################
+
+### Export rules
+
+##### Test 1
+
+## Printing
+midterm1.zip: midterm1.1.exam.pdf midterm1.2.exam.pdf midterm1.3.exam.pdf midterm1.4.exam.pdf midterm1.5.exam.pdf
+	$(ZIP)
+
+## Pushing
+midterm1.tests: midterm1.1.test.pdf.push midterm1.2.test.pdf.push midterm1.3.test.pdf.push midterm1.4.test.pdf.push midterm1.5.test.pdf.push 
+
+midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pdf.push midterm1.4.key.pdf.push midterm1.5.key.pdf.push
+
+##### Test 2
+
+## Printing
+midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
+	$(ZIP)
+
+## Pushing
+midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
+
+midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
+
+final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
+	$(ZIP)
+
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
 
@@ -363,6 +387,8 @@ final.ssv:
 # Make a special answer key for scantron processing
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
+
+midterm1.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
@@ -590,12 +616,26 @@ ebola:
 
 ## Assignments
 
-##
+## Intro (NFC)
 intro.asn.pdf: assign/intro.ques
 
+## Population growth
 pg.asn.pdf: assign/pg.ques
 
+## Intro R (NFC, lives on wiki)
+
+## Regulation (uses some R, lives here, points to wiki)
+regulation.asn.pdf: assign/regulation.ques
 regulation.key.pdf: assign/regulation.ques
+regulation.rub.pdf: assign/regulation.ques
+
+## An allee question that has fallen between the cracks. Could be added to the previous or following assignment
+## Previous assignment currently has a detailed Allee question, though.
+allee.asn.pdf: assign/allee.ques
+
+## Structure assignment
+## Sometimes for credit, apparently
+structure.asn.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
@@ -603,18 +643,34 @@ competition.key.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
 
+######################################################################
+
+## Transitioning to having knitr in the pipeline
+
+## Pre-knit markup
+%.ques: assign/%.ques lect/knit.fmt talk/lect.pl
+	$(PUSH)
+
+## Knit
+%.qq: %.ques
+	echo 'knitr::knit("$<", "$@")' | R --vanilla
+
+## Markup for different products
 Sources += asn.tmp
 
 %.ques.fmt: lect/ques.format lect/fmt.pl
 	$(PUSHSTAR)
 
-%.asn.tex: assign/%.ques asn.tmp asn.ques.fmt talk/lect.pl
+%.asn.tex: %.qq asn.tmp asn.ques.fmt talk/lect.pl
 	$(PUSH)
 
-%.key.tex: assign/%.ques asn.tmp key.ques.fmt talk/lect.pl
+%.old.asn.tex: assign/%.ques asn.tmp asn.ques.fmt talk/lect.pl
 	$(PUSH)
 
-%.rub.tex: assign/%.ques asn.tmp rub.ques.fmt talk/lect.pl
+%.key.tex: %.qq asn.tmp key.ques.fmt talk/lect.pl
+	$(PUSH)
+
+%.rub.tex: %.qq asn.tmp rub.ques.fmt talk/lect.pl
 	$(PUSH)
 
 ##################################################################

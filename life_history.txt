@@ -8,7 +8,7 @@ TSEC Introduction
 	{\bf Life history} refers to patterns of how organisms allocate
 	resources to key components underlying reproductive success:
 
-	POLL free_text_polls/HnxsmETagYYztS7 Give a one-word example of such a component
+	POLL free_text_polls/kjRkTLMDSwSqi6g Give a one-word example of such a component. 
 
 		ANS Survival
 
@@ -59,7 +59,7 @@ Oaks and dandelions
 
 		ANS Water, sunlight, nutrients
 
-	POLL free_text_polls/euJrjbBCEVjEphr What are some differences?
+	POLL free_text_polls/RxLfPtycVi4bTyp What are some differences?
 
 		ANS Oak trees are bigger
 
@@ -70,6 +70,20 @@ Oaks and dandelions
 		ANS Oak trees put much more energy into each seed
 
 		ANS Dandelion seeds are dispersed by wind, acorns by animals
+
+----------------------------------------------------------------------
+
+RSLIDE Strategies
+
+BCC
+
+SIDEFIG images/giraffes.png
+
+NCC
+
+SIDEFIG images/cutters.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -85,7 +99,17 @@ Scales of competition
 
 		Competition between populations
 
-CHANGE CC: You went quite fast for this slide
+----------------------------------------------------------------------
+
+RSLIDE Within species
+
+FIG images/mallard_nest.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Between populations
+
+FIG images/tree_competition.jpg
 
 ----------------------------------------------------------------------
 
@@ -93,7 +117,7 @@ TSEC Tradeoffs
 
 	Some evolutionary changes simply help organisms function better
 
-CHANGE CC: Perhaps write some examples on the slide for the previous sentence 
+		Hemoglobin is highly evolved to bind and release oxygen
 
 	Most have advantages and disadvantages
 
@@ -105,7 +129,18 @@ CHANGE CC: Perhaps write some examples on the slide for the previous sentence
 	A \textbf{tradeoff} occurs when improvements in one area come at a
 	cost of disadvantages in another area
 
-CHANGE CC: A funny example is the color of the beak of birds: Faivre et al (2003) Immune Activation Rapidly Mirrored in a Secondary Sexual Trait. Science 04. Vol. 300, Issue 5616, pp. 103 DOI: 10.1126/science.1081802
+----------------------------------------------------------------------
+
+RSLIDE Tradeoffs
+
+FIG images/bamboo.jpg
+
+CHANGE CC: add tradeoff with photosynthesis
+----------------------------------------------------------------------
+
+RSLIDE Tradeoffs
+
+FIG images/peacock.jpg
 
 ----------------------------------------------------------------------
 
@@ -146,6 +181,7 @@ NC
 SIDEFIG life_history/frontier.Rout-1.pdf
 
 EC
+
 ----------------------------------------------------------------------
 
 Evolution and optimization
@@ -170,9 +206,24 @@ Programmed optimization
 
 		Plants sensing water environments
 
+		Moths circling light bulbs
+
 		People pursuing sexual opportunities
 
 ----------------------------------------------------------------------
+
+RSLIDE Programmed optimization
+
+FIG images/moth_light.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Programmed optimization
+
+HIGHFIG images/teenage_couple.jpg
+
+----------------------------------------------------------------------
+
 
 Tradeoff: Quick maturation vs.~large final size
 
@@ -221,6 +272,18 @@ Semelparity
 
 ----------------------------------------------------------------------
 
+RSLIDE Semele
+
+HIGHFIG images/semele.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Cole's paradox
+
+FIG images/tomato.jpg
+
+----------------------------------------------------------------------
+
 Cole's paradox
 
 BC
@@ -244,8 +307,6 @@ EC
 
 Responses to Cole
 
-BC
-
 	What are some reasons why it makes evolutionary sense for organisms
 	to be iteroparous, in light of Cole's arguments?
 
@@ -258,13 +319,11 @@ BC
 		ANS Risky environments: long-lived organisms can deal better with
 		variation in offspring success. 
 
-NC
+----------------------------------------------------------------------
+
+RSLIDE Responses to Cole
 
 SIDEFIG images/jungle.jpg
-
-EC
-
-
 
 ----------------------------------------------------------------------
 
@@ -279,18 +338,53 @@ Tradeoff example: many offspring vs.~high-quality offspring
 
 		ANS Oaks vs.~pines
 
-	POLL free_text_polls/gBkYaGL5NBgZCHK What are potential advantages of producing fewer offspring with the same amount of energy?
+		ANS Tsetses vs. mosquitoes
+
+	POLL free_text_polls/5vyO0qrVgRGFWHm What are potential advantages of producing fewer offspring with the same amount of energy?
 
 		ANS Greater chance of survival (or reproductive success)
 
 		ANS Dispersal
 
+CHANGE CC: add higher chance to reproduce again
+----------------------------------------------------------------------
+
+RSLIDE How many offspring?
+
+BCC
+
+SIDEFIG images/acorns.jpg
+
+NCC
+
+SIDEFIG images/sequoia_cones.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+RSLIDE How many offspring?
+
+FIG images/mosquito_laying.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE How many offspring?
+
+FIG images/tsetse_laying.jpg
+
 ----------------------------------------------------------------------
 
 Tradeoff: direct investment vs.~dispersal investment
 
-	Plants' investment in reproduction may not go directly to the
-	offspring, but instead to mechanisms to help the offspring disperse
+	Investment in reproduction may not go directly to the
+	offspring, but instead to mechanisms to help the offspring disperse.
+	
+	Why is this particularly important in plants?
+
+		ANS Parent-assisted dispersal is often their only chance to move.
+
+	What are some example mechanisms?
 
 		ANS Edible fruits
 
@@ -298,12 +392,23 @@ Tradeoff: direct investment vs.~dispersal investment
 
 		ANS Exploding seed pods
 
-	This may be particularly important to plants because of the ``eggs in
-	one basket" problem
+----------------------------------------------------------------------
 
-		ANS Parent-assisted dispersal is often their only chance to move.
+RSLIDE Dispersal investment
 
-CHANGE CC: Perhaps don't distinguish the last example from the others or change the order (one student answered you at first with the last example)
+FIG images/mulberries.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Dispersal investment
+
+FIG images/maple_fruit.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Dispersal investment
+
+FIG images/sandbox_fruit.jpg
 
 ----------------------------------------------------------------------
 
@@ -361,14 +466,14 @@ DEFHEAD $K$-strategists
 
 	$K$-strategists are selected to do well in crowded environments
 
-	$K$ measures that maximum density at which a species can ``make a
+	$K$ measures the maximum density at which a species can ``make a
 	living'' -- by keeping $\R=1$
 
-	Measuring $K$ between species can be tricky
+	Comparing $K$ between species can be tricky
 
 ----------------------------------------------------------------------
 
-Maples and marigolds
+RSLIDE Maples and marigolds
 
 BC
 
@@ -382,17 +487,24 @@ EC
 
 ----------------------------------------------------------------------
 
+
 Measuring $K$
 
 	Which is the $K$ strategist: maple trees or marigolds?
 
 		ANS Maple trees do better at competing under stable conditions
 
+		ANS Marigolds are faster at invading new environments
+
+	Which has a higher value of $\rmax$?
+
+		ANS Marigolds
+
 	Which has a higher value of $K$?
 
-		POLL multiple_choice_polls/mAH34RghCw8Iwre In [indiv/ha]?
+		POLL multiple_choice_polls/oJIl9jyOs45P3ti In [indiv/ha]? Which has a higher carrying capacity [indiv/ha]? maples, marigolds
 
-		POLL multiple_choice_polls/UKMeDYbvnEz2nbJ In [kg/ha]?
+		POLL multiple_choice_polls/jg5HEJysPyiJUWS In [kg/ha]? Which has a higher carrying capacity [kg/ha]? maples, marigolds
 
 	To compare species, we attempt to measure $K$ in units that reflect
 	the effect of crowding on the competitive environment
@@ -401,15 +513,35 @@ Measuring $K$
 
 ----------------------------------------------------------------------
 
-RSLIDE Example: trees
+RSLIDE Strategies
 
-FIG images/old_growth_opal.jpg
+BCC
+
+SIDEFIG images/giraffes.png
+
+NCC
+
+SIDEFIG images/cutters.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
-RSLIDE Example: trees
+Example: trees
+
+FIG images/larches.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Open environment
 
 FIG images/old_field.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Stable environment
+
+FIG images/old_growth_opal.jpg
 
 ----------------------------------------------------------------------
 
@@ -428,6 +560,7 @@ Example: trees
 			ANS High $K$ means you can continue doing well when the forest
 			is already too crowded for others
 
+CHANGE CC: add agriculture/human activities as disturbance
 ----------------------------------------------------------------------
 
 DEFHEAD $r$ vs.~$K$ strategists
@@ -471,12 +604,13 @@ Life-history characteristics
 			In crowded conditions, these ``quick" offspring may
 			be out-competed by offspring with more resources
 
-		Be more aggressive about dispersal
+		Be more aggressive about dispersal. 
 
 			ANS They need to find the next empty, suitable habitat before
 			this one gets too crowded
 
 ----------------------------------------------------------------------
+
 
 Biology is complicated
 
@@ -491,12 +625,25 @@ Biology is complicated
 
 		17-year locusts, century plants
 
-  CHANGE MK: Image of the plant would be nice
-
 	Every species life history has specific, important {\em details}
 
 		But general principles are very important to guide our
 		understanding
+
+CHANGE CC: change locust into cicadas
+----------------------------------------------------------------------
+
+RSLIDE Biology is complicated
+
+BC
+
+WIDEFIG images/sea_turtle.jpg
+
+NC
+
+WIDEFIG images/century_plant.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -509,13 +656,16 @@ Changing conditions
 
 	When conditions are good ($\R>1$), should organisms be fast
 	or slow to maximize $\lambda$?
-	
-  CHANGE MK: Need an answer here
 
-	POLL multiple_choice_polls/n1ZCuPQxTwbHAnz When conditions are bad ($\R<1$), should organisms be fast or slow, to maximize $\lambda$?
-	
-CHANGE CC: you also wanted to add the answer of the poll
+		ANS Fast
 
+	POLL free_text_polls/zw4SJE9HcxG3rZP When conditions are bad ($\R<1$),
+	should organisms be fast or slow to maximize $\lambda$?  When conditions are
+	bad (R<1), should organisms be fast or slow, to maximize λ?
+
+		ANS Slow!
+
+CHANGE CC: change poll into multiple choices
 ----------------------------------------------------------------------
 
 Changing life history
@@ -525,9 +675,7 @@ Changing life history
 
 		ANS Move slow when things are bad, and fast when things are good
 
-	Examples
-	
-  CHANGE MK: Poll here would be nice. Maybe you will get some interesting examples if students can answer anonymously
+	POLL free_text_polls/uXfLWxzcQeTNO9E What are some examples? Can you think of an example of changing life-history patterns?
 
 		ANS Many animals reach sexual maturity faster under good
 		conditions
@@ -539,6 +687,7 @@ Changing life history
 		bad -- don't reproduce or grow at all, but may survive for a long
 		time
 
+CHANGE CC: you were thinking of adding a reminder in slide about putting away phones after polls? and maybe give a species name example for animals that reach maturity faster under good conditions
 ----------------------------------------------------------------------
 
 Applications
@@ -548,17 +697,24 @@ Applications
 
 		ANS $r$ strategists will generally deal with disturbance better
 
-	Would $r$ or $K$ strategists be more useful for human production (eg.
+	What are advantages of $r$ or $K$ strategists for human production (eg.
 	biofuels, agriculture, drug production etc..)?
-	
-	CHANGE CC: you wanted to divide the question into 2 questions 
+
+	POLL free_text_polls/RrvAaSlcPCYevro What are some advantages of $r$ strategists?
+	What are some advantages of r strategists?
 
 		ANS $r$ strategists are likely to respond better to human attempts
 		to manipulate the environment to their advantage
 
+	POLL free_text_polls/Ac5nrU1aNcHWopy What are some advantages of $K$ strategists?
+	What are some advantages of K strategists?
+
 		ANS $K$ strategists may be more sustainable to grow for a long
 		time in a stable environment
 
+CHANGE CC: rephrase the 1st question + advantages r: add grow faster
+
+CHANGE CC: stop here on Feb 28
 ----------------------------------------------------------------------
 
 TSEC Bet hedging
@@ -566,12 +722,10 @@ TSEC Bet hedging
 	In a risky world, you never want to put all your eggs in the same
 	basket
 
-		If all your offspring are in similar conditions, they can all do
+		If all your offspring are born into similar conditions, they can all do
 		well together -- or they can all die together
-		
-  CHANGE MK: Wording seems a bit off here: "If all of your offspring are (born at the same time into similar conditions)..." or something like that
 
-	Strategies that usually do well aren't good enough
+	Strategies that \emph{usually} do well aren't good enough
 
 		The species we see now have survived for billions of years (if we
 		include ancestral species, who also had to survive)
@@ -597,6 +751,7 @@ Averaging
 
 		$x * y * z = m * m * m$
 
+CHANGE CC: not sure the example of stealing money was very clear
 ----------------------------------------------------------------------
 
 Averaging
@@ -627,10 +782,11 @@ Example: plant Q
 
 	The three kinds of year are equally likely
 	
-	POLL free_text_polls/0gN1gjenIjZtPnq What is the long term average growth rate of the population?
+	POLL free_text_polls/mUguRKsPmb9MaZh What is the long term average growth rate of plant Q?
 
 		ANS The geometric mean of 6, 0.6 and 0.06: $\lambda=0.6$
 
+CHANGE CC: not a change but a note: students did not know how to calculate the GM
 ----------------------------------------------------------------------
 
 Plant D
@@ -645,10 +801,13 @@ Plant D
 	but they disperse so far (in this hypothetical example) that 1/3 of
 	them experience good, normal and bad conditions every year.
 
-	What is the average growth rate of the new variety?
+	POLL free_text_polls/KkFgfiBDNr8CAtX What is the average growth rate of plant D?
 
-		ANS Survival follows the arithmetic mean: $\lambda=1.11$
+		ANS Average survival is the mean of 0.2, 0.02, and 0.002
 
+		ANS Growth is the arithmetic mean of 3, 0.3 and 0.03: $\lambda=1.11$
+
+CHANGE CC: apparently you went a little bit too fast to explain how you did the calculations
 ----------------------------------------------------------------------
 
 Averaging
@@ -711,6 +870,8 @@ Dispersal, spreading risk over space
 		ANS Distribute risk -- if you don't disperse, \emph{all}
 		of your offspring could die if there is a disturbance
 
+CHANGE CC: staying home: ANS of a student: group protection
+CHANGE CC: dispersal: ANS students: decrease inbreeding, find a better place
 ----------------------------------------------------------------------
 
 Spreading risk over time
@@ -738,13 +899,15 @@ Why is it called bet hedging?
 		ANS If you don't disperse in space, or spread out risk in time,
 		you are ``betting" all of your offspring on a single environment
 
+CHANGE CC: not sure why this slide
+CHANGE CC: stop here on March 2nd
 ----------------------------------------------------------------------
 
 \clearpage
 
 TSEC Sex ratios
 
-	POLL free_text_polls/YKYgHq4h0mvWaIT Should organisms allocate more resources to producing males or females?
+	POLL free_text_polls/XVdaqUEFBnNJXxX Should organisms allocate more resources to producing males or females?
 
 		ANS They should allocate more resources to females because it is
 		females that limit the growth rate
@@ -755,8 +918,6 @@ TSEC Sex ratios
 
 		ANS They should allocate more resources to males, because males
 		have greater potential reproductive success
-		
-		CHANGE ML: add the case it can be reverse for different speices like sea horse
 
 ----------------------------------------------------------------------
 
@@ -814,8 +975,6 @@ Elephant seal details
 		ANS Males' average fitness is 300/360=0.83; females' is 300/40 =
 		7.5
 
-  CHANGE ML: Con't here next week
-
 ----------------------------------------------------------------------
 
 Sex ratio and balance
@@ -826,16 +985,16 @@ Sex ratio and balance
 	Thus, the \emph{number} of offspring I can make does not depend on
 	sex
 
-	POLL free_text_polls/Zh8O1GPCrHRnkin If everyone else is making more males than females, what should I do?
+	POLL free_text_polls/w1XdvYUv8V4ycCh If everyone else is making more males than females, what should I do?
 
 		ANS Make more females, because that will increase my average
 		fitness
 
-	How should this population evolve?
+	How will this population evolve in the long term?
 
-CHANGE CC: add "long term" in the question
+		ANS More and more females
 
-		ANS To a balanced sex ratio
+		ANS Eventually, a balanced sex ratio
 
 ----------------------------------------------------------------------
 
@@ -892,11 +1051,11 @@ Fig wasp details
 
 	Would a mother benefit by producing more males than others do?
 
-		ANS No, because these males would not have the same access to the
-		females as their siblings do
+		ANS No, because these males would not have access to the extra
+		females produced by other mothers
 
-		ANS Producing more males because \emph{average} male fitness is
-		higher works only if the new males can share in the average
+		ANS Producing males because \emph{average} male fitness is
+		higher works only if your males can \emph{share} that average
 		fitness
 
 ----------------------------------------------------------------------
@@ -915,6 +1074,7 @@ Female-biased sex ratios
 	the sex ratio in the same direction
 
 ----------------------------------------------------------------------
+
 
 Variation in reproductive success
 
@@ -936,24 +1096,75 @@ Variation in reproductive success
 
 ----------------------------------------------------------------------
 
+Sexual roles
+
+	What do you expect to happen in a population where males contributing more to raising offspring than females do?
+
+		ANS All of these stories can be reversed
+
+			ANS Females compete for males
+
+			ANS Parents invest more in individual females
+
+			ANS Possible male-biased sex ratio
+
+	Can you think of any examples?
+
+		ANS Sea horses
+
+		ANS Nest-guarding fish
+
+----------------------------------------------------------------------
+
+RSLIDE Pregnant seahorse
+
+FIG images/pregnant_seahorse.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Midshipman nest
+
+FIG images/midshipman_nest.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Equids
+
+FIG images/zebra_harem.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Equids
+
+FIG images/horses.jpg
+
+----------------------------------------------------------------------
+
 Equids
 
-	Horses and zebras produce offspring at similar rates through their
+	Horses and zebras have harem males who compete for access to females
+
+	Successful stallions can have very high fitness
+
+	Females produce offspring at similar rates through their
 	adult lives
 
-CHANGE CC: add males have harem
-
-	The healthiest, middle-aged mares produce a greater fraction of males
+	Healthy, middle-aged mares produce a greater fraction of males
 
 		Presumably they are allocating more resources to these males
 		(because they have more resources available)
+
+----------------------------------------------------------------------
+
+CONT Equids
 
 	It is not clear from studies whether they produce fewer males than
 	females over their lifespan to compensate (balance would predict
 	that they should)
 
-	These animals show skewed sex ratios of adults, probably for a
-	related reason
+	These animals \emph{do} show female-biased sex ratios of adults
+
+	What is another possible, related reason?
 
 		ANS Males pursue high-risk development strategies, and therefore
 		have lower survival
@@ -961,4 +1172,31 @@ CHANGE CC: add males have harem
 		ANS High-risk, aggressive development increases the chance of
 		being dominant and reproductively successful
 
-CHANGE CC: another example which is very interesting is the Kakapo. It was an endangered species and researchers tried to save them giving food to the females but it was a disaster. Females tend to have a big male during good years so because of the researchers the females "thought" they were good years and the population had a very biased male sex-ratio and almost disappeared...
+----------------------------------------------------------------------
+
+RSLIDE Kakapos
+
+FIG images/kakapo_fruit.jpg
+
+----------------------------------------------------------------------
+
+Kakapos
+
+BC
+
+	Researchers tried to save the endangered kakapos by providing food to
+	females.
+
+	Females responded to these "good years" by producing too many males making
+	population crisis worse
+
+NC
+
+	SIDEFIG images/kakapo_portrait.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+ADD Conclusion for next  year?
+
