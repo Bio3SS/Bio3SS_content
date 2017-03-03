@@ -164,6 +164,7 @@ competition.final.pdf: competition.txt
 competition.draft.pdf: competition.txt
 competition.complete.pdf: competition.txt
 competition.handouts.pdf: competition.txt
+competition.pq: competition.txt
 
 ##################################################################
 
