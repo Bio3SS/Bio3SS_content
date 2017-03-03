@@ -899,6 +899,8 @@ Why is it called bet hedging?
 		ANS If you don't disperse in space, or spread out risk in time,
 		you are ``betting" all of your offspring on a single environment
 
+CHANGE CC: not sure why this slide
+CHANGE CC: stop here on March 2nd
 ----------------------------------------------------------------------
 
 \clearpage

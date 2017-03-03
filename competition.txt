@@ -95,7 +95,7 @@ Flour beetles
 	The larger species survives better in drier conditions, and the
 	smaller species reproduces faster in moister conditions
 
-	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What outcomes do you expect under wet vs. dry conditions?
+	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What outcomes do you expect under wet vs dry conditions?
 
 		ANS Each species wins when conditions are better for it
 
@@ -414,7 +414,7 @@ Coexistence
 
 	Coexistence \emph{may} occur when $C<1$
 
-	Why might individuals have relatively weaker competitive
+	POLL XXX Why might individuals have relatively weaker competitive
 	interactions with members of the other species?
 
 		ANS They may compete for mates or mating sites
@@ -467,7 +467,7 @@ Founder control
 
 	Founder control \emph{may} occur when $C>1$
 
-	Why might individuals have relatively stronger competitive
+	POLL XXX Why might individuals have relatively stronger competitive
 	interactions with members of the other species?
 
 		ANS Conspecifics might co-operate to defend resources
