@@ -285,8 +285,6 @@ Dominance reversed
 
 DOUBLEFIG competition/third.comp.Rout-0.pdf competition/third.comp.Rout-1.pdf
 
-  CHANGE MK: Can we see the carrying capacity of the non-dominant species?
-
 ----------------------------------------------------------------------
 
 Log plots and linear plots
@@ -474,14 +472,12 @@ Founder control
 
 		ANS Conspecifics might co-operate to defend resources
 
-			ANS Example: hyenas and leopards
+			ANS Example: dogs and leopards
 
 		ANS Organisms might change the environment in a way that favors
 		their own species
 
 			ANS Example: trees and grasses
-
-CHANGE CC: the order of the pictures doesn't fit with the order of the examples 
 
 ----------------------------------------------------------------------
 
@@ -556,12 +552,10 @@ Results of competition
 	$C$ may stay (about) the same, even as we switch conditions so that
 	one or the other species dominates
 
-	$C$ tells us what will happen \emph{if} neither species is
-	dominating
+	POLL XXX $C$ tells us what will happen \emph{if} neither species is
+	dominating. What are the possible results, other than dominance?
 
 		ANS Founder effects, neutrality or coexistence
-
-CHANGE CC: perhaps add a poll to check that everybody is following 
 
 ----------------------------------------------------------------------
 
@@ -572,7 +566,7 @@ SEC Population-level interactions
 TSS Invasion theory
 
 	The competitive relationship between two species can be
-	investigated by studying \textbf{invasion}:
+	investigated by studying two \textbf{invasion} scenarios:
 
 	What happens if one species is established, and the other one tries
 	to invade (ie., some individuals are introduced)?
@@ -584,8 +578,6 @@ TSS Invasion theory
 		ANS Founder control occurs when neither species can invade the
 		other
 
-CHANGE CC: perhaps add some answers of the students that were interesting: successfull/unsuccessfull invasion, mating...
-
 ----------------------------------------------------------------------
 
 Allee effects
@@ -595,10 +587,9 @@ Allee effects
 
 	That is, it neglects Allee effects
 
-		ANS With Allee effects a species that could do fine in a certain
-		situation may still not be able to ``invade" if it's rare
+	Would this assumption work with Allee effects?
 
-CHANGE CC: Try to go slowly (you gave the solution before asking)
+		ANS No. With Allee effects a species may be able to do well if established, but not be able to ``invade" if it's rare
 
 ----------------------------------------------------------------------
 
@@ -656,7 +647,7 @@ Results of competition
 
 		ANS We expect that species to always win: dominance
 
-CHANGE CC: the table you drew on the board to summarize was helpful and will help students to remember
+	DIAGRAM
 
 ----------------------------------------------------------------------
 
@@ -761,8 +752,6 @@ TSS Colonization and co-existence
 Growth rates
 
 	The maximum growth rate (for each species) is $r_0 = (b(0) - d(0))$:
-
-	CHANGE ML: make a simple model example. Landscape
 
 		ANS The net growth rate when crowding pressure is very low
 
@@ -906,14 +895,12 @@ Competitive exclusion and biodiversity
 	stable environment in the long term due to their competitive
 	dynamics
 
-  CHANGE ML: Do people know what your examples are? For example, a picture of Joshua tree and catus? 
-
 	This statement can be justified mathematically, and it has
 	important implications for real populations \ldots\
 	
 	\ldots but it must also break down 
-	
-	CHANGE ML: Make a poll here
+
+	POLL XXX How?
 
 		ANS Species may not use resources in the same way
 
