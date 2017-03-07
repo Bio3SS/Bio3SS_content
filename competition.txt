@@ -95,15 +95,17 @@ Flour beetles
 	The larger species survives better in drier conditions, and the
 	smaller species reproduces faster in moister conditions
 
-	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What outcomes do you expect under wet vs dry conditions?
+	POLL https://www.polleverywhere.com/free_text_polls/0b9fhjVf23qirZU What outcomes do you expect under wet vs dry conditions?
 
 		ANS Each species wins when conditions are better for it
 
-	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if I ``tune" the conditions to something in between? What if I tune the conditions to something in between?
+	POLL https://www.polleverywhere.com/free_text_polls/qH625W9P4YsheuW What if I ``tune" the conditions to something in between? What if I tune the conditions to something in between?
 
 		ANS The species could both survive together
 
-		ANS Whichever species got a head start might exclude the other
+		ANS Sometimes one survives, and sometimes the other
+
+			ANS Whichever species got a ``head start'' would survive
 
 ----------------------------------------------------------------------
 
@@ -285,8 +287,6 @@ Dominance reversed
 
 DOUBLEFIG competition/third.comp.Rout-0.pdf competition/third.comp.Rout-1.pdf
 
-  CHANGE MK: Can we see the carrying capacity of the non-dominant species?
-
 ----------------------------------------------------------------------
 
 Log plots and linear plots
@@ -327,7 +327,7 @@ Balanced competition example
 	Two plants compete with each other for water.  The value of
 	$\alpha_{21}$ is $4 \indiv_1/\indiv_2$
 
-	POLL https://www.polleverywhere.com/free_text_polls/OHwhmRq2NQUGxkT Which species is bigger?
+	POLL https://www.polleverywhere.com/free_text_polls/g5R5Ndmc1sWEW0y Which species is bigger?
 
 		ANS Species 2 individuals use as much water as 4
 		species 1 individuals
@@ -350,7 +350,7 @@ FIG images/water_compete.jpg
 
 Balanced competition
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/cK0WEfc5geVUTXi What results do we expect from balanced competition?
+	POLL https://www.polleverywhere.com/free_text_polls/mzmM5jlhNAR7acn What results do we expect from balanced competition?
 
 		ANS It seems like the bigger species should win
 
@@ -416,8 +416,7 @@ Coexistence
 
 	Coexistence \emph{may} occur when $C<1$
 
-	POLL XXX Why might individuals have relatively weaker competitive
-	interactions with members of the other species?
+	POLL https://www.polleverywhere.com/free_text_polls/lwU5FiTR9eTocwE Why might individuals have relatively weaker competitive interactions with members of the other species?
 
 		ANS They may compete for mates or mating sites
 
@@ -432,6 +431,12 @@ Coexistence
 RSLIDE Coexistence
 
 FIG images/cliff_swallows.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Coexistence
+
+FIG images/robins_nest.jpg
 
 ----------------------------------------------------------------------
 
@@ -469,19 +474,16 @@ Founder control
 
 	Founder control \emph{may} occur when $C>1$
 
-	POLL XXX Why might individuals have relatively stronger competitive
-	interactions with members of the other species?
+	POLL https://www.polleverywhere.com/free_text_polls/jy0DfNHbO3Y2oci Why might individuals have relatively stronger competitive interactions with members of the other species?
 
 		ANS Conspecifics might co-operate to defend resources
 
-			ANS Example: hyenas and leopards
+			ANS Example: dogs and leopards
 
 		ANS Organisms might change the environment in a way that favors
 		their own species
 
 			ANS Example: trees and grasses
-
-CHANGE CC: the order of the pictures doesn't fit with the order of the examples 
 
 ----------------------------------------------------------------------
 
@@ -556,12 +558,9 @@ Results of competition
 	$C$ may stay (about) the same, even as we switch conditions so that
 	one or the other species dominates
 
-	$C$ tells us what will happen \emph{if} neither species is
-	dominating
+	POLL https://www.polleverywhere.com/free_text_polls/0TyG26NIKwEG1BY $C$ tells us what will happen \emph{if} neither species is dominating. What are the possible results, other than dominance?
 
 		ANS Founder effects, neutrality or coexistence
-
-CHANGE CC: perhaps add a poll to check that everybody is following 
 
 ----------------------------------------------------------------------
 
@@ -572,7 +571,7 @@ SEC Population-level interactions
 TSS Invasion theory
 
 	The competitive relationship between two species can be
-	investigated by studying \textbf{invasion}:
+	investigated by studying two \textbf{invasion} scenarios:
 
 	What happens if one species is established, and the other one tries
 	to invade (ie., some individuals are introduced)?
@@ -584,8 +583,6 @@ TSS Invasion theory
 		ANS Founder control occurs when neither species can invade the
 		other
 
-CHANGE CC: perhaps add some answers of the students that were interesting: successfull/unsuccessfull invasion, mating...
-
 ----------------------------------------------------------------------
 
 Allee effects
@@ -595,10 +592,9 @@ Allee effects
 
 	That is, it neglects Allee effects
 
-		ANS With Allee effects a species that could do fine in a certain
-		situation may still not be able to ``invade" if it's rare
+	Would this assumption work with Allee effects?
 
-CHANGE CC: Try to go slowly (you gave the solution before asking)
+		ANS No. With Allee effects a species may be able to do well if established, but not be able to ``invade" if it's rare
 
 ----------------------------------------------------------------------
 
@@ -656,7 +652,7 @@ Results of competition
 
 		ANS We expect that species to always win: dominance
 
-CHANGE CC: the table you drew on the board to summarize was helpful and will help students to remember
+	DIAGRAM
 
 ----------------------------------------------------------------------
 
@@ -709,7 +705,7 @@ Founder control
 	But from the point of view of the competing species, it's pretty
 	important which one of them gets control
 
-	POLL https://www.polleverywhere.com/free_text_polls/1rHkKLYvuTZYltv What factors determine who gets control?
+	POLL https://www.polleverywhere.com/free_text_polls/gHep7iMXNN0oI1Q What factors determine who gets control?
 
 		ANS Who gets there first
 
@@ -752,7 +748,7 @@ TSS Colonization and co-existence
 		$r$ strategists do better in the short term; $K$ strategists do
 		better do better in the long term
 	
-	POLL XXX When can you survive by doing better in the short term?
+	POLL free_text_polls/kPxgrXkNfkdj7sU When can you survive by doing better in the short term?
 
 		ANS When new opportunities (empty habitat) keep coming available
 
@@ -761,8 +757,6 @@ TSS Colonization and co-existence
 Growth rates
 
 	The maximum growth rate (for each species) is $r_0 = (b(0) - d(0))$:
-
-	CHANGE ML: make a simple model example. Landscape
 
 		ANS The net growth rate when crowding pressure is very low
 

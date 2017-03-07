@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -137,7 +137,9 @@ structure.draft.pdf: structure.txt
 structure.handouts.pdf: structure.txt
 structure.complete.pdf: structure.txt
 
-## New poll questions framework; still in development
+## Poll questions framework
+## Trim up to the first period or question mark that is followed by words
+## Should really rewrite to read paragraphs, replace \n with \s.
 %.pq: %.txt pq.pl
 	$(PUSH)
 
