@@ -99,7 +99,7 @@ Flour beetles
 
 		ANS Each species wins when conditions are better for it
 
-	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if I ``tune" the conditions to something in between?
+	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if I ``tune" the conditions to something in between? What if I tune the conditions to something in between?
 
 		ANS The species could both survive together
 
@@ -815,7 +815,7 @@ Fundamental niches
 	Many plants have very large fundamental niches
 
 		The reason spruce trees don't grow in Cootes Paradise is not that
-		they can't
+		they can't grow there
 		
 		ANS They can't compete with the other trees that
 		grow there
@@ -906,14 +906,12 @@ Competitive exclusion and biodiversity
 	stable environment in the long term due to their competitive
 	dynamics
 
-  CHANGE ML: Do people know what your examples are? For example, a picture of Joshua tree and catus? 
-
 	This statement can be justified mathematically, and it has
 	important implications for real populations \ldots\
 	
 	\ldots but it must also break down 
-	
-	CHANGE ML: Make a poll here
+
+	POLL XXX How? Why do we observe species co-existing?
 
 		ANS Species may not use resources in the same way
 
@@ -923,3 +921,4 @@ Competitive exclusion and biodiversity
 
 		ANS There may be stabilizing factors outside competitive dynamics
 		(e.g., natural enemies)
+

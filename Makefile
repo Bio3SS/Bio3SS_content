@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: life_history.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -164,6 +164,7 @@ competition.final.pdf: competition.txt
 competition.draft.pdf: competition.txt
 competition.complete.pdf: competition.txt
 competition.handouts.pdf: competition.txt
+competition.large.pdf: competition.txt
 competition.pq: competition.txt
 
 ##################################################################
