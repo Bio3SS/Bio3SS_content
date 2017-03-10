@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.bank.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -139,8 +139,12 @@ structure.complete.pdf: structure.txt
 
 ## Poll questions framework
 ## Trim up to the first period or question mark that is followed by words
+## Should really rewrite to read paragraphs, replace \n with \s.
 %.pq: %.txt pq.pl
 	$(PUSH)
+
+%.pollclean: %.txt
+	perl -pi -e "s|POLL.*?everywhere.com/|POLL |" $<
 
 ## Script for cutting things off to make partial notes
 structure_prelim.txt: structure.txt prelim.pl
@@ -166,7 +170,9 @@ competition.final.pdf: competition.txt
 competition.draft.pdf: competition.txt
 competition.complete.pdf: competition.txt
 competition.handouts.pdf: competition.txt
+competition.large.pdf: competition.txt
 competition.pq: competition.txt
+competition.pollclean: competition.txt
 
 ##################################################################
 
@@ -232,7 +238,7 @@ midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank assign
 	$(PUSH)
 
 midterm2.bank.key.pdf:
-midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank
+midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank assign/competition.bank
 	$(cat)
 
 final.bank.key.pdf:
@@ -279,8 +285,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm1.1.exam.pdf:
-midterm1.3.key.pdf:
+midterm2.1.test.pdf: 
 
 ##### Versioning
 

@@ -35,7 +35,9 @@ Competition
 	resource, or resources
 
 	Each species ability to reproduce successfully is reduced by the
-	presence of the other
+	presence of the other 
+	
+	CHANGE ML : (components of successful reproduction)
 
 		ANS Survival, growth, producing offspring
 
@@ -95,15 +97,17 @@ Flour beetles
 	The larger species survives better in drier conditions, and the
 	smaller species reproduces faster in moister conditions
 
-	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What outcomes do you expect under wet vs dry conditions?
+	POLL free_text_polls/0b9fhjVf23qirZU What outcomes do you expect under wet vs dry conditions?
 
 		ANS Each species wins when conditions are better for it
 
-	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if I ``tune" the conditions to something in between?
+	POLL free_text_polls/qH625W9P4YsheuW What if I ``tune" the conditions to something in between? What if I tune the conditions to something in between?
 
 		ANS The species could both survive together
 
-		ANS Whichever species got a head start might exclude the other
+		ANS Sometimes one survives, and sometimes the other
+
+			ANS Whichever species got a ``head start'' would survive
 
 ----------------------------------------------------------------------
 
@@ -325,7 +329,7 @@ Balanced competition example
 	Two plants compete with each other for water.  The value of
 	$\alpha_{21}$ is $4 \indiv_1/\indiv_2$
 
-	POLL https://www.polleverywhere.com/free_text_polls/OHwhmRq2NQUGxkT Which species is bigger?
+	POLL free_text_polls/g5R5Ndmc1sWEW0y Which species is bigger?
 
 		ANS Species 2 individuals use as much water as 4
 		species 1 individuals
@@ -348,7 +352,7 @@ FIG images/water_compete.jpg
 
 Balanced competition
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/cK0WEfc5geVUTXi What results do we expect from balanced competition?
+	POLL free_text_polls/mzmM5jlhNAR7acn What results do we expect from balanced competition?
 
 		ANS It seems like the bigger species should win
 
@@ -414,8 +418,7 @@ Coexistence
 
 	Coexistence \emph{may} occur when $C<1$
 
-	POLL XXX Why might individuals have relatively weaker competitive
-	interactions with members of the other species?
+	POLL free_text_polls/lwU5FiTR9eTocwE Why might individuals have relatively weaker competitive interactions with members of the other species?
 
 		ANS They may compete for mates or mating sites
 
@@ -430,6 +433,12 @@ Coexistence
 RSLIDE Coexistence
 
 FIG images/cliff_swallows.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Coexistence
+
+FIG images/robins_nest.jpg
 
 ----------------------------------------------------------------------
 
@@ -467,8 +476,7 @@ Founder control
 
 	Founder control \emph{may} occur when $C>1$
 
-	POLL XXX Why might individuals have relatively stronger competitive
-	interactions with members of the other species?
+	POLL free_text_polls/jy0DfNHbO3Y2oci Why might individuals have relatively stronger competitive interactions with members of the other species?
 
 		ANS Conspecifics might co-operate to defend resources
 
@@ -552,8 +560,7 @@ Results of competition
 	$C$ may stay (about) the same, even as we switch conditions so that
 	one or the other species dominates
 
-	POLL XXX $C$ tells us what will happen \emph{if} neither species is
-	dominating. What are the possible results, other than dominance?
+	POLL free_text_polls/0TyG26NIKwEG1BY $C$ tells us what will happen \emph{if} neither species is dominating. What are the possible results, other than dominance?
 
 		ANS Founder effects, neutrality or coexistence
 
@@ -700,7 +707,7 @@ Founder control
 	But from the point of view of the competing species, it's pretty
 	important which one of them gets control
 
-	POLL https://www.polleverywhere.com/free_text_polls/1rHkKLYvuTZYltv What factors determine who gets control?
+	POLL free_text_polls/gHep7iMXNN0oI1Q What factors determine who gets control?
 
 		ANS Who gets there first
 
@@ -743,9 +750,11 @@ TSS Colonization and co-existence
 		$r$ strategists do better in the short term; $K$ strategists do
 		better do better in the long term
 	
-	POLL XXX When can you survive by doing better in the short term?
+	POLL free_text_polls/kPxgrXkNfkdj7sU When can you survive by doing better in the short term?
 
 		ANS When new opportunities (empty habitat) keep coming available
+
+			ANS When there is a lot of disturbance: fire, flood \ldots
 
 ----------------------------------------------------------------------
 
@@ -764,6 +773,8 @@ Growth rates
 	If they are very unstable, then $r$ species wins
 
 	In between, we get coexistence at the level of multiple populations
+
+	CHANGE Say landscape
 
 ----------------------------------------------------------------------
 
@@ -804,7 +815,7 @@ Fundamental niches
 	Many plants have very large fundamental niches
 
 		The reason spruce trees don't grow in Cootes Paradise is not that
-		they can't
+		they can't grow there
 		
 		ANS They can't compete with the other trees that
 		grow there
@@ -900,7 +911,7 @@ Competitive exclusion and biodiversity
 	
 	\ldots but it must also break down 
 
-	POLL XXX How?
+	POLL XXX How? Why do we observe species co-existing?
 
 		ANS Species may not use resources in the same way
 
@@ -910,3 +921,4 @@ Competitive exclusion and biodiversity
 
 		ANS There may be stabilizing factors outside competitive dynamics
 		(e.g., natural enemies)
+
