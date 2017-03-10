@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.final.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -143,6 +143,9 @@ structure.complete.pdf: structure.txt
 %.pq: %.txt pq.pl
 	$(PUSH)
 
+%.pollclean: %.txt
+	perl -pi -e "s|POLL.*?everywhere.com/|POLL |" $<
+
 ## Script for cutting things off to make partial notes
 structure_prelim.txt: structure.txt prelim.pl
 	$(PUSH)
@@ -168,6 +171,7 @@ competition.complete.pdf: competition.txt
 competition.handouts.pdf: competition.txt
 competition.large.pdf: competition.txt
 competition.pq: competition.txt
+competition.pollclean: competition.txt
 
 ##################################################################
 
