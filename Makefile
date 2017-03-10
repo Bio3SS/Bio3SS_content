@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.final.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: structure.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -155,6 +155,7 @@ structure_prelim.complete.pdf: structure.txt
 life_history.final.pdf: life_history.txt
 life_history.draft.pdf: life_history.txt
 life_history.handouts.pdf: life_history.txt
+life_history.complete.pdf: life_history.txt
 life_history.pq: life_history.txt
 
 ######################################################################
@@ -635,8 +636,10 @@ regulation.rub.pdf: assign/regulation.ques
 allee.asn.pdf: assign/allee.ques
 
 ## Structure assignment
-## Sometimes for credit, apparently
+## Given for credit sometimes (e.g., 2016)
 structure.asn.pdf: assign/structure.ques
+structure.key.pdf: assign/structure.ques
+structure.rub.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques

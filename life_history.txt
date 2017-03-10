@@ -527,7 +527,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Example: trees
+RSLIDE Example: trees
 
 FIG images/larches.jpg
 
