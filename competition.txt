@@ -754,6 +754,8 @@ TSS Colonization and co-existence
 
 		ANS When new opportunities (empty habitat) keep coming available
 
+			ANS When there is a lot of disturbance: fire, flood \ldots
+
 ----------------------------------------------------------------------
 
 Growth rates
@@ -771,6 +773,8 @@ Growth rates
 	If they are very unstable, then $r$ species wins
 
 	In between, we get coexistence at the level of multiple populations
+
+	CHANGE Say landscape
 
 ----------------------------------------------------------------------
 
