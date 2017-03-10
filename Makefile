@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: structure.bank.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.1.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -238,7 +238,7 @@ midterm1.bank: midterm1.formulas assign/linear.bank assign/nonlinear.bank assign
 	$(PUSH)
 
 midterm2.bank.key.pdf:
-midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank assign/competition.bank
+midterm2.bank: midterm2.formulas assign/linear.bank assign/nonlinear.bank assign/structure.bank assign/life_history.bank assign/comp.bank
 	$(cat)
 
 final.bank.key.pdf:
@@ -268,9 +268,12 @@ midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure
 	$(cat)
 
 # Select the short-answer part of a test
-.PRECIOUS: %.sa
-%.sa: %.short.test null.tmp %.select.fmt talk/lect.pl
+%.ss: %.short.test null.tmp %.select.fmt talk/lect.pl
 	$(PUSH)
+
+.PRECIOUS: %.sa
+%.sa: %.ss
+	echo 'knitr::knit("$<", "$@")' | R --vanilla
 
 ### Separator for MC and SA on the same test
 Sources += end.dmu
