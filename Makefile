@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.1.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.2.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -12,6 +12,7 @@ test: intro.draft.tex.deps
 ##################################################################
 
 # This is a big, old messy directory. It seems to clone OK, though.
+# But it doesn't track all dependencies; I must have cloned it into an environment with the gitroot stuff it needed, at least.
 
 # Lecture formats are in lect/
 ##### Main is lect/lect.format
@@ -30,7 +31,7 @@ include stuff.mk
 
 ## Orphaned from 2016
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
-## In which case, why bother with note once they are rescued.
+## In which case, why bother with note once they are rescued.?
 Sources += exam.tmp final_texcover.tex scantron.jpg
 
 ## local
@@ -267,19 +268,22 @@ midterm1.short.test: assign/linear.short assign/nonlinear.short
 midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure.short assign/life_history.short
 	$(cat)
 
-# Select the short-answer part of a test
-%.ss: %.short.test null.tmp %.select.fmt talk/lect.pl
-	$(PUSH)
+######################################################################
 
+# Generic test; hasn't worked well for a while
+# Don't try to view it
+# In theory, it could be better to change some of these rules to avoid unnecessary rule clashes
+
+# Select the short-answer part of a test
 .PRECIOUS: %.sa
-%.sa: %.ss
-	echo 'knitr::knit("$<", "$@")' | R --vanilla
+%.sa: %.short.test null.tmp %.select.fmt talk/lect.pl
+	$(PUSH)
 
 ### Separator for MC and SA on the same test
 Sources += end.dmu
 
 ### Combine mc and sa to make the real test
-%.test: %.mc end.dmu %.sa
+%.test: %.mc end.dmu %.ksa
 	$(cat)
 
 final.key.pdf:
@@ -288,7 +292,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm2.1.test.pdf: 
+midterm2.2.test.pdf: assign/structure.short
 
 ##### Versioning
 
@@ -299,11 +303,23 @@ Sources += $(wildcard *.pl) $(wildcard *.R)
 midterm1.%.mc: midterm1.mc scramble.pl
 	$(PUSHSTAR)
 
-## Split questions into 4 or 5 questions (if there are slash-separated numbers)
-## Do not scramble. This allows hacking at the clearpage stuff, which is not ideal, but is what I'm currently doing.
+## Split SA questions by versions (based on slash-separated numbers)
+## Do not scramble. This allows hacking at the clearpage stuff (kludge)
 midterm1.%.sa: midterm1.sa testselect.pl
 	$(PUSHSTAR)
 
+midterm2.%.vsa: midterm2.sa testselect.pl
+	$(PUSHSTAR)
+
+## Convert versioned sa to rmd style
+%.rsa: %.vsa lect/knit.fmt talk/lect.pl
+	$(PUSH)
+
+## and finally knit
+%.ksa: %.rsa
+	$(knit)
+
+## Add cover pages and such
 midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 	$(pdfcat)
 
@@ -316,14 +332,11 @@ final.%.exam.pdf: final.front.pdf final.%.pdf
 midterm2.%.mc: midterm2.mc scramble.pl
 	$(PUSHSTAR)
 
-final.%.test: final.mc scramble.pl
-	$(PUSHSTAR)
-
-midterm2.%.sa: midterm2.sa testselect.pl
-	$(PUSHSTAR)
-
 midterm2.%.exam.pdf: midterm2.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
+
+final.%.test: final.mc scramble.pl
+	$(PUSHSTAR)
 
 ### Process a test into different outputs
 %.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
@@ -664,8 +677,9 @@ expl.asn.pdf: assign/expl.ques
 	$(PUSH)
 
 ## Knit
+knit = echo 'knitr::knit("$<", "$@")' | R --vanilla
 %.qq: %.ques
-	echo 'knitr::knit("$<", "$@")' | R --vanilla
+	$(knit)
 
 ## Markup for different products
 Sources += asn.tmp
