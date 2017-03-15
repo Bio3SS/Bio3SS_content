@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.zip 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.complete.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
