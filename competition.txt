@@ -27,6 +27,8 @@ Inter-species interactions
 
 		NOANS
 
+CHANGE Make sure you ask for examples. How should NOANS show up in complete notes?
+
 ----------------------------------------------------------------------
 
 Competition
