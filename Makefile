@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.6.exam.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.5.exam.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -295,7 +295,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm2.6.exam.pdf: assign/structure.short
+midterm2.5.exam.pdf: assign/structure.short
 
 ##### Versioning
 
