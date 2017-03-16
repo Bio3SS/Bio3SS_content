@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.complete.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.keys 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -319,6 +319,10 @@ midterm2.%.vsa: midterm2.sa testselect.pl
 %.ksa: %.rsa
 	$(knit)
 
+## http://printpal.mcmaster.ca/
+## account # 206000301032330000
+
+
 ## Add cover pages and such
 midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 	$(pdfcat)
@@ -377,10 +381,11 @@ midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pd
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
 	$(ZIP)
 
-## Pushing
+## Pushing (new style is better for gx-ing)
 midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
 
-midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
+midterm2_keys = midterm2.1.key.pdf midterm2.2.key.pdf midterm2.3.key.pdf midterm2.4.key.pdf midterm2.5.key.pdf
+midterm2.keys: $(midterm2_keys:%=%.push)
 
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
