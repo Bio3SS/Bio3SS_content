@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.large.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.draft.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -184,6 +184,7 @@ exploitation.draft.pdf: exploitation.txt
 exploitation.handouts.pdf: exploitation.txt
 exploitation.large.pdf: exploitation.txt
 exploitation.complete.pdf: exploitation.txt
+exploitation.pq: exploitation.txt
 
 ##################################################################
 
