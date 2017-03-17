@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.5.exam.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.pq 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -183,6 +183,7 @@ exploitation.final.pdf: exploitation.txt
 exploitation.draft.pdf: exploitation.txt
 exploitation.handouts.pdf: exploitation.txt
 exploitation.complete.pdf: exploitation.txt
+exploitation.pq: exploitation.txt
 
 ##################################################################
 
