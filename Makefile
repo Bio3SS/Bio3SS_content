@@ -4,7 +4,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.keys 
+target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.large.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -182,11 +182,12 @@ competition.pollclean: competition.txt
 exploitation.final.pdf: exploitation.txt
 exploitation.draft.pdf: exploitation.txt
 exploitation.handouts.pdf: exploitation.txt
+exploitation.large.pdf: exploitation.txt
 exploitation.complete.pdf: exploitation.txt
 
 ##################################################################
 
-# Unit 6 (Disease)
+# Unit 7 (Disease)
 
 disease.outline.pdf: disease.txt
 disease.final.pdf: disease.txt
@@ -283,6 +284,9 @@ midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure
 Sources += end.dmu
 
 ### Combine mc and sa to make the real test
+midterm2.6.test: midterm2.6.mc
+	$(cat)
+
 %.test: %.mc end.dmu %.ksa
 	$(cat)
 
@@ -292,7 +296,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm2.3.exam.pdf: assign/structure.short
+midterm2.5.exam.pdf: assign/structure.short
 
 ##### Versioning
 
