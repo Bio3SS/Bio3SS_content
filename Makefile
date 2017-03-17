@@ -2,6 +2,8 @@
 
 ### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
+## https://github.com/Bio3SS/Bio3SS_content/
+
 current: target
 
 target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.draft.pdf 
