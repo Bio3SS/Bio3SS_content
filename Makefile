@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.pq 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -423,7 +423,7 @@ final.ssv:
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
 
-midterm1.scantron.csv:
+midterm2.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
