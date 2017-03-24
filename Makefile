@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -423,7 +423,9 @@ final.ssv:
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
 
+## Brasero disk burner
 midterm1.scantron.csv:
+midterm2.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
@@ -669,13 +671,14 @@ regulation.rub.pdf: assign/regulation.ques
 allee.asn.pdf: assign/allee.ques
 
 ## Structure assignment
-## Given for credit sometimes (e.g., 2016)
+## Often given for credit
 structure.asn.pdf: assign/structure.ques
 structure.key.pdf: assign/structure.ques
 structure.rub.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
+
 competition.key.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
