@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: competition.asn.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -254,7 +254,7 @@ final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/struc
 
 ## Developing a test
 
-midterm1.test.pdf:
+final.test.pdf:
 
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
@@ -676,7 +676,8 @@ structure.rub.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
-competition.key.pdf: assign/competition.ques
+
+competition.asn.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
 
