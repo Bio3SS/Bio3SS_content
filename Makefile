@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.key.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -254,7 +254,7 @@ final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/struc
 
 ## Developing a test
 
-midterm1.test.pdf:
+final.test.pdf:
 
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
@@ -423,6 +423,8 @@ final.ssv:
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
 
+## Brasero disk burner
+midterm1.scantron.csv:
 midterm2.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
@@ -669,13 +671,15 @@ regulation.rub.pdf: assign/regulation.ques
 allee.asn.pdf: assign/allee.ques
 
 ## Structure assignment
-## Given for credit sometimes (e.g., 2016)
+## Often given for credit
 structure.asn.pdf: assign/structure.ques
 structure.key.pdf: assign/structure.ques
 structure.rub.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
+
+competition.asn.pdf: assign/competition.ques
 competition.key.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
