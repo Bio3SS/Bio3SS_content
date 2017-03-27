@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.asn.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -423,6 +423,8 @@ final.ssv:
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
 
+## Brasero disk burner
+midterm1.scantron.csv:
 midterm2.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
@@ -669,7 +671,7 @@ regulation.rub.pdf: assign/regulation.ques
 allee.asn.pdf: assign/allee.ques
 
 ## Structure assignment
-## Given for credit sometimes (e.g., 2016)
+## Often given for credit
 structure.asn.pdf: assign/structure.ques
 structure.key.pdf: assign/structure.ques
 structure.rub.pdf: assign/structure.ques
@@ -678,6 +680,7 @@ structure.rub.pdf: assign/structure.ques
 interaction.asn.pdf: assign/interaction.ques
 
 competition.asn.pdf: assign/competition.ques
+competition.key.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
 
