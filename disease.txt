@@ -89,7 +89,7 @@ Microparasite models
 		\textbf{Resistant} individuals are not infected and cannot become
 		infected
 
-	More complicated models might included other states, such as
+	More complicated models might include other states, such as
 	latently infected hosts who are infected with the pathogen but
 	cannot yet infect others
 
@@ -137,7 +137,7 @@ Basic reproductive number
 
 	But they don't always mean the same thing:
 
-		Maximum value of \R in a population
+		Maximum value of \Ro\ in a population
 
 		Theoretical value in a naive population without control efforts
 
@@ -291,6 +291,8 @@ Interpreting
 
 	Why might there not be an epidemic?
 
+		ANS If the disease can't spread well enough in the population
+
 		ANS Demographic stochasticity: if we only start with one
 		individual, we expect an element of chance
 
@@ -298,13 +300,13 @@ Interpreting
 
 		NOANS
 
+		CHANGE How is this one resolved?
+
 ----------------------------------------------------------------------
 
 Implementing the model
 
 BC
-
-  CHANGE MK: Probably useful to describe beta before moving too far
 
 	The {simplest} way to implement this conceptual
 	model is with differential equations:
@@ -324,21 +326,36 @@ EC
 
 ----------------------------------------------------------------------
 
-Units
+Quantities
 
-BC
+CLASS WIDEFIG boxes/sir.three.pdf
+
+State variables
 
 	$S, I, R, N$: [people] or [people/ha]
 
-	$\beta, \gamma$: [1/time]
 
-NC
+----------------------------------------------------------------------
 
-SIDEFIG boxes/sir.three.pdf
+CONT Quantities
 
-  CHANGE MK: Writing on the board was definitely very helpful here. May consider doing it a bit more often in units before this and exploitation
+Parameters
 
-EC
+	Susceptible people have \textbf{potentially effective} contacts at rate
+	$\beta$ (units [1/time])
+
+		These are contacts that would lead to infection if the person
+		contacted is infectious
+
+		Total infection rate is $\beta I/N$, because $I/N$ is the
+		proportion of the population infectious
+
+	Infectious people recover at \emph{per capita}
+	rate $\gamma$ (units [1/time])
+
+		Total recovery rate is $\gamma I$
+
+		Mean time infectious is $D = 1/\gamma$ (units [time])
 
 ----------------------------------------------------------------------
 
@@ -351,26 +368,6 @@ DOUBLEPDF sims/burnout.plots.Rout
 Simulating the model
 
 DOUBLEFIG sims/burnouts.plots.Rout-0.pdf sims/burnouts.plots.Rout-4.pdf
-
-----------------------------------------------------------------------
-
-Parameters
-
-	Infectious people recover at \emph{per capita}
-	rate $\gamma$ 
-
-		Total recovery rate is $\gamma I$
-
-		Mean time infectious is $D = 1/\gamma$
-
-	Susceptible people have ``potentially effective'' contacts at rate
-	$\beta$
-
-		These are contacts that would lead to infection if the person
-		contacted is infectious
-
-		Total infection rate is $\beta I/N$, because $I/N$ is the
-		proportion of the population infectious
 
 ----------------------------------------------------------------------
 
@@ -409,18 +406,17 @@ Effective reproductive number
 
 		ANS $\Reff = \Ro S/N$
 
-	What do we expect $\Reff$ to be at equilibrium?
-	
-	CHANGE MK: I think it would be useful to spend en extra few seconds emphasizing that the SIR model on the board wont reach an equilibrium with I > 0
+	Is the disease increasing or decreasing?
 
-		ANS 1. Each case causes on average one new case, at equilibrium.
+		ANS It will increase when $\Reff > 1$ (more than one case ber case)
 
-		ANS At equilibrium, $S/N = 1/\Ro$
+		ANS This happens when $S/N > 1/\Ro$
 
 	Why doesn't everyone get infected?
 
-		ANS Because when $\Reff<1$, the disease dies out on its own (each
-		case causes less than 1 new case)
+		ANS When susceptibles are low enough $\Reff<1$
+
+		ANS When $\Reff<1$, the disease dies out on its own (less than one case ber case)
 
 ----------------------------------------------------------------------
 
@@ -512,6 +508,79 @@ Births and deaths
 
 WIDEFIG boxes/sirbd.four.pdf
 
+	$$\frac{dS}{dt}  =  \b N - \beta \frac{SI}{N} -d S$$
+
+	$$\frac{dI}{dt}  = \beta \frac{SI}{N}- \gamma I -d I $$
+
+	$$\frac{dR}{dt}  = \gamma I - d R$$
+
+We often assume $b=d$; population is constant
+
+----------------------------------------------------------------------
+
+Equilibrium
+
+	At equilibrium, we know that $\Reff=1$
+
+		One case per case
+
+		Number of susceptibles at equilibrium determined by the number required
+		to keep infection in balance
+
+			$S/N = 1/\Ro$
+		
+		ANS Reciprocal control!
+
+----------------------------------------------------------------------
+
+CONT Equilibrium
+
+	Number of infectious individuals determined by number required to keep susceptibles in balance.
+
+	As susceptibles go up, what happens?
+
+		Per capita replenishment goes down
+
+		Infections required goes down
+
+----------------------------------------------------------------------
+
+Reciprocal control
+
+	What happens if we protect susceptibles (move them to $R$ class)?
+
+		ANS Equation for $dI/dt$ does not change
+
+		ANS Number of susceptibles does not change
+
+		ANS Fewer susceptibles need to be removed by infection (some are removed
+		by us)
+		
+		ANS Number of infectious individuals goes down 
+
+	What else could happen?
+
+		ANS If we remove susceptibles fast enough, infection could go extinct
+
+		ANS If we keep increasing the rate \ldots
+
+			ANS Number of susceptibles goes down
+
+----------------------------------------------------------------------
+
+Reciprocal control
+
+	POLL XXX What happens if we remove infectious individuals at a constant rate (find them and cure them or isolate them)?
+
+		ANS We need more susceptibles to balance $dI/dt$
+
+		ANS If we have more susceptibles, then per capita replenishment goes down
+
+			ANS So the number of infectious individuals goes down
+
+		ANS If we remove infectious individuals fast enough, the infection could
+		go extinct
+
 ----------------------------------------------------------------------
 
 Tendency to oscillate
@@ -551,7 +620,7 @@ Source of oscillations
 
 Persistent oscillations
 
-  CHANGE MK: Graph here of measles so you dont have to scroll back and forth
+BC
 
 	If oscillations tend to be damped in simple models, why do they
 	persist in real life?
@@ -562,8 +631,15 @@ Persistent oscillations
 
 		ANS Demographic stochasticity
 
-		ANS Behaviour: if people are scared of the disease, it goes away,
-		and then they stop being scared
+		ANS Changes in Behaviour
+		
+			ANS People are more careful when disease levels are high
+
+NC
+
+SIDEFIG dd/ewmeas.Rout.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -606,26 +682,23 @@ Threshold for elimination
 	a disease?
 
 		ANS Transmission should be reduced by a factor of $\R$, so a
-		fraction $1=1/\R$ should be vaccinated
-
-CHANGE CC: change "$1=1/\R$" by "$1-1/\R$"
+		fraction $1-1/\R$ should be vaccinated
 
 ----------------------------------------------------------------------
 
 Examples: 
 
-	Polio has an $\Ro$ of about 5. What proportion of the population
+	Polio has an $\Ro$ of about 5.
+	
+	POLL XXX What proportion of the population
 	should be vaccinated to eliminate polio?
 
-		ANS 1-1/5 = 80%
+		ANS At least 1-1/5 = 80%
 
 	Measles has an $\Ro$ of about 20. What proportion of the population
 	should be vaccinated to eliminate measles?
 
-		ANS 1-1/20 = 95%
-
-CHANGE CC: You made the 1st question as a poll
-CHANGE CC: better not to use "=" because "at least"
+		ANS At least 1-1/20 = 95%
 
 ----------------------------------------------------------------------
 
@@ -640,7 +713,9 @@ Persistence of infectious disease
 
 			People differ in: nutrition, exposure, access to care
 
-CHANGE CC: Add "people choose not to vaccine their babies"
+		Information and misinformation
+
+			Vaccine scares, trust in health care in general
 
 ----------------------------------------------------------------------
 
