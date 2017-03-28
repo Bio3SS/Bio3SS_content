@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: disease.draft.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.test.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
