@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.zip 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -34,6 +34,7 @@ include stuff.mk
 ## Orphaned from 2016
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
 ## In which case, why bother with note once they are rescued.?
+## Dunno, but the condition of the final exam is an absolute disaster!
 Sources += exam.tmp final_texcover.tex scantron.jpg
 
 ## local
@@ -256,6 +257,8 @@ final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/struc
 
 final.test.pdf:
 
+final.1.exam.pdf:
+
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
 %.mc: %.bank null.tmp %.select.fmt talk/lect.pl
@@ -329,7 +332,6 @@ midterm2.%.vsa: midterm2.sa testselect.pl
 ## http://printpal.mcmaster.ca/
 ## account # 206000301032330000
 
-
 ## Add cover pages and such
 midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 	$(pdfcat)
@@ -337,7 +339,7 @@ midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
-final.%.exam.pdf: final.front.pdf final.%.pdf
+final.%.exam.pdf: final.front.pdf final.%.final.pdf
 	$(pdfcat)
 
 midterm2.%.mc: midterm2.mc scramble.pl
@@ -354,6 +356,7 @@ final.%.test: final.mc scramble.pl
 	$(PUSH)
 
 final.1.final.pdf: exam.tmp 
+
 %.final.tex: %.test exam.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
