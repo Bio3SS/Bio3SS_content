@@ -2,9 +2,11 @@
 
 ### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
+## https://github.com/Bio3SS/Bio3SS_content/
+
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.zip 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.zip 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -32,6 +34,7 @@ include stuff.mk
 ## Orphaned from 2016
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
 ## In which case, why bother with note once they are rescued.?
+## Dunno, but the condition of the final exam is an absolute disaster!
 Sources += exam.tmp final_texcover.tex scantron.jpg
 
 ## local
@@ -182,11 +185,13 @@ competition.pollclean: competition.txt
 exploitation.final.pdf: exploitation.txt
 exploitation.draft.pdf: exploitation.txt
 exploitation.handouts.pdf: exploitation.txt
+exploitation.large.pdf: exploitation.txt
 exploitation.complete.pdf: exploitation.txt
+exploitation.pq: exploitation.txt
 
 ##################################################################
 
-# Unit 6 (Disease)
+# Unit 7 (Disease)
 
 disease.outline.pdf: disease.txt
 disease.final.pdf: disease.txt
@@ -250,7 +255,9 @@ final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/struc
 
 ## Developing a test
 
-midterm1.test.pdf:
+final.test.pdf:
+
+final.1.exam.pdf:
 
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
@@ -283,6 +290,9 @@ midterm2.short.test: assign/linear.short assign/nonlinear.short assign/structure
 Sources += end.dmu
 
 ### Combine mc and sa to make the real test
+midterm2.6.test: midterm2.6.mc
+	$(cat)
+
 %.test: %.mc end.dmu %.ksa
 	$(cat)
 
@@ -292,7 +302,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm2.3.exam.pdf: assign/structure.short
+midterm2.5.exam.pdf: assign/structure.short
 
 ##### Versioning
 
@@ -319,6 +329,9 @@ midterm2.%.vsa: midterm2.sa testselect.pl
 %.ksa: %.rsa
 	$(knit)
 
+## http://printpal.mcmaster.ca/
+## account # 206000301032330000
+
 ## Add cover pages and such
 midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 	$(pdfcat)
@@ -326,7 +339,7 @@ midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
-final.%.exam.pdf: final.front.pdf final.%.pdf
+final.%.exam.pdf: final.front.pdf final.%.final.pdf
 	$(pdfcat)
 
 midterm2.%.mc: midterm2.mc scramble.pl
@@ -343,6 +356,7 @@ final.%.test: final.mc scramble.pl
 	$(PUSH)
 
 final.1.final.pdf: exam.tmp 
+
 %.final.tex: %.test exam.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
@@ -377,10 +391,11 @@ midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pd
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
 	$(ZIP)
 
-## Pushing
+## Pushing (new style is better for gx-ing)
 midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
 
-midterm2.keys: midterm2.1.key.pdf.push midterm2.2.key.pdf.push midterm2.3.key.pdf.push midterm2.4.key.pdf.push midterm2.5.key.pdf.push
+midterm2_keys = midterm2.1.key.pdf midterm2.2.key.pdf midterm2.3.key.pdf midterm2.4.key.pdf midterm2.5.key.pdf
+midterm2.keys: $(midterm2_keys:%=%.push)
 
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
@@ -411,7 +426,9 @@ final.ssv:
 %.sc.csv: %.ssv scantron.pl
 	$(PUSH)
 
+## Brasero disk burner
 midterm1.scantron.csv:
+midterm2.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
@@ -657,13 +674,15 @@ regulation.rub.pdf: assign/regulation.ques
 allee.asn.pdf: assign/allee.ques
 
 ## Structure assignment
-## Given for credit sometimes (e.g., 2016)
+## Often given for credit
 structure.asn.pdf: assign/structure.ques
 structure.key.pdf: assign/structure.ques
 structure.rub.pdf: assign/structure.ques
 
 ## Interaction is an old assignment, now broken up into a very short (life history) assignment and a slightly longer (competition) assignment
 interaction.asn.pdf: assign/interaction.ques
+
+competition.asn.pdf: assign/competition.ques
 competition.key.pdf: assign/competition.ques
 
 expl.asn.pdf: assign/expl.ques
