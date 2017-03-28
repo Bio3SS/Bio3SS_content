@@ -35,7 +35,9 @@ Competition
 	resource, or resources
 
 	Each species ability to reproduce successfully is reduced by the
-	presence of the other
+	presence of the other 
+	
+	CHANGE ML : (components of successful reproduction)
 
 		ANS Survival, growth, producing offspring
 
@@ -43,7 +45,7 @@ Competition
 
 		ANS Oaks and maples competing for light
 
-		ANS Ants and deer competing for leaves
+		ANS Ants and mammals competing for leaves
 
 		ANS Mussels and algae competing for space in the intertidal zone
 
@@ -63,7 +65,7 @@ FIG images/leaf_cutters.jpg
 
 NC
 
-HFIG 0.55 images/tapir.jpg
+WIDEFIG images/tapir.jpg
 
 EC
 
@@ -95,22 +97,29 @@ Flour beetles
 	The larger species survives better in drier conditions, and the
 	smaller species reproduces faster in moister conditions
 
-	POLL https://www.polleverywhere.com/free_text_polls/byOAEf9RDUnvgyG What are the possible outcomes of such an experiment?
+	POLL free_text_polls/0b9fhjVf23qirZU What outcomes do you expect under wet vs dry conditions?
 
 		ANS Each species wins when conditions are better for it
 
-	POLL https://www.polleverywhere.com/free_text_polls/hzaRF4bXYXqrmAY What if we ``tune" the conditions to something in between
-	(neither species always does better than the other)?
+	POLL free_text_polls/qH625W9P4YsheuW What if I ``tune" the conditions to something in between? What if I tune the conditions to something in between?
 
 		ANS The species could both survive together
 
-		ANS Whichever species got a head start might exclude the other
+		ANS Sometimes one survives, and sometimes the other
+
+			ANS Whichever species got a ``head start'' would survive
+
+----------------------------------------------------------------------
+
+RSLIDE Outcomes of competition
+
+FIG images/confusum.jpg
+
+COMMENT The confused flour beetle
 
 ----------------------------------------------------------------------
 
 Outcomes of competition
-
-BC
 
 	In a given stable environment, we generally expect the competitive
 	interaction between two species to have one of the following results
@@ -123,13 +132,7 @@ BC
 		{\bf Founder control}: whichever species gets established first
 		will exclude the other
 
-NC
 
-COMMENT The confused flour beetle
-
-SIDEFIG images/confusum.jpg
-
-EC
 ----------------------------------------------------------------------
 
 TSEC Population model with competition
@@ -163,7 +166,7 @@ Carrying capacity
 	Therefore, we expect each species to converge to its \emph{carrying
 	capacity} $K$ (or $K_1$ and $K_2$) when it is alone
 
-	The species is at equilibrium (carrying capacity) when?
+	How do we define carrying capacity in this system?
 
 		ANS The birth rate equals the death rate: $b(K) = d(K)$
 
@@ -182,8 +185,6 @@ Carrying capacity with competition
 		ANS $N_1 = 0$: the species is not present
 
 ----------------------------------------------------------------------
-
-  CHANGE MK: This information felt a little out of place
 
 Logistic model
 
@@ -210,9 +211,7 @@ Equal competition
 	This means that the competitive effect of an individual from either
 	species is the same.
 
-	We call the total population $\bar N = N_1 + N_2$.
-
-	Our equations are now
+	If $\bar N = N_1 + N_2$, then:
 
 		$\ds \frac{dN_1}{dt} = (b_1(\bar N) - d_1(\bar N)) N_1 $
 
@@ -220,32 +219,12 @@ Equal competition
 
 	What happens in this case?
 
-		ANS The population with the higher value of $K$ is going to
-		dominate
+		ANS Competition is mediated by only one quantity, $\bar N$.
 
-		ANS No coexistence 
+		ANS Whichever species has a higher value of $K$ can survive at a density
+		where the other one can't 
 		
-  CHANGE MK: Combine the next information on Competitive exclusion with this information so that you don't need an additional slide before the pictures. This was a bit choppy
-
-----------------------------------------------------------------------
-
-Competitive exclusion
-
-	Why does one species always win in equal competition?
-
-		Competition is mediated by only one quantity, $\bar N$.
-
-		Whichever species can reproduce up to a higher value of $\bar N$
-		is going to win; there is no basis for a tradeoff
-
-	Reminder:
-
-		$\ds \frac{dN_1}{dt} = (b_1(\bar N) - d_1(\bar N)) N_1 $
-
-		$\ds \frac{dN_2}{dt} = (b_2(\bar N) - d_2(\bar N)) N_2 $
-
-	If $K_1 > K_2$, then species 1 can always increase when species 2
-	can; and sometimes when it can't
+		ANS Dominance!
 
 ----------------------------------------------------------------------
 
@@ -277,9 +256,17 @@ Time plots and phase plots
 	\emph{Time plots} have time on one axis and show population
 	quantities on another
 
+		Fixed parameters (usually)
+
+		Single starting points
+
 	\emph{Phase plots} have population quantities on both axes
 
-		Better for seeing dynamical results
+		Fixed parameters (usually)
+
+		Multiple starting points (usually)
+
+		Better for seeing overall pattern of results
 
 		Worse for seeing rates (how quickly things change)
 
@@ -294,8 +281,6 @@ Reading phase plots
 	Closed circles are ending points
 
 	Arrows show direction of time
-	
-  CHANGE MK: Small bit of text about different starting conditions or different parameter sets would be nice
 
 ----------------------------------------------------------------------
 
@@ -303,8 +288,6 @@ Reading phase plots
 Dominance reversed
 
 DOUBLEFIG competition/third.comp.Rout-0.pdf competition/third.comp.Rout-1.pdf
-
-  CHANGE MK: Can we see the carrying capacity of the non-dominant species?
 
 ----------------------------------------------------------------------
 
@@ -346,7 +329,7 @@ Balanced competition example
 	Two plants compete with each other for water.  The value of
 	$\alpha_{21}$ is $4 \indiv_1/\indiv_2$
 
-	POLL https://www.polleverywhere.com/free_text_polls/OHwhmRq2NQUGxkT Which species is bigger?
+	POLL free_text_polls/g5R5Ndmc1sWEW0y Which species is bigger?
 
 		ANS Species 2 individuals use as much water as 4
 		species 1 individuals
@@ -369,7 +352,7 @@ FIG images/water_compete.jpg
 
 Balanced competition
 
-	POLL https://www.polleverywhere.com/multiple_choice_polls/cK0WEfc5geVUTXi What results do we expect from balanced competition?
+	POLL free_text_polls/mzmM5jlhNAR7acn What results do we expect from balanced competition?
 
 		ANS It seems like the bigger species should win
 
@@ -410,22 +393,6 @@ Measuring competitive effects
 
 ----------------------------------------------------------------------
 
-Neutral competition
-
-	If competition is balanced, and neither species dominates, this is
-	called neutral competition
-
-	No tendency for either species to win
-
-	No tendency for founder control or for coexistence
-
-	If there's any small difference between the species, one may
-	dominate
-
-	Even if there's no difference, one should win eventually, by random
-	``drift"
-
-----------------------------------------------------------------------
 
 TSS Unbalanced competition
 
@@ -451,8 +418,7 @@ Coexistence
 
 	Coexistence \emph{may} occur when $C<1$
 
-	Why might individuals have relatively weaker competitive
-	interactions with members of the other species?
+	POLL free_text_polls/lwU5FiTR9eTocwE Why might individuals have relatively weaker competitive interactions with members of the other species?
 
 		ANS They may compete for mates or mating sites
 
@@ -467,6 +433,12 @@ Coexistence
 RSLIDE Coexistence
 
 FIG images/cliff_swallows.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Coexistence
+
+FIG images/robins_nest.jpg
 
 ----------------------------------------------------------------------
 
@@ -504,19 +476,24 @@ Founder control
 
 	Founder control \emph{may} occur when $C>1$
 
-	Why might individuals have relatively stronger competitive
-	interactions with members of the other species?
+	POLL free_text_polls/jy0DfNHbO3Y2oci Why might individuals have relatively stronger competitive interactions with members of the other species?
 
 		ANS Conspecifics might co-operate to defend resources
 
-			ANS Example: hyenas and leopards
+			ANS Example: dogs and leopards
 
 		ANS Organisms might change the environment in a way that favors
 		their own species
 
 			ANS Example: trees and grasses
 
-CHANGE CC: the order of the pictures doesn't fit with the order of the examples 
+----------------------------------------------------------------------
+
+RSLIDE Founder control
+
+FIG images/wild_dogs.jpg
+
+COMMENT Co-operation
 
 ----------------------------------------------------------------------
 
@@ -524,11 +501,7 @@ RSLIDE Founder control
 
 FIG images/savanna_burn.jpg
 
-----------------------------------------------------------------------
-
-RSLIDE Founder control
-
-FIG images/wild_dogs.jpg
+COMMENT Changing the environment
 
 ----------------------------------------------------------------------
 
@@ -587,12 +560,9 @@ Results of competition
 	$C$ may stay (about) the same, even as we switch conditions so that
 	one or the other species dominates
 
-	$C$ tells us what will happen \emph{if} neither species is
-	dominating
+	POLL free_text_polls/0TyG26NIKwEG1BY $C$ tells us what will happen \emph{if} neither species is dominating. What are the possible results, other than dominance?
 
 		ANS Founder effects, neutrality or coexistence
-
-CHANGE CC: perhaps add a poll to check that everybody is following 
 
 ----------------------------------------------------------------------
 
@@ -603,7 +573,7 @@ SEC Population-level interactions
 TSS Invasion theory
 
 	The competitive relationship between two species can be
-	investigated by studying \textbf{invasion}:
+	investigated by studying two \textbf{invasion} scenarios:
 
 	What happens if one species is established, and the other one tries
 	to invade (ie., some individuals are introduced)?
@@ -615,8 +585,6 @@ TSS Invasion theory
 		ANS Founder control occurs when neither species can invade the
 		other
 
-CHANGE CC: perhaps add some answers of the students that were interesting: successfull/unsuccessfull invasion, mating...
-
 ----------------------------------------------------------------------
 
 Allee effects
@@ -626,10 +594,9 @@ Allee effects
 
 	That is, it neglects Allee effects
 
-		ANS With Allee effects a species that could do fine in a certain
-		situation may still not be able to ``invade" if it's rare
+	Would this assumption work with Allee effects?
 
-CHANGE CC: Try to go slowly (you gave the solution before asking)
+		ANS No. With Allee effects a species may be able to do well if established, but not be able to ``invade" if it's rare
 
 ----------------------------------------------------------------------
 
@@ -687,7 +654,7 @@ Results of competition
 
 		ANS We expect that species to always win: dominance
 
-CHANGE CC: the table you drew on the board to summarize was helpful and will help students to remember
+	DIAGRAM
 
 ----------------------------------------------------------------------
 
@@ -716,6 +683,23 @@ Measuring competition
 
 ----------------------------------------------------------------------
 
+Neutral competition
+
+	If competition is balanced, and neither species dominates, this is
+	called neutral competition
+
+	No tendency for either species to win
+
+	No tendency for founder control or for coexistence
+
+	If there's any small difference between the species, one may
+	dominate
+
+	Even if there's no difference, one should win eventually, by random
+	``drift"
+
+----------------------------------------------------------------------
+
 Founder control 
 
 	Up until now, we've thought of founder control as a single outcome
@@ -723,7 +707,7 @@ Founder control
 	But from the point of view of the competing species, it's pretty
 	important which one of them gets control
 
-	POLL https://www.polleverywhere.com/free_text_polls/1rHkKLYvuTZYltv What factors determine who gets control?
+	POLL free_text_polls/gHep7iMXNN0oI1Q What factors determine who gets control?
 
 		ANS Who gets there first
 
@@ -766,17 +750,17 @@ TSS Colonization and co-existence
 		$r$ strategists do better in the short term; $K$ strategists do
 		better do better in the long term
 	
-	POLL When can you survive by doing better in the short term?
+	POLL free_text_polls/kPxgrXkNfkdj7sU When can you survive by doing better in the short term?
 
 		ANS When new opportunities (empty habitat) keep coming available
+
+			ANS When there is a lot of disturbance: fire, flood \ldots
 
 ----------------------------------------------------------------------
 
 Growth rates
 
 	The maximum growth rate (for each species) is $r_0 = (b(0) - d(0))$:
-
-	CHANGE ML: make a simple model example. Landscape
 
 		ANS The net growth rate when crowding pressure is very low
 
@@ -789,6 +773,8 @@ Growth rates
 	If they are very unstable, then $r$ species wins
 
 	In between, we get coexistence at the level of multiple populations
+
+	CHANGE Say landscape
 
 ----------------------------------------------------------------------
 
@@ -829,7 +815,7 @@ Fundamental niches
 	Many plants have very large fundamental niches
 
 		The reason spruce trees don't grow in Cootes Paradise is not that
-		they can't
+		they can't grow there
 		
 		ANS They can't compete with the other trees that
 		grow there
@@ -920,14 +906,12 @@ Competitive exclusion and biodiversity
 	stable environment in the long term due to their competitive
 	dynamics
 
-  CHANGE ML: Do people know what your examples are? For example, a picture of Joshua tree and catus? 
-
 	This statement can be justified mathematically, and it has
 	important implications for real populations \ldots\
 	
 	\ldots but it must also break down 
-	
-	CHANGE ML: Make a poll here
+
+	POLL XXX How? Why do we observe species co-existing?
 
 		ANS Species may not use resources in the same way
 
@@ -937,3 +921,4 @@ Competitive exclusion and biodiversity
 
 		ANS There may be stabilizing factors outside competitive dynamics
 		(e.g., natural enemies)
+

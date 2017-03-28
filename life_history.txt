@@ -485,9 +485,8 @@ SIDEFIG images/marigold.jpg
 
 EC
 
-ADD Others?
-
 ----------------------------------------------------------------------
+
 
 Measuring $K$
 
@@ -514,15 +513,35 @@ Measuring $K$
 
 ----------------------------------------------------------------------
 
-RSLIDE Example: trees
+RSLIDE Strategies
 
-FIG images/old_growth_opal.jpg
+BCC
+
+SIDEFIG images/giraffes.png
+
+NCC
+
+SIDEFIG images/cutters.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
 RSLIDE Example: trees
 
+FIG images/larches.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Open environment
+
 FIG images/old_field.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Stable environment
+
+FIG images/old_growth_opal.jpg
 
 ----------------------------------------------------------------------
 
@@ -541,6 +560,7 @@ Example: trees
 			ANS High $K$ means you can continue doing well when the forest
 			is already too crowded for others
 
+CHANGE CC: add agriculture/human activities as disturbance
 ----------------------------------------------------------------------
 
 DEFHEAD $r$ vs.~$K$ strategists
@@ -565,11 +585,6 @@ DEFHEAD $r$ vs.~$K$ strategists
 		Hemlock trees do best in stable, closed forests
 
 ----------------------------------------------------------------------
-
-RSLIDE Apples and hemlocks?
-
-----------------------------------------------------------------------
-
 
 Life-history characteristics
 
@@ -596,6 +611,7 @@ Life-history characteristics
 
 ----------------------------------------------------------------------
 
+
 Biology is complicated
 
 	The $r$-$K$ dichotomy is useful for thinking about strategies, but
@@ -614,11 +630,20 @@ Biology is complicated
 		But general principles are very important to guide our
 		understanding
 
+CHANGE CC: change locust into cicadas
 ----------------------------------------------------------------------
 
 RSLIDE Biology is complicated
 
-Pictures of the above
+BC
+
+WIDEFIG images/sea_turtle.jpg
+
+NC
+
+WIDEFIG images/century_plant.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -634,10 +659,13 @@ Changing conditions
 
 		ANS Fast
 
-	POLL free_text_polls/zw4SJE9HcxG3rZP When conditions are bad ($\R<1$), When conditions are bad (R<1), should organisms be fast or slow, to maximize λ?
+	POLL free_text_polls/zw4SJE9HcxG3rZP When conditions are bad ($\R<1$),
+	should organisms be fast or slow to maximize $\lambda$?  When conditions are
+	bad (R<1), should organisms be fast or slow, to maximize λ?
 
 		ANS Slow!
 
+CHANGE CC: change poll into multiple choices
 ----------------------------------------------------------------------
 
 Changing life history
@@ -659,6 +687,7 @@ Changing life history
 		bad -- don't reproduce or grow at all, but may survive for a long
 		time
 
+CHANGE CC: you were thinking of adding a reminder in slide about putting away phones after polls? and maybe give a species name example for animals that reach maturity faster under good conditions
 ----------------------------------------------------------------------
 
 Applications
@@ -683,6 +712,9 @@ Applications
 		ANS $K$ strategists may be more sustainable to grow for a long
 		time in a stable environment
 
+CHANGE CC: rephrase the 1st question + advantages r: add grow faster
+
+CHANGE CC: stop here on Feb 28
 ----------------------------------------------------------------------
 
 TSEC Bet hedging
@@ -719,6 +751,7 @@ Averaging
 
 		$x * y * z = m * m * m$
 
+CHANGE CC: not sure the example of stealing money was very clear
 ----------------------------------------------------------------------
 
 Averaging
@@ -753,6 +786,7 @@ Example: plant Q
 
 		ANS The geometric mean of 6, 0.6 and 0.06: $\lambda=0.6$
 
+CHANGE CC: not a change but a note: students did not know how to calculate the GM
 ----------------------------------------------------------------------
 
 Plant D
@@ -773,6 +807,7 @@ Plant D
 
 		ANS Growth is the arithmetic mean of 3, 0.3 and 0.03: $\lambda=1.11$
 
+CHANGE CC: apparently you went a little bit too fast to explain how you did the calculations
 ----------------------------------------------------------------------
 
 Averaging
@@ -835,6 +870,8 @@ Dispersal, spreading risk over space
 		ANS Distribute risk -- if you don't disperse, \emph{all}
 		of your offspring could die if there is a disturbance
 
+CHANGE CC: staying home: ANS of a student: group protection
+CHANGE CC: dispersal: ANS students: decrease inbreeding, find a better place
 ----------------------------------------------------------------------
 
 Spreading risk over time
@@ -862,6 +899,8 @@ Why is it called bet hedging?
 		ANS If you don't disperse in space, or spread out risk in time,
 		you are ``betting" all of your offspring on a single environment
 
+CHANGE CC: not sure why this slide
+CHANGE CC: stop here on March 2nd
 ----------------------------------------------------------------------
 
 \clearpage
@@ -953,7 +992,9 @@ Sex ratio and balance
 
 	How will this population evolve in the long term?
 
-		ANS To a balanced sex ratio
+		ANS More and more females
+
+		ANS Eventually, a balanced sex ratio
 
 ----------------------------------------------------------------------
 
@@ -1075,9 +1116,27 @@ Sexual roles
 
 ----------------------------------------------------------------------
 
+RSLIDE Pregnant seahorse
+
+FIG images/pregnant_seahorse.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Midshipman nest
+
+FIG images/midshipman_nest.jpg
+
+----------------------------------------------------------------------
+
 RSLIDE Equids
 
-ADD Picture
+FIG images/zebra_harem.jpg
+
+----------------------------------------------------------------------
+
+RSLIDE Equids
+
+FIG images/horses.jpg
 
 ----------------------------------------------------------------------
 
@@ -1117,7 +1176,7 @@ CONT Equids
 
 RSLIDE Kakapos
 
-ADD Picture
+FIG images/kakapo_fruit.jpg
 
 ----------------------------------------------------------------------
 
@@ -1133,12 +1192,11 @@ BC
 
 NC
 
-	ADD Picture
+	SIDEFIG images/kakapo_portrait.jpg
 
 EC
 
-
 ----------------------------------------------------------------------
 
-ADD Concluding pix
+ADD Conclusion for next  year?
 

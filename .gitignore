@@ -2,6 +2,7 @@ commit.time
 .*.sw*
 
 *.pdf
+*.pq
 
 *.log
 *.aux
