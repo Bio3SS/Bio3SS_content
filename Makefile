@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.zip 
+target pngtarget pdftarget vtarget acrtarget pushtarget: midterm2.keys 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -197,6 +197,7 @@ disease.outline.pdf: disease.txt
 disease.final.pdf: disease.txt
 disease.draft.pdf: disease.txt
 disease.handouts.pdf: disease.txt
+disease.large.pdf: disease.txt
 
 ##################################################################
 
@@ -302,7 +303,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm2.5.exam.pdf: assign/structure.short
+midterm2.1.key.pdf: assign/structure.short
 
 ##### Versioning
 
@@ -341,6 +342,8 @@ midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 
 final.%.exam.pdf: final.front.pdf final.%.final.pdf
 	$(pdfcat)
+
+midterm2.1.mc: midterm2.mc scramble.pl
 
 midterm2.%.mc: midterm2.mc scramble.pl
 	$(PUSHSTAR)
@@ -394,8 +397,8 @@ midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pd
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
 	$(ZIP)
 
-## Pushing (new style is better for gx-ing)
-midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
+## Pushing (new style (below) is better for gx-ing)
+midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push midterm2.5.test.pdf.push
 
 midterm2_keys = midterm2.1.key.pdf midterm2.2.key.pdf midterm2.3.key.pdf midterm2.4.key.pdf midterm2.5.key.pdf
 midterm2.keys: $(midterm2_keys:%=%.push)
@@ -422,6 +425,11 @@ final_dir.update: final.zip final_dir
 # Substance (belongs elsewhere)
 
 ebola_time = steps.R gamHist.R # Copied from academicWW
+
+## This has absolutely nothing to do with nothing; it's about varying generation interval _shapes_!
+gamHist.Rout: gamHist.R
+
+generationTime.Rout: generationTime.R
 
 ######################################################################
 
