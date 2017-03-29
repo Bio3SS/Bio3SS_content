@@ -117,17 +117,15 @@ EC
 
 TSEC Rate of spread
 
-	For many diseases, especially new diseases, we can \emph{observe}
-	and \emph{estimate} $r$
+	POLL For many diseases, especially new diseases, we can \emph{observe}
+	and \emph{estimate} $r$. What is r?
 
 		ANS the exponential rate of spread
 
-	Want to know what factors contribute to that, and how it relates to
-	\R
+	POLL Want to know what factors contribute to that, and how it relates to
+	\R. What is R?
 
 		ANS number of new cases per case
-
-CHANGE CC: Add a poll for r/R to check if it is ok for everyone?
 
 ----------------------------------------------------------------------
 
@@ -137,11 +135,13 @@ Basic reproductive number
 
 	But they don't always mean the same thing:
 
-		Maximum value of \Ro\ in a population
+		Actual value of \R\ before an epidemic
 
-		Theoretical value in a naive population without control efforts
+		Hypothetical value assuming no immunity
 
-		Actual value before an epidemic
+		Hypothetical value assuming no control efforts whatsoever
+
+	Often easier to talk simply about \R.
 
 ----------------------------------------------------------------------
 
@@ -167,17 +167,15 @@ BC
 
 NC
 
-SIDEFIG gamHist.Rout-4.pdf
+SIDEFIG generationTime.Rout-0.pdf
 
 EC
-
-CHANGE CC: make the pictures with more differences? We can say for which one we have a higher variability but not which one shows the highest density at the beginning
 
 ----------------------------------------------------------------------
 
 Generation intervals
 
-DOUBLEFIG gamHist.Rout-4.pdf gamHist.Rout-2.pdf
+DOUBLEFIG generationTime.Rout-0.pdf generationTime.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
@@ -195,7 +193,7 @@ BC
 
 NC
 
-SIDEFIG gamHist.Rout-4.pdf
+SIDEFIG generationTime.Rout-0.pdf
 
 EC
 
@@ -239,6 +237,22 @@ FIG steps.Rout-1.pdf
 Generation time and risk
 
 DOUBLEPDF steps.Rout
+
+----------------------------------------------------------------------
+
+Generation time and risk
+
+	An intuitive view:
+
+		Epidemic speed = Generation speed $\times$ Generation strength
+
+	If we know generation speed, then a faster epidemic speed means:
+
+		ANS More strength required (greater $\R$)
+
+	If we know epidemic speed, a faster generation speed means
+
+		ANS Less strength required (smaller $\R$)
 
 ----------------------------------------------------------------------
 
@@ -432,8 +446,27 @@ TSS Epidemic size
 
 		ANS The number of susceptibles at the beginning of the epidemic
 
-			ANS More susceptibles means a bigger epidemic -- and therefore
-			fewer susceptibles at the end
+----------------------------------------------------------------------
+
+Overshoot 
+
+BC
+
+	Why does more susceptibles at the beginning mean fewer susceptibles at the
+	end?
+
+		ANS Bigger epidemic $\implies$
+
+		ANS More infections at peak (same number of susceptibles) $\implies$
+
+		ANS More infections after peak \ldots
+
+
+NC
+
+SIDEFIG sims/burnouts.plots.Rout-4.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -441,10 +474,10 @@ Ebola example
 
 BC
 
-  CHANGE MK: Maybe put this after the next slide and before "Recurrent epidemic models"
-
 	In September, the US CDC predicted ``as many as'' 1.5 million Ebola
-	cases in Liberia
+	cases in Liberia by January
+
+	In fact, their model predicted many \emph{more} cases than that by April
 
 	What happened?
 
@@ -502,19 +535,39 @@ Closing the circle
 
 WIDEFIG boxes/sirs.four.pdf
 
+	ANS Loss of immunity
+
+----------------------------------------------------------------------
+
+Closing the circle
+
+WIDEFIG boxes/sirbd.four.pdf
+
+	ANS Births and deaths
+
+		ANS Effect on dynamics is similar to loss of immunity
+
 ----------------------------------------------------------------------
 
 Births and deaths
 
-WIDEFIG boxes/sirbd.four.pdf
+BC
 
-	$$\frac{dS}{dt}  =  \b N - \beta \frac{SI}{N} -d S$$
+	$$\frac{dS}{dt}  =  b N - \beta \frac{SI}{N} - d S$$
 
 	$$\frac{dI}{dt}  = \beta \frac{SI}{N}- \gamma I -d I $$
 
 	$$\frac{dR}{dt}  = \gamma I - d R$$
 
-We often assume $b=d$; population is constant
+	We often assume $b=d$
+
+		$\implies$ population is constant
+
+NC
+
+SIDEFIG boxes/sirbd.four.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -622,7 +675,7 @@ Persistent oscillations
 
 BC
 
-	If oscillations tend to be damped in simple models, why do they
+	POLL XXX If oscillations tend to be damped in simple models, why do they
 	persist in real life?
 
 		ANS Weather
@@ -702,7 +755,6 @@ Examples:
 
 ----------------------------------------------------------------------
 
-
 Persistence of infectious disease
 
 	Why have infectious diseases persisted?
@@ -737,3 +789,9 @@ Heterogeneity and persistence
 
 		Humans rarely do this, however: the populations that need the
 		most support typically have the least access
+
+----------------------------------------------------------------------
+
+ADD Infectious disease and income
+
+
