@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.zip 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -34,7 +34,8 @@ include stuff.mk
 ## Orphaned from 2016
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
 ## In which case, why bother with note once they are rescued.?
-Sources += exam.tmp final_texcover.tex scantron.jpg
+## Dunno, but the condition of the final exam is an absolute disaster!
+Sources += final.tmp scantron.jpg
 
 ## local
 Sources += dushoff.mk
@@ -256,6 +257,8 @@ final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/struc
 
 final.test.pdf:
 
+final.1.exam.pdf:
+
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
 %.mc: %.bank null.tmp %.select.fmt talk/lect.pl
@@ -329,7 +332,6 @@ midterm2.%.vsa: midterm2.sa testselect.pl
 ## http://printpal.mcmaster.ca/
 ## account # 206000301032330000
 
-
 ## Add cover pages and such
 midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 	$(pdfcat)
@@ -337,7 +339,7 @@ midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
-final.%.exam.pdf: final.front.pdf final.%.pdf
+final.%.exam.pdf: final.front.pdf final.%.final.pdf
 	$(pdfcat)
 
 midterm2.%.mc: midterm2.mc scramble.pl
@@ -353,8 +355,12 @@ final.%.test: final.mc scramble.pl
 %.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
-final.1.final.pdf: exam.tmp 
-%.final.tex: %.test exam.tmp test.test.fmt talk/lect.pl
+final.2.final.pdf: final.tmp 
+
+final.%.tmp: final.tmp examno.pl
+	$(PUSHSTAR)
+
+%.final.tex: %.test %.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
 %.key.tex: %.test test.tmp key.test.fmt talk/lect.pl
@@ -396,9 +402,20 @@ midterm2.keys: $(midterm2_keys:%=%.push)
 
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
+	$(MAKE) final_dir
+	-$(RM) final_dir/*.*
+	$(CP) $@ final_dir
+	cd final_dir && unzip $@
+	cd final_dir && rename "s/final./Bio_3SS3_C01_V/; s/final.//" final*.pdf
+	$(MAKE) final_dir.go
 
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
+
+final_dir:
+	$(mkdir)
+
+final_dir.update: final.zip final_dir 
 
 ######################################################################
 

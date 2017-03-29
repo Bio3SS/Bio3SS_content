@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{epsfig,grffile,lastpage,xspace}
 \usepackage[margin=1.2in]{geometry}
+\usepackage{talk/commands}
 
 \input{lect/pop.tex}
 \input{lect/dfpar.tex}
@@ -21,9 +22,16 @@
 \newcounter{question}
 \newcounter{mc}[question]
 \newcounter{qpart}[question]
+\renewcommand{\testver}{VVV}
 % \setcounter{page}{1}
  
 \begin{document}
+
+% Update year (anything else?)
+\input{final.cover.tex}
+
+\newgeometry{margin=1.2in}
+\clearpage
 
 ----------------------------------------------------------------------
 
