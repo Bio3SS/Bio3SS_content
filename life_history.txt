@@ -919,6 +919,7 @@ TSEC Sex ratios
 		ANS They should allocate more resources to males, because males
 		have greater potential reproductive success
 
+CHANGE CC: Comparative aspects better explain for the poll
 ----------------------------------------------------------------------
 
 The balance argument
@@ -935,7 +936,8 @@ The balance argument
 		ANS If the population on average is allocating more to one type,
 		individuals who allocate more to the other type would do better
 		than average
-
+		
+CHANGE CC: Add more explanation for the ANS of balance arg
 ----------------------------------------------------------------------
 
 Example: elephant seals
@@ -958,6 +960,7 @@ SIDEFIG images/elephant_seal_couple.jpg
 
 EC
 
+CHANGE CC: Add poll for the question
 ----------------------------------------------------------------------
 
 Elephant seal details
@@ -975,6 +978,7 @@ Elephant seal details
 		ANS Males' average fitness is 300/360=0.83; females' is 300/40 =
 		7.5
 
+CHANGE CC: Better explanation after a question (future should explain how you get each number from the beginning)
 ----------------------------------------------------------------------
 
 Sex ratio and balance
@@ -996,6 +1000,7 @@ Sex ratio and balance
 
 		ANS Eventually, a balanced sex ratio
 
+CHANGE CC: Change How will this population evolve in the long term? As a poll
 ----------------------------------------------------------------------
 
 Allocation and balance
@@ -1041,6 +1046,7 @@ SIDEFIG images/fig_wasp_dimorphism.png
 
 EC
 
+CHANGE CC: add a poll for more female/male? (not sure everybody understand)
 ----------------------------------------------------------------------
 
 Fig wasp details
@@ -1058,6 +1064,7 @@ Fig wasp details
 		higher works only if your males can \emph{share} that average
 		fitness
 
+CHANGE CC: If more males, competition between your own offspring
 ----------------------------------------------------------------------
 
 Female-biased sex ratios
