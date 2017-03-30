@@ -25,7 +25,7 @@ Infectious disease
 
 Disease agents
 
-	POLL https://www.polleverywhere.com/free_text_polls/CCUi8ULHN5OBMlO Can you name an infectious agent that causes disease in humans?
+	POLL free_text_polls/CCUi8ULHN5OBMlO Can you name an infectious agent that causes disease in humans?
 
 	Disease agents vary tremendously:
 
@@ -117,12 +117,12 @@ EC
 
 TSEC Rate of spread
 
-	POLL https://www.polleverywhere.com/free_text_polls/Bzr6gpzwQ5k1xR://www.polleverywhere.com/free_text_polls/r5O8ujpEfmdBcc0 For many diseases, especially new diseases, we can \emph{observe}
+	POLL free_text_polls/Bzr6gpzwQ5k1xR://www.polleverywhere.com/free_text_polls/r5O8ujpEfmdBcc0 For many diseases, especially new diseases, we can \emph{observe}
 	and \emph{estimate} $r$. What is r?
 
 		ANS the exponential rate of spread
 
-	POLL https://www.polleverywhere.com/free_text_polls/NZAPJMsY64WCB5b Want to know what factors contribute to that, and how it relates to
+	POLL free_text_polls/NZAPJMsY64WCB5b Want to know what factors contribute to that, and how it relates to
 	\R. What is R?
 
 		ANS number of new cases per case
@@ -282,7 +282,7 @@ Conceptual modeling
 
 BC
 
-	POLL https://www.polleverywhere.com/free_text_polls/DXEewMaDpNhiJyY What happens in the long term if we introduce an infectious individual?
+	POLL free_text_polls/DXEewMaDpNhiJyY What happens in the long term if we introduce an infectious individual?
 
 		ANS The \emph{may be} an \textbf{epidemic} -- an outbreak of
 		disease
@@ -387,7 +387,7 @@ DOUBLEFIG sims/burnouts.plots.Rout-0.pdf sims/burnouts.plots.Rout-4.pdf
 
 Basic reproductive number
 
-	POLL https://www.polleverywhere.com/free_text_polls/Dx8yk5UQrFPOJq0 What \emph{unitless} parameter can you make from the model above?
+	POLL free_text_polls/Dx8yk5UQrFPOJq0 What \emph{unitless} parameter can you make from the model above?
 	What unitless parameter can you make?
 
 		ANS $\Ro = \beta D = \beta/\gamma$ is the \textbf{basic
@@ -403,7 +403,7 @@ Basic reproductive number
 
 Basic reproductive number implications
 
-	POLL https://www.polleverywhere.com/free_text_polls/Gj5tDb3y6grYJzG What happens early in the epidemic if $\Ro>1$?
+	POLL free_text_polls/Gj5tDb3y6grYJzG What happens early in the epidemic if $\Ro>1$?
 	What happens early in the epidemic if Ro>1?
 
 		ANS Number of infected individuals grows exponentially
@@ -493,11 +493,11 @@ EC
 
 What limits epidemics?
 
-	POLL https://www.polleverywhere.com/free_text_polls/Ww28eOlRUK8f5I2 What limits epidemics in our simple models?
+	POLL free_text_polls/Ww28eOlRUK8f5I2 What limits epidemics in our simple models?
 
 		ANS Depletion of susceptibles
 
-	POLL https://www.polleverywhere.com/free_text_polls/GBZdsyZ88grHUbJ What else limits epidemics in real life?
+	POLL free_text_polls/GBZdsyZ88grHUbJ What else limits epidemics in real life?
 
 		ANS Interventions
 
@@ -511,7 +511,7 @@ TSEC Recurrent epidemic models
 
 BC
 
-	POLL https://www.polleverywhere.com/free_text_polls/lkgsFIpMHpl8V7F
+	POLL free_text_polls/lkgsFIpMHpl8V7F
 	If epidemics tend to burn out, why do we often see repeated
 	epidemics?
 
@@ -625,7 +625,7 @@ Reciprocal control
 
 Reciprocal control
 
-	POLL https://www.polleverywhere.com/free_text_polls/UaSJBaSOoy0rOKi What happens if we remove infectious individuals at a constant rate (find them and cure them or isolate them)?
+	POLL free_text_polls/UaSJBaSOoy0rOKi What happens if we remove infectious individuals at a constant rate (find them and cure them or isolate them)?
 	What happens if we remove infectious individuals at a constant rate?
 
 		ANS We need more susceptibles to balance $dI/dt$
@@ -678,7 +678,7 @@ Persistent oscillations
 
 BC
 
-	POLL https://www.polleverywhere.com/free_text_polls/qvMZLezBsM69b21 If oscillations tend to be damped in simple models, why do they
+	POLL free_text_polls/qvMZLezBsM69b21 If oscillations tend to be damped in simple models, why do they
 	persist in real life?
 
 		ANS Weather
@@ -746,7 +746,7 @@ Examples:
 
 	Polio has an $\Ro$ of about 5.
 
-	POLL https://www.polleverywhere.com/free_text_polls/rpnF77L9UWWOEki What proportion of the population
+	POLL free_text_polls/rpnF77L9UWWOEki What proportion of the population
 	should be vaccinated to eliminate polio?
 
 		ANS At least 1-1/5 = 80%
