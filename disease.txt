@@ -404,6 +404,7 @@ Basic reproductive number
 			ANS That is: the number they would cause on average if
 			everyone else were susceptible
 
+CHANGE CC: good idea to write the def/unit of the variables on the board
 ----------------------------------------------------------------------
 
 Basic reproductive number implications
@@ -418,6 +419,7 @@ Basic reproductive number implications
 		ANS Number of infected individuals cannot grow (disease cannot
 		invade)
 
+CHANGE CC: Perhaps consider to also have the 2nd one as a poll too (only 1 person was willing to participate)
 ----------------------------------------------------------------------
 
 Effective reproductive number
@@ -429,7 +431,7 @@ Effective reproductive number
 
 	Is the disease increasing or decreasing?
 
-		ANS It will increase when $\Reff > 1$ (more than one case ber case)
+		ANS It will increase when $\Reff > 1$ (more than one case per case)
 
 		ANS This happens when $S/N > 1/\Ro$
 
@@ -437,8 +439,9 @@ Effective reproductive number
 
 		ANS When susceptibles are low enough $\Reff<1$
 
-		ANS When $\Reff<1$, the disease dies out on its own (less than one case ber case)
+		ANS When $\Reff<1$, the disease dies out on its own (less than one case per case)
 
+CHANGE CC: perhaps for next year consider to have the boxes plots (or have it small on slides where you are referring to it) (you drew it later for TSS Epidemic size but probably usefull to also have it earlier)
 ----------------------------------------------------------------------
 
 TSS Epidemic size
@@ -453,6 +456,11 @@ TSS Epidemic size
 
 		ANS The number of susceptibles at the beginning of the epidemic
 
+			ANS More susceptibles leads to a bigger epidemic
+
+			ANS \ldots and \emph{fewer} susceptibles at the end
+
+CHANGE CC: probably add the number of sick people at the beginning as the 3rd factor
 ----------------------------------------------------------------------
 
 Overshoot 
@@ -468,6 +476,7 @@ BC
 
 		ANS More infections after peak \ldots
 
+CHANGE CC: For answer: need more steps / more details
 
 NC
 
@@ -510,6 +519,7 @@ What limits epidemics?
 
 		ANS Heterogeneity (differences between hosts, locations, etc.)
 
+CHANGE CC: Stop here on March 31st
 ----------------------------------------------------------------------
 
 TSEC Recurrent epidemic models
