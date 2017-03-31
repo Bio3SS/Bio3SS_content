@@ -127,6 +127,7 @@ TSEC Rate of spread
 
 		ANS number of new cases per case
 
+CHANGE CC: 1st poll wasn't working and replace answer of r by per capita growth rate (unit 1/t)
 ----------------------------------------------------------------------
 
 Basic reproductive number
@@ -149,6 +150,7 @@ Example: the West African Ebola epidemic
 
 DOUBLEPDF ebola/liberia.npc.tsplot.Rout
 
+CHANGE CC: Need to increase the size of axis (numbers + labels)
 ----------------------------------------------------------------------
 
 Generation intervals
@@ -171,6 +173,7 @@ SIDEFIG generationTime.Rout-0.pdf
 
 EC
 
+CHANGE CC: put the SSLIDE Fighting Ebola picture here?
 ----------------------------------------------------------------------
 
 Generation intervals
@@ -254,6 +257,7 @@ Generation time and risk
 
 		ANS Less strength required (smaller $\R$)
 
+CHANGE CC: add the previous formula R = \exp(r \hat G)
 ----------------------------------------------------------------------
 
 TSEC Single-epidemic model
@@ -316,6 +320,7 @@ Interpreting
 
 		CHANGE How is this one resolved?
 
+CHANGE CC: add environment as sub-reasons (influenza during summer)
 ----------------------------------------------------------------------
 
 Implementing the model
@@ -348,7 +353,7 @@ State variables
 
 	$S, I, R, N$: [people] or [people/ha]
 
-
+CHANGE CC: Stop here on March 30
 ----------------------------------------------------------------------
 
 CONT Quantities
