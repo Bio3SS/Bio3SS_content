@@ -424,7 +424,7 @@ Effective reproductive number
 
 	Is the disease increasing or decreasing?
 
-		ANS It will increase when $\Reff > 1$ (more than one case ber case)
+		ANS It will increase when $\Reff > 1$ (more than one case per case)
 
 		ANS This happens when $S/N > 1/\Ro$
 
@@ -432,7 +432,7 @@ Effective reproductive number
 
 		ANS When susceptibles are low enough $\Reff<1$
 
-		ANS When $\Reff<1$, the disease dies out on its own (less than one case ber case)
+		ANS When $\Reff<1$, the disease dies out on its own (less than one case per case)
 
 ----------------------------------------------------------------------
 
@@ -448,6 +448,10 @@ TSS Epidemic size
 
 		ANS The number of susceptibles at the beginning of the epidemic
 
+			ANS More susceptibles leads to a bigger epidemic
+
+			ANS \ldots and \emph{fewer} susceptibles at the end
+
 ----------------------------------------------------------------------
 
 Overshoot 
@@ -462,7 +466,6 @@ BC
 		ANS More infections at peak (same number of susceptibles) $\implies$
 
 		ANS More infections after peak \ldots
-
 
 NC
 
