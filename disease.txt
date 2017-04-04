@@ -640,7 +640,8 @@ Reciprocal control
 
 		ANS If we have more susceptibles, then per capita replenishment goes down
 
-			ANS So the number of infectious individuals goes down
+			ANS So the number of infectious individuals required for balance goes
+			down
 
 		ANS If we remove infectious individuals fast enough, the infection could
 		go extinct
@@ -800,9 +801,3 @@ Heterogeneity and persistence
 
 		Humans rarely do this, however: the populations that need the
 		most support typically have the least access
-
-----------------------------------------------------------------------
-
-ADD Infectious disease and income
-
-
