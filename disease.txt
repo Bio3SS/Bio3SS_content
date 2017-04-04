@@ -540,6 +540,7 @@ SIDEFIG dd/ewmeas.Rout.pdf
 
 EC
 
+CHANGE CC: add more details for the ans
 ----------------------------------------------------------------------
 
 Recurrent epidemics
@@ -636,6 +637,7 @@ Reciprocal control
 
 			ANS Number of susceptibles goes down
 
+CHANGE CC: add that it is at the equilibrium?
 ----------------------------------------------------------------------
 
 Reciprocal control
@@ -713,6 +715,7 @@ SIDEFIG dd/ewmeas.Rout.pdf
 
 EC
 
+CHANGE CC: ANS seasonality (add/change compared to weather?)?
 ----------------------------------------------------------------------
 
 TSEC Reproductive numbers and risk
@@ -756,6 +759,7 @@ Threshold for elimination
 		ANS Transmission should be reduced by a factor of $\R$, so a
 		fraction $1-1/\R$ should be vaccinated
 
+CHANGE CC: add "at least" (+ can also be killing mosquito or other stuff to decrease the repro of virus…)
 ----------------------------------------------------------------------
 
 Examples: 
