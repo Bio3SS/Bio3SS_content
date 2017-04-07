@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: exploitation.complete.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: disease.complete.pdf 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -206,6 +206,7 @@ disease.draft.pdf: disease.txt
 disease.handouts.pdf: disease.txt
 disease.large.pdf: disease.txt
 disease.poll.csv: disease.txt pollcsv.pl
+disease.complete.pdf: disease.txt pollcsv.pl
 
 ##################################################################
 
@@ -377,7 +378,7 @@ final.%.tmp: final.tmp examno.pl
 %.key.tex: %.test test.tmp key.test.fmt talk/lect.pl
 	$(PUSH)
 
-%.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
+%.rub.tex: %.ksa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
 
 ## Partial set of rubrics because of coding disaster
@@ -401,6 +402,8 @@ midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pd
 
 ##### Test 2
 
+midterm2.1.rub.pdf:
+
 ## Printing
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
 	$(ZIP)
@@ -410,6 +413,10 @@ midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.tes
 
 midterm2_keys = midterm2.1.key.pdf midterm2.2.key.pdf midterm2.3.key.pdf midterm2.4.key.pdf midterm2.5.key.pdf
 midterm2.keys: $(midterm2_keys:%=%.push)
+
+midterm2_rubs = midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
+midterm2.rub.zip: $(midterm2_rubs)
+	$(ZIP)
 
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
