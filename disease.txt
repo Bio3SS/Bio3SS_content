@@ -540,6 +540,7 @@ SIDEFIG dd/ewmeas.Rout.pdf
 
 EC
 
+CHANGE CC: add more details for the ans
 ----------------------------------------------------------------------
 
 Recurrent epidemics
@@ -636,6 +637,7 @@ Reciprocal control
 
 			ANS Number of susceptibles goes down
 
+CHANGE CC: add that it is at the equilibrium?
 ----------------------------------------------------------------------
 
 Reciprocal control
@@ -647,7 +649,8 @@ Reciprocal control
 
 		ANS If we have more susceptibles, then per capita replenishment goes down
 
-			ANS So the number of infectious individuals goes down
+			ANS So the number of infectious individuals required for balance goes
+			down
 
 		ANS If we remove infectious individuals fast enough, the infection could
 		go extinct
@@ -712,6 +715,7 @@ SIDEFIG dd/ewmeas.Rout.pdf
 
 EC
 
+CHANGE CC: ANS seasonality (add/change compared to weather?)?
 ----------------------------------------------------------------------
 
 TSEC Reproductive numbers and risk
@@ -755,6 +759,7 @@ Threshold for elimination
 		ANS Transmission should be reduced by a factor of $\R$, so a
 		fraction $1-1/\R$ should be vaccinated
 
+CHANGE CC: add "at least" (+ can also be killing mosquito or other stuff to decrease the repro of virus…)
 ----------------------------------------------------------------------
 
 Examples: 
@@ -807,9 +812,3 @@ Heterogeneity and persistence
 
 		Humans rarely do this, however: the populations that need the
 		most support typically have the least access
-
-----------------------------------------------------------------------
-
-ADD Infectious disease and income
-
-
