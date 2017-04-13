@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: disease.complete.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.scantron.csv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -466,6 +466,7 @@ final.ssv:
 ## Brasero disk burner
 midterm1.scantron.csv:
 midterm2.scantron.csv:
+final.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
