@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.scantron.csv 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.scores.Rout.csv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -485,8 +485,11 @@ midterm1.%.order: midterm2.skeleton scramble.pl
 midterm2.%.order: midterm2.skeleton scramble.pl
 	$(PUSHSTAR)
 
+final.%.order: final.skeleton scramble.pl
+	$(PUSHSTAR)
+
 midterm1.orders:
-midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.order midterm%.5.order orders.pl
+%.orders: %.1.order %.2.order %.3.order %.4.order %.5.order orders.pl
 	$(PUSH)
 
 ## Student responses from scantron
@@ -503,8 +506,14 @@ midterm2.pv.Rout: grades/ta.csv midterm2.pv.R
 ## Compile scores
 midterm2.scores.Rout.csv:
 midterm2.scores.Rout: scores.R
-%.scores.Rout: %.pv.Rout %.responses.csv %.orders %.ssv scores.R
+
+# scores.R used to also merge with some TA grading sheet.
+# Dysfunctional now, maybe refactor later
+%.scores.Rout: %.responses.csv %.orders %.ssv scores.R
 	$(run-R)
+
+final.scores.Rout.csv: 
+final.scores.Rout: scores.R
 
 # newscores.R is not working yet; tries to merge in manually entered version numbers
 
