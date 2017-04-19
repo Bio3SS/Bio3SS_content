@@ -1,4 +1,10 @@
 # Bio3SS_content
+### Deprecating this whole giant directory!
+### Break into:
+###### Lectures
+###### Assignments (need to RENAME current Assignments, which is private material)
+###### Tests
+###### Anything else?
 
 ### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
@@ -223,6 +229,7 @@ null.tmp:
 ######################################################################
 
 # Look at test banks one at a time (use unit names)
+## Change this rule to say "unit" -- distinguish from "bank" which is at the scale of a test
 
 %.bank: assign/%.bank
 	$(copy)
