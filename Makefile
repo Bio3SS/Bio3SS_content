@@ -6,7 +6,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: competition.key.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.scores.Rout.csv 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -206,6 +206,7 @@ disease.draft.pdf: disease.txt
 disease.handouts.pdf: disease.txt
 disease.large.pdf: disease.txt
 disease.poll.csv: disease.txt pollcsv.pl
+disease.complete.pdf: disease.txt pollcsv.pl
 
 ##################################################################
 
@@ -377,7 +378,7 @@ final.%.tmp: final.tmp examno.pl
 %.key.tex: %.test test.tmp key.test.fmt talk/lect.pl
 	$(PUSH)
 
-%.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
+%.rub.tex: %.ksa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
 
 ## Partial set of rubrics because of coding disaster
@@ -401,6 +402,8 @@ midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pd
 
 ##### Test 2
 
+midterm2.1.rub.pdf:
+
 ## Printing
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
 	$(ZIP)
@@ -410,6 +413,10 @@ midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.tes
 
 midterm2_keys = midterm2.1.key.pdf midterm2.2.key.pdf midterm2.3.key.pdf midterm2.4.key.pdf midterm2.5.key.pdf
 midterm2.keys: $(midterm2_keys:%=%.push)
+
+midterm2_rubs = midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
+midterm2.rub.zip: $(midterm2_rubs)
+	$(ZIP)
 
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
@@ -459,6 +466,7 @@ final.ssv:
 ## Brasero disk burner
 midterm1.scantron.csv:
 midterm2.scantron.csv:
+final.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
@@ -477,8 +485,11 @@ midterm1.%.order: midterm2.skeleton scramble.pl
 midterm2.%.order: midterm2.skeleton scramble.pl
 	$(PUSHSTAR)
 
+final.%.order: final.skeleton scramble.pl
+	$(PUSHSTAR)
+
 midterm1.orders:
-midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.order midterm%.5.order orders.pl
+%.orders: %.1.order %.2.order %.3.order %.4.order %.5.order orders.pl
 	$(PUSH)
 
 ## Student responses from scantron
@@ -489,14 +500,20 @@ midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.o
 assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
-## Recorded version
+## Recorded version of people's papers from 2016
 midterm2.pv.Rout: grades/ta.csv midterm2.pv.R
 
 ## Compile scores
 midterm2.scores.Rout.csv:
 midterm2.scores.Rout: scores.R
-%.scores.Rout: %.pv.Rout %.responses.csv %.orders %.ssv scores.R
+
+# scores.R used to also merge with some TA grading sheet.
+# Dysfunctional now, maybe refactor later
+%.scores.Rout: %.responses.csv %.orders %.ssv scores.R
 	$(run-R)
+
+final.scores.Rout.csv: 
+final.scores.Rout: scores.R
 
 # newscores.R is not working yet; tries to merge in manually entered version numbers
 
