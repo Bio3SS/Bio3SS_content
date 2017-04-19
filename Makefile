@@ -52,17 +52,6 @@ Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 
 ##################################################################
 
-## Outline
-## Deprecated! Now part of the gh-pages
-
-outline.pdf: outline.dmu
-outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
-	$(PUSH)
-outline.pdf.push: outline.pdf
-	cp $< ~/git/Bio3SS.github.io/materials/
-
-######################################################################
-
 ## Lecture rules
 
 lect/%.fmt: ;
@@ -527,15 +516,6 @@ midterm2.%.bonus.Rout: midterm2.responses.csv midterm2.orders %.ssv scores.R
 midterm2.fixed.Rout: midterm2.scores.Rout.csv midterm2.mortfix.bonus.Rout.csv midterm2.nonsense.bonus.Rout.csv addscores.R
 	$(run-R)
 
-### A bunch of pipeline problems due to my addressing the bubbling problems too late. Did not manually check versions for these people, and did not figure out what's going on with the scores.R
-
-# Sources += midterm2.hand.csv
-midterm2.hand.csv: assign/midterm2.hand.csv
-	$(copy)
-
-midterm2.curved.Rout.csv: 
-midterm2.curved.Rout: midterm2.hand.csv curve.R
-	$(run-R)
 
 ## Compare our calculated scores with scores calculated by the Media folks
 %.media.csv: assign/%.media.csv
