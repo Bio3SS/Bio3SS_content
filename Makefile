@@ -489,7 +489,7 @@ midterm1.orders:
 assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
-## Recorded version
+## Recorded version of people's papers from 2016
 midterm2.pv.Rout: grades/ta.csv midterm2.pv.R
 
 ## Compile scores
