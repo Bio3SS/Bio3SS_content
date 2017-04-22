@@ -1,4 +1,10 @@
 # Bio3SS_content
+### Deprecating this whole giant directory!
+### Break into:
+###### Lectures
+###### Assignments (need to RENAME current Assignments, which is private material)
+###### Tests
+###### Anything else?
 
 ### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
@@ -6,7 +12,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.test.pdf 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.scores.Rout 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -34,7 +40,8 @@ include stuff.mk
 ## Orphaned from 2016
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
 ## In which case, why bother with note once they are rescued.?
-Sources += exam.tmp final_texcover.tex scantron.jpg
+## Dunno, but the condition of the final exam is an absolute disaster!
+Sources += final.tmp scantron.jpg
 
 ## local
 Sources += dushoff.mk
@@ -50,17 +57,6 @@ Sources += todo.mkd agenda.mkd
 Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 
 ##################################################################
-
-## Outline
-## Deprecated! Now part of the gh-pages
-
-outline.pdf: outline.dmu
-outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
-	$(PUSH)
-outline.pdf.push: outline.pdf
-	cp $< ~/git/Bio3SS.github.io/materials/
-
-######################################################################
 
 ## Lecture rules
 
@@ -141,9 +137,16 @@ structure.handouts.pdf: structure.txt
 structure.complete.pdf: structure.txt
 
 ## Poll questions framework
+
+## Obsoleted by polleverywhere!
 ## Trim up to the first period or question mark that is followed by words
 ## Should really rewrite to read paragraphs, replace \n with \s.
 %.pq: %.txt pq.pl
+	$(PUSH)
+
+# New version
+# Not tested for MC yet!
+%.poll.csv: %.txt pollcsv.pl
 	$(PUSH)
 
 %.pollclean: %.txt
@@ -196,6 +199,9 @@ disease.outline.pdf: disease.txt
 disease.final.pdf: disease.txt
 disease.draft.pdf: disease.txt
 disease.handouts.pdf: disease.txt
+disease.large.pdf: disease.txt
+disease.poll.csv: disease.txt pollcsv.pl
+disease.complete.pdf: disease.txt pollcsv.pl
 
 ##################################################################
 
@@ -223,6 +229,7 @@ null.tmp:
 ######################################################################
 
 # Look at test banks one at a time (use unit names)
+## Change this rule to say "unit" -- distinguish from "bank" which is at the scale of a test
 
 %.bank: assign/%.bank
 	$(copy)
@@ -255,6 +262,8 @@ final.bank: final.formulas assign/linear.bank assign/nonlinear.bank assign/struc
 ## Developing a test
 
 final.test.pdf:
+
+final.1.exam.pdf:
 
 # Select the multiple choice part of a test
 .PRECIOUS: %.mc
@@ -299,7 +308,7 @@ final.test: final.mc
 
 ######################################################################
 
-midterm2.5.exam.pdf: assign/structure.short
+midterm2.1.key.pdf: assign/structure.short
 
 ##### Versioning
 
@@ -329,7 +338,6 @@ midterm2.%.vsa: midterm2.sa testselect.pl
 ## http://printpal.mcmaster.ca/
 ## account # 206000301032330000
 
-
 ## Add cover pages and such
 midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 	$(pdfcat)
@@ -337,8 +345,10 @@ midterm1.%.exam.pdf: midterm.front.pdf midterm1.%.test.pdf
 midterm2.%.exam.pdf: midterm.front.pdf midterm2.%.test.pdf
 	$(pdfcat)
 
-final.%.exam.pdf: final.front.pdf final.%.pdf
+final.%.exam.pdf: final.front.pdf final.%.final.pdf
 	$(pdfcat)
+
+midterm2.1.mc: midterm2.mc scramble.pl
 
 midterm2.%.mc: midterm2.mc scramble.pl
 	$(PUSHSTAR)
@@ -353,14 +363,18 @@ final.%.test: final.mc scramble.pl
 %.test.tex: %.test test.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
-final.1.final.pdf: exam.tmp 
-%.final.tex: %.test exam.tmp test.test.fmt talk/lect.pl
+final.2.final.pdf: final.tmp 
+
+final.%.tmp: final.tmp examno.pl
+	$(PUSHSTAR)
+
+%.final.tex: %.test %.tmp test.test.fmt talk/lect.pl
 	$(PUSH)
 
 %.key.tex: %.test test.tmp key.test.fmt talk/lect.pl
 	$(PUSH)
 
-%.rub.tex: %.sa test.tmp rub.test.fmt talk/lect.pl
+%.rub.tex: %.ksa test.tmp rub.test.fmt talk/lect.pl
 	$(PUSH)
 
 ## Partial set of rubrics because of coding disaster
@@ -384,27 +398,49 @@ midterm1.keys: midterm1.1.key.pdf.push midterm1.2.key.pdf.push midterm1.3.key.pd
 
 ##### Test 2
 
+midterm2.1.rub.pdf:
+
 ## Printing
 midterm2.zip: midterm2.1.exam.pdf midterm2.2.exam.pdf midterm2.3.exam.pdf midterm2.4.exam.pdf midterm2.5.exam.pdf
 	$(ZIP)
 
-## Pushing (new style is better for gx-ing)
-midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push
+## Pushing (new style (below) is better for gx-ing)
+midterm2.tests: midterm2.1.test.pdf.push midterm2.2.test.pdf.push midterm2.3.test.pdf.push midterm2.4.test.pdf.push midterm2.5.test.pdf.push
 
 midterm2_keys = midterm2.1.key.pdf midterm2.2.key.pdf midterm2.3.key.pdf midterm2.4.key.pdf midterm2.5.key.pdf
 midterm2.keys: $(midterm2_keys:%=%.push)
 
+midterm2_rubs = midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
+midterm2.rub.zip: $(midterm2_rubs)
+	$(ZIP)
+
 final.zip: final.1.final.pdf final.2.final.pdf final.3.final.pdf final.4.final.pdf final.5.final.pdf
 	$(ZIP)
+	$(MAKE) final_dir
+	-$(RM) final_dir/*.*
+	$(CP) $@ final_dir
+	cd final_dir && unzip $@
+	cd final_dir && rename "s/final./Bio_3SS3_C01_V/; s/final.//" final*.pdf
+	$(MAKE) final_dir.go
 
 midterm2.rub.tgz: midterm2.1.rub.pdf midterm2.2.rub.pdf midterm2.3.rub.pdf midterm2.4.rub.pdf midterm2.5.rub.pdf
 	$(TGZ)
+
+final_dir:
+	$(mkdir)
+
+final_dir.update: final.zip final_dir 
 
 ######################################################################
 
 # Substance (belongs elsewhere)
 
 ebola_time = steps.R gamHist.R # Copied from academicWW
+
+## This has absolutely nothing to do with nothing; it's about varying generation interval _shapes_!
+gamHist.Rout: gamHist.R
+
+generationTime.Rout: generationTime.R
 
 ######################################################################
 
@@ -426,6 +462,7 @@ final.ssv:
 ## Brasero disk burner
 midterm1.scantron.csv:
 midterm2.scantron.csv:
+final.scantron.csv:
 
 # Combine a bunch of scantron keys into a file for the processors
 final.scantron.csv midterm1.scantron.csv midterm2.scantron.csv: %.scantron.csv: %.1.sc.csv %.2.sc.csv %.3.sc.csv %.4.sc.csv %.5.sc.csv
@@ -444,8 +481,11 @@ midterm1.%.order: midterm2.skeleton scramble.pl
 midterm2.%.order: midterm2.skeleton scramble.pl
 	$(PUSHSTAR)
 
+final.%.order: final.skeleton scramble.pl
+	$(PUSHSTAR)
+
 midterm1.orders:
-midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.order midterm%.5.order orders.pl
+%.orders: %.1.order %.2.order %.3.order %.4.order %.5.order orders.pl
 	$(PUSH)
 
 ## Student responses from scantron
@@ -456,14 +496,20 @@ midterm%.orders: midterm%.1.order midterm%.2.order midterm%.3.order midterm%.4.o
 assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
-## Recorded version
+## Recorded version of people's papers from 2016
 midterm2.pv.Rout: grades/ta.csv midterm2.pv.R
 
 ## Compile scores
 midterm2.scores.Rout.csv:
 midterm2.scores.Rout: scores.R
-%.scores.Rout: %.pv.Rout %.responses.csv %.orders %.ssv scores.R
+
+# scores.R used to also merge with some TA grading sheet.
+# Dysfunctional now, maybe refactor later
+%.scores.Rout: %.responses.csv %.orders %.ssv scores.R
 	$(run-R)
+
+final.scores.Rout.csv: 
+final.scores.Rout: scores.R
 
 # newscores.R is not working yet; tries to merge in manually entered version numbers
 
@@ -477,15 +523,6 @@ midterm2.%.bonus.Rout: midterm2.responses.csv midterm2.orders %.ssv scores.R
 midterm2.fixed.Rout: midterm2.scores.Rout.csv midterm2.mortfix.bonus.Rout.csv midterm2.nonsense.bonus.Rout.csv addscores.R
 	$(run-R)
 
-### A bunch of pipeline problems due to my addressing the bubbling problems too late. Did not manually check versions for these people, and did not figure out what's going on with the scores.R
-
-# Sources += midterm2.hand.csv
-midterm2.hand.csv: assign/midterm2.hand.csv
-	$(copy)
-
-midterm2.curved.Rout.csv: 
-midterm2.curved.Rout: midterm2.hand.csv curve.R
-	$(run-R)
 
 ## Compare our calculated scores with scores calculated by the Media folks
 %.media.csv: assign/%.media.csv

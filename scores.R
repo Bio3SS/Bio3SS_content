@@ -1,3 +1,4 @@
+## Sheets means scantron sheets
 sheets <- read.csv(input_files[[1]], header=FALSE, row.names=1)
 versionOrder <- read.table(input_files[[2]], header=FALSE, row.names=1)
 key <- as.character(read.table(input_files[[3]], header=FALSE, row.names=1)[[1]])
