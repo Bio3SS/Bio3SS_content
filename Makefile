@@ -1,4 +1,10 @@
 # Bio3SS_content
+### Deprecating this whole giant directory!
+### Break into:
+###### Lectures
+###### Assignments (need to RENAME current Assignments, which is private material)
+###### Tests
+###### Anything else?
 
 ### Planning spreadsheet https://docs.google.com/spreadsheets/d/1v07n8Jfsu0tcqpulHUiQktoMq1uTmtuzGmW_FtAxyeI/edit#gid=0
 
@@ -6,7 +12,7 @@
 
 current: target
 
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.scores.Rout.csv 
+target pngtarget pdftarget vtarget acrtarget pushtarget: final.scores.Rout 
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -51,17 +57,6 @@ Sources += todo.mkd agenda.mkd
 Sources += $(wildcard *.dmu) $(wildcard *.txt) $(wildcard *.poll)
 
 ##################################################################
-
-## Outline
-## Deprecated! Now part of the gh-pages
-
-outline.pdf: outline.dmu
-outline.tex: outline.dmu lect/course.tmp lect/course.fmt talk/lect.pl
-	$(PUSH)
-outline.pdf.push: outline.pdf
-	cp $< ~/git/Bio3SS.github.io/materials/
-
-######################################################################
 
 ## Lecture rules
 
@@ -234,6 +229,7 @@ null.tmp:
 ######################################################################
 
 # Look at test banks one at a time (use unit names)
+## Change this rule to say "unit" -- distinguish from "bank" which is at the scale of a test
 
 %.bank: assign/%.bank
 	$(copy)
@@ -526,15 +522,6 @@ midterm2.%.bonus.Rout: midterm2.responses.csv midterm2.orders %.ssv scores.R
 midterm2.fixed.Rout: midterm2.scores.Rout.csv midterm2.mortfix.bonus.Rout.csv midterm2.nonsense.bonus.Rout.csv addscores.R
 	$(run-R)
 
-### A bunch of pipeline problems due to my addressing the bubbling problems too late. Did not manually check versions for these people, and did not figure out what's going on with the scores.R
-
-# Sources += midterm2.hand.csv
-midterm2.hand.csv: assign/midterm2.hand.csv
-	$(copy)
-
-midterm2.curved.Rout.csv: 
-midterm2.curved.Rout: midterm2.hand.csv curve.R
-	$(run-R)
 
 ## Compare our calculated scores with scores calculated by the Media folks
 %.media.csv: assign/%.media.csv
