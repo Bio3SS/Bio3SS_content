@@ -500,9 +500,6 @@ midterm1.orders:
 assign/midterm2.scores.orig.csv:
 	/bin/cp midterm2.scores.Rout.csv $@
 
-## Recorded version of people's papers from 2016
-midterm2.pv.Rout: grades/ta.csv midterm2.pv.R
-
 ## Compile scores
 midterm2.scores.Rout.csv:
 midterm2.scores.Rout: scores.R
@@ -514,6 +511,8 @@ midterm2.scores.Rout: scores.R
 
 final.scores.Rout.csv: 
 final.scores.Rout: scores.R
+
+
 
 # newscores.R is not working yet; tries to merge in manually entered version numbers
 
