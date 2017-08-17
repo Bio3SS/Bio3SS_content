@@ -41,6 +41,7 @@ include stuff.mk
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
 ## In which case, why bother with note once they are rescued.?
 ## Dunno, but the condition of the final exam is an absolute disaster!
+## Better now? (after 2017 is finished)
 Sources += final.tmp scantron.jpg
 
 ## local
@@ -66,6 +67,9 @@ lect/%.fmt: ;
 
 .PRECIOUS: lect/lect.format lect/fmt.pl
 
+## Using separate rules here; there's a divergence between lect.format and txt.format.
+## Now developing 1M using txt.format
+## Are there also two copies of fmt.pl??
 Sources += beamer.tmp
 %.draft.tex: %.txt beamer.tmp draft.lect.fmt talk/lect.pl
 	$(PUSH)
