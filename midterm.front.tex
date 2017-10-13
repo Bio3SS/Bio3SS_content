@@ -3,8 +3,15 @@
 \usepackage[margin=1.2in]{geometry}
 
 \pagestyle{myheadings}
-
+% \newcommand{\myhead}{\small \bf Bio 3SS3\hfill{}\fullver}
+\newcommand{\myhead}{\small \bf Bio 3SS3\hfill{}Version \testver}
 \newcommand{\myfoot}{\hfill Page \thepage\ \hfill}
+\makeatletter
+\renewcommand{\@oddhead}{\myhead}
+\renewcommand{\@evenhead}{\myhead}
+\renewcommand{\@oddfoot}{\myfoot}
+\renewcommand{\@evenfoot}{\myfoot}
+\makeatother
 
 \begin{document}
 
