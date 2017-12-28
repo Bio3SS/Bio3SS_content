@@ -11,8 +11,7 @@
 ## https://github.com/Bio3SS/Bio3SS_content/
 
 current: target
-
-target pngtarget pdftarget vtarget acrtarget pushtarget: final.scores.Rout 
+-include target.mk
 
 test: intro.draft.tex.deps
 	$(MAKE) intro.draft.pdf.go
@@ -27,13 +26,14 @@ test: intro.draft.tex.deps
 ##### lect is in makestuff; make sure to sync
 
 # Scripts seem to be in talk/ and make rules in $(ms). But it's not clear if those work
+
 ##### talk is in makestuff; make sure to sync
+#### Names and places have somehow changed, and things don't work :-(
 
 # make files
 
-Sources += Makefile .gitignore README.md stuff.mk LICENSE.md notes.md
-include stuff.mk
--include $(ms)/os.mk
+Sources += Makefile .gitignore README.md sub.mk LICENSE.md notes.md
+include sub.mk
 
 -include $(ms)/perl.def
 
@@ -41,7 +41,7 @@ include stuff.mk
 ## Great note, morpho! WTF does it mean? Maybe that I had to rescue them? 
 ## In which case, why bother with note once they are rescued.?
 ## Dunno, but the condition of the final exam is an absolute disaster!
-## Better now? (after 2017 is finished)
+## Better now (after 2017 is finished)
 Sources += final.tmp scantron.jpg
 
 ## local
@@ -787,6 +787,12 @@ Sources += asn.tmp
 ## Push to private repo
 %.private: %
 	$(CP) $< assign
+
+## Patching
+
+talkdir = makestuff/newtalk/
+talk:
+	$(LN) $(talkdir) $@
 
 ### Makestuff
 
