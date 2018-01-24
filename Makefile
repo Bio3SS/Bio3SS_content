@@ -32,7 +32,7 @@ test: intro.draft.tex.deps
 
 # make files
 
-Sources += Makefile .gitignore README.md sub.mk LICENSE.md notes.md
+Sources += Makefile .ignore README.md sub.mk LICENSE.md notes.md
 include sub.mk
 
 -include $(ms)/perl.def
